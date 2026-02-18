@@ -3,6 +3,7 @@
  */
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const compression = require('compression');
 
 const app = express();
@@ -11,8 +12,17 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(compression());
 
-// Servir archivos estáticos desde la carpeta browser
-const distFolder = path.join(__dirname, 'browser');
+// Servir archivos estáticos desde la carpeta de build
+const distCandidates = [
+  path.join(__dirname, 'browser', 'browser'),
+  path.join(__dirname, 'browser'),
+  path.join(__dirname, 'dist', 'skote', 'browser'),
+  path.join(__dirname, 'dist', 'skote')
+];
+
+const distFolder = distCandidates.find((candidate) =>
+  fs.existsSync(path.join(candidate, 'index.html'))
+) || distCandidates[0];
 app.use(express.static(distFolder, {
   maxAge: '1y',
   etag: false
