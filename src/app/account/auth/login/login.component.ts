@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 import { AlertModule } from 'ngx-bootstrap/alert';
 
 @Component({
-    selector: 'app-login',
-    templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss'],
-    imports: [CommonModule, FormsModule, ReactiveFormsModule, AlertModule]
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, AlertModule]
 })
 
 /**
