@@ -28,9 +28,7 @@
     'echo "Verificando contenido de /app después del build:"',
     'ls -la /app || true',
     'echo "Verificando /app/browser:"',
-    'ls -la /app/browser || true',
-    'echo "Verificando /app/browser/browser (donde debería estar index.html):"',
-    'ls -la /app/browser/browser || true'
+    'ls -la /app/browser || true'
   ]
 
 [start]
