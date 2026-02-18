@@ -23,8 +23,8 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
-// Fallback para Angular Router - SPA
-app.get('/*', (req, res) => {
+// Fallback para Angular Router - SPA (debe ser lo último)
+app.use((req, res) => {
   res.sendFile(path.join(distFolder, 'index.html'));
 });
 
