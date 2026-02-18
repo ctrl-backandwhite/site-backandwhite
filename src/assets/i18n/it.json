@@ -317,7 +317,7 @@
     "MAPS": {
       "TEXT": "Mappe",
       "LIST": {
-        "GOOGLEMAP": "Google Maps",
+
         "LEAFLETMAP": "Mappe volantino",
         "AMCHARTS": "AmCharts"
       }

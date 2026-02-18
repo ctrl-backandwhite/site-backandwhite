@@ -861,12 +861,6 @@ export const MENU: MenuItem[] = [
         icon: 'bx-map',
         subItems: [
             {
-                id: 141,
-                label: 'MENUITEMS.MAPS.LIST.GOOGLEMAP',
-                link: '/maps/google',
-                parentId: 140
-            },
-            {
                 id: 142,
                 label: 'MENUITEMS.MAPS.LIST.LEAFLETMAP',
                 link: '/maps/leaflet',

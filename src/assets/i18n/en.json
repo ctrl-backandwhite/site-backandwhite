@@ -319,7 +319,6 @@
     "MAPS": {
       "TEXT": "Maps",
       "LIST": {
-        "GOOGLEMAP": "Google Maps",
         "LEAFLETMAP": "Leaflet Maps",
         "AMCHARTS": "AmCharts"
       }

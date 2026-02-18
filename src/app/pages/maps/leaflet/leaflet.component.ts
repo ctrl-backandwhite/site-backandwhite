@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { latLng, tileLayer, circle, polygon, marker, icon, Layer } from 'leaflet';
 import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.component';
-// Google Map
-import { GoogleMapsModule } from '@angular/google-maps';
 // Leaflet Map
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
@@ -10,7 +8,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
   selector: 'app-leaflet',
   templateUrl: './leaflet.component.html',
   styleUrls: ['./leaflet.component.scss'],
-  imports: [PagetitleComponent, GoogleMapsModule, LeafletModule]
+  imports: [PagetitleComponent, LeafletModule]
 })
 
 /**

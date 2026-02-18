@@ -4,17 +4,15 @@ import * as am5 from '@amcharts/amcharts5';
 import * as am5map from "@amcharts/amcharts5/map";
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow";
-// Google Map
-import { GoogleMapsModule } from '@angular/google-maps';
 // Leaflet Map
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.component';
 
 @Component({
-    selector: 'app-amcharts',
-    templateUrl: './amcharts.component.html',
-    styleUrls: ['./amcharts.component.scss'],
-    imports: [PagetitleComponent, GoogleMapsModule, LeafletModule]
+  selector: 'app-amcharts',
+  templateUrl: './amcharts.component.html',
+  styleUrls: ['./amcharts.component.scss'],
+  imports: [PagetitleComponent, LeafletModule]
 })
 export class AmchartsComponent {
 
