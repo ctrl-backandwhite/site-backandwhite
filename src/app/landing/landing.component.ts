@@ -11,14 +11,17 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class LandingComponent implements OnInit, OnDestroy {
     year = new Date().getFullYear();
-    currentLanguage = 'es';
+    currentLanguage = 'en';
     mobileMenuOpen = false;
     languageDropdownOpen = false;
 
     languages = [
         { code: 'en', name: 'English', flag: 'us.jpg' },
         { code: 'es', name: 'Español', flag: 'spain.jpg' },
-        { code: 'pt', name: 'Português', flag: 'portugal.svg' }
+        { code: 'pt', name: 'Português', flag: 'portugal.svg' },
+        { code: 'de', name: 'Deutsch', flag: 'germany.jpg' },
+        { code: 'it', name: 'Italiano', flag: 'italy.jpg' },
+        { code: 'ru', name: 'Русский', flag: 'russia.jpg' }
     ];
 
     // Countdown properties
@@ -79,8 +82,8 @@ export class LandingComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.translate.setDefaultLang('es');
-        this.translate.use('es');
+        this.translate.setDefaultLang('en');
+        this.translate.use('en');
         this.onScroll();
         this.startCountdown();
         this.startAutoRotateCarousel();

@@ -4,6 +4,7 @@
       "BRAND": "Back & White",
       "FEATURES": "Características",
       "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
       "LOGIN": "Login",
       "LANGUAGE": "Idioma"
     },
@@ -133,18 +134,34 @@
       "BUTTON": "Abra sua conta agora"
     },
     "FOOTER": {
-      "BRAND": "Back & White",
-      "COPYRIGHT": "Todos os direitos reservados.",
-      "DESCRIPTION": "Revolucionando o investimento com tecnologia blockchain e ativos tokenizados.",
-      "PRODUCT": "Produto",
-      "COMMUNITY": "Comunidade",
-      "LEGAL": "Legal",
-      "WHITEPAPER": "Whitepaper",
-      "PRIVACY": "Política de Privacidade",
-      "TERMS": "Termos de Serviço",
-      "COOKIES": "Política de Cookies",
-      "COMPLIANCE": "Conformidade",
-      "DISCLAIMER": "Esta é uma plataforma de demonstração. Sempre faça sua própria pesquisa antes de investir."
+      "DESCRIPTION": "Plataforma empresarial para ativos digitais e investimentos com foco em segurança, transparência e conformidade.",
+      "COMPANY": {
+        "TITLE": "Empresa",
+        "FEATURES": "Características",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Produto",
+        "ACCESS": "Acesso",
+        "SECURITY": "Segurança",
+        "UTILITY": "Utilidade"
+      },
+      "LEGAL": {
+        "TITLE": "Legal",
+        "TERMS": "Termos",
+        "PRIVACY": "Privacidade",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "Contato",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. Todos os direitos reservados.",
+      "META": {
+        "ACCESS": "Acesso",
+        "FEATURES": "Características"
+      }
     }
   }
 }

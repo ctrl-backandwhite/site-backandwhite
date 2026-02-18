@@ -12,7 +12,7 @@
             <div class="nav-menu">
                 <a href="#features" class="nav-item">{{ 'LANDING.NAV.FEATURES' | translate }}</a>
                 <a href="#roadmap" class="nav-item">{{ 'LANDING.NAV.ROADMAP' | translate }}</a>
-                <a href="#tokenomics" class="nav-item">Tokenomics</a>
+                <a href="#tokenomics" class="nav-item">{{ 'LANDING.NAV.TOKENOMICS' | translate }}</a>
             </div>
 
             <!-- Language Selector Desktop -->
@@ -56,7 +56,7 @@
             {{ 'LANDING.NAV.ROADMAP' | translate }}
         </a>
         <a href="#tokenomics" class="mobile-nav-item" (click)="closeMobileMenu()">
-            Tokenomics
+            {{ 'LANDING.NAV.TOKENOMICS' | translate }}
         </a>
 
         <!-- Divider -->
@@ -359,3 +359,64 @@
         <a routerLink="/auth/login" class="btn btn-light btn-lg">{{ 'LANDING.CTA.BUTTON' | translate }}</a>
     </div>
 </section>
+
+<!-- Footer -->
+<footer class="footer-elegant">
+    <div class="container-xl">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="footer-logo" routerLink="/">
+                    <span class="brand-icon">₿</span>
+                    <span class="brand-text">{{ 'LANDING.NAV.BRAND' | translate }}</span>
+                </a>
+                <p class="footer-description">{{ 'LANDING.FOOTER.DESCRIPTION' | translate }}</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="X">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="bx bxl-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>{{ 'LANDING.FOOTER.COMPANY.TITLE' | translate }}</h4>
+                    <a href="#features">{{ 'LANDING.FOOTER.COMPANY.FEATURES' | translate }}</a>
+                    <a href="#roadmap">{{ 'LANDING.FOOTER.COMPANY.ROADMAP' | translate }}</a>
+                    <a href="#tokenomics">{{ 'LANDING.FOOTER.COMPANY.TOKENOMICS' | translate }}</a>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ 'LANDING.FOOTER.PRODUCT.TITLE' | translate }}</h4>
+                    <a routerLink="/auth/login">{{ 'LANDING.FOOTER.PRODUCT.ACCESS' | translate }}</a>
+                    <a href="#features">{{ 'LANDING.FOOTER.PRODUCT.SECURITY' | translate }}</a>
+                    <a href="#tokenomics">{{ 'LANDING.FOOTER.PRODUCT.UTILITY' | translate }}</a>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ 'LANDING.FOOTER.LEGAL.TITLE' | translate }}</h4>
+                    <a href="/terms" target="_self">{{ 'LANDING.FOOTER.LEGAL.TERMS' | translate }}</a>
+                    <a href="/privacy" target="_self">{{ 'LANDING.FOOTER.LEGAL.PRIVACY' | translate }}</a>
+                    <a href="/cookies" target="_self">{{ 'LANDING.FOOTER.LEGAL.COOKIES' | translate }}</a>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ 'LANDING.FOOTER.CONTACT.TITLE' | translate }}</h4>
+                    <a href="mailto:info@backandwhite.com">info@backandwhite.com</a>
+                    <span class="footer-location">{{ 'LANDING.FOOTER.CONTACT.LOCATION' | translate }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>{{ 'LANDING.FOOTER.COPYRIGHT' | translate:{ year: year } }}</span>
+            <div class="footer-meta">
+                <a routerLink="/auth/login">{{ 'LANDING.FOOTER.META.ACCESS' | translate }}</a>
+                <span class="divider">•</span>
+                <a href="#features">{{ 'LANDING.FOOTER.META.FEATURES' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</footer>
