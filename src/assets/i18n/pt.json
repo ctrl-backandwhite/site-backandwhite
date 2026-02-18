@@ -4,6 +4,7 @@
       "BRAND": "Back & White",
       "FEATURES": "Características",
       "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
       "LOGIN": "Login",
       "LANGUAGE": "Idioma"
     },
@@ -99,7 +100,7 @@
       "Q1_2026": {
         "TITLE": "Expansão Global",
         "ITEM1": "Regulação em 10+ países",
-        "ITEM2": "Múltiplas moedas fiduciárias",
+        "ITEM2": "Token BW disponível",
         "ITEM3": "Aplicativo móvel nativo"
       },
       "H2_2026": {
@@ -110,7 +111,7 @@
       }
     },
     "TOKENOMICS": {
-      "TITLE": "Token BWC",
+      "TITLE": "Token BW",
       "SUBTITLE": "Especificações técnicas e distribuição",
       "PUBLIC_SALE": "Venda Pública",
       "DEX_LIQUIDITY": "Liquidez DEX",
@@ -132,19 +133,66 @@
       "SUBTITLE": "Junte-se a milhares de investidores que já estão democratizando o mercado de ações",
       "BUTTON": "Abra sua conta agora"
     },
+    "TEAM": {
+      "TITLE": "Equipe de liderança",
+      "SUBTITLE": "Profissionais experientes conduzindo produto, conformidade e crescimento.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Fundadora",
+          "BIO": "15+ anos em mercados de capitais e estratégia fintech."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Arquitetura e segurança para plataformas escaláveis."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operações, parcerias e coordenação regulatória."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Head de Produto",
+          "BIO": "Experiência do usuário e execução do roadmap."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Head de Compliance",
+          "BIO": "Risco, KYC/AML e governança."
+        }
+      }
+    },
     "FOOTER": {
-      "BRAND": "Back & White",
-      "COPYRIGHT": "Todos os direitos reservados.",
-      "DESCRIPTION": "Revolucionando o investimento com tecnologia blockchain e ativos tokenizados.",
-      "PRODUCT": "Produto",
-      "COMMUNITY": "Comunidade",
-      "LEGAL": "Legal",
-      "WHITEPAPER": "Whitepaper",
-      "PRIVACY": "Política de Privacidade",
-      "TERMS": "Termos de Serviço",
-      "COOKIES": "Política de Cookies",
-      "COMPLIANCE": "Conformidade",
-      "DISCLAIMER": "Esta é uma plataforma de demonstração. Sempre faça sua própria pesquisa antes de investir."
+      "DESCRIPTION": "Plataforma empresarial para ativos digitais e investimentos com foco em segurança, transparência e conformidade.",
+      "COMPANY": {
+        "TITLE": "Empresa",
+        "FEATURES": "Características",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Produto",
+        "ACCESS": "Acesso",
+        "SECURITY": "Segurança",
+        "UTILITY": "Utilidade"
+      },
+      "LEGAL": {
+        "TITLE": "Legal",
+        "TERMS": "Termos",
+        "PRIVACY": "Privacidade",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "Contato",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. Todos os direitos reservados.",
+      "META": {
+        "ACCESS": "Acesso",
+        "FEATURES": "Características"
+      }
     }
   }
 }

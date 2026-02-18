@@ -11,14 +11,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class LandingComponent implements OnInit, OnDestroy {
     year = new Date().getFullYear();
-    currentLanguage = 'es';
+    currentLanguage = 'en';
     mobileMenuOpen = false;
     languageDropdownOpen = false;
+    fadeActive = false;
+    private fadeTimeout: any;
 
     languages = [
         { code: 'en', name: 'English', flag: 'us.jpg' },
         { code: 'es', name: 'Español', flag: 'spain.jpg' },
-        { code: 'pt', name: 'Português', flag: 'portugal.svg' }
+        { code: 'pt', name: 'Português', flag: 'portugal.svg' },
+        { code: 'de', name: 'Deutsch', flag: 'germany.jpg' },
+        { code: 'it', name: 'Italiano', flag: 'italy.jpg' },
+        { code: 'ru', name: 'Русский', flag: 'russia.jpg' },
+        { code: 'fr', name: 'Français', flag: 'french.jpg' },
+        { code: 'zh-Hant', name: '中文（繁體）', flag: 'china.svg' }
     ];
 
     // Countdown properties
@@ -79,11 +86,12 @@ export class LandingComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.translate.setDefaultLang('es');
-        this.translate.use('es');
+        this.translate.setDefaultLang('en');
+        this.translate.use('en');
         this.onScroll();
         this.startCountdown();
         this.startAutoRotateCarousel();
+        this.triggerFadeIn();
     }
 
     startAutoRotateCarousel() {
@@ -99,12 +107,19 @@ export class LandingComponent implements OnInit, OnDestroy {
         if (this.autoRotateInterval) {
             clearInterval(this.autoRotateInterval);
         }
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
     }
 
     changeLanguage(lang: string) {
+        if (this.currentLanguage === lang) {
+            this.languageDropdownOpen = false;
+            return;
+        }
         this.currentLanguage = lang;
-        this.translate.use(lang);
         this.languageDropdownOpen = false;
+        this.triggerLanguageFade(lang);
     }
 
     toggleLanguageDropdown() {
@@ -135,5 +150,26 @@ export class LandingComponent implements OnInit, OnDestroy {
 
     goToSlide(index: number) {
         this.currentSlideIndex = index;
+    }
+
+    private triggerFadeIn() {
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
+        this.fadeActive = false;
+        this.fadeTimeout = setTimeout(() => {
+            this.fadeActive = true;
+        }, 80);
+    }
+
+    private triggerLanguageFade(lang: string) {
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
+        this.fadeActive = false;
+        this.fadeTimeout = setTimeout(() => {
+            this.translate.use(lang);
+            this.fadeActive = true;
+        }, 140);
     }
 }

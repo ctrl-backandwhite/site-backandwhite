@@ -1,8 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Google Map
-import { GoogleMapsModule } from '@angular/google-maps';
 // Leaflet Map
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 

@@ -319,7 +319,6 @@
     "MAPS": {
       "TEXT": "Maps",
       "LIST": {
-        "GOOGLEMAP": "Google Maps",
         "LEAFLETMAP": "Leaflet Maps",
         "AMCHARTS": "AmCharts"
       }
@@ -343,6 +342,7 @@
       "BRAND": "Back & White",
       "FEATURES": "Features",
       "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
       "LOGIN": "Login",
       "LANGUAGE": "Language"
     },
@@ -420,7 +420,7 @@
       "Q2_2025": {
         "TITLE": "Mainnet and Token Launch",
         "ITEM1": "Mainnet launch",
-        "ITEM2": "BWC token available",
+        "ITEM2": "BW token available",
         "ITEM3": "First stock pairs"
       },
       "Q3_2025": {
@@ -449,7 +449,7 @@
       }
     },
     "TOKENOMICS": {
-      "TITLE": "BWC Token",
+      "TITLE": "BW Token",
       "SUBTITLE": "Technical specifications and distribution",
       "PUBLIC_SALE": "Public Sale",
       "DEX_LIQUIDITY": "DEX Liquidity",
@@ -471,19 +471,66 @@
       "SUBTITLE": "Join thousands of investors already democratizing the stock market",
       "BUTTON": "Open your account now"
     },
+    "TEAM": {
+      "TITLE": "Leadership team",
+      "SUBTITLE": "Experienced professionals driving product, compliance, and growth.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Founder",
+          "BIO": "15+ years in capital markets and fintech strategy."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Architecture and security for scalable platforms."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operations, partnerships, and regulatory coordination."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Head of Product",
+          "BIO": "User experience and roadmap execution."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Head of Compliance",
+          "BIO": "Risk, KYC/AML, and governance."
+        }
+      }
+    },
     "FOOTER": {
-      "BRAND": "Back & White",
-      "COPYRIGHT": "All rights reserved.",
-      "DESCRIPTION": "Revolutionizing investment with blockchain technology and tokenized assets.",
-      "PRODUCT": "Product",
-      "COMMUNITY": "Community",
-      "LEGAL": "Legal",
-      "WHITEPAPER": "Whitepaper",
-      "PRIVACY": "Privacy Policy",
-      "TERMS": "Terms of Service",
-      "COOKIES": "Cookie Policy",
-      "COMPLIANCE": "Compliance",
-      "DISCLAIMER": "This is a demonstration platform. Always conduct your own research before investing."
+      "DESCRIPTION": "Enterprise-grade platform for digital assets and investments focused on security, transparency, and compliance.",
+      "COMPANY": {
+        "TITLE": "Company",
+        "FEATURES": "Features",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Product",
+        "ACCESS": "Access",
+        "SECURITY": "Security",
+        "UTILITY": "Utility"
+      },
+      "LEGAL": {
+        "TITLE": "Legal",
+        "TERMS": "Terms",
+        "PRIVACY": "Privacy",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. All rights reserved.",
+      "META": {
+        "ACCESS": "Access",
+        "FEATURES": "Features"
+      }
     }
   }
 }

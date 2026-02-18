@@ -319,7 +319,6 @@
     "MAPS": {
       "TEXT": "Mapas",
       "LIST": {
-        "GOOGLEMAP": "mapas de Google",
         "LEAFLETMAP": "Mapas de folletos",
         "AMCHARTS": "AmGráficos"
       }
@@ -343,6 +342,7 @@
       "BRAND": "Back & White",
       "FEATURES": "Características",
       "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
       "LOGIN": "Login",
       "LANGUAGE": "Idioma"
     },
@@ -420,7 +420,7 @@
       "Q2_2025": {
         "TITLE": "Mainnet y Token Launch",
         "ITEM1": "Lanzamiento en mainnet",
-        "ITEM2": "Token BWC disponible",
+        "ITEM2": "Token BW disponible",
         "ITEM3": "Primeros pares de acciones"
       },
       "Q3_2025": {
@@ -449,7 +449,7 @@
       }
     },
     "TOKENOMICS": {
-      "TITLE": "Token BWC",
+      "TITLE": "Token BW",
       "SUBTITLE": "Especificaciones técnicas y distribución",
       "PUBLIC_SALE": "Venta Pública",
       "DEX_LIQUIDITY": "Liquidez DEX",
@@ -471,19 +471,66 @@
       "SUBTITLE": "Únete a miles de inversores que ya están democratizando el mercado de valores",
       "BUTTON": "Abre tu cuenta ahora"
     },
+    "TEAM": {
+      "TITLE": "Equipo directivo",
+      "SUBTITLE": "Profesionales con experiencia liderando producto, cumplimiento y crecimiento.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Fundadora",
+          "BIO": "15+ años en mercados de capitales y estrategia fintech."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Arquitectura y seguridad para plataformas escalables."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operaciones, alianzas y coordinación regulatoria."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Líder de Producto",
+          "BIO": "Experiencia de usuario y ejecución del roadmap."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Líder de Compliance",
+          "BIO": "Riesgo, KYC/AML y gobernanza."
+        }
+      }
+    },
     "FOOTER": {
-      "BRAND": "Back & White",
-      "COPYRIGHT": "Todos los derechos reservados.",
-      "DESCRIPTION": "Revolucionando la inversión con tecnología blockchain y activos tokenizados.",
-      "PRODUCT": "Producto",
-      "COMMUNITY": "Comunidad",
-      "LEGAL": "Legal",
-      "WHITEPAPER": "Whitepaper",
-      "PRIVACY": "Política de Privacidad",
-      "TERMS": "Términos de Servicio",
-      "COOKIES": "Política de Cookies",
-      "COMPLIANCE": "Cumplimiento",
-      "DISCLAIMER": "Esta es una plataforma de demostración. Siempre realiza tu propia investigación antes de invertir."
+      "DESCRIPTION": "Plataforma empresarial para inversiones y activos digitales con foco en seguridad, transparencia y cumplimiento.",
+      "COMPANY": {
+        "TITLE": "Empresa",
+        "FEATURES": "Características",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Producto",
+        "ACCESS": "Acceso",
+        "SECURITY": "Seguridad",
+        "UTILITY": "Utilidad"
+      },
+      "LEGAL": {
+        "TITLE": "Legal",
+        "TERMS": "Términos",
+        "PRIVACY": "Privacidad",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "Contacto",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. Todos los derechos reservados.",
+      "META": {
+        "ACCESS": "Acceso",
+        "FEATURES": "Características"
+      }
     }
   }
 }

@@ -317,7 +317,7 @@
     "MAPS": {
       "TEXT": "Mappe",
       "LIST": {
-        "GOOGLEMAP": "Google Maps",
+
         "LEAFLETMAP": "Mappe volantino",
         "AMCHARTS": "AmCharts"
       }
@@ -333,6 +333,202 @@
             "2": "Livello 2.2"
           }
         }
+      }
+    }
+  },
+  "LANDING": {
+    "NAV": {
+      "BRAND": "Back & White",
+      "FEATURES": "Funzionalità",
+      "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
+      "LOGIN": "Accesso",
+      "LANGUAGE": "Lingua"
+    },
+    "HERO": {
+      "BADGE": "✨ Azioni tokenizzate",
+      "TITLE": "Il futuro degli investimenti decentralizzati",
+      "SUBTITLE": "Partecipa alla creazione di aziende reali con token basati su blockchain. Democratizziamo l’accesso alle opportunità di investimento istituzionali.",
+      "WHITEPAPER": "📄 Scarica il Whitepaper",
+      "ACCESS": "Accedi →"
+    },
+    "COUNTDOWN": {
+      "LAUNCH": "Lancio ufficiale",
+      "DAYS": "Giorni",
+      "HOURS": "Ore",
+      "MINUTES": "Minuti",
+      "SECONDS": "Secondi"
+    },
+    "FEATURES": {
+      "TITLE": "Perché Back & White?",
+      "SUBTITLE": "La piattaforma rivoluzionaria per investimenti tokenizzati",
+      "REAL_STOCKS": {
+        "TITLE": "Azioni reali",
+        "DESC": "Investi in aziende autentiche con dividendi reali e diritti di proprietà."
+      },
+      "SECURITY": {
+        "TITLE": "Sicurezza blockchain",
+        "DESC": "Transazioni sicure e trasparenti tramite smart contract auditati."
+      },
+      "NO_FEES": {
+        "TITLE": "Nessun intermediario",
+        "DESC": "Elimina le commissioni tradizionali e accedi direttamente alle opportunità."
+      },
+      "GLOBAL": {
+        "TITLE": "Accesso globale",
+        "DESC": "Investi da qualsiasi parte del mondo, 24/7, senza restrizioni."
+      },
+      "LIQUIDITY": {
+        "TITLE": "Liquidità garantita",
+        "DESC": "Compra e vendi in qualsiasi momento nel nostro mercato secondario."
+      },
+      "REGULATED": {
+        "TITLE": "Regolato",
+        "DESC": "Piena conformità alle normative internazionali e auditing costante."
+      }
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "Come funziona",
+      "SUBTITLE": "Inizia a investire in 4 semplici passaggi",
+      "STEP1": {
+        "TITLE": "Apri il tuo account",
+        "DESC": "Registrati con la tua email e verifica la tua identità in pochi minuti."
+      },
+      "STEP2": {
+        "TITLE": "Deposita fondi",
+        "DESC": "Trasferisci crypto o valuta fiat nel tuo wallet in sicurezza."
+      },
+      "STEP3": {
+        "TITLE": "Seleziona gli asset",
+        "DESC": "Esplora e scegli tra centinaia di aziende tokenizzate."
+      },
+      "STEP4": {
+        "TITLE": "Ricevi profitti",
+        "DESC": "Ottieni dividendi automatici e apprezzamento del capitale."
+      }
+    },
+    "ROADMAP": {
+      "TITLE": "Roadmap 2025-2026",
+      "SUBTITLE": "Il nostro piano per rivoluzionare il mercato azionario",
+      "Q1_2025": {
+        "TITLE": "Lancio Testnet",
+        "ITEM1": "Piattaforma demo",
+        "ITEM2": "Smart contract auditati",
+        "ITEM3": "Test con i primi utenti"
+      },
+      "Q2_2025": {
+        "TITLE": "Mainnet e lancio del token",
+        "ITEM1": "Avvio mainnet",
+        "ITEM2": "Token BW disponibile",
+        "ITEM3": "Prime coppie di azioni"
+      },
+      "Q3_2025": {
+        "TITLE": "Espansione degli asset",
+        "ITEM1": "100+ aziende quotate",
+        "ITEM2": "Integrazione con exchange",
+        "ITEM3": "Programmi di staking"
+      },
+      "Q4_2025": {
+        "TITLE": "Mercato secondario",
+        "ITEM1": "DEX integrato",
+        "ITEM2": "Liquidità garantita",
+        "ITEM3": "Derivati finanziari"
+      },
+      "Q1_2026": {
+        "TITLE": "Espansione globale",
+        "ITEM1": "Regolamentazione in 10+ paesi",
+        "ITEM2": "Valute fiat multiple",
+        "ITEM3": "App mobile nativa"
+      },
+      "H2_2026": {
+        "TITLE": "DAO Governance",
+        "ITEM1": "Governance decentralizzata",
+        "ITEM2": "Proposte della community",
+        "ITEM3": "Protocollo completamente autonomo"
+      }
+    },
+    "TOKENOMICS": {
+      "TITLE": "Token BW",
+      "SUBTITLE": "Specifiche tecniche e distribuzione",
+      "PUBLIC_SALE": "Vendita pubblica",
+      "DEX_LIQUIDITY": "Liquidità DEX",
+      "TEAM_VESTING": "Team (Vesting)",
+      "DEVELOPMENT": "Sviluppo",
+      "RESERVE": "Riserva strategica",
+      "SPECS": "Specifiche",
+      "TOTAL_SUPPLY": "Offerta totale",
+      "ICO_PRICE": "Prezzo ICO",
+      "BLOCKCHAIN": "Blockchain",
+      "STANDARD": "Standard",
+      "UTILITY": "Utilità",
+      "UTILITY_VALUE": "Governance, commissioni, staking",
+      "BURN": "Meccanismo di burn",
+      "BURN_VALUE": "0,5% per transazione"
+    },
+    "CTA": {
+      "TITLE": "Sii parte della rivoluzione finanziaria",
+      "SUBTITLE": "Unisciti a migliaia di investitori che stanno già democratizzando il mercato azionario",
+      "BUTTON": "Apri il tuo account ora"
+    },
+    "TEAM": {
+      "TITLE": "Team di leadership",
+      "SUBTITLE": "Professionisti esperti alla guida di prodotto, conformità e crescita.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Fondatrice",
+          "BIO": "15+ anni nei mercati dei capitali e strategia fintech."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Architettura e sicurezza per piattaforme scalabili."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operazioni, partnership e coordinamento normativo."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Responsabile Prodotto",
+          "BIO": "Esperienza utente ed esecuzione della roadmap."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Responsabile Compliance",
+          "BIO": "Rischio, KYC/AML e governance."
+        }
+      }
+    },
+    "FOOTER": {
+      "DESCRIPTION": "Piattaforma enterprise per asset digitali e investimenti con focus su sicurezza, trasparenza e conformità.",
+      "COMPANY": {
+        "TITLE": "Azienda",
+        "FEATURES": "Funzionalità",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Prodotto",
+        "ACCESS": "Accesso",
+        "SECURITY": "Sicurezza",
+        "UTILITY": "Utilità"
+      },
+      "LEGAL": {
+        "TITLE": "Legale",
+        "TERMS": "Termini",
+        "PRIVACY": "Privacy",
+        "COOKIES": "Cookie"
+      },
+      "CONTACT": {
+        "TITLE": "Contatto",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. Tutti i diritti riservati.",
+      "META": {
+        "ACCESS": "Accesso",
+        "FEATURES": "Funzionalità"
       }
     }
   }

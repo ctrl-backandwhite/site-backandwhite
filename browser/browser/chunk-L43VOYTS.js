@@ -1,1 +1,0 @@
-import{a}from"./chunk-EJIDRGWY.js";import"./chunk-IGHBE2S6.js";import"./chunk-RJJY5D34.js";import"./chunk-N7OK2KIZ.js";import"./chunk-NNGS3SCM.js";import"./chunk-6HGW62YV.js";import"./chunk-G7RXW2R4.js";import"./chunk-ZXBMKFCI.js";import"./chunk-WQVSV5O6.js";import"./chunk-JQ2Q4TV4.js";export{a as InvoicesModule};
