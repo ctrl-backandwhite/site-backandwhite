@@ -1,20 +1,8 @@
-# Railway + Nixpacks config para Angular + Caddy
+# Railway config para Angular
 
 [variables]
   NPM_CONFIG_UPDATE_NOTIFIER = 'false'
   NPM_CONFIG_FUND = 'false'
-
-[phases.setup]
-  nixPkgs = ['nodejs_22', 'jq']
-
-[phases.caddy]
-  dependsOn = ['setup']
-  nixPkgs = ['caddy']
-  nixpkgsArchive = 'ba913eda2df8eb72147259189d55932012df6301'
-
-[phases.fmt]
-  dependsOn = ['caddy']
-  cmds = ['caddy fmt --overwrite Caddyfile']
 
 [phases.build]
   cmds = [
@@ -22,14 +10,6 @@
     'npm run build'
   ]
 
-[phases.verify]
-  dependsOn = ['build']
-  cmds = [
-    'echo "Verificando contenido de /app después del build:"',
-    'ls -la /app || true',
-    'echo "Verificando /app/browser:"',
-    'ls -la /app/browser || true'
-  ]
-
 [start]
-  cmd = 'exec caddy run --config Caddyfile --adapter caddyfile 2>&1'
+  cmd = 'npm start'
+
