@@ -1,0 +1,536 @@
+{
+  "HEADER": {
+    "SEARCH": "搜尋...",
+    "MEGA_MENU": "大型選單",
+    "NOTIFICATIONS": {
+      "TITLE": "通知",
+      "VIEW_ALL": "查看全部",
+      "LOAD_MORE": "查看更多..",
+      "FIRST": {
+        "TITLE": "您的訂單已建立",
+        "TEXT": "若多種語言融合其文法",
+        "TIME": "3 分鐘前"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "看起來像是簡化英文。",
+        "TIME": "1 小時前"
+      },
+      "THIRD": {
+        "TITLE": "您的商品已出貨",
+        "TEXT": "若多種語言融合其文法",
+        "TIME": "3 分鐘前"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "像是一位來自劍橋的懷疑論朋友。",
+        "TIME": "1 小時前"
+      }
+    },
+    "SETTINGS": "設定",
+    "UI": {
+      "TITLE": "UI 元件",
+      "LIGHTBOX": "燈箱",
+      "RANGE_SLIDER": "範圍滑桿",
+      "SWEET_ALERT": "甜美警示",
+      "RATING": "評分",
+      "FORMS": "表單",
+      "TABLES": "表格",
+      "CHARTS": "圖表"
+    },
+    "APPLICATIONS": {
+      "TITLE": "應用程式",
+      "ECOMMERCE": "電商",
+      "CALENDAR": "行事曆",
+      "EMAIL": "電子郵件",
+      "PROJECTS": "專案",
+      "TASKS": "任務",
+      "CONTACTS": "聯絡人"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "其他頁面",
+      "LIGHT_SIDEBAR": "淺色側邊欄",
+      "COMPACT_SIDEBAR": "精簡側邊欄",
+      "HORIZONTAL_LAYOUT": "水平版面",
+      "MAINTENANCE": "維護",
+      "COMING SOON": "即將推出",
+      "TIMELINE": "時間軸",
+      "FAQ": "常見問題"
+    },
+    "LOGIN": {
+      "PROFILE": "個人資料",
+      "MY_WALLET": "我的錢包",
+      "SETTINGS": "設定",
+      "LOCK_SCREEN": "鎖定畫面",
+      "LOGOUT": "登出"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "選單"
+    },
+    "DASHBOARDS": {
+      "TEXT": "儀表板",
+      "BADGE": "04",
+      "LIST": {
+        "DEFAULT": "預設",
+        "SAAS": "SaaS",
+        "CRYPTO": "加密貨幣",
+        "BLOG": "部落格",
+        "JOBS": "工作"
+      }
+    },
+    "LAYOUTS": {
+      "TEXT": "版面",
+      "LIST": {
+        "HORIZONTAL": "水平",
+        "LIGHTSIDEBAR": "淺色側邊欄",
+        "COMPACTSIDEBAR": "精簡側邊欄",
+        "ICONSIDEBAR": "圖示側邊欄",
+        "BOXED": "盒狀版面",
+        "COLOREDSIDEBAR": "彩色側邊欄",
+        "VERTICAL": "垂直",
+        "LIGHTTOPBAR": "淺色頂欄",
+        "COLOREDHEADER": "彩色標頭",
+        "SCROLLABLE": "可捲動"
+      }
+    },
+    "APPS": {
+      "TEXT": "應用"
+    },
+    "CALENDAR": {
+      "TEXT": "行事曆"
+    },
+    "CHAT": {
+      "TEXT": "聊天",
+      "BADGE": "新"
+    },
+    "FILEMANAGER": {
+      "TEXT": "檔案管理",
+      "BADGE": "新"
+    },
+    "ECOMMERCE": {
+      "TEXT": "電商",
+      "LIST": {
+        "PRODUCTS": "商品",
+        "PRODUCTDETAIL": "商品詳情",
+        "ORDERS": "訂單",
+        "CUSTOMERS": "客戶",
+        "CART": "購物車",
+        "CHECKOUT": "結帳",
+        "SHOPS": "商店",
+        "ADDPRODUCT": "新增商品"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "加密貨幣",
+      "LIST": {
+        "WALLET": "錢包",
+        "BUY/SELL": "買/賣",
+        "EXCHANGE": "兌換",
+        "LENDING": "借貸",
+        "ORDERS": "訂單",
+        "KYCAPPLICATION": "KYC 申請",
+        "ICOLANDING": "ICO Landing"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "電子郵件",
+      "LIST": {
+        "INBOX": "收件匣",
+        "READEMAIL": "閱讀郵件",
+        "TEMPLATE": {
+          "BADGE": "新",
+          "TEXT": "範本",
+          "LIST": {
+            "BASIC": "基本動作",
+            "ALERT": "警示郵件",
+            "BILLING": "帳務郵件"
+          }
+        }
+      }
+    },
+    "INVOICES": {
+      "TEXT": "發票",
+      "LIST": {
+        "INVOICELIST": "發票清單",
+        "INVOICEDETAIL": "發票詳情"
+      }
+    },
+    "PROJECTS": {
+      "TEXT": "專案",
+      "LIST": {
+        "GRID": "專案格狀",
+        "PROJECTLIST": "專案清單",
+        "OVERVIEW": "專案概覽",
+        "CREATE": "建立新的"
+      }
+    },
+    "TASKS": {
+      "TEXT": "任務",
+      "LIST": {
+        "TASKLIST": "任務清單",
+        "KANBAN": "看板",
+        "CREATETASK": "建立任務"
+      }
+    },
+    "CONTACTS": {
+      "TEXT": "聯絡人",
+      "LIST": {
+        "USERGRID": "使用者格狀",
+        "USERLIST": "使用者清單",
+        "PROFILE": "個人資料"
+      }
+    },
+    "BLOG": {
+      "TEXT": "部落格",
+      "BADGE": "新",
+      "LIST": {
+        "BLOGLIST": "部落格清單",
+        "BLOGGRID": "部落格格狀",
+        "DETAIL": "部落格詳情"
+      }
+    },
+    "JOBS": {
+      "TEXT": "工作",
+      "BADGE": "新",
+      "LIST": {
+        "JOBLIST": "工作清單",
+        "JOBGRID": "工作格狀",
+        "APPLYJOB": "應徵工作",
+        "JOBDETAILS": "工作詳情",
+        "JOBCATEGORIES": "工作類別",
+        "CANDIDATE": {
+          "TEXT": "候選人",
+          "LIST": {
+            "LIST": "清單",
+            "OVERVIEW": "概覽"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "頁面"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "身分驗證",
+      "BADGE": "新",
+      "LIST": {
+        "LOGIN": "登入",
+        "LOGIN2": "登入 2",
+        "REGISTER": "註冊",
+        "REGISTER2": "註冊 2",
+        "RECOVERPWD": "找回密碼",
+        "RECOVERPWD2": "找回密碼 2",
+        "LOCKSCREEN": "鎖定畫面",
+        "LOCKSCREEN2": "鎖定畫面 2",
+        "CONFIRMMAIL": "確認郵件",
+        "CONFIRMMAIL2": "確認郵件 2",
+        "EMAILVERIFICATION": "郵件驗證",
+        "EMAILVERIFICATION2": "郵件驗證 2",
+        "TWOSTEPVERIFICATION": "兩步驟驗證",
+        "TWOSTEPVERIFICATION2": "兩步驟驗證 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "工具",
+      "LIST": {
+        "STARTER": "起始頁",
+        "MAINTENANCE": "維護",
+        "TIMELINE": "時間軸",
+        "FAQS": "常見問題",
+        "PRICING": "定價",
+        "ERROR404": "錯誤 404",
+        "ERROR500": "錯誤 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "元件"
+    },
+    "UIELEMENTS": {
+      "TEXT": "UI 元素",
+      "LIST": {
+        "ALERTS": "警示",
+        "BUTTONS": "按鈕",
+        "CARDS": "卡片",
+        "CAROUSEL": "輪播",
+        "DROPDOWNS": "下拉選單",
+        "GRID": "網格",
+        "IMAGES": "圖片",
+        "LIGHTBOX": "燈箱",
+        "MODALS": "對話框",
+        "RANGESLIDER": "範圍滑桿",
+        "PROGRESSBAR": "進度條",
+        "PLACEHOLDER": "佔位符",
+        "SWEETALERT": "甜美警示",
+        "TABS": "分頁與手風琴",
+        "TYPOGRAPHY": "字體",
+        "TOASTS": "吐司訊息",
+        "VIDEO": "影片",
+        "GENERAL": "一般",
+        "COLORS": "顏色",
+        "RATING": "評分",
+        "NOTIFICATION": "通知",
+        "UTILITIES": "工具",
+        "CROPPER": "圖片裁切"
+      }
+    },
+    "FORMS": {
+      "TEXT": "表單",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "表單元素",
+        "VALIDATION": "表單驗證",
+        "ADVANCED": "進階表單",
+        "EDITOR": "表單編輯器",
+        "FILEUPLOAD": "表單檔案上傳",
+        "REPEATER": "表單重複器",
+        "WIZARD": "表單精靈",
+        "MASK": "表單遮罩",
+        "LAYOUTS": "表單版面"
+      }
+    },
+    "TABLES": {
+      "TEXT": "表格",
+      "LIST": {
+        "BASIC": "基本表格",
+        "DataTables": "資料表",
+        "EditTableTables": "可編輯表格"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "圖表",
+      "LIST": {
+        "APEX": "Apex 圖表",
+        "CHARTJS": "Chartjs 圖表",
+        "CHARTIST": "Chartist 圖表",
+        "ECHART": "E 圖表"
+      }
+    },
+    "ICONS": {
+      "TEXT": "圖示",
+      "LIST": {
+        "BOXICONS": "Boxicons",
+        "MATERIALDESIGN": "Material Design",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Font Awesome"
+      }
+    },
+    "MAPS": {
+      "TEXT": "地圖",
+      "LIST": {
+        "LEAFLETMAP": "Leaflet 地圖",
+        "AMCHARTS": "AmCharts"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "多層級",
+      "LIST": {
+        "LEVEL1": {
+          "1": "層級 1.1",
+          "2": "層級 1.2",
+          "LEVEL2": {
+            "1": "層級 2.1",
+            "2": "層級 2.2"
+          }
+        }
+      }
+    }
+  },
+  "LANDING": {
+    "NAV": {
+      "BRAND": "Back & White",
+      "FEATURES": "特色",
+      "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
+      "LOGIN": "登入",
+      "LANGUAGE": "語言"
+    },
+    "HERO": {
+      "BADGE": "✨ 代幣化股票",
+      "TITLE": "去中心化投資的未來",
+      "SUBTITLE": "參與以區塊鏈代幣創造真實企業。我們讓機構投資機會更民主化。",
+      "WHITEPAPER": "📄 下載 Whitepaper",
+      "ACCESS": "前往 →"
+    },
+    "COUNTDOWN": {
+      "LAUNCH": "正式上線",
+      "DAYS": "天",
+      "HOURS": "小時",
+      "MINUTES": "分鐘",
+      "SECONDS": "秒"
+    },
+    "FEATURES": {
+      "TITLE": "為什麼選擇 Back & White？",
+      "SUBTITLE": "革命性的代幣化投資平台",
+      "REAL_STOCKS": {
+        "TITLE": "真實股票",
+        "DESC": "投資真實企業，享有真實股息與所有權。"
+      },
+      "SECURITY": {
+        "TITLE": "區塊鏈安全",
+        "DESC": "透過審計的智慧合約，交易安全且透明。"
+      },
+      "NO_FEES": {
+        "TITLE": "無中介",
+        "DESC": "消除傳統費用，直接取得機會。"
+      },
+      "GLOBAL": {
+        "TITLE": "全球可及",
+        "DESC": "在全球任何地方 24/7 投資，不受限制。"
+      },
+      "LIQUIDITY": {
+        "TITLE": "保證流動性",
+        "DESC": "在次級市場隨時買賣。"
+      },
+      "REGULATED": {
+        "TITLE": "受監管",
+        "DESC": "完全符合國際法規並持續審計。"
+      }
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "運作方式",
+      "SUBTITLE": "4 個簡單步驟開始投資",
+      "STEP1": {
+        "TITLE": "開立帳戶",
+        "DESC": "用電子郵件註冊並在幾分鐘內完成驗證。"
+      },
+      "STEP2": {
+        "TITLE": "存入資金",
+        "DESC": "安全地轉入加密貨幣或法幣至錢包。"
+      },
+      "STEP3": {
+        "TITLE": "選擇資產",
+        "DESC": "探索並挑選數百家代幣化企業。"
+      },
+      "STEP4": {
+        "TITLE": "獲取收益",
+        "DESC": "獲得自動股息與資本增值。"
+      }
+    },
+    "ROADMAP": {
+      "TITLE": "Roadmap 2025-2026",
+      "SUBTITLE": "我們革命化股票市場的計畫",
+      "Q1_2025": {
+        "TITLE": "Testnet 上線",
+        "ITEM1": "示範平台",
+        "ITEM2": "已審計智慧合約",
+        "ITEM3": "首批用戶測試"
+      },
+      "Q2_2025": {
+        "TITLE": "Mainnet 與代幣上線",
+        "ITEM1": "Mainnet 上線",
+        "ITEM2": "BW 代幣可用",
+        "ITEM3": "首批股票配對"
+      },
+      "Q3_2025": {
+        "TITLE": "資產擴張",
+        "ITEM1": "100+ 企業上架",
+        "ITEM2": "與交易所整合",
+        "ITEM3": "質押計畫"
+      },
+      "Q4_2025": {
+        "TITLE": "次級市場",
+        "ITEM1": "整合 DEX",
+        "ITEM2": "保證流動性",
+        "ITEM3": "金融衍生品"
+      },
+      "Q1_2026": {
+        "TITLE": "全球擴張",
+        "ITEM1": "10+ 國家監管",
+        "ITEM2": "多種法幣",
+        "ITEM3": "原生行動 App"
+      },
+      "H2_2026": {
+        "TITLE": "DAO 治理",
+        "ITEM1": "去中心化治理",
+        "ITEM2": "社群提案",
+        "ITEM3": "完全自治協議"
+      }
+    },
+    "TOKENOMICS": {
+      "TITLE": "BW 代幣",
+      "SUBTITLE": "技術規格與分配",
+      "PUBLIC_SALE": "公開銷售",
+      "DEX_LIQUIDITY": "DEX 流動性",
+      "TEAM_VESTING": "團隊（解鎖期）",
+      "DEVELOPMENT": "開發",
+      "RESERVE": "戰略儲備",
+      "SPECS": "規格",
+      "TOTAL_SUPPLY": "總供應量",
+      "ICO_PRICE": "ICO 價格",
+      "BLOCKCHAIN": "區塊鏈",
+      "STANDARD": "標準",
+      "UTILITY": "效用",
+      "UTILITY_VALUE": "治理、費用、質押",
+      "BURN": "代幣銷毀機制",
+      "BURN_VALUE": "每筆交易 0.5%"
+    },
+    "CTA": {
+      "TITLE": "成為金融革命的一部分",
+      "SUBTITLE": "加入成千上萬已在推動金融民主化的投資者",
+      "BUTTON": "立即開戶"
+    },
+    "TEAM": {
+      "TITLE": "領導團隊",
+      "SUBTITLE": "資深專業人士推動產品、合規與成長。",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Founder",
+          "BIO": "15+ 年資本市場與金融科技策略經驗。"
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "可擴展平台的架構與安全。"
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "營運、合作與監管協調。"
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Head of Product",
+          "BIO": "使用者體驗與路線圖執行。"
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Head of Compliance",
+          "BIO": "風險、KYC/AML 與治理。"
+        }
+      }
+    },
+    "FOOTER": {
+      "DESCRIPTION": "企業級數位資產與投資平台，重視安全、透明與合規。",
+      "COMPANY": {
+        "TITLE": "公司",
+        "FEATURES": "特色",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "產品",
+        "ACCESS": "存取",
+        "SECURITY": "安全",
+        "UTILITY": "效用"
+      },
+      "LEGAL": {
+        "TITLE": "法律",
+        "TERMS": "條款",
+        "PRIVACY": "隱私",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "聯絡",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. 保留所有權利。",
+      "META": {
+        "ACCESS": "存取",
+        "FEATURES": "特色"
+      }
+    }
+  }
+}

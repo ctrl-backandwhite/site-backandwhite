@@ -420,7 +420,7 @@
       "Q2_2025": {
         "TITLE": "Mainnet and Token Launch",
         "ITEM1": "Mainnet launch",
-        "ITEM2": "BWC token available",
+        "ITEM2": "BW token available",
         "ITEM3": "First stock pairs"
       },
       "Q3_2025": {
@@ -449,7 +449,7 @@
       }
     },
     "TOKENOMICS": {
-      "TITLE": "BWC Token",
+      "TITLE": "BW Token",
       "SUBTITLE": "Technical specifications and distribution",
       "PUBLIC_SALE": "Public Sale",
       "DEX_LIQUIDITY": "DEX Liquidity",
@@ -470,6 +470,37 @@
       "TITLE": "Be part of the financial revolution",
       "SUBTITLE": "Join thousands of investors already democratizing the stock market",
       "BUTTON": "Open your account now"
+    },
+    "TEAM": {
+      "TITLE": "Leadership team",
+      "SUBTITLE": "Experienced professionals driving product, compliance, and growth.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Founder",
+          "BIO": "15+ years in capital markets and fintech strategy."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Architecture and security for scalable platforms."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operations, partnerships, and regulatory coordination."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Head of Product",
+          "BIO": "User experience and roadmap execution."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Head of Compliance",
+          "BIO": "Risk, KYC/AML, and governance."
+        }
+      }
     },
     "FOOTER": {
       "DESCRIPTION": "Enterprise-grade platform for digital assets and investments focused on security, transparency, and compliance.",

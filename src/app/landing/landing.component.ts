@@ -21,7 +21,9 @@ export class LandingComponent implements OnInit, OnDestroy {
         { code: 'pt', name: 'Português', flag: 'portugal.svg' },
         { code: 'de', name: 'Deutsch', flag: 'germany.jpg' },
         { code: 'it', name: 'Italiano', flag: 'italy.jpg' },
-        { code: 'ru', name: 'Русский', flag: 'russia.jpg' }
+        { code: 'ru', name: 'Русский', flag: 'russia.jpg' },
+        { code: 'fr', name: 'Français', flag: 'french.jpg' },
+        { code: 'zh-Hant', name: '中文（繁體）', flag: 'china.svg' }
     ];
 
     // Countdown properties
