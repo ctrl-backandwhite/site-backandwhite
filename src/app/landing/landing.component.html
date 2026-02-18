@@ -1,0 +1,361 @@
+<!-- Navigation Bar -->
+<nav class="navbar-elegant">
+    <div class="navbar-container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" routerLink="/">
+            <span class="brand-icon">₿</span>
+            <span class="brand-text">Back & White</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="navbar-desktop">
+            <div class="nav-menu">
+                <a href="#features" class="nav-item">{{ 'LANDING.NAV.FEATURES' | translate }}</a>
+                <a href="#roadmap" class="nav-item">{{ 'LANDING.NAV.ROADMAP' | translate }}</a>
+                <a href="#tokenomics" class="nav-item">Tokenomics</a>
+            </div>
+
+            <!-- Language Selector Desktop -->
+            <div class="language-selector-desktop">
+                <button class="language-trigger" (click)="toggleLanguageDropdown()" [title]="'Select Language'">
+                    <img [src]="'assets/images/flags/' + getCurrentLanguageFlag()" [alt]="currentLanguage"
+                        class="flag-icon">
+                </button>
+                <div class="language-menu" [class.active]="languageDropdownOpen">
+                    <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code)" class="language-option"
+                        [class.active]="currentLanguage === lang.code" [title]="lang.name">
+                        <img [src]="'assets/images/flags/' + lang.flag" [alt]="lang.name" class="language-flag">
+                        <span class="language-name">{{ lang.name }}</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Login Button Desktop -->
+            <a routerLink="/auth/login" class="btn-login-desktop">
+                {{ 'LANDING.NAV.LOGIN' | translate }}
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" [class.active]="mobileMenuOpen" (click)="toggleMobileMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="navbar-mobile" [class.active]="mobileMenuOpen">
+    <div class="mobile-menu-wrapper">
+        <!-- Mobile Navigation Items -->
+        <a href="#features" class="mobile-nav-item" (click)="closeMobileMenu()">
+            {{ 'LANDING.NAV.FEATURES' | translate }}
+        </a>
+        <a href="#roadmap" class="mobile-nav-item" (click)="closeMobileMenu()">
+            {{ 'LANDING.NAV.ROADMAP' | translate }}
+        </a>
+        <a href="#tokenomics" class="mobile-nav-item" (click)="closeMobileMenu()">
+            Tokenomics
+        </a>
+
+        <!-- Divider -->
+        <div class="menu-divider"></div>
+
+        <!-- Mobile Language Selector -->
+        <div class="language-selector-mobile">
+            <p class="language-label">{{ 'LANDING.NAV.LANGUAGE' | translate }}</p>
+            <div class="mobile-language-list">
+                <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeMobileMenu()"
+                    class="mobile-language-option" [class.active]="currentLanguage === lang.code" [title]="lang.name">
+                    <img [src]="'assets/images/flags/' + lang.flag" [alt]="lang.name" class="mobile-flag">
+                    <span>{{ lang.name }}</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="menu-divider"></div>
+
+        <!-- Mobile Login Button -->
+        <a routerLink="/auth/login" class="btn-login-mobile" (click)="closeMobileMenu()">
+            {{ 'LANDING.NAV.LOGIN' | translate }}
+        </a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-background"></div>
+    <div class="container-xl hero-wrapper">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">{{ 'LANDING.HERO.TITLE' | translate }}</h1>
+                <p class="hero-description">{{ 'LANDING.HERO.SUBTITLE' | translate }}</p>
+                <div class="hero-cta">
+                    <a routerLink="/auth/login" class="btn btn-primary btn-lg">{{ 'LANDING.HERO.ACCESS' | translate
+                        }}</a>
+                    <a href="#features" class="btn btn-secondary btn-lg">{{ 'LANDING.HERO.WHITEPAPER' | translate }}</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glow-orb"></div>
+                <img src="assets/images/crypto/features-img/img-1.png" alt="Back & White Blockchain Platform"
+                    class="hero-img">
+            </div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container">
+            <p class="countdown-label">{{ 'LANDING.COUNTDOWN.LAUNCH' | translate }}</p>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number">{{ countdownDays }}</div>
+                    <div class="countdown-label-item">{{ 'LANDING.COUNTDOWN.DAYS' | translate }}</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number">{{ countdownHours }}</div>
+                    <div class="countdown-label-item">{{ 'LANDING.COUNTDOWN.HOURS' | translate }}</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number">{{ countdownMinutes }}</div>
+                    <div class="countdown-label-item">{{ 'LANDING.COUNTDOWN.MINUTES' | translate }}</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number">{{ countdownSeconds }}</div>
+                    <div class="countdown-label-item">{{ 'LANDING.COUNTDOWN.SECONDS' | translate }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container-xl">
+        <div class="section-header">
+            <h2>{{ 'LANDING.FEATURES.TITLE' | translate }}</h2>
+            <p>{{ 'LANDING.FEATURES.SUBTITLE' | translate }}</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <h3>{{ 'LANDING.FEATURES.REAL_STOCKS.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.REAL_STOCKS.DESC' | translate }}</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔐</div>
+                <h3>{{ 'LANDING.FEATURES.SECURITY.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.SECURITY.DESC' | translate }}</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <h3>{{ 'LANDING.FEATURES.NO_FEES.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.NO_FEES.DESC' | translate }}</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🌍</div>
+                <h3>{{ 'LANDING.FEATURES.GLOBAL.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.GLOBAL.DESC' | translate }}</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📈</div>
+                <h3>{{ 'LANDING.FEATURES.LIQUIDITY.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.LIQUIDITY.DESC' | translate }}</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">✅</div>
+                <h3>{{ 'LANDING.FEATURES.REGULATED.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.FEATURES.REGULATED.DESC' | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-section">
+    <div class="container-xl">
+        <div class="section-header">
+            <h2>{{ 'LANDING.HOW_IT_WORKS.TITLE' | translate }}</h2>
+            <p>{{ 'LANDING.HOW_IT_WORKS.SUBTITLE' | translate }}</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>{{ 'LANDING.HOW_IT_WORKS.STEP1.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.HOW_IT_WORKS.STEP1.DESC' | translate }}</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>{{ 'LANDING.HOW_IT_WORKS.STEP2.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.HOW_IT_WORKS.STEP2.DESC' | translate }}</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>{{ 'LANDING.HOW_IT_WORKS.STEP3.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.HOW_IT_WORKS.STEP3.DESC' | translate }}</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>{{ 'LANDING.HOW_IT_WORKS.STEP4.TITLE' | translate }}</h3>
+                <p>{{ 'LANDING.HOW_IT_WORKS.STEP4.DESC' | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Roadmap Section -->
+<section class="roadmap-section" id="roadmap">
+    <div class="container-xl">
+        <div class="section-header">
+            <h2>{{ 'LANDING.ROADMAP.TITLE' | translate }}</h2>
+            <p>{{ 'LANDING.ROADMAP.SUBTITLE' | translate }}</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">Q1 2025</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.Q1_2025.TITLE' | translate }}</h4>
+                    <ul>
+                        <li
+                            *ngFor="let item of ['LANDING.ROADMAP.Q1_2025.ITEM1' | translate, 'LANDING.ROADMAP.Q1_2025.ITEM2' | translate, 'LANDING.ROADMAP.Q1_2025.ITEM3' | translate]">
+                            ✓ {{ item }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">Q2 2025</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.Q2_2025.TITLE' | translate }}</h4>
+                    <ul>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q2_2025.ITEM1' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q2_2025.ITEM2' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q2_2025.ITEM3' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">Q3 2025</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.Q3_2025.TITLE' | translate }}</h4>
+                    <ul>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q3_2025.ITEM1' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q3_2025.ITEM2' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q3_2025.ITEM3' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">Q4 2025</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.Q4_2025.TITLE' | translate }}</h4>
+                    <ul>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q4_2025.ITEM1' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q4_2025.ITEM2' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q4_2025.ITEM3' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">Q1 2026</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.Q1_2026.TITLE' | translate }}</h4>
+                    <ul>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q1_2026.ITEM1' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q1_2026.ITEM2' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.Q1_2026.ITEM3' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">H2 2026</div>
+                <div class="timeline-content">
+                    <h4>{{ 'LANDING.ROADMAP.H2_2026.TITLE' | translate }}</h4>
+                    <ul>
+                        <li>✓ {{ 'LANDING.ROADMAP.H2_2026.ITEM1' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.H2_2026.ITEM2' | translate }}</li>
+                        <li>✓ {{ 'LANDING.ROADMAP.H2_2026.ITEM3' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tokenomics Section -->
+<section class="tokenomics-section" id="tokenomics">
+    <div class="container-xl">
+        <div class="section-header">
+            <h2>{{ 'LANDING.TOKENOMICS.TITLE' | translate }}</h2>
+            <p>{{ 'LANDING.TOKENOMICS.SUBTITLE' | translate }}</p>
+        </div>
+        <div class="tokenomics-content">
+            <div class="tokenomics-chart">
+                <div class="chart-item">
+                    <div class="chart-bar" style="width: 25%; background: #556ee6;"></div>
+                    <div class="chart-label">{{ 'LANDING.TOKENOMICS.PUBLIC_SALE' | translate }}</div>
+                    <div class="chart-value">25%</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="width: 20%; background: #34c38f;"></div>
+                    <div class="chart-label">{{ 'LANDING.TOKENOMICS.DEX_LIQUIDITY' | translate }}</div>
+                    <div class="chart-value">20%</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="width: 15%; background: #f1b44c;"></div>
+                    <div class="chart-label">{{ 'LANDING.TOKENOMICS.TEAM_VESTING' | translate }}</div>
+                    <div class="chart-value">15%</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="width: 20%; background: #50a5f1;"></div>
+                    <div class="chart-label">{{ 'LANDING.TOKENOMICS.DEVELOPMENT' | translate }}</div>
+                    <div class="chart-value">20%</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="width: 20%; background: #ff6b6b;"></div>
+                    <div class="chart-label">{{ 'LANDING.TOKENOMICS.RESERVE' | translate }}</div>
+                    <div class="chart-value">20%</div>
+                </div>
+            </div>
+            <div class="tokenomics-specs">
+                <h3>{{ 'LANDING.TOKENOMICS.SPECS' | translate }}</h3>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.TOTAL_SUPPLY' | translate }}</span>
+                    <span class="spec-value">1,000,000,000 BWC</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.ICO_PRICE' | translate }}</span>
+                    <span class="spec-value">$0.10 USD</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.BLOCKCHAIN' | translate }}</span>
+                    <span class="spec-value">Ethereum + Polygon</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.STANDARD' | translate }}</span>
+                    <span class="spec-value">ERC-20</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.UTILITY' | translate }}</span>
+                    <span class="spec-value">{{ 'LANDING.TOKENOMICS.UTILITY_VALUE' | translate }}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">{{ 'LANDING.TOKENOMICS.BURN' | translate }}</span>
+                    <span class="spec-value">{{ 'LANDING.TOKENOMICS.BURN_VALUE' | translate }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container-xl">
+        <h2>{{ 'LANDING.CTA.TITLE' | translate }}</h2>
+        <p>{{ 'LANDING.CTA.SUBTITLE' | translate }}</p>
+        <a routerLink="/auth/login" class="btn btn-light btn-lg">{{ 'LANDING.CTA.BUTTON' | translate }}</a>
+    </div>
+</section>

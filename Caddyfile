@@ -1,0 +1,37 @@
+{
+  admin off
+  persist_config off
+  auto_https off
+
+  log {
+    format json
+  }
+
+  servers {
+    trusted_proxies static private_ranges
+  }
+}
+
+:{$PORT} {
+  log {
+    format json
+  }
+
+  @i18n path /i18n/*
+  header @i18n Cache-Control "no-cache, no-store, must-revalidate"
+  header @i18n Pragma "no-cache"
+  header @i18n Expires "0"
+
+  # Healthcheck para Railway
+  respond /health 200
+
+  # Sirve el build Angular desde la ruta donde están los archivos (nota la subcarpeta 'browser')
+  # En tu caso local los archivos están en /app/browser/browser
+  root * /app/browser/browser
+
+  encode gzip
+  file_server
+
+  # Fallback SPA para Angular Router
+  try_files {path} /index.html
+}

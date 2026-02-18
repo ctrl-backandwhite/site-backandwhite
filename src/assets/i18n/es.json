@@ -1,0 +1,489 @@
+{
+  "HEADER": {
+    "SEARCH": "Buscar...",
+    "MEGA_MENU": "Mega Menú",
+    "NOTIFICATIONS": {
+      "TITLE": "Notificaciones",
+      "VIEW_ALL": "Ver todo",
+      "LOAD_MORE": "Ver más..",
+      "FIRST": {
+        "TITLE": "Su pedido se ha realizado",
+        "TEXT": "Si varios idiomas fusionan la gramática",
+        "TIME": "hace 3 minutos"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "Parecerá un inglés simplificado",
+        "TIME": "hace 1 hora"
+      },
+      "THIRD": {
+        "TITLE": "Su artículo ha sido enviado",
+        "TEXT": "Si varios idiomas fusionan la gramática",
+        "TIME": "hace 3 minutos"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "Como un escéptico amigo de Cambridge occidental",
+        "TIME": "hace 1 hora"
+      }
+    },
+    "SETTINGS": "Configuración",
+    "UI": {
+      "TITLE": "Componentes de la interfaz de usuario",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Control deslizante de rango",
+      "SWEET_ALERT": "Alerta dulce",
+      "RATING": "Calificación",
+      "FORMS": "Formularios",
+      "TABLES": "Tablas",
+      "CHARTS": "Gráficos"
+    },
+    "APPLICATIONS": {
+      "TITLE": "Aplicaciones",
+      "ECOMMERCE": "Comercio electrónico",
+      "CALENDAR": "Calendario",
+      "EMAIL": "Correo electrónico",
+      "PROJECTS": "Proyectos",
+      "TASKS": "Tareas",
+      "CONTACTS": "Contactos"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Páginas extra",
+      "LIGHT_SIDEBAR": "Barra lateral ligera",
+      "COMPACT_SIDEBAR": "Barra lateral compacta",
+      "HORIZONTAL_LAYOUT": "Diseño horizontal",
+      "MAINTENANCE": "Mantenimiento",
+      "COMING SOON": "Próximamente",
+      "TIMELINE": "Timeline",
+      "FAQ": "Preguntas frecuentes"
+    },
+    "LOGIN": {
+      "PROFILE": "Perfil",
+      "MY_WALLET": "Mi billetera",
+      "SETTINGS": "Configuración",
+      "LOCK_SCREEN": "Pantalla de bloqueo",
+      "LOGOUT": "Cerrar sesión"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menú"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Tableros",
+      "BADGE": "04",
+      "LIST": {
+        "DEFAULT": "Defecto",
+        "SAAS": "Saas",
+        "CRYPTO": "Cripto",
+        "BLOG": "Blog",
+        "JOBS": "Trabajos"
+      }
+    },
+    "LAYOUTS": {
+      "TEXT": "Diseños",
+      "LIST": {
+        "HORIZONTAL": "Horizontal",
+        "LIGHTSIDEBAR": "Barra lateral ligera",
+        "COMPACTSIDEBAR": "Barra lateral compacta",
+        "ICONSIDEBAR": "Barra lateral de iconos",
+        "BOXED": "Diseño en caja",
+        "COLOREDSIDEBAR": "Barra lateral de color",
+        "VERTICAL": "Vertical",
+        "LIGHTTOPBAR": "Barra superior ligera",
+        "COLOREDHEADER": "Encabezado de color",
+        "SCROLLABLE": "Desplazable"
+      }
+    },
+    "APPS": {
+      "TEXT": "Aplicaciones"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendario"
+    },
+    "CHAT": {
+      "TEXT": "Charla",
+      "BADGE": "Nueva"
+    },
+    "FILEMANAGER": {
+      "TEXT": "Administradora de archivos",
+      "BADGE": "Nueva"
+    },
+    "ECOMMERCE": {
+      "TEXT": "Comercio electrónico",
+      "LIST": {
+        "PRODUCTS": "Productos",
+        "PRODUCTDETAIL": "Detalle del producto",
+        "ORDERS": "Pedidos",
+        "CUSTOMERS": "Clientes",
+        "CART": "Carro",
+        "CHECKOUT": "Revisa",
+        "SHOPS": "Tiendas",
+        "ADDPRODUCT": "Añadir Producto"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "Cripto",
+      "LIST": {
+        "WALLET": "Billetera",
+        "BUY/SELL": "Compra venta",
+        "EXCHANGE": "Intercambiar",
+        "LENDING": "Préstamo",
+        "ORDERS": "Pedidos",
+        "KYCAPPLICATION": "Solicitud KYC",
+        "ICOLANDING": "Aterrizaje ICO"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "Email",
+      "LIST": {
+        "INBOX": "Bandeja de entrada",
+        "READEMAIL": "Leer el correo electrónico",
+        "TEMPLATE": {
+          "TEXT": "Modelo",
+          "BADGE": "Nueva",
+          "LIST": {
+            "BASIC": "Acción básica",
+            "ALERT": "Correo electrónico de alerta",
+            "BILLING": "Correo Electrónico de Facturas"
+          }
+        }
+      }
+    },
+    "INVOICES": {
+      "TEXT": "Facturas",
+      "LIST": {
+        "INVOICELIST": "Lista de facturas",
+        "INVOICEDETAIL": "Detalle de factura"
+      }
+    },
+    "PROJECTS": {
+      "TEXT": "Proyectos",
+      "LIST": {
+        "GRID": "Cuadrícula de proyectos",
+        "PROJECTLIST": "Lista de proyectos",
+        "OVERVIEW": "Descripción del proyecto",
+        "CREATE": "Crear nueva"
+      }
+    },
+    "TASKS": {
+      "TEXT": "Tareas",
+      "LIST": {
+        "TASKLIST": "Lista de tareas",
+        "KANBAN": "Kanban Board",
+        "CREATETASK": "Crear tarea"
+      }
+    },
+    "CONTACTS": {
+      "TEXT": "Contactos",
+      "LIST": {
+        "USERGRID": "Cuadrícula de usuario",
+        "USERLIST": "Lista de usuarios",
+        "PROFILE": "Perfil"
+      }
+    },
+    "BLOG": {
+      "TEXT": "Blog",
+      "BADGE": "Nueva",
+      "LIST": {
+        "BLOGLIST": "Lista de blogs",
+        "BLOGGRID": "Blog Grid",
+        "DETAIL": "Detalles del blog"
+      }
+    },
+    "JOBS": {
+      "TEXT": "Trabajos",
+      "BADGE": "Nueva",
+      "LIST": {
+        "JOBLIST": "Lista de trabajo",
+        "JOBGRID": "Cuadrícula de trabajo",
+        "APPLYJOB": "Aplicar al trabajo",
+        "JOBDETAILS": "Detalles del trabajo",
+        "JOBCATEGORIES": "Categorías de trabajos",
+        "CANDIDATE": {
+          "TEXT": "Candidata",
+          "LIST": {
+            "LIST": "Lista",
+            "OVERVIEW": "Visión general"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "Páginas"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Autenticación",
+      "BADGE": "Nueva",
+      "LIST": {
+        "LOGIN": "Iniciar sesión",
+        "REGISTER": "Registrarse",
+        "RECOVERPWD": "Recuperar contraseña",
+        "LOCKSCREEN": "Bloquear pantalla",
+        "LOGIN2": "Iniciar sesión 2",
+        "REGISTER2": "Registrarse 2",
+        "RECOVERPWD2": "Recuperar contraseña 2",
+        "LOCKSCREEN2": "Bloquear pantalla 2",
+        "CONFIRMMAIL": "Confirmar correo",
+        "CONFIRMMAIL2": "Confirmar correo 2",
+        "EMAILVERIFICATION": "Verificacion de email",
+        "EMAILVERIFICATION2": "Verificacion de email 2",
+        "TWOSTEPVERIFICATION": "Verificación de dos pasos",
+        "TWOSTEPVERIFICATION2": "Verificación de dos pasos 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "Utilidad",
+      "LIST": {
+        "STARTER": "Página de inicio",
+        "MAINTENANCE": "Mantenimiento",
+        "TIMELINE": "Cronograma",
+        "FAQS": "Preguntas frecuentes",
+        "PRICING": "Precios",
+        "ERROR404": "error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "Componentes"
+    },
+    "UIELEMENTS": {
+      "TEXT": "Elementos de la IU",
+      "LIST": {
+        "ALERTS": "Alertas",
+        "BUTTONS": "Botones",
+        "CARDS": "Tarjetas",
+        "CAROUSEL": "Carrusel",
+        "DROPDOWNS": "Listas deplegables",
+        "GRID": "Cuadrícula",
+        "IMAGES": "Imágenes",
+        "LIGHTBOX": "Caja ligera",
+        "MODALS": "modales",
+        "RANGESLIDER": "Deslizador de rango",
+        "PROGRESSBAR": "Barras de progreso",
+        "PLACEHOLDER": "Marcador de posición",
+        "SWEETALERT": "dulce alerta",
+        "TABS": "Tablaturas y acordeones",
+        "TYPOGRAPHY": "Typography",
+        "TOASTS": "tostadas",
+        "VIDEO": "Video",
+        "GENERAL": "General",
+        "COLORS": "Colores",
+        "RATING": "Clasificación",
+        "NOTIFICATION": "Notificación",
+        "UTILITIES": "Utilidades",
+        "CROPPER": "Recortador de imágenes"
+      }
+    },
+    "FORMS": {
+      "TEXT": "Formas",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Elementos de formulario",
+        "VALIDATION": "Validación de formulario",
+        "ADVANCED": "Formulario avanzado",
+        "EDITOR": "Editora de formularios",
+        "FILEUPLOAD": "Subir archivo de formulario",
+        "REPEATER": "Repetidor de forma",
+        "WIZARD": "Asistente de formulario",
+        "MASK": "Máscara de forma",
+        "LAYOUTS": "Diseños de formulario"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Mesas",
+      "LIST": {
+        "BASIC": "Tablas Básicas",
+        "DataTables": "Tablas de datos",
+        "EditTableTables": "Tabla editable"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Gráficos",
+      "LIST": {
+        "APEX": "Gráfico de Apex",
+        "CHARTJS": "Chartjs Chart",
+        "CHARTIST": "Chartist Chart",
+        "ECHART": "Gráfico E"
+      }
+    },
+    "ICONS": {
+      "TEXT": "Íconos",
+      "LIST": {
+        "BOXICONS": "Boxicones",
+        "MATERIALDESIGN": "Diseño de materiales",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Fuente impresionante"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Mapas",
+      "LIST": {
+        "GOOGLEMAP": "mapas de Google",
+        "LEAFLETMAP": "Mapas de folletos",
+        "AMCHARTS": "AmGráficos"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi nivel",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Nivel 1.1",
+          "2": "Nivel 1.2",
+          "LEVEL2": {
+            "1": "Nivel 2.1",
+            "2": "Nivel 2.2"
+          }
+        }
+      }
+    }
+  },
+  "LANDING": {
+    "NAV": {
+      "BRAND": "Back & White",
+      "FEATURES": "Características",
+      "ROADMAP": "Roadmap",
+      "LOGIN": "Login",
+      "LANGUAGE": "Idioma"
+    },
+    "HERO": {
+      "BADGE": "✨ Acciones Tokenizadas",
+      "TITLE": "El futuro de la inversión descentralizada",
+      "SUBTITLE": "Sé parte de la creación de empresas reales con tokens basados en blockchain. Democratizamos el acceso a las oportunidades de inversión institucional.",
+      "WHITEPAPER": "📄 Descargar Whitepaper",
+      "ACCESS": "Acceder →"
+    },
+    "COUNTDOWN": {
+      "LAUNCH": "Lanzamiento Oficial",
+      "DAYS": "Días",
+      "HOURS": "Horas",
+      "MINUTES": "Minutos",
+      "SECONDS": "Segundos"
+    },
+    "FEATURES": {
+      "TITLE": "¿Por qué Back & White?",
+      "SUBTITLE": "La plataforma revolucionaria para inversiones tokenizadas",
+      "REAL_STOCKS": {
+        "TITLE": "Acciones Reales",
+        "DESC": "Invierte en empresas auténticas con dividendos reales y derechos de propiedad."
+      },
+      "SECURITY": {
+        "TITLE": "Seguridad Blockchain",
+        "DESC": "Transacciones seguras y transparentes mediante smart contracts auditorados."
+      },
+      "NO_FEES": {
+        "TITLE": "Sin intermediarios",
+        "DESC": "Elimina comisiones tradicionales y accede directamente a oportunidades."
+      },
+      "GLOBAL": {
+        "TITLE": "Acceso Global",
+        "DESC": "Invierte desde cualquier parte del mundo, 24/7, sin restricciones."
+      },
+      "LIQUIDITY": {
+        "TITLE": "Liquidez Garantizada",
+        "DESC": "Compra y vende en cualquier momento en nuestro mercado secundario."
+      },
+      "REGULATED": {
+        "TITLE": "Regulado",
+        "DESC": "Cumplimiento total con normativas internacionales y auditoría constante."
+      }
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "Cómo funciona",
+      "SUBTITLE": "Comienza a invertir en 4 sencillos pasos",
+      "STEP1": {
+        "TITLE": "Abre tu cuenta",
+        "DESC": "Regístrate con tu email y verifica tu identidad en minutos."
+      },
+      "STEP2": {
+        "TITLE": "Deposita fondos",
+        "DESC": "Transfiere crypto o dinero fiat a tu cartera de forma segura."
+      },
+      "STEP3": {
+        "TITLE": "Selecciona activos",
+        "DESC": "Explora y elige entre cientos de empresas tokenizadas."
+      },
+      "STEP4": {
+        "TITLE": "Recibe ganancias",
+        "DESC": "Obtén dividendos automáticos y revalorización del capital."
+      }
+    },
+    "ROADMAP": {
+      "TITLE": "Roadmap 2025-2026",
+      "SUBTITLE": "Nuestro plan para revolucionar el mercado de valores",
+      "Q1_2025": {
+        "TITLE": "Lanzamiento Testnet",
+        "ITEM1": "Plataforma de demostración",
+        "ITEM2": "Smart contracts auditorados",
+        "ITEM3": "Testing con primeros usuarios"
+      },
+      "Q2_2025": {
+        "TITLE": "Mainnet y Token Launch",
+        "ITEM1": "Lanzamiento en mainnet",
+        "ITEM2": "Token BWC disponible",
+        "ITEM3": "Primeros pares de acciones"
+      },
+      "Q3_2025": {
+        "TITLE": "Expansión de activos",
+        "ITEM1": "100+ empresas listadas",
+        "ITEM2": "Integración con exchanges",
+        "ITEM3": "Programas de staking"
+      },
+      "Q4_2025": {
+        "TITLE": "Mercado secundario",
+        "ITEM1": "DEX integrado",
+        "ITEM2": "Liquidez garantizada",
+        "ITEM3": "Derivados financieros"
+      },
+      "Q1_2026": {
+        "TITLE": "Expansión global",
+        "ITEM1": "Regulación en 10+ países",
+        "ITEM2": "Múltiples monedas fiduciarias",
+        "ITEM3": "Aplicación móvil nativa"
+      },
+      "H2_2026": {
+        "TITLE": "DAO Governance",
+        "ITEM1": "Gobernanza descentralizada",
+        "ITEM2": "Propuestas comunitarias",
+        "ITEM3": "Protocolo completamente autónomo"
+      }
+    },
+    "TOKENOMICS": {
+      "TITLE": "Token BWC",
+      "SUBTITLE": "Especificaciones técnicas y distribución",
+      "PUBLIC_SALE": "Venta Pública",
+      "DEX_LIQUIDITY": "Liquidez DEX",
+      "TEAM_VESTING": "Equipo (Vesting)",
+      "DEVELOPMENT": "Desarrollo",
+      "RESERVE": "Reserva Estratégica",
+      "SPECS": "Especificaciones",
+      "TOTAL_SUPPLY": "Supply Total",
+      "ICO_PRICE": "Precio ICO",
+      "BLOCKCHAIN": "Blockchain",
+      "STANDARD": "Estándar",
+      "UTILITY": "Utility",
+      "UTILITY_VALUE": "Governance, Fees, Staking",
+      "BURN": "Quema de Tokens",
+      "BURN_VALUE": "0.5% por transacción"
+    },
+    "CTA": {
+      "TITLE": "Sé parte de la revolución financiera",
+      "SUBTITLE": "Únete a miles de inversores que ya están democratizando el mercado de valores",
+      "BUTTON": "Abre tu cuenta ahora"
+    },
+    "FOOTER": {
+      "BRAND": "Back & White",
+      "COPYRIGHT": "Todos los derechos reservados.",
+      "DESCRIPTION": "Revolucionando la inversión con tecnología blockchain y activos tokenizados.",
+      "PRODUCT": "Producto",
+      "COMMUNITY": "Comunidad",
+      "LEGAL": "Legal",
+      "WHITEPAPER": "Whitepaper",
+      "PRIVACY": "Política de Privacidad",
+      "TERMS": "Términos de Servicio",
+      "COOKIES": "Política de Cookies",
+      "COMPLIANCE": "Cumplimiento",
+      "DISCLAIMER": "Esta es una plataforma de demostración. Siempre realiza tu propia investigación antes de invertir."
+    }
+  }
+}
