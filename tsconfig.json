@@ -16,6 +16,6 @@
     "skipLibCheck": true 
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
+    "enableI18nLegacyMessageIdFormat": false
   }
 }
