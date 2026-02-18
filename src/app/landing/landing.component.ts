@@ -14,6 +14,8 @@ export class LandingComponent implements OnInit, OnDestroy {
     currentLanguage = 'en';
     mobileMenuOpen = false;
     languageDropdownOpen = false;
+    fadeActive = false;
+    private fadeTimeout: any;
 
     languages = [
         { code: 'en', name: 'English', flag: 'us.jpg' },
@@ -89,6 +91,7 @@ export class LandingComponent implements OnInit, OnDestroy {
         this.onScroll();
         this.startCountdown();
         this.startAutoRotateCarousel();
+        this.triggerFadeIn();
     }
 
     startAutoRotateCarousel() {
@@ -104,12 +107,19 @@ export class LandingComponent implements OnInit, OnDestroy {
         if (this.autoRotateInterval) {
             clearInterval(this.autoRotateInterval);
         }
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
     }
 
     changeLanguage(lang: string) {
+        if (this.currentLanguage === lang) {
+            this.languageDropdownOpen = false;
+            return;
+        }
         this.currentLanguage = lang;
-        this.translate.use(lang);
         this.languageDropdownOpen = false;
+        this.triggerLanguageFade(lang);
     }
 
     toggleLanguageDropdown() {
@@ -140,5 +150,26 @@ export class LandingComponent implements OnInit, OnDestroy {
 
     goToSlide(index: number) {
         this.currentSlideIndex = index;
+    }
+
+    private triggerFadeIn() {
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
+        this.fadeActive = false;
+        this.fadeTimeout = setTimeout(() => {
+            this.fadeActive = true;
+        }, 80);
+    }
+
+    private triggerLanguageFade(lang: string) {
+        if (this.fadeTimeout) {
+            clearTimeout(this.fadeTimeout);
+        }
+        this.fadeActive = false;
+        this.fadeTimeout = setTimeout(() => {
+            this.translate.use(lang);
+            this.fadeActive = true;
+        }, 140);
     }
 }
