@@ -15,14 +15,28 @@ $breakpoint-xl: 1200px;
 
 // Mixins
 @mixin respond($breakpoint) {
-  @if $breakpoint == 'sm' {
-    @media (min-width: $breakpoint-sm) { @content; }
-  } @else if $breakpoint == 'md' {
-    @media (min-width: $breakpoint-md) { @content; }
-  } @else if $breakpoint == 'lg' {
-    @media (min-width: $breakpoint-lg) { @content; }
-  } @else if $breakpoint == 'xl' {
-    @media (min-width: $breakpoint-xl) { @content; }
+  @if $breakpoint =='sm' {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =='md' {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =='lg' {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =='xl' {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
   }
 }
 
@@ -467,10 +481,11 @@ body {
   }
 
   &.active {
-    max-height: calc(100vh - 64px);
+    max-height: 80vh;
     opacity: 1;
     pointer-events: auto;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 
     @include respond('md') {
       max-height: calc(100vh - 70px);
@@ -2215,6 +2230,7 @@ body {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -2226,6 +2242,7 @@ body {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -2237,6 +2254,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -2244,18 +2262,24 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.85;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @keyframes pulse-number {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
