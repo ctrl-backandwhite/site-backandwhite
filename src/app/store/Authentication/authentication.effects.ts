@@ -42,23 +42,17 @@ export class AuthenticationEffects {
     this.actions$.pipe(
       ofType(login),
       exhaustMap(({ email, password }) => {
-        if (environment.defaultauth === "fakebackend") {
-          return this.AuthfakeService.login(email, password).pipe(
-            map((user) => {
-              if (user) {
-                localStorage.setItem('currentUser', JSON.stringify(user));
-                localStorage.setItem('token', user.token);
-                this.router.navigate(['/']);
-              }
-              return loginSuccess({ user });
-            }),
-            catchError((error) => of(loginFailure({ error })), // Closing parenthesis added here
-            ));
-        } else if (environment.defaultauth === "firebase") {
-          return this.AuthenticationService.login(email, password).pipe(map((user) => {
+        return this.AuthfakeService.login(email, password).pipe(
+          map((user) => {
+            if (user) {
+              localStorage.setItem('currentUser', JSON.stringify(user));
+              localStorage.setItem('token', user.token);
+              this.router.navigate(['/']);
+            }
             return loginSuccess({ user });
-          }))
-        }
+          }),
+          catchError((error) => of(loginFailure({ error })))
+        );
       })
     )
   );

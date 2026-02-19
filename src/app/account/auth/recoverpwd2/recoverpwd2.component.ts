@@ -3,15 +3,14 @@ import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup,
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { AuthenticationService } from '../../../core/services/auth.service';
-import { environment } from '../../../../environments/environment';
 import { CommonModule } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
-    selector: 'app-recoverpwd2',
-    templateUrl: './recoverpwd2.component.html',
-    styleUrls: ['./recoverpwd2.component.scss'],
-    imports: [CommonModule, FormsModule, ReactiveFormsModule,SlickCarouselModule]
+  selector: 'app-recoverpwd2',
+  templateUrl: './recoverpwd2.component.html',
+  styleUrls: ['./recoverpwd2.component.scss'],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, SlickCarouselModule]
 })
 export class Recoverpwd2Component implements OnInit {
 
@@ -46,12 +45,14 @@ export class Recoverpwd2Component implements OnInit {
     if (this.resetForm.invalid) {
       return;
     }
-    if (environment.defaultauth === 'firebase') {
-      this.authenticationService.resetPassword(this.f.email.value)
-        .catch(error => {
-          this.error = error ? error : '';
-        });
-    }
+    this.authenticationService.resetPassword(this.f.email.value).subscribe(
+      () => {
+        this.success = 'Password reset email sent successfully';
+      },
+      error => {
+        this.error = error ? error : '';
+      }
+    );
   }
   // swiper config
   slideConfig = {

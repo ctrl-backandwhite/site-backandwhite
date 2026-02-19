@@ -33,7 +33,7 @@ import { FormModule } from './form/form.module';
 import { TablesModule } from './tables/tables.module';
 import { IconsModule } from './icons/icons.module';
 import { ChartModule } from './chart/chart.module';
-import { CalendarComponent } from './calendar/calendar.component';
+import { JobsModule } from './jobs/jobs.module';
 import { MapsModule } from './maps/maps.module';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
@@ -63,6 +63,7 @@ import { TranslateModule } from '@ngx-translate/core';
                         TablesModule,
                         IconsModule,
                         ChartModule,
+                        JobsModule,
                         MapsModule,
                         FullCalendarModule,
                         TabsModule.forRoot(),

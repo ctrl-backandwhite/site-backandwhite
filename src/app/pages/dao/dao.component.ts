@@ -6,7 +6,6 @@ import { WalletService, WalletInfo } from '../../core/services/wallet.service';
 import { DaoProposal, UserTokenInfo } from '../../core/models/dao.model';
 import { DaoProposalCardComponent } from './components/dao-proposal-card.component';
 import { DaoVotingModalComponent } from './components/dao-voting-modal.component';
-import { DaoManageComponent } from './components/dao-manage.component';
 
 @Component({
   selector: 'app-dao',
@@ -15,8 +14,7 @@ import { DaoManageComponent } from './components/dao-manage.component';
     CommonModule,
     TranslateModule,
     DaoProposalCardComponent,
-    DaoVotingModalComponent,
-    DaoManageComponent
+    DaoVotingModalComponent
   ],
   templateUrl: './dao.component.html',
   styleUrls: ['./dao.component.scss']

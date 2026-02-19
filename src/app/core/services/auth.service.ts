@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { getFirebaseBackend } from '../../authUtils';
 import { User } from 'src/app/store/Authentication/auth.models';
-import { from, map } from 'rxjs';
+import { from, map, of } from 'rxjs';
 
 
 @Injectable({ providedIn: 'root' })
@@ -18,7 +17,8 @@ export class AuthenticationService {
      * Returns the current user
      */
     public currentUser(): User {
-        return getFirebaseBackend().getAuthenticatedUser();
+        const authUser = sessionStorage.getItem('authUser');
+        return authUser ? JSON.parse(authUser) : null;
     }
 
 
@@ -28,10 +28,8 @@ export class AuthenticationService {
      * @param password password of user
      */
     login(email: string, password: string) {
-        return from(getFirebaseBackend().loginUser(email, password).pipe(map(user => {
-            return user;
-        }
-        )));
+        const authUser = sessionStorage.getItem('authUser');
+        return of(authUser ? JSON.parse(authUser) : null);
     }
 
     /**
@@ -40,12 +38,7 @@ export class AuthenticationService {
      * @param password password
      */
     register(user: User) {
-        // return from(getFirebaseBackend().registerUser(user));
-
-        return from(getFirebaseBackend().registerUser(user).then((response: any) => {
-            const user = response;
-            return user;
-        }));
+        return of(user);
     }
 
     /**
@@ -53,10 +46,7 @@ export class AuthenticationService {
      * @param email email
      */
     resetPassword(email: string) {
-        return getFirebaseBackend().forgetPassword(email).then((response: any) => {
-            const message = response.data;
-            return message;
-        });
+        return of({ message: 'Password reset email sent' });
     }
 
     /**
@@ -64,7 +54,7 @@ export class AuthenticationService {
      */
     logout() {
         // logout the user
-        getFirebaseBackend().logout();
+        sessionStorage.removeItem('authUser');
     }
 }
 

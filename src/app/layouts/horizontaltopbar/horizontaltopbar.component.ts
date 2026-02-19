@@ -16,10 +16,10 @@ import { environment } from '../../../environments/environment';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-horizontaltopbar',
-    templateUrl: './horizontaltopbar.component.html',
-    styleUrls: ['./horizontaltopbar.component.scss'],
-    imports: [CommonModule, TranslateModule,RouterLink]
+  selector: 'app-horizontaltopbar',
+  templateUrl: './horizontaltopbar.component.html',
+  styleUrls: ['./horizontaltopbar.component.scss'],
+  imports: [CommonModule, TranslateModule, RouterLink]
 })
 
 /**
@@ -87,11 +87,7 @@ export class HorizontaltopbarComponent implements OnInit, AfterViewInit {
    * Logout the user
    */
   logout() {
-    if (environment.defaultauth === 'firebase') {
-      this.authService.logout();
-    } else {
-      this.authFackservice.logout();
-    }
+    this.authFackservice.logout();
     this.router.navigate(['/auth/login']);
   }
 

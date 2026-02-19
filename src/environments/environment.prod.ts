@@ -11,16 +11,5 @@ export const environment = {
   scope: 'openid',
   responseType: 'code',
   responseMode: 'query',
-  code_challenge_method: 'S256',
-
-  firebaseConfig: {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: '',
-    measurementId: ''
-  }
+  code_challenge_method: 'S256'
 };
