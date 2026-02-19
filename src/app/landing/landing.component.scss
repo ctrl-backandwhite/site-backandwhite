@@ -143,6 +143,18 @@ body {
       transform: translateY(-2px);
     }
 
+    .brand-logo-img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+
+      @include respond('md') {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
     .brand-icon {
       font-size: 1.25rem;
       background: linear-gradient(135deg, $primary 0%, $secondary 100%);
@@ -1982,6 +1994,18 @@ body {
         gap: 10px;
         font-size: 1.1rem;
         margin-bottom: 14px;
+      }
+
+      .brand-logo-footer {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+
+        @include respond('md') {
+          width: 42px;
+          height: 42px;
+        }
       }
 
       .brand-icon {
