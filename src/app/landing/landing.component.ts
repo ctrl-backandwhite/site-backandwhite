@@ -14,7 +14,7 @@ import { LoginService } from '../core/services/login.service';
 export class LandingComponent implements OnInit, OnDestroy {
     private authOAuthService = inject(AuthOAuthService);
     private loginService = inject(LoginService);
-    
+
     year = new Date().getFullYear();
     currentLanguage = 'en';
     mobileMenuOpen = false;

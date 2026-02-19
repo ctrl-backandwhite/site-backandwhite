@@ -20,7 +20,6 @@ import { initFirebaseBackend } from './app/authUtils';
 import { FakeBackendInterceptor } from './app/core/helpers/fake-backend';
 import { HTTP_INTERCEPTORS, provideHttpClient } from '@angular/common/http';
 import { JwtInterceptor } from './app/core/helpers/jwt.interceptor';
-import { ErrorInterceptor } from './app/core/helpers/error.interceptor';
 // Enable production mode if in production environment
 if (environment.production) {
   enableProdMode();
@@ -34,12 +33,11 @@ if (environment.defaultauth === 'firebase') {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideZoneChangeDetection(),provideHttpClient(),
+    provideZoneChangeDetection(), provideHttpClient(),
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: FakeBackendInterceptor, multi: true },
     ...appConfig.providers
   ]
 })
-.catch((err) => console.error('Error during bootstrapping the application:', err));
+  .catch((err) => console.error('Error during bootstrapping the application:', err));
 

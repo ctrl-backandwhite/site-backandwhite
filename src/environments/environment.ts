@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   defaultauth: 'fakebackend',
-  
+
   // OAuth2 Configuration
   apiBaseUrl: 'https://localhost:8443/api/v1',
   oauth2AuthorizeUrl: 'https://localhost:8443/oauth2/authorize',
@@ -16,7 +16,7 @@ export const environment = {
   responseType: 'code',
   responseMode: 'query',
   code_challenge_method: 'S256',
-  
+
   firebaseConfig: {
     apiKey: "",
     authDomain: "",

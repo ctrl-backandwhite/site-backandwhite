@@ -21,14 +21,15 @@
               <a routerLink="/">
                 <div class="avatar-md profile-user-wid mb-4">
                   <span class="avatar-title rounded-circle bg-light">
-                    <img src="assets/images/logo.svg" alt="" class="rounded-circle" height="34">
+                    <img src="assets/logo.png" alt="Back & White" class="rounded-circle" height="34">
                   </span>
                 </div>
               </a>
             </div>
             <div class="p-2">
 
-              <form class="needs-validation" name="signupForm" [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate>
+              <form class="needs-validation" name="signupForm" [formGroup]="signupForm" (ngSubmit)="onSubmit()"
+                novalidate>
                 @if(successmsg){
                 <alert type="success" [dismissible]="false">Registeration successfull.
                 </alert>
@@ -39,7 +40,9 @@
                 <div class="mb-3">
                   <label for="username" class="form-label">Username</label>
 
-                  <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="username" placeholder="Enter username" />
+                  <input type="text" formControlName="username" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="username"
+                    placeholder="Enter username" />
                   @if(submitted && f.username.errors){
                   <div class="invalid-feedback">
                     @if(f.username.errors.required){
@@ -50,7 +53,8 @@
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
 
-                  <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="email" placeholder="Email" />
+                  <input type="email" formControlName="email" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="email" placeholder="Email" />
                   @if(submitted && f.email.errors){
                   <div class="invalid-feedback">
                     @if(f.email.errors.required){
@@ -63,7 +67,8 @@
                 <div class="mb-3">
                   <label for="password" class="form-label">Password</label>
 
-                  <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password" placeholder="Password" />
+                  <input type="password" formControlName="password" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password" placeholder="Password" />
                   @if(submitted && f.password.errors){
                   <div class="invalid-feedback">
                     @if(f.password.errors.required){
@@ -96,7 +101,8 @@
                   </ul>
                 </div>
                 <div class="mt-4 text-center">
-                  <p class="mb-0">By registering you agree to the Skote <a href="javascript: void(0);" class="text-primary">Terms of
+                  <p class="mb-0">By registering you agree to the Skote <a href="javascript: void(0);"
+                      class="text-primary">Terms of
                       Use</a></p>
                 </div>
               </form>

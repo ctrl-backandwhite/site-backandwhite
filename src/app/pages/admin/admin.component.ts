@@ -5,10 +5,10 @@ import { AuthService } from '../../core/auth/services/auth.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-admin',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  template: `
+    selector: 'app-admin',
+    standalone: true,
+    imports: [CommonModule, TranslateModule],
+    template: `
     <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <!-- Header -->
       <div class="bg-white shadow-md border-b-2 border-blue-600">
@@ -66,14 +66,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   `
 })
 export class AdminComponent {
-  private readonly router = inject(Router);
-  private readonly authService = inject(AuthService);
-  private readonly translateService = inject(TranslateService);
+    private readonly router = inject(Router);
+    private readonly authService = inject(AuthService);
+    private readonly translateService = inject(TranslateService);
 
-  accessToken = this.authService.getAccessToken() || '';
+    accessToken = this.authService.getAccessToken() || '';
 
-  logout(): void {
-    this.authService.logout();
-    this.router.navigate(['/']);
-  }
+    logout(): void {
+        this.authService.logout();
+        this.router.navigate(['/']);
+    }
 }
