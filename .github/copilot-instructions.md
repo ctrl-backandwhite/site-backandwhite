@@ -29,6 +29,7 @@
 - Verifica los componentes que tiene la aplicacion
 - Mira los estilos de la aplicacion antes de aplicar cambios
 - Manten el estandar de la aplicacion
+- Para los cambios que vaya a aplicar piensa en mobile-first siempre
 
 ## Integration Points
 - Uses third-party Angular modules (e.g., `ngx-bootstrap`, `ngrx/store`).
