@@ -48,21 +48,17 @@ export class AuthCallbackComponent implements OnInit {
       this.authService.exchangeCodeForToken(code)
         .then(() => {
           console.log('[AuthCallback] Token exchange successful');
-          console.log('[AuthCallback] Current origin:', window.location.origin);
-          console.log('[AuthCallback] Navigating to /dashboard');
+          console.log('[AuthCallback] Access token saved:', !!this.authService.getAccessToken());
+          console.log('[AuthCallback] Is authenticated:', this.authService.isAuthenticated());
 
-          // Dar tiempo para que se completen los logs antes de navegar
-          setTimeout(() => {
-            window.location.href = `${window.location.origin}/dashboard`;
-          }, 100);
+          // Usar window.location.href para forzar reload y que las rutas se recarguen
+          console.log('[AuthCallback] Reloading page to dashboard');
+          window.location.href = `${window.location.origin}/dashboard`;
         })
         .catch((error) => {
           console.error('[AuthCallback] Token exchange failed:', error);
           console.error('[AuthCallback] Error details:', JSON.stringify(error, null, 2));
-
-          // Temporalmente navegar al dashboard para debug
-          alert('Token exchange failed. Check console. Navigating to dashboard anyway for debug.');
-          window.location.href = `${window.location.origin}/dashboard`;
+          this.router.navigate(['/']);
         });
     } catch (error) {
       console.error('[AuthCallback] Unexpected error:', error);
