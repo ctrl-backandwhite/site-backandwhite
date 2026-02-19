@@ -194,5 +194,19 @@
         "FEATURES": "Características"
       }
     }
+  },
+  "admin": {
+    "welcome": "Bem-vindo ao Painel de Administração Back & White",
+    "logout": "Sair",
+    "dashboard": "Painel de Controle",
+    "dashboardDesc": "Monitore sua conta e veja análises",
+    "users": "Usuários",
+    "usersDesc": "Gerencie contas de usuários e permissões",
+    "settings": "Configurações",
+    "settingsDesc": "Configure suas preferências",
+    "userInfo": "Informações do Usuário",
+    "accessToken": "Token de Acesso",
+    "tokenStatus": "Status do Token",
+    "active": "Ativo"
   }
 }

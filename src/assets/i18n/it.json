@@ -531,5 +531,19 @@
         "FEATURES": "Funzionalità"
       }
     }
+  },
+  "admin": {
+    "welcome": "Benvenuto nel Pannello di Amministrazione Back & White",
+    "logout": "Esci",
+    "dashboard": "Cruscotto",
+    "dashboardDesc": "Monitora il tuo account e visualizza analitiche",
+    "users": "Utenti",
+    "usersDesc": "Gestisci account utenti e autorizzazioni",
+    "settings": "Impostazioni",
+    "settingsDesc": "Configura le tue preferenze",
+    "userInfo": "Informazioni Utente",
+    "accessToken": "Token di Accesso",
+    "tokenStatus": "Stato del Token",
+    "active": "Attivo"
   }
 }

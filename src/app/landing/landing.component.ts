@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AuthOAuthService } from '../core/services/auth-oauth.service';
+import { LoginService } from '../core/services/login.service';
 
 @Component({
     selector: 'app-landing',
@@ -10,6 +12,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     imports: [CommonModule, RouterModule, TranslateModule]
 })
 export class LandingComponent implements OnInit, OnDestroy {
+    private authOAuthService = inject(AuthOAuthService);
+    private loginService = inject(LoginService);
+    
     year = new Date().getFullYear();
     currentLanguage = 'en';
     mobileMenuOpen = false;
@@ -27,7 +32,6 @@ export class LandingComponent implements OnInit, OnDestroy {
         { code: 'fr', name: 'Français', flag: 'french.jpg' },
         { code: 'zh-Hant', name: '中文（繁體）', flag: 'china.svg' }
     ];
-
     // Countdown properties
     countdownDays = 0;
     countdownHours = 0;
@@ -171,5 +175,12 @@ export class LandingComponent implements OnInit, OnDestroy {
             this.translate.use(lang);
             this.fadeActive = true;
         }, 140);
+    }
+
+    /**
+     * Inicia el flujo OAuth2 de login
+     */
+    async onLogin() {
+        await this.loginService.initiateLogin();
     }
 }

@@ -532,5 +532,19 @@
         "FEATURES": "Fonctionnalités"
       }
     }
+  },
+  "admin": {
+    "welcome": "Bienvenue au Panneau d'Administration Back & White",
+    "logout": "Déconnexion",
+    "dashboard": "Tableau de Bord",
+    "dashboardDesc": "Surveillez votre compte et visualisez les analyses",
+    "users": "Utilisateurs",
+    "usersDesc": "Gérez les comptes d'utilisateurs et les permissions",
+    "settings": "Paramètres",
+    "settingsDesc": "Configurez vos préférences",
+    "userInfo": "Informations de l'Utilisateur",
+    "accessToken": "Jeton d'Accès",
+    "tokenStatus": "État du Jeton",
+    "active": "Actif"
   }
 }

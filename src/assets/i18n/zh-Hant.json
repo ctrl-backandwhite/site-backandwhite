@@ -531,6 +531,18 @@
         "ACCESS": "存取",
         "FEATURES": "特色"
       }
-    }
-  }
+    }  },
+  "admin": {
+    "welcome": "歡迎來到 Back & White 管理面板",
+    "logout": "登出",
+    "dashboard": "儀表板",
+    "dashboardDesc": "監控您的帳戶並查看分析",
+    "users": "用戶",
+    "usersDesc": "管理用戶帳戶和權限",
+    "settings": "設置",
+    "settingsDesc": "配置您的偏好設置",
+    "userInfo": "用戶信息",
+    "accessToken": "訪問令牌",
+    "tokenStatus": "令牌狀態",
+    "active": "活躍"  }
 }

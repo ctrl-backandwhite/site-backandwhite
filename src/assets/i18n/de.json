@@ -532,5 +532,19 @@
         "FEATURES": "Funktionen"
       }
     }
+  },
+  "admin": {
+    "welcome": "Willkommen im Back & White Admin-Bereich",
+    "logout": "Abmelden",
+    "dashboard": "Dashboard",
+    "dashboardDesc": "Überwachen Sie Ihr Konto und Analysen",
+    "users": "Benutzer",
+    "usersDesc": "Verwalten Sie Benutzerkonten und Berechtigungen",
+    "settings": "Einstellungen",
+    "settingsDesc": "Konfigurieren Sie Ihre Voreinstellungen",
+    "userInfo": "Benutzerinformationen",
+    "accessToken": "Zugangstoken",
+    "tokenStatus": "Token-Status",
+    "active": "Aktiv"
   }
 }

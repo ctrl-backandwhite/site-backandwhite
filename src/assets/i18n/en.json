@@ -532,5 +532,19 @@
         "FEATURES": "Features"
       }
     }
+  },
+  "admin": {
+    "welcome": "Welcome to the Back & White Admin Panel",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "dashboardDesc": "Monitor your account and view analytics",
+    "users": "Users",
+    "usersDesc": "Manage user accounts and permissions",
+    "settings": "Settings",
+    "settingsDesc": "Configure your preferences",
+    "userInfo": "User Information",
+    "accessToken": "Access Token",
+    "tokenStatus": "Token Status",
+    "active": "Active"
   }
 }

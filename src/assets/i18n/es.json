@@ -532,5 +532,19 @@
         "FEATURES": "Características"
       }
     }
+  },
+  "admin": {
+    "welcome": "Bienvenido al Panel de Administración Back & White",
+    "logout": "Cerrar Sesión",
+    "dashboard": "Panel",
+    "dashboardDesc": "Monitorea tu cuenta y visualiza análisis",
+    "users": "Usuarios",
+    "usersDesc": "Gestiona cuentas de usuario y permisos",
+    "settings": "Configuración",
+    "settingsDesc": "Configura tus preferencias",
+    "userInfo": "Información del Usuario",
+    "accessToken": "Token de Acceso",
+    "tokenStatus": "Estado del Token",
+    "active": "Activo"
   }
 }

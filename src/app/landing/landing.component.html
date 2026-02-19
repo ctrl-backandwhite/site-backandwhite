@@ -32,9 +32,9 @@
                 </div>
 
                 <!-- Login Button Desktop -->
-                <a routerLink="/auth/login" class="btn-login-desktop">
+                <button (click)="onLogin()" class="btn-login-desktop">
                     {{ 'LANDING.NAV.LOGIN' | translate }}
-                </a>
+                </button>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -81,9 +81,9 @@
             <div class="menu-divider"></div>
 
             <!-- Mobile Login Button -->
-            <a routerLink="/auth/login" class="btn-login-mobile" (click)="closeMobileMenu()">
+            <button (click)="onLogin(); closeMobileMenu()" class="btn-login-mobile">
                 {{ 'LANDING.NAV.LOGIN' | translate }}
-            </a>
+            </button>
         </div>
     </div>
 
@@ -96,8 +96,8 @@
                     <h1 class="hero-title">{{ 'LANDING.HERO.TITLE' | translate }}</h1>
                     <p class="hero-description">{{ 'LANDING.HERO.SUBTITLE' | translate }}</p>
                     <div class="hero-cta">
-                        <a routerLink="/auth/login" class="btn btn-primary btn-lg">{{ 'LANDING.HERO.ACCESS' | translate
-                            }}</a>
+                        <button (click)="onLogin()" class="btn btn-primary btn-lg">{{ 'LANDING.HERO.ACCESS' | translate
+                            }}</button>
                         <a href="#features" class="btn btn-secondary btn-lg">{{ 'LANDING.HERO.WHITEPAPER' | translate
                             }}</a>
                     </div>
@@ -360,7 +360,7 @@
         <div class="container-xl">
             <h2>{{ 'LANDING.CTA.TITLE' | translate }}</h2>
             <p>{{ 'LANDING.CTA.SUBTITLE' | translate }}</p>
-            <a routerLink="/auth/login" class="btn btn-light btn-lg">{{ 'LANDING.CTA.BUTTON' | translate }}</a>
+            <button (click)="onLogin()" class="btn btn-light btn-lg">{{ 'LANDING.CTA.BUTTON' | translate }}</button>
         </div>
     </section>
 

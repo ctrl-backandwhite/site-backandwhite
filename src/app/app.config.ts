@@ -1,5 +1,5 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClient, HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
@@ -18,6 +18,7 @@ import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 import { routes } from './app.routes';
 import { rootReducer } from './store';
+import { AuthInterceptor } from './core/auth/interceptors/auth.interceptor';
 
 // Import the necessary effects
 import { FilemanagerEffects } from './store/filemanager/filemanager.effects';
@@ -52,6 +53,11 @@ export const appConfig: ApplicationConfig = {
         prefix: 'assets/i18n/',
         suffix: '.json'
       },
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
     },
     provideFlatpickrDefaults(),
     provideZoneChangeDetection({ eventCoalescing: true }),
