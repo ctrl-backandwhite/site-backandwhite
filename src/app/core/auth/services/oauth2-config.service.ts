@@ -12,10 +12,15 @@ export class OAuth2ConfigService {
   private readonly responseType = environment.responseType;
   private readonly responseMode = environment.responseMode;
   private readonly codeChallengeMethod = environment.code_challenge_method;
-  private readonly state = environment.state;
-  private readonly nonce = environment.nonce;
 
   buildAuthorizationUrl(codeChallenge: string): string {
+    const state = this.generateRandomString(32);
+    const nonce = this.generateRandomString(32);
+
+    // Guardar state y nonce para validación posterior
+    localStorage.setItem('oauth_state', state);
+    localStorage.setItem('oauth_nonce', nonce);
+
     const params = new URLSearchParams({
       client_id: this.clientId,
       redirect_uri: this.redirectUri,
@@ -24,11 +29,11 @@ export class OAuth2ConfigService {
       scope: this.scope,
       code_challenge: codeChallenge,
       code_challenge_method: this.codeChallengeMethod,
-      state: this.state,
-      nonce: this.nonce,
+      state: state,
+      nonce: nonce,
     });
 
-    return `${this.oauth2AuthorizeUrl}${params.toString()}`;
+    return `${this.oauth2AuthorizeUrl}?${params.toString()}`;
   }
 
   getClientId(): string {
@@ -41,5 +46,14 @@ export class OAuth2ConfigService {
 
   getScope(): string {
     return this.scope;
+  }
+
+  private generateRandomString(length: number): string {
+    const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      result += charset.charAt(Math.floor(Math.random() * charset.length));
+    }
+    return result;
   }
 }
