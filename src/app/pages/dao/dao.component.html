@@ -1,86 +1,176 @@
-<div class="dao-container">
-    <!-- Header -->
-    <div class="dao-header">
-        <div>
-            <h2>{{ 'DAO.TITLE' | translate }}</h2>
-            <p class="text-muted">{{ 'DAO.SUBTITLE' | translate }}</p>
+<div class="page-content dao-page">
+    <div class="container-fluid">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h4 class="mb-1">{{ 'DAO.TITLE' | translate }}</h4>
+                <p class="text-muted mb-0">{{ 'DAO.SUBTITLE' | translate }}</p>
+            </div>
+            <div class="dao-header-actions">
+                <button class="btn btn-sm" [ngClass]="wallet() ? 'btn-outline-secondary' : 'btn-primary'"
+                    (click)="toggleWallet()">
+                    {{ wallet() ? ('WALLET.DISCONNECT' | translate) : ('WALLET.CONNECT' | translate) }}
+                </button>
+                @if (!isManaging()) {
+                <button class="btn btn-sm btn-secondary" (click)="toggleManage()">
+                    {{ 'DAO.MANAGE' | translate }}
+                </button>
+                }
+                @if (isManaging()) {
+                <button class="btn btn-sm btn-outline-secondary" (click)="toggleManage()">
+                    {{ 'DAO.BACK' | translate }}
+                </button>
+                }
+            </div>
         </div>
-        <div class="header-actions">
-            <button class="btn btn-sm" [ngClass]="wallet() ? 'btn-secondary' : 'btn-primary'" (click)="toggleWallet()">
-                {{ wallet() ? ('WALLET.DISCONNECT' | translate) : ('WALLET.CONNECT' | translate) }}
-            </button>
-            @if (!isManaging()) {
-            <button class="btn btn-sm btn-secondary" (click)="toggleManage()">
-                {{ 'DAO.MANAGE' | translate }}
-            </button>
-            }
-            @if (isManaging()) {
-            <button class="btn btn-sm btn-outline" (click)="toggleManage()">
-                {{ 'DAO.BACK' | translate }}
-            </button>
-            }
+
+        <div class="card">
+            <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                <div class="avatar-sm flex-shrink-0">
+                    <div class="avatar-title rounded bg-primary-subtle text-primary">
+                        <i class="bx bx-wallet font-size-18"></i>
+                    </div>
+                </div>
+                <div class="flex-grow-1">
+                    <h5 class="mb-1">{{ 'DAO.WALLET_INFO' | translate }}</h5>
+                    @if (wallet()) {
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                        <span class="badge bg-soft-primary text-primary dao-wallet-address">
+                            {{ wallet()!.address | slice:0:6 }}...{{ wallet()!.address | slice:-4 }}
+                        </span>
+                        <span class="text-muted">
+                            {{ 'WALLET.BALANCE' | translate }}: {{ wallet()!.balance | number }}
+                        </span>
+                    </div>
+                    }
+                    @if (!wallet()) {
+                    <p class="text-muted mb-0">{{ 'DAO.CONNECT_HINT' | translate }}</p>
+                    }
+                </div>
+                <div>
+                    <span class="badge"
+                        [ngClass]="wallet() ? 'bg-soft-success text-success' : 'bg-soft-secondary text-secondary'">
+                        {{ wallet() ? ('DAO.WALLET_CONNECTED' | translate) : ('DAO.WALLET_NOT_CONNECTED' | translate) }}
+                    </span>
+                </div>
+            </div>
         </div>
+
+        @if (userTokenInfo() && !isManaging()) {
+        <div class="d-flex align-items-center justify-content-between mt-4 mb-2">
+            <h5 class="mb-0">{{ 'DAO.GOVERNANCE_METRICS' | translate }}</h5>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="avatar-sm">
+                                <div class="avatar-title rounded bg-info-subtle text-info">
+                                    <i class="bx bx-coin-stack"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-muted mb-1">{{ 'DAO.BALANCE' | translate }}</p>
+                                <h5 class="mb-0">{{ userTokenInfo()!.balance | number }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="avatar-sm">
+                                <div class="avatar-title rounded bg-warning-subtle text-warning">
+                                    <i class="bx bx-time-five"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-muted mb-1">{{ 'DAO.HOLDING_DAYS' | translate }}</p>
+                                <h5 class="mb-0" [class.text-success]="userTokenInfo()?.canVote">
+                                    {{ userTokenInfo()!.holdingDays }} {{ 'DAO.DAYS' | translate }}
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="avatar-sm">
+                                <div class="avatar-title rounded bg-primary-subtle text-primary">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-muted mb-1">{{ 'DAO.STAKED_AMOUNT' | translate }}</p>
+                                <h5 class="mb-0">{{ userTokenInfo()!.stakedAmount | number }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="text-muted mb-2">{{ 'DAO.VOTING_STATUS' | translate }}</p>
+                        <span class="badge"
+                            [ngClass]="userTokenInfo()?.canVote ? 'bg-soft-success text-success' : 'bg-soft-danger text-danger'">
+                            {{ userTokenInfo()?.canVote ? ('DAO.CAN_VOTE' | translate) : ('DAO.CANNOT_VOTE' | translate)
+                            }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+
+        @if (isManaging()) {
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="card-title mb-1">{{ 'DAO.MANAGE_PANEL' | translate }}</h5>
+                <p class="text-muted mb-0">{{ 'DAO.MANAGE_SUBTITLE' | translate }}</p>
+            </div>
+            <div class="card-body">
+                <app-dao-manage></app-dao-manage>
+            </div>
+        </div>
+        }
+
+        @if (!isManaging()) {
+        <div class="card mt-4">
+            <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div>
+                    <h5 class="card-title mb-1">{{ 'DAO.PROPOSALS' | translate }}</h5>
+                    <p class="text-muted mb-0">{{ 'DAO.PROPOSALS_SUBTITLE' | translate }}</p>
+                </div>
+                <span class="badge bg-light text-muted">{{ proposals().length }}</span>
+            </div>
+            <div class="card-body">
+                @if (proposals().length > 0) {
+                <div class="row g-3">
+                    @for (proposal of proposals(); track proposal.id) {
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <app-dao-proposal-card [proposal]="proposal" [canVote]="userTokenInfo()?.canVote || false"
+                            (vote)="onVote($event)" (invest)="onInvest($event)">
+                        </app-dao-proposal-card>
+                    </div>
+                    }
+                </div>
+                }
+                @if (proposals().length === 0) {
+                <div class="alert alert-light mb-0">{{ 'DAO.NO_PROPOSALS' | translate }}</div>
+                }
+            </div>
+        </div>
+        }
+
+        <app-dao-voting-modal [visible]="votingModalVisible()" [proposal]="selectedProposal()"
+            [userBalance]="userTokenInfo()?.balance || 0" (close)="votingModalVisible.set(false)"
+            (submit)="submitVote($event)">
+        </app-dao-voting-modal>
     </div>
-
-    <!-- Wallet Info -->
-    @if (wallet()) {
-    <div class="wallet-info">
-        <span class="wallet-badge">
-            <i class="bx bx-wallet"></i>
-            {{ wallet()!.address | slice:0:6 }}...{{ wallet()!.address | slice:-4 }}
-        </span>
-        <span class="wallet-balance">{{ 'WALLET.BALANCE' | translate }}: {{ wallet()!.balance | number }}</span>
-    </div>
-    }
-
-    <!-- User Token Info -->
-    @if (userTokenInfo() && !isManaging()) {
-    <div class="info-row">
-        <div class="info-col">
-            <label>{{ 'DAO.BALANCE' | translate }}</label>
-            <span class="info-value">{{ userTokenInfo()!.balance | number }}</span>
-        </div>
-        <div class="info-col">
-            <label>{{ 'DAO.HOLDING_DAYS' | translate }}</label>
-            <span class="info-value" [class.text-success]="userTokenInfo()?.canVote">
-                {{ userTokenInfo()!.holdingDays }} {{ 'DAO.DAYS' | translate }}
-            </span>
-        </div>
-        <div class="info-col">
-            <label>{{ 'DAO.STAKED_AMOUNT' | translate }}</label>
-            <span class="info-value">{{ userTokenInfo()!.stakedAmount | number }}</span>
-        </div>
-        <div class="info-col">
-            <label>{{ 'DAO.VOTING_STATUS' | translate }}</label>
-            <span class="status-badge" [class.status-success]="userTokenInfo()?.canVote"
-                [class.status-danger]="!userTokenInfo()?.canVote">
-                {{ userTokenInfo()?.canVote ? ('DAO.CAN_VOTE' | translate) : ('DAO.CANNOT_VOTE' | translate) }}
-            </span>
-        </div>
-    </div>
-    }
-
-    <!-- Manage View -->
-    @if (isManaging()) {
-    <app-dao-manage></app-dao-manage>
-    }
-
-    <!-- Proposals List -->
-    @if (!isManaging()) {
-    <div class="proposals-container">
-        <div class="proposals-grid">
-            @for (proposal of proposals(); track proposal.id) {
-            <app-dao-proposal-card [proposal]="proposal" [canVote]="userTokenInfo()?.canVote || false"
-                (vote)="onVote($event)" (invest)="onInvest($event)">
-            </app-dao-proposal-card>
-            }
-        </div>
-    </div>
-    }
-
-    <!-- Voting Modal -->
-    <app-dao-voting-modal [visible]="votingModalVisible()" [proposal]="selectedProposal()"
-        [userBalance]="userTokenInfo()?.balance || 0" (close)="votingModalVisible.set(false)"
-        (submit)="submitVote($event)">
-    </app-dao-voting-modal>
 </div>

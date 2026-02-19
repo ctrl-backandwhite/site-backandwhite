@@ -262,4 +262,14 @@
     "NO_PROPOSALS": "Sem propostas ainda. Crie uma para começar!",
     "TARGET": "Alvo",
     "FUNDED": "Financiado"  }
+    "OVERVIEW": "Visão geral",
+    "WALLET_INFO": "Carteira",
+    "WALLET_CONNECTED": "Carteira conectada",
+    "WALLET_NOT_CONNECTED": "Carteira não conectada",
+    "CONNECT_HINT": "Conecte sua carteira para acessar recursos de governança.",
+    "GOVERNANCE_METRICS": "Métricas de governança",
+    "PROPOSALS": "Propostas",
+    "PROPOSALS_SUBTITLE": "Revise, vote e invista em propostas ativas.",
+    "MANAGE_PANEL": "Painel de gestão",
+    "MANAGE_SUBTITLE": "Crie ou atualize propostas e configurações de governança."
 }

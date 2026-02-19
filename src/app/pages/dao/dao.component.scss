@@ -1,205 +1,30 @@
-.dao-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 16px;
+.dao-page {
+    .dao-header-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .dao-wallet-address {
+        font-family: 'Courier New', monospace;
+        letter-spacing: 0.4px;
+    }
 }
 
-.dao-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 24px;
-    gap: 16px;
-    flex-wrap: wrap;
-}
+@media (max-width: 576px) {
+    .dao-page {
+        .dao-header-actions {
+            width: 100%;
+        }
 
-.dao-header h2 {
-    margin: 0 0 4px 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: #1a1a1a;
-}
-
-.dao-header .text-muted {
-    margin: 0;
-    color: #6b7280;
-    font-size: 14px;
-}
-
-.header-actions {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 8px 16px;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-}
-
-.btn-primary {
-    background: #556ee6;
-    color: white;
-    border-color: #556ee6;
-}
-
-.btn-primary:hover {
-    background: #445ac8;
-    border-color: #445ac8;
-}
-
-.btn-secondary {
-    background: #f3f4f6;
-    color: #374151;
-    border-color: #d1d5db;
-}
-
-.btn-secondary:hover {
-    background: #e5e7eb;
-    border-color: #9ca3af;
-}
-
-.btn-outline {
-    background: transparent;
-    color: #556ee6;
-    border-color: #556ee6;
-}
-
-.btn-outline:hover {
-    background: #f3f4f6;
-    color: #445ac8;
-    border-color: #445ac8;
-}
-
-.btn-sm {
-    padding: 6px 12px;
-    font-size: 12px;
-}
-
-.wallet-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    font-size: 13px;
-}
-
-.wallet-badge {
-    background: #dbeafe;
-    color: #0369a1;
-    padding: 4px 8px;
-    border-radius: 3px;
-    font-weight: 500;
-    font-family: 'Courier New', monospace;
-}
-
-.wallet-balance {
-    color: #6b7280;
-}
-
-.info-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
-    padding: 16px;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-}
-
-.info-col {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.info-col label {
-    font-size: 12px;
-    color: #6b7280;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.info-value {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
-}
-
-.info-value.text-success {
-    color: #10b981;
-}
-
-.status-badge {
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 3px;
-    font-size: 12px;
-    font-weight: 500;
-    width: fit-content;
-}
-
-.status-success {
-    background: #d1fae5;
-    color: #065f46;
-}
-
-.status-danger {
-    background: #fee2e2;
-    color: #7f1d1d;
+        .dao-header-actions .btn {
+            flex: 1;
+        }
+    }
 }
 
 .proposals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
-
-/* Mobile First */
-@media (max-width: 768px) {
-    .dao-container {
-        padding: 12px 12px;
-    }
-
-    .dao-header {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .header-actions {
-        width: 100%;
-    }
-
-    .header-actions .btn {
-        flex: 1;
-    }
-
-    .info-row {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        padding: 12px;
-    }
-
-    .wallet-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .proposals-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
 }

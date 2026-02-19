@@ -1,77 +1,70 @@
-<div class="proposal-card" [ngClass]="'status-' + proposal.status">
-    <!-- Category Badge -->
-    <div class="category-badge">{{ getCategoryLabel() }}</div>
-
-    <!-- Image -->
-    <div class="proposal-image">
-        <div class="placeholder-image">
-            <i class="bx" [ngClass]="getCategoryIcon()"></i>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="proposal-content">
-        <h3>{{ proposal.name }}</h3>
-        <p class="description">{{ proposal.description }}</p>
-
-        <!-- Details -->
-        <div class="details">
-            <div class="detail-item">
-                <span class="label">{{ 'DAO.INDUSTRY' | translate }}</span>
-                <span class="value">{{ proposal.details.industry }}</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">{{ 'DAO.LOCATION' | translate }}</span>
-                <span class="value">{{ proposal.details.location }}</span>
-            </div>
-        </div>
-
-        <!-- Progress Bars -->
-        <div class="progress-section">
-            <div class="progress-item">
-                <label>{{ 'DAO.VOTES' | translate }}</label>
-                <div class="progress-bar">
-                    <div class="progress-fill" [style.width.%]="getVotePercentage()"></div>
+<div class="card h-100 dao-proposal-card" [ngClass]="'status-' + proposal.status">
+    <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between">
+            <div class="avatar-md">
+                <div class="avatar-title rounded bg-light text-secondary">
+                    <i class="bx" [ngClass]="getCategoryIcon()"></i>
                 </div>
-                <span class="progress-text">
-                    {{ proposal.currentVotes }} / {{ proposal.votesRequired }}
-                </span>
             </div>
-
-            <div class="progress-item">
-                <label>{{ 'DAO.FUNDING' | translate }}</label>
-                <div class="progress-bar">
-                    <div class="progress-fill" [style.width.%]="getFundingPercentage()"></div>
-                </div>
-                <span class="progress-text">
-                    {{ proposal.currentFunding | number }} / {{ proposal.targetFunding | number }}
-                </span>
-            </div>
-        </div>
-
-        <!-- Timeline -->
-        <div class="timeline">
-            <span class="days-left">
-                {{ getDaysLeft() }} {{ 'DAO.DAYS_LEFT' | translate }}
+            <span class="badge bg-soft-primary text-primary text-uppercase">
+                {{ getCategoryLabel() }}
             </span>
         </div>
 
-        <!-- Return Info -->
-        <div class="return-info">
-            <span class="label">{{ 'DAO.EXPECTED_RETURN' | translate }}</span>
-            <span class="return-value">{{ proposal.details.expectedReturn }}</span>
+        <h5 class="mt-3 mb-2">{{ proposal.name }}</h5>
+        <p class="text-muted mb-3 clamp-2">{{ proposal.description }}</p>
+
+        <div class="d-flex justify-content-between small text-muted">
+            <span>{{ 'DAO.INDUSTRY' | translate }}</span>
+            <span class="text-body fw-medium">{{ proposal.details.industry }}</span>
+        </div>
+        <div class="d-flex justify-content-between small text-muted mb-3">
+            <span>{{ 'DAO.LOCATION' | translate }}</span>
+            <span class="text-body fw-medium">{{ proposal.details.location }}</span>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="text-muted small">{{ 'DAO.VOTES' | translate }}</span>
+                <span class="text-muted small">{{ proposal.currentVotes }} / {{ proposal.votesRequired }}</span>
+            </div>
+            <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" [style.width.%]="getVotePercentage()"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <span class="text-muted small">{{ 'DAO.FUNDING' | translate }}</span>
+                <span class="text-muted small">{{ proposal.currentFunding | number }} / {{ proposal.targetFunding |
+                    number }}</span>
+            </div>
+            <div class="progress progress-sm">
+                <div class="progress-bar bg-success" [style.width.%]="getFundingPercentage()"></div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <span class="badge bg-soft-warning text-warning">
+                {{ getDaysLeft() }} {{ 'DAO.DAYS_LEFT' | translate }}
+            </span>
+            <span class="text-success fw-semibold">
+                {{ 'DAO.EXPECTED_RETURN' | translate }}: {{ proposal.details.expectedReturn }}
+            </span>
         </div>
     </div>
 
-    <!-- Footer Actions -->
-    <div class="actions">
-        <button class="btn-vote" (click)="onVote()" [disabled]="!canVote || proposal.status !== 'active'">
-            <i class="bx bx-check-circle"></i>
-            {{ 'DAO.VOTE' | translate }}
-        </button>
-        <button class="btn-invest" (click)="onInvest()" [disabled]="proposal.status !== 'active'">
-            <i class="bx bx-wallet"></i>
-            {{ 'DAO.INVEST' | translate }}
-        </button>
+    <div class="card-footer bg-transparent border-top-0 pt-0">
+        <div class="d-flex gap-2">
+            <button class="btn btn-primary btn-sm w-100" (click)="onVote()"
+                [disabled]="!canVote || proposal.status !== 'active'">
+                <i class="bx bx-check-circle me-1"></i>
+                {{ 'DAO.VOTE' | translate }}
+            </button>
+            <button class="btn btn-success btn-sm w-100" (click)="onInvest()" [disabled]="proposal.status !== 'active'">
+                <i class="bx bx-wallet me-1"></i>
+                {{ 'DAO.INVEST' | translate }}
+            </button>
+        </div>
     </div>
 </div>

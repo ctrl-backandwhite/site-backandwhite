@@ -599,6 +599,16 @@
     "CREATE": "Créer",
     "NO_PROPOSALS": "Pas de propositions pour le moment. Créez-en une pour commencer!",
     "TARGET": "Cible",
-    "FUNDED": "Financé"
+    "FUNDED": "Financé",
+    "OVERVIEW": "Aperçu",
+    "WALLET_INFO": "Portefeuille",
+    "WALLET_CONNECTED": "Portefeuille connecté",
+    "WALLET_NOT_CONNECTED": "Portefeuille non connecté",
+    "CONNECT_HINT": "Connectez votre portefeuille pour accéder aux fonctions de gouvernance.",
+    "GOVERNANCE_METRICS": "Indicateurs de gouvernance",
+    "PROPOSALS": "Propositions",
+    "PROPOSALS_SUBTITLE": "Examinez, votez et investissez dans les propositions actives.",
+    "MANAGE_PANEL": "Panneau de gestion",
+    "MANAGE_SUBTITLE": "Créez ou mettez à jour les propositions et les paramètres de gouvernance."
   }
 }
