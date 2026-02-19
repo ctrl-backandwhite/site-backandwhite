@@ -14,31 +14,31 @@ export const MENU: MenuItem[] = [
             {
                 id: 3,
                 label: 'MENUITEMS.DASHBOARDS.LIST.DEFAULT',
-                link: '/dashboard',
+                link: '/dashboard/',
                 parentId: 2
             },
             {
                 id: 4,
                 label: 'MENUITEMS.DASHBOARDS.LIST.SAAS',
-                link: '/dashboards/saas',
+                link: '/dashboard/dashboards/saas',
                 parentId: 2
             },
             {
                 id: 5,
                 label: 'MENUITEMS.DASHBOARDS.LIST.CRYPTO',
-                link: '/dashboards/crypto',
+                link: '/dashboard/dashboards/crypto',
                 parentId: 2
             },
             {
                 id: 6,
                 label: 'MENUITEMS.DASHBOARDS.LIST.BLOG',
-                link: '/dashboards/blog',
+                link: '/dashboard/dashboards/blog',
                 parentId: 2
             },
             {
                 id: 7,
                 label: 'MENUITEMS.DASHBOARDS.LIST.JOBS',
-                link: '/dashboards/jobs',
+                link: '/dashboard/dashboards/jobs',
                 parentId: 2,
             },
         ]
@@ -56,20 +56,20 @@ export const MENU: MenuItem[] = [
         id: 10,
         label: 'MENUITEMS.CALENDAR.TEXT',
         icon: 'bx-calendar',
-        link: '/calendar',
+        link: '/dashboard/calendar',
     },
     {
         id: 11,
         label: 'MENUITEMS.CHAT.TEXT',
         icon: 'bx-chat',
-        link: '/chat',
+        link: '/dashboard/chat',
 
     },
     {
         id: 12,
         label: 'MENUITEMS.FILEMANAGER.TEXT',
         icon: 'bx-file',
-        link: '/filemanager',
+        link: '/dashboard/filemanager',
     },
     {
         id: 13,
@@ -79,49 +79,49 @@ export const MENU: MenuItem[] = [
             {
                 id: 14,
                 label: 'MENUITEMS.ECOMMERCE.LIST.PRODUCTS',
-                link: '/ecommerce/products',
+                link: '/dashboard/ecommerce/products',
                 parentId: 13
             },
             {
                 id: 15,
                 label: 'MENUITEMS.ECOMMERCE.LIST.PRODUCTDETAIL',
-                link: '/ecommerce/product-detail/1',
+                link: '/dashboard/ecommerce/product-detail/1',
                 parentId: 13
             },
             {
                 id: 16,
                 label: 'MENUITEMS.ECOMMERCE.LIST.ORDERS',
-                link: '/ecommerce/orders',
+                link: '/dashboard/ecommerce/orders',
                 parentId: 13
             },
             {
                 id: 17,
                 label: 'MENUITEMS.ECOMMERCE.LIST.CUSTOMERS',
-                link: '/ecommerce/customers',
+                link: '/dashboard/ecommerce/customers',
                 parentId: 13
             },
             {
                 id: 18,
                 label: 'MENUITEMS.ECOMMERCE.LIST.CART',
-                link: '/ecommerce/cart',
+                link: '/dashboard/ecommerce/cart',
                 parentId: 13
             },
             {
                 id: 19,
                 label: 'MENUITEMS.ECOMMERCE.LIST.CHECKOUT',
-                link: '/ecommerce/checkout',
+                link: '/dashboard/ecommerce/checkout',
                 parentId: 13
             },
             {
                 id: 20,
                 label: 'MENUITEMS.ECOMMERCE.LIST.SHOPS',
-                link: '/ecommerce/shops',
+                link: '/dashboard/ecommerce/shops',
                 parentId: 13
             },
             {
                 id: 21,
                 label: 'MENUITEMS.ECOMMERCE.LIST.ADDPRODUCT',
-                link: '/ecommerce/add-product',
+                link: '/dashboard/ecommerce/add-product',
                 parentId: 13
             },
         ]
@@ -134,37 +134,37 @@ export const MENU: MenuItem[] = [
             {
                 id: 23,
                 label: 'MENUITEMS.CRYPTO.LIST.WALLET',
-                link: '/crypto/wallet',
+                link: '/dashboard/crypto/wallet',
                 parentId: 22
             },
             {
                 id: 24,
                 label: 'MENUITEMS.CRYPTO.LIST.BUY/SELL',
-                link: '/crypto/buy-sell',
+                link: '/dashboard/crypto/buy-sell',
                 parentId: 22
             },
             {
                 id: 25,
                 label: 'MENUITEMS.CRYPTO.LIST.EXCHANGE',
-                link: '/crypto/exchange',
+                link: '/dashboard/crypto/exchange',
                 parentId: 22
             },
             {
                 id: 26,
                 label: 'MENUITEMS.CRYPTO.LIST.LENDING',
-                link: '/crypto/lending',
+                link: '/dashboard/crypto/lending',
                 parentId: 22
             },
             {
                 id: 27,
                 label: 'MENUITEMS.CRYPTO.LIST.ORDERS',
-                link: '/crypto/orders',
+                link: '/dashboard/crypto/orders',
                 parentId: 22
             },
             {
                 id: 28,
                 label: 'MENUITEMS.CRYPTO.LIST.KYCAPPLICATION',
-                link: '/crypto/kyc-application',
+                link: '/dashboard/crypto/kyc-application',
                 parentId: 22
             },
             {
@@ -183,13 +183,13 @@ export const MENU: MenuItem[] = [
             {
                 id: 31,
                 label: 'MENUITEMS.EMAIL.LIST.INBOX',
-                link: '/email/inbox',
+                link: '/dashboard/email/inbox',
                 parentId: 30
             },
             {
                 id: 32,
                 label: 'MENUITEMS.EMAIL.LIST.READEMAIL',
-                link: '/email/read/1',
+                link: '/dashboard/email/read/1',
                 parentId: 30
             },
             {
@@ -204,19 +204,19 @@ export const MENU: MenuItem[] = [
                     {
                         id: 34,
                         label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.BASIC',
-                        link: '/email/basic',
+                        link: '/dashboard/email/basic',
                         parentId: 30
                     },
                     {
                         id: 35,
                         label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.ALERT',
-                        link: '/email/alert',
+                        link: '/dashboard/email/alert',
                         parentId: 30
                     },
                     {
                         id: 36,
                         label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.BILLING',
-                        link: '/email/billing',
+                        link: '/dashboard/email/billing',
                         parentId: 30
                     }
                 ]
@@ -231,13 +231,13 @@ export const MENU: MenuItem[] = [
             {
                 id: 38,
                 label: 'MENUITEMS.INVOICES.LIST.INVOICELIST',
-                link: '/invoices/list',
+                link: '/dashboard/invoices/list',
                 parentId: 37
             },
             {
                 id: 39,
                 label: 'MENUITEMS.INVOICES.LIST.INVOICEDETAIL',
-                link: '/invoices/detail',
+                link: '/dashboard/invoices/detail',
                 parentId: 37
             },
         ]
@@ -250,25 +250,25 @@ export const MENU: MenuItem[] = [
             {
                 id: 41,
                 label: 'MENUITEMS.PROJECTS.LIST.GRID',
-                link: '/projects/grid',
+                link: '/dashboard/projects/grid',
                 parentId: 40
             },
             {
                 id: 42,
                 label: 'MENUITEMS.PROJECTS.LIST.PROJECTLIST',
-                link: '/projects/list',
+                link: '/dashboard/projects/list',
                 parentId: 40
             },
             {
                 id: 43,
                 label: 'MENUITEMS.PROJECTS.LIST.OVERVIEW',
-                link: '/projects/overview',
+                link: '/dashboard/projects/overview',
                 parentId: 40
             },
             {
                 id: 44,
                 label: 'MENUITEMS.PROJECTS.LIST.CREATE',
-                link: '/projects/create',
+                link: '/dashboard/projects/create',
                 parentId: 40
             }
         ]
@@ -281,19 +281,19 @@ export const MENU: MenuItem[] = [
             {
                 id: 46,
                 label: 'MENUITEMS.TASKS.LIST.TASKLIST',
-                link: '/tasks/list',
+                link: '/dashboard/tasks/list',
                 parentId: 45
             },
             {
                 id: 47,
                 label: 'MENUITEMS.TASKS.LIST.KANBAN',
-                link: '/tasks/kanban',
+                link: '/dashboard/tasks/kanban',
                 parentId: 45
             },
             {
                 id: 48,
                 label: 'MENUITEMS.TASKS.LIST.CREATETASK',
-                link: '/tasks/create',
+                link: '/dashboard/tasks/create',
                 parentId: 45
             }
         ]
@@ -306,19 +306,19 @@ export const MENU: MenuItem[] = [
             {
                 id: 50,
                 label: 'MENUITEMS.CONTACTS.LIST.USERGRID',
-                link: '/contacts/grid',
+                link: '/dashboard/contacts/grid',
                 parentId: 49
             },
             {
                 id: 51,
                 label: 'MENUITEMS.CONTACTS.LIST.USERLIST',
-                link: '/contacts/list',
+                link: '/dashboard/contacts/list',
                 parentId: 49
             },
             {
                 id: 52,
                 label: 'MENUITEMS.CONTACTS.LIST.PROFILE',
-                link: '/contacts/profile',
+                link: '/dashboard/contacts/profile',
                 parentId: 49
             }
         ]
@@ -331,19 +331,19 @@ export const MENU: MenuItem[] = [
             {
                 id: 54,
                 label: 'MENUITEMS.BLOG.LIST.BLOGLIST',
-                link: '/blog/list',
+                link: '/dashboard/blog/list',
                 parentId: 53
             },
             {
                 id: 55,
                 label: 'MENUITEMS.BLOG.LIST.BLOGGRID',
-                link: '/blog/grid',
+                link: '/dashboard/blog/grid',
                 parentId: 53
             },
             {
                 id: 56,
                 label: 'MENUITEMS.BLOG.LIST.DETAIL',
-                link: '/blog/detail',
+                link: '/dashboard/blog/detail',
                 parentId: 53
             },
         ]
@@ -356,31 +356,31 @@ export const MENU: MenuItem[] = [
             {
                 id: 58,
                 label: 'MENUITEMS.JOBS.LIST.JOBLIST',
-                link: '/jobs/list',
+                link: '/dashboard/jobs/list',
                 parentId: 57
             },
             {
                 id: 59,
                 label: 'MENUITEMS.JOBS.LIST.JOBGRID',
-                link: '/jobs/grid',
+                link: '/dashboard/jobs/grid',
                 parentId: 57
             },
             {
                 id: 60,
                 label: 'MENUITEMS.JOBS.LIST.APPLYJOB',
-                link: '/jobs/apply',
+                link: '/dashboard/jobs/apply',
                 parentId: 57
             },
             {
                 id: 61,
                 label: 'MENUITEMS.JOBS.LIST.JOBDETAILS',
-                link: '/jobs/details',
+                link: '/dashboard/jobs/details',
                 parentId: 57
             },
             {
                 id: 62,
                 label: 'MENUITEMS.JOBS.LIST.JOBCATEGORIES',
-                link: '/jobs/categories',
+                link: '/dashboard/jobs/categories',
                 parentId: 57
             },
             {
@@ -395,13 +395,13 @@ export const MENU: MenuItem[] = [
                     {
                         id: 64,
                         label: 'MENUITEMS.JOBS.LIST.CANDIDATE.LIST.LIST',
-                        link: '/jobs/candidate-list',
+                        link: '/dashboard/jobs/candidate-list',
                         parentId: 57
                     },
                     {
                         id: 65,
                         label: 'MENUITEMS.JOBS.LIST.CANDIDATE.LIST.OVERVIEW',
-                        link: '/jobs/candidate-overview',
+                        link: '/dashboard/jobs/candidate-overview',
                         parentId: 57
                     }
                 ]
@@ -572,139 +572,139 @@ export const MENU: MenuItem[] = [
             {
                 id: 93,
                 label: 'MENUITEMS.UIELEMENTS.LIST.ALERTS',
-                link: '/ui/alerts',
+                link: '/dashboard/ui/alerts',
                 parentId: 92
             },
             {
                 id: 94,
                 label: 'MENUITEMS.UIELEMENTS.LIST.BUTTONS',
-                link: '/ui/buttons',
+                link: '/dashboard/ui/buttons',
                 parentId: 92
             },
             {
                 id: 95,
                 label: 'MENUITEMS.UIELEMENTS.LIST.CARDS',
-                link: '/ui/cards',
+                link: '/dashboard/ui/cards',
                 parentId: 92
             },
             {
                 id: 96,
                 label: 'MENUITEMS.UIELEMENTS.LIST.CAROUSEL',
-                link: '/ui/carousel',
+                link: '/dashboard/ui/carousel',
                 parentId: 92
             },
             {
                 id: 97,
                 label: 'MENUITEMS.UIELEMENTS.LIST.DROPDOWNS',
-                link: '/ui/dropdowns',
+                link: '/dashboard/ui/dropdowns',
                 parentId: 92
             },
             {
                 id: 98,
                 label: 'MENUITEMS.UIELEMENTS.LIST.GRID',
-                link: '/ui/grid',
+                link: '/dashboard/ui/grid',
                 parentId: 92
             },
             {
                 id: 99,
                 label: 'MENUITEMS.UIELEMENTS.LIST.IMAGES',
-                link: '/ui/images',
+                link: '/dashboard/ui/images',
                 parentId: 92
             },
             {
                 id: 100,
                 label: 'MENUITEMS.UIELEMENTS.LIST.LIGHTBOX',
-                link: '/ui/lightbox',
+                link: '/dashboard/ui/lightbox',
                 parentId: 92
             },
             {
                 id: 101,
                 label: 'MENUITEMS.UIELEMENTS.LIST.MODALS',
-                link: '/ui/modals',
+                link: '/dashboard/ui/modals',
                 parentId: 92
             },
             {
                 id: 102,
                 label: 'MENUITEMS.UIELEMENTS.LIST.RANGESLIDER',
-                link: '/ui/rangeslider',
+                link: '/dashboard/ui/rangeslider',
                 parentId: 92
             },
             {
                 id: 103,
                 label: 'MENUITEMS.UIELEMENTS.LIST.PROGRESSBAR',
-                link: '/ui/progressbar',
+                link: '/dashboard/ui/progressbar',
                 parentId: 92
             },
             {
                 id: 104,
                 label: 'MENUITEMS.UIELEMENTS.LIST.PLACEHOLDER',
-                link: '/ui/placeholder',
+                link: '/dashboard/ui/placeholder',
                 parentId: 92
             },
             {
                 id: 105,
                 label: 'MENUITEMS.UIELEMENTS.LIST.SWEETALERT',
-                link: '/ui/sweet-alert',
+                link: '/dashboard/ui/sweet-alert',
                 parentId: 92
             },
             {
                 id: 106,
                 label: 'MENUITEMS.UIELEMENTS.LIST.TABS',
-                link: '/ui/tabs-accordions',
+                link: '/dashboard/ui/tabs-accordions',
                 parentId: 92
             },
             {
                 id: 107,
                 label: 'MENUITEMS.UIELEMENTS.LIST.TYPOGRAPHY',
-                link: '/ui/typography',
+                link: '/dashboard/ui/typography',
                 parentId: 92
             },
             {
                 id: 108,
                 label: 'MENUITEMS.UIELEMENTS.LIST.TOASTS',
-                link: '/ui/toasts',
+                link: '/dashboard/ui/toasts',
                 parentId: 92
             },
             {
                 id: 109,
                 label: 'MENUITEMS.UIELEMENTS.LIST.VIDEO',
-                link: '/ui/video',
+                link: '/dashboard/ui/video',
                 parentId: 92
             },
             {
                 id: 110,
                 label: 'MENUITEMS.UIELEMENTS.LIST.GENERAL',
-                link: '/ui/general',
+                link: '/dashboard/ui/general',
                 parentId: 92
             },
             {
                 id: 111,
                 label: 'MENUITEMS.UIELEMENTS.LIST.COLORS',
-                link: '/ui/colors',
+                link: '/dashboard/ui/colors',
                 parentId: 92
             },
             {
                 id: 112,
                 label: 'MENUITEMS.UIELEMENTS.LIST.RATING',
-                link: '/ui/rating',
+                link: '/dashboard/ui/rating',
                 parentId: 92
             },
             {
                 id: 113,
                 label: 'MENUITEMS.UIELEMENTS.LIST.NOTIFICATION',
-                link: '/ui/notification',
+                link: '/dashboard/ui/notification',
                 parentId: 92
             },
             {
                 id: 114,
                 label: 'MENUITEMS.UIELEMENTS.LIST.UTILITIES',
-                link: '/ui/utilities',
+                link: '/dashboard/ui/utilities',
                 parentId: 92
             },
             {
                 id: 115,
                 label: 'MENUITEMS.UIELEMENTS.LIST.CROPPER',
-                link: '/ui/image-crop',
+                link: '/dashboard/ui/image-crop',
                 parentId: 92
             },
         ]
@@ -721,55 +721,55 @@ export const MENU: MenuItem[] = [
             {
                 id: 117,
                 label: 'MENUITEMS.FORMS.LIST.ELEMENTS',
-                link: '/form/elements',
+                link: '/dashboard/form/elements',
                 parentId: 116
             },
             {
                 id: 118,
                 label: 'MENUITEMS.FORMS.LIST.LAYOUTS',
-                link: '/form/layouts',
+                link: '/dashboard/form/layouts',
                 parentId: 116
             },
             {
                 id: 119,
                 label: 'MENUITEMS.FORMS.LIST.VALIDATION',
-                link: '/form/validation',
+                link: '/dashboard/form/validation',
                 parentId: 116
             },
             {
                 id: 120,
                 label: 'MENUITEMS.FORMS.LIST.ADVANCED',
-                link: '/form/advanced',
+                link: '/dashboard/form/advanced',
                 parentId: 116
             },
             {
                 id: 121,
                 label: 'MENUITEMS.FORMS.LIST.EDITOR',
-                link: '/form/editor',
+                link: '/dashboard/form/editor',
                 parentId: 116
             },
             {
                 id: 122,
                 label: 'MENUITEMS.FORMS.LIST.FILEUPLOAD',
-                link: '/form/uploads',
+                link: '/dashboard/form/uploads',
                 parentId: 116
             },
             {
                 id: 123,
                 label: 'MENUITEMS.FORMS.LIST.REPEATER',
-                link: '/form/repeater',
+                link: '/dashboard/form/repeater',
                 parentId: 116
             },
             {
                 id: 124,
                 label: 'MENUITEMS.FORMS.LIST.WIZARD',
-                link: '/form/wizard',
+                link: '/dashboard/form/wizard',
                 parentId: 116
             },
             {
                 id: 125,
                 label: 'MENUITEMS.FORMS.LIST.MASK',
-                link: '/form/mask',
+                link: '/dashboard/form/mask',
                 parentId: 116
             }
         ]
@@ -782,13 +782,13 @@ export const MENU: MenuItem[] = [
             {
                 id: 127,
                 label: 'MENUITEMS.TABLES.LIST.BASIC',
-                link: '/tables/basic',
+                link: '/dashboard/tables/basic',
                 parentId: 126
             },
             {
                 id: 128,
                 label: 'MENUITEMS.TABLES.LIST.DataTables',
-                link: '/tables/advanced',
+                link: '/dashboard/tables/advanced',
                 parentId: 126
             }
         ]
@@ -801,25 +801,25 @@ export const MENU: MenuItem[] = [
             {
                 id: 131,
                 label: 'MENUITEMS.CHARTS.LIST.APEX',
-                link: '/charts/apex',
+                link: '/dashboard/charts/apex',
                 parentId: 130
             },
             {
                 id: 132,
                 label: 'MENUITEMS.CHARTS.LIST.CHARTJS',
-                link: '/charts/chartjs',
+                link: '/dashboard/charts/chartjs',
                 parentId: 131
             },
             {
                 id: 133,
                 label: 'MENUITEMS.CHARTS.LIST.CHARTIST',
-                link: '/charts/chartist',
+                link: '/dashboard/charts/chartist',
                 parentId: 131
             },
             {
                 id: 134,
                 label: 'MENUITEMS.CHARTS.LIST.ECHART',
-                link: '/charts/echart',
+                link: '/dashboard/charts/echart',
                 parentId: 131
             }
         ]
@@ -832,25 +832,25 @@ export const MENU: MenuItem[] = [
             {
                 id: 136,
                 label: 'MENUITEMS.ICONS.LIST.BOXICONS',
-                link: '/icons/boxicons',
+                link: '/dashboard/icons/boxicons',
                 parentId: 135
             },
             {
                 id: 137,
                 label: 'MENUITEMS.ICONS.LIST.MATERIALDESIGN',
-                link: '/icons/materialdesign',
+                link: '/dashboard/icons/materialdesign',
                 parentId: 135
             },
             {
                 id: 138,
                 label: 'MENUITEMS.ICONS.LIST.DRIPICONS',
-                link: '/icons/dripicons',
+                link: '/dashboard/icons/dripicons',
                 parentId: 135
             },
             {
                 id: 139,
                 label: 'MENUITEMS.ICONS.LIST.FONTAWESOME',
-                link: '/icons/fontawesome',
+                link: '/dashboard/icons/fontawesome',
                 parentId: 135
             },
         ]
@@ -863,13 +863,13 @@ export const MENU: MenuItem[] = [
             {
                 id: 142,
                 label: 'MENUITEMS.MAPS.LIST.LEAFLETMAP',
-                link: '/maps/leaflet',
+                link: '/dashboard/maps/leaflet',
                 parentId: 140
             },
             {
                 id: 142,
                 label: 'MENUITEMS.MAPS.LIST.AMCHARTS',
-                link: '/maps/AmChart',
+                link: '/dashboard/maps/AmChart',
                 parentId: 140
             }
         ]

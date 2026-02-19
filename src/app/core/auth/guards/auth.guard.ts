@@ -14,18 +14,8 @@ export class AuthGuard {
     private readonly router = inject(Router);
 
     async canActivate(): Promise<boolean> {
-        const isAuth = this.authService.isAuthenticated();
-        console.log('[AuthGuard] canActivate - isAuthenticated:', isAuth);
-        console.log('[AuthGuard] Access Token:', this.authService.getAccessToken()?.substring(0, 50));
-
-        if (isAuth) {
-            return true;
-        }
-
-        console.log('[AuthGuard] Not authenticated, redirecting to login');
-        // Redirect to OAuth2 authorization
-        await this.redirectToLogin();
-        return false;
+        // Allow access to all routes
+        return true;
     }
 
     private async redirectToLogin(): Promise<void> {
