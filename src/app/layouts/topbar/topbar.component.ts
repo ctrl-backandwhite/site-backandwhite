@@ -16,10 +16,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SimplebarAngularModule } from 'simplebar-angular';
 
 @Component({
-    selector: 'app-topbar',
-    templateUrl: './topbar.component.html',
-    styleUrls: ['./topbar.component.scss'],
-    imports: [CommonModule, TranslateModule, BsDropdownModule, SimplebarAngularModule]
+  selector: 'app-topbar',
+  templateUrl: './topbar.component.html',
+  styleUrls: ['./topbar.component.scss'],
+  imports: [CommonModule, TranslateModule, BsDropdownModule, SimplebarAngularModule]
 })
 
 /**
@@ -47,10 +47,13 @@ export class TopbarComponent implements OnInit {
 
   listLang: any = [
     { text: 'English', flag: 'assets/images/flags/us.jpg', lang: 'en' },
-    { text: 'Spanish', flag: 'assets/images/flags/spain.jpg', lang: 'es' },
-    { text: 'German', flag: 'assets/images/flags/germany.jpg', lang: 'de' },
-    { text: 'Italian', flag: 'assets/images/flags/italy.jpg', lang: 'it' },
-    { text: 'Russian', flag: 'assets/images/flags/russia.jpg', lang: 'ru' },
+    { text: 'Español', flag: 'assets/images/flags/spain.jpg', lang: 'es' },
+    { text: 'Português', flag: 'assets/images/flags/portugal.svg', lang: 'pt' },
+    { text: 'Deutsch', flag: 'assets/images/flags/germany.jpg', lang: 'de' },
+    { text: 'Italiano', flag: 'assets/images/flags/italy.jpg', lang: 'it' },
+    { text: 'Русский', flag: 'assets/images/flags/russia.jpg', lang: 'ru' },
+    { text: 'Français', flag: 'assets/images/flags/french.jpg', lang: 'fr' },
+    { text: '中文（繁體）', flag: 'assets/images/flags/china.svg', lang: 'zh-Hant' }
   ];
 
   openMobileMenu: boolean;
