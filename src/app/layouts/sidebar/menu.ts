@@ -875,6 +875,12 @@ export const MENU: MenuItem[] = [
         ]
     },
     {
+        id: 148,
+        label: 'DAO.TITLE',
+        icon: 'bx-building',
+        link: '/dashboard/dao',
+    },
+    {
         id: 143,
         label: 'MENUITEMS.MULTILEVEL.TEXT',
         icon: 'bx-share-alt',

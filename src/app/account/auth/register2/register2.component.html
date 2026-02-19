@@ -12,10 +12,13 @@
                                 <div class="col-lg-7">
                                     <div class="text-center">
 
-                                        <h4 class="mb-3"><i class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span class="text-primary">5k</span>+ Satisfied clients</h4>
+                                        <h4 class="mb-3"><i
+                                                class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span
+                                                class="text-primary">5k</span>+ Satisfied clients</h4>
 
                                         <div dir="ltr">
-                                            <ngx-slick-carousel dir="ltr" class="owl-theme auth-review-carousel" [config]="slideConfig">
+                                            <ngx-slick-carousel dir="ltr" class="owl-theme auth-review-carousel"
+                                                [config]="slideConfig">
                                                 <div class="item" ngxSlickItem>
                                                     <div class="py-3">
                                                         <p class="font-size-16 mb-4">" Fantastic theme with a
@@ -30,7 +33,7 @@
 
                                                         <div>
                                                             <h4 class="font-size-16 text-primary">Abs1981</h4>
-                                                            <p class="font-size-14 mb-0">- Skote User</p>
+                                                            <p class="font-size-14 mb-0">- Back & White User</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -45,7 +48,7 @@
 
                                                         <div>
                                                             <h4 class="font-size-16 text-primary">nezerious</h4>
-                                                            <p class="font-size-14 mb-0">- Skote User</p>
+                                                            <p class="font-size-14 mb-0">- Back & White User</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -68,14 +71,14 @@
                     <div class="d-flex flex-column h-100">
                         <div class="mb-4 mb-md-5">
                             <a routerLink="/" class="d-block auth-logo">
-                                <img src="assets/images/logo-dark.png" alt="" height="18" class="auth-logo-dark">
-                                <img src="assets/images/logo-light.png" alt="" height="18" class="auth-logo-light">
+                                <img src="assets/logo.png" alt="Back & White" height="18" class="auth-logo-dark">
+                                <img src="assets/logo.png" alt="Back & White" height="18" class="auth-logo-light">
                             </a>
                         </div>
                         <div class="my-auto">
                             <div>
                                 <h5 class="text-primary">Register account</h5>
-                                <p class="text-muted">Get your free Skote account now.</p>
+                                <p class="text-muted">Get your free Back & White account now.</p>
                             </div>
                             <div class="mt-4">
                                 <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
@@ -88,7 +91,9 @@
                                     }
                                     <div class="mb-3">
                                         <label for="username">Username</label>
-                                        <input type="text" formControlName="username" class="form-control" id="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Enter username">
+                                        <input type="text" formControlName="username" class="form-control" id="username"
+                                            [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+                                            placeholder="Enter username">
                                         @if(submitted && f.username.errors){
                                         <div class="invalid-feedback">
                                             @if(f.username.errors.required){
@@ -98,7 +103,9 @@
 
                                     <div class="mb-3">
                                         <label for="useremail">Email</label>
-                                        <input type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" class="form-control" id="useremail" placeholder="Enter email">
+                                        <input type="email" formControlName="email"
+                                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                                            class="form-control" id="useremail" placeholder="Enter email">
                                         @if(submitted && f.email.errors){
                                         <div class="invalid-feedback">
                                             @if(f.email.errors.required){
@@ -110,7 +117,9 @@
 
                                     <div class="mb-3">
                                         <label for="userpassword">Password</label>
-                                        <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" class="form-control" id="userpassword" placeholder="Enter password">
+                                        <input type="password" formControlName="password"
+                                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                                            class="form-control" id="userpassword" placeholder="Enter password">
                                         @if(submitted && f.password.errors){
                                         <div class="invalid-feedback">
                                             @if(f.password.errors.required){
@@ -119,7 +128,8 @@
                                     </div>
 
                                     <div>
-                                        <p class="mb-0">By registering you agree to the Skote <a href="javascript: void(0);" class="text-primary">Terms of Use</a>
+                                        <p class="mb-0">By registering you agree to the Back & White <a
+                                                href="javascript: void(0);" class="text-primary">Terms of Use</a>
                                         </p>
                                     </div>
 
@@ -131,17 +141,20 @@
                                         <h5 class="font-size-14 mb-3">Sign up using</h5>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a href="javascript::void()" class="social-list-item bg-primary text-white border-primary">
+                                                <a href="javascript::void()"
+                                                    class="social-list-item bg-primary text-white border-primary">
                                                     <i class="mdi mdi-facebook"></i>
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="javascript::void()" class="social-list-item bg-info text-white border-info">
+                                                <a href="javascript::void()"
+                                                    class="social-list-item bg-info text-white border-info">
                                                     <i class="mdi mdi-twitter"></i>
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
-                                                <a href="javascript::void()" class="social-list-item bg-danger text-white border-danger">
+                                                <a href="javascript::void()"
+                                                    class="social-list-item bg-danger text-white border-danger">
                                                     <i class="mdi mdi-google"></i>
                                                 </a>
                                             </li>
@@ -150,13 +163,15 @@
                                 </form>
 
                                 <div class="mt-5 text-center">
-                                    <p>Already have an account ? <a routerLink="/auth/login-2" class="fw-medium text-primary"> Login</a> </p>
+                                    <p>Already have an account ? <a routerLink="/auth/login-2"
+                                            class="fw-medium text-primary"> Login</a> </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mt-4 mt-md-5 text-center">
-                            <p class="mb-0">© {{year}} Skote. Crafted with <i class="mdi mdi-heart text-danger"></i>
+                            <p class="mb-0">© {{year}} Back & White. Crafted with <i
+                                    class="mdi mdi-heart text-danger"></i>
                                 by Themesbrand</p>
                         </div>
                     </div>

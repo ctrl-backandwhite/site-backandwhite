@@ -1,10 +1,8 @@
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { emailSentBarChart, monthlyEarningChart } from './data';
 import { ChartType } from './dashboard.model';
-import { BsModalService, BsModalRef, ModalDirective, ModalModule } from 'ngx-bootstrap/modal';
-import { EventService } from '../../../core/services/event.service';
-
 import { ConfigService } from '../../../core/services/config.service';
+import { EventService } from '../../../core/services/event.service';
 import { CommonModule } from '@angular/common';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -16,26 +14,18 @@ import { StatComponent } from 'src/app/shared/widget/stat/stat.component';
   selector: 'app-default',
   templateUrl: './default.component.html',
   styleUrls: ['./default.component.scss'],
-  imports: [LoaderComponent, CommonModule, NgApexchartsModule, BsDropdownModule, ModalModule, TransactionComponent, StatComponent]
+  imports: [LoaderComponent, CommonModule, NgApexchartsModule, BsDropdownModule, TransactionComponent, StatComponent]
 })
 export class DefaultComponent implements OnInit {
-  modalRef?: BsModalRef;
   isVisible: string;
 
   emailSentBarChart: ChartType;
   monthlyEarningChart: ChartType;
   transactions: any;
   statData: any;
-  config: any = {
-    backdrop: true,
-    ignoreBackdropClick: true
-  };
-
   isActive: string;
 
-  @ViewChild('content') content;
-  @ViewChild('center', { static: false }) center?: ModalDirective;
-  constructor(private modalService: BsModalService, private configService: ConfigService, private eventService: EventService) {
+  constructor(private configService: ConfigService, private eventService: EventService) {
   }
 
   ngOnInit() {
@@ -63,12 +53,6 @@ export class DefaultComponent implements OnInit {
     this.fetchData();
   }
 
-  ngAfterViewInit() {
-    setTimeout(() => {
-      this.center?.show()
-    }, 2000);
-  }
-
   /**
    * Fetches the data
    */
@@ -76,15 +60,14 @@ export class DefaultComponent implements OnInit {
     this.emailSentBarChart = emailSentBarChart;
     this.monthlyEarningChart = monthlyEarningChart;
 
-    this.isActive = 'year';
+    const initialActive = 'year';
+    this.isActive = initialActive;
     this.configService.getConfig().subscribe(data => {
       this.transactions = data.transactions;
       this.statData = data.statData;
     });
   }
-  opencenterModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
-  }
+
   weeklyreport() {
     this.isActive = 'week';
     this.emailSentBarChart.series =

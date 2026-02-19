@@ -1,0 +1,86 @@
+<div class="dao-container">
+    <!-- Header -->
+    <div class="dao-header">
+        <div>
+            <h2>{{ 'DAO.TITLE' | translate }}</h2>
+            <p class="text-muted">{{ 'DAO.SUBTITLE' | translate }}</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-sm" [ngClass]="wallet() ? 'btn-secondary' : 'btn-primary'" (click)="toggleWallet()">
+                {{ wallet() ? ('WALLET.DISCONNECT' | translate) : ('WALLET.CONNECT' | translate) }}
+            </button>
+            @if (!isManaging()) {
+            <button class="btn btn-sm btn-secondary" (click)="toggleManage()">
+                {{ 'DAO.MANAGE' | translate }}
+            </button>
+            }
+            @if (isManaging()) {
+            <button class="btn btn-sm btn-outline" (click)="toggleManage()">
+                {{ 'DAO.BACK' | translate }}
+            </button>
+            }
+        </div>
+    </div>
+
+    <!-- Wallet Info -->
+    @if (wallet()) {
+    <div class="wallet-info">
+        <span class="wallet-badge">
+            <i class="bx bx-wallet"></i>
+            {{ wallet()!.address | slice:0:6 }}...{{ wallet()!.address | slice:-4 }}
+        </span>
+        <span class="wallet-balance">{{ 'WALLET.BALANCE' | translate }}: {{ wallet()!.balance | number }}</span>
+    </div>
+    }
+
+    <!-- User Token Info -->
+    @if (userTokenInfo() && !isManaging()) {
+    <div class="info-row">
+        <div class="info-col">
+            <label>{{ 'DAO.BALANCE' | translate }}</label>
+            <span class="info-value">{{ userTokenInfo()!.balance | number }}</span>
+        </div>
+        <div class="info-col">
+            <label>{{ 'DAO.HOLDING_DAYS' | translate }}</label>
+            <span class="info-value" [class.text-success]="userTokenInfo()?.canVote">
+                {{ userTokenInfo()!.holdingDays }} {{ 'DAO.DAYS' | translate }}
+            </span>
+        </div>
+        <div class="info-col">
+            <label>{{ 'DAO.STAKED_AMOUNT' | translate }}</label>
+            <span class="info-value">{{ userTokenInfo()!.stakedAmount | number }}</span>
+        </div>
+        <div class="info-col">
+            <label>{{ 'DAO.VOTING_STATUS' | translate }}</label>
+            <span class="status-badge" [class.status-success]="userTokenInfo()?.canVote"
+                [class.status-danger]="!userTokenInfo()?.canVote">
+                {{ userTokenInfo()?.canVote ? ('DAO.CAN_VOTE' | translate) : ('DAO.CANNOT_VOTE' | translate) }}
+            </span>
+        </div>
+    </div>
+    }
+
+    <!-- Manage View -->
+    @if (isManaging()) {
+    <app-dao-manage></app-dao-manage>
+    }
+
+    <!-- Proposals List -->
+    @if (!isManaging()) {
+    <div class="proposals-container">
+        <div class="proposals-grid">
+            @for (proposal of proposals(); track proposal.id) {
+            <app-dao-proposal-card [proposal]="proposal" [canVote]="userTokenInfo()?.canVote || false"
+                (vote)="onVote($event)" (invest)="onInvest($event)">
+            </app-dao-proposal-card>
+            }
+        </div>
+    </div>
+    }
+
+    <!-- Voting Modal -->
+    <app-dao-voting-modal [visible]="votingModalVisible()" [proposal]="selectedProposal()"
+        [userBalance]="userTokenInfo()?.balance || 0" (close)="votingModalVisible.set(false)"
+        (submit)="submitVote($event)">
+    </app-dao-voting-modal>
+</div>

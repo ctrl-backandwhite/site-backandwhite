@@ -36,6 +36,7 @@ import { ChartModule } from './chart/chart.module';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MapsModule } from './maps/maps.module';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule(
         {
@@ -70,7 +71,8 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
                         AlertModule.forRoot(),
                         SimplebarAngularModule,
                         LightboxModule,
-                        PickerModule],
+                        PickerModule,
+                        TranslateModule],
                 providers: [provideHttpClient(withInterceptorsFromDi())]
         })
 export class PagesModule { }

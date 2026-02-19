@@ -1,0 +1,33 @@
+.logo-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 5px;
+  }
+}
+
+.brand-text {
+  color: white !important;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .logo-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+}

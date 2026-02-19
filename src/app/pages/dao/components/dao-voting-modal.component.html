@@ -1,0 +1,65 @@
+@if (visible) {
+<div class="modal-overlay" (click)="onClose()">
+    <div class="modal-dialog" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+            <h2>{{ proposal?.name }}</h2>
+            <button class="close-btn" (click)="onClose()">
+                <i class="bx bx-x"></i>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-section">
+                <label>{{ 'DAO.AMOUNT_TO_STAKE' | translate }}</label>
+                <div class="input-group">
+                    <input type="number" [(ngModel)]="amount" [max]="userBalance" placeholder="0" min="1">
+                    <span class="currency">BW</span>
+                </div>
+                <p class="helper-text">
+                    {{ 'DAO.AVAILABLE_BALANCE' | translate }}: {{ userBalance | number }}
+                </p>
+            </div>
+
+            <div class="modal-section">
+                <label>{{ 'DAO.QUICK_AMOUNTS' | translate }}</label>
+                <div class="quick-buttons">
+                    @for (qty of quickAmounts; track qty) {
+                    <button class="quick-btn" (click)="setAmount(qty)" [disabled]="qty > userBalance">
+                        {{ qty | number }}
+                    </button>
+                    }
+                </div>
+            </div>
+
+            <div class="modal-section highlight">
+                <div class="info-item">
+                    <span>{{ 'DAO.VOTING_POWER' | translate }}</span>
+                    <span class="value">{{ amount / 100 | number }}</span>
+                </div>
+                <div class="info-item">
+                    <span>{{ 'DAO.REMAINING_BALANCE' | translate }}</span>
+                    <span class="value">{{ userBalance - amount | number }}</span>
+                </div>
+            </div>
+
+            <div class="modal-section info-box">
+                <p><strong>{{ 'DAO.IMPORTANT' | translate }}:</strong></p>
+                <ul>
+                    <li>{{ 'DAO.VOTING_INFO_1' | translate }}</li>
+                    <li>{{ 'DAO.VOTING_INFO_2' | translate }}</li>
+                    <li>{{ 'DAO.VOTING_INFO_3' | translate }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn-cancel" (click)="onClose()">
+                {{ 'DAO.CANCEL' | translate }}
+            </button>
+            <button class="btn-confirm" (click)="onSubmit()" [disabled]="amount <= 0 || amount > userBalance">
+                {{ 'DAO.CONFIRM_VOTE' | translate }}
+            </button>
+        </div>
+    </div>
+</div>
+}

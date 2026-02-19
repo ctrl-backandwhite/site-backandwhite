@@ -3,22 +3,11 @@
     <div class="d-flex">
       <!-- LOGO -->
       <div class="navbar-brand-box">
-        <a routerLink="/" class="logo logo-dark">
-          <span class="logo-sm">
+        <a routerLink="/" class="logo logo-dark logo-light d-flex align-items-center">
+          <span class="logo-circle">
             <img src="assets/logo.png" alt="Back & White" height="22">
           </span>
-          <span class="logo-lg">
-            <img src="assets/images/logo-dark.png" alt="" height="17">
-          </span>
-        </a>
-
-        <a routerLink="/" class="logo logo-light">
-          <span class="logo-sm">
-            <img src="assets/images/logo-light.svg" alt="" height="22">
-          </span>
-          <span class="logo-lg">
-            <img src="assets/images/logo-light.png" alt="" height="19">
-          </span>
+          <span class="brand-text d-none d-lg-inline-block ms-2">Back & White</span>
         </a>
       </div>
 
@@ -169,7 +158,7 @@
 
     <div class="d-flex">
       <div class="dropdown d-inline-block d-lg-none ms-2" dropdown>
-        <button type="button" class="btn header-item noti-icon" id="page-header-search-dropdown" data-toggle="dropdown"
+        <button type="button" class="btn header-item noti-icon" id="page-header-search-dropdown" 
           aria-haspopup="true" dropdownToggle aria-expanded="false">
           <i class="mdi mdi-magnify"></i>
         </button>
@@ -197,7 +186,6 @@
           }
         </button>
         <div class="dropdown-menu dropdown-menu-end" *dropdownMenu>
-          <!-- item-->
           @for (item of listLang; track $index) {
           <a href="javascript:void(0);" class="dropdown-item notify-item"
             (click)="setLanguage(item.text, item.lang, item.flag)" [ngClass]="{'active': cookieValue === item.lang}">
@@ -205,66 +193,7 @@
               class="align-middle">{{item.text}}</span>
           </a>
           }
-          <!-- item-->
         </div>
-      </div>
-
-      <div class="dropdown d-none d-lg-inline-block ms-1" dropdown>
-        <button type="button" class="btn header-item noti-icon" dropdownToggle>
-          <i class="bx bx-customize"></i>
-        </button>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end" *dropdownMenu>
-          <div class="px-lg-2">
-            <div class="row no-gutters">
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/github.png" alt="Github">
-                  <span>GitHub</span>
-                </a>
-              </div>
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
-                  <span>Bitbucket</span>
-                </a>
-              </div>
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/dribbble.png" alt="dribbble">
-                  <span>Dribbble</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="row no-gutters">
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/dropbox.png" alt="dropbox">
-                  <span>Dropbox</span>
-                </a>
-              </div>
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
-                  <span>Mail Chimp</span>
-                </a>
-              </div>
-              <div class="col">
-                <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="assets/images/brands/slack.png" alt="slack">
-                  <span>Slack</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="dropdown d-none d-lg-inline-block ms-1">
-        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen"
-          (click)="fullscreen()">
-          <i class="bx bx-fullscreen"></i>
-        </button>
       </div>
 
       <div class="dropdown d-inline-block" dropdown>
@@ -362,15 +291,11 @@
           <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-end" *dropdownMenu>
-          <!-- item-->
           <a class="dropdown-item" routerLink="/contacts/profile"><i
               class="bx bx-user font-size-16 align-middle me-1"></i>
             {{ 'HEADER.LOGIN.PROFILE' | translate}}</a>
           <a class="dropdown-item" routerLink="/crypto/wallet" href="javascript: void(0);"><i
               class="bx bx-wallet font-size-16 align-middle me-1"></i>{{ 'HEADER.LOGIN.MY_WALLET' | translate}}</a>
-          <a class="dropdown-item d-block" href="javascript: void(0);"><span
-              class="badge bg-success float-end">11</span><i class="bx bx-wrench font-size-16 align-middle me-1"></i>{{
-            'HEADER.LOGIN.SETTINGS' | translate}} </a>
           <a class="dropdown-item" routerLink="/pages/lock-screen-1"><i
               class="bx bx-lock-open font-size-16 align-middle me-1"></i>
             {{ 'HEADER.LOGIN.LOCK_SCREEN' | translate}}</a>
@@ -379,12 +304,6 @@
               class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i>
             {{ 'HEADER.LOGIN.LOGOUT' | translate}}</a>
         </div>
-      </div>
-
-      <div class="dropdown d-inline-block">
-        <button type="button" class="btn header-item noti-icon right-bar-toggle" (click)="toggleRightSidebar()">
-          <i class="bx bx-cog bx-spin"></i>
-        </button>
       </div>
 
     </div>

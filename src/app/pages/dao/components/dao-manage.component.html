@@ -1,0 +1,114 @@
+<div class="manage-container">
+    <div class="manage-header">
+        <h3>{{ 'DAO.MANAGE_PROPOSALS' | translate }}</h3>
+        @if (!editMode && !formVisible) {
+        <button class="btn-new" (click)="toggleForm()">
+            <i class="bx bx-plus"></i>
+            {{ 'DAO.NEW_PROPOSAL' | translate }}
+        </button>
+        }
+    </div>
+
+    <!-- Form Section -->
+    @if (formVisible) {
+    <div class="form-section">
+        <div class="form-card">
+            <h4>{{ editMode ? ('DAO.EDIT_PROPOSAL' | translate) : ('DAO.NEW_PROPOSAL' | translate) }}</h4>
+
+            <form (ngSubmit)="saveProposal()">
+                <div class="form-group">
+                    <label>{{ 'DAO.COMPANY_NAME' | translate }}</label>
+                    <input type="text" [(ngModel)]="formData.name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>{{ 'DAO.DESCRIPTION' | translate }}</label>
+                    <textarea [(ngModel)]="formData.description" name="description" rows="3" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>{{ 'DAO.CATEGORY' | translate }}</label>
+                        <select [(ngModel)]="formData.category" name="category" required>
+                            <option value="">{{ 'DAO.SELECT_CATEGORY' | translate }}</option>
+                            <option value="Retail">{{ 'DAO.CATEGORY_RETAIL' | translate }}</option>
+                            <option value="Food">{{ 'DAO.CATEGORY_FOOD' | translate }}</option>
+                            <option value="Ecommerce">{{ 'DAO.CATEGORY_ECOMMERCE' | translate }}</option>
+                            <option value="Technology">{{ 'DAO.CATEGORY_TECHNOLOGY' | translate }}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ 'DAO.TARGET_FUNDING' | translate }}</label>
+                        <input type="number" [(ngModel)]="formData.targetFunding" name="targetFunding" min="1000"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>{{ 'DAO.INDUSTRY' | translate }}</label>
+                        <input type="text" [(ngModel)]="formData.details.industry" name="industry" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ 'DAO.LOCATION' | translate }}</label>
+                        <input type="text" [(ngModel)]="formData.details.location" name="location" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>{{ 'DAO.EXPECTED_RETURN' | translate }}</label>
+                    <input type="number" [(ngModel)]="formData.details.expectedReturn" name="expectedReturn" min="0"
+                        max="100" required>
+                    <span class="input-suffix">%</span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-save">
+                        {{ editMode ? ('DAO.UPDATE' | translate) : ('DAO.CREATE' | translate) }}
+                    </button>
+                    <button type="button" class="btn-cancel" (click)="cancelForm()">
+                        {{ 'DAO.CANCEL' | translate }}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    }
+
+    <!-- List Section -->
+    @if (!formVisible) {
+    <div class="proposals-list">
+        @for (proposal of proposals; track proposal.id) {
+        <div class="list-item">
+            <div class="item-info">
+                <h4>{{ proposal.name }}</h4>
+                <p class="category">{{ proposal.category }}</p>
+                <p class="description">{{ proposal.description }}</p>
+                <div class="details">
+                    <span>{{ proposal.details.location }}</span>
+                    <span>{{ 'DAO.TARGET' | translate }}: ${{ proposal.targetFunding | number }}</span>
+                    <span>{{ 'DAO.FUNDED' | translate }}: ${{ proposal.currentFunding | number }}</span>
+                </div>
+            </div>
+            <div class="item-actions">
+                <button class="btn-edit" (click)="editProposal(proposal)">
+                    <i class="bx bx-edit"></i>
+                </button>
+                <button class="btn-delete" (click)="deleteProposal(proposal.id)">
+                    <i class="bx bx-trash"></i>
+                </button>
+            </div>
+        </div>
+        }
+
+        @if (proposals.length === 0) {
+        <div class="empty-state">
+            <i class="bx bx-inbox"></i>
+            <p>{{ 'DAO.NO_PROPOSALS' | translate }}</p>
+        </div>
+        }
+    </div>
+    }
+</div>

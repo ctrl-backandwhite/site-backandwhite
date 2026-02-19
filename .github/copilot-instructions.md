@@ -32,6 +32,8 @@
 - Para los cambios que vaya a aplicar piensa en mobile-first siempre
 - Simpre agrega las traducciones a los archivos de i18n de todos los idiomas disponibles
 - Para los cambios que vayas a aplicar piensa en la experiencia de usuario siempre
+- usa siempre external template para el hml
+- no escibas css en el componente, haslo en los archivos scss correspondientes
 
 ## Integration Points
 - Uses third-party Angular modules (e.g., `ngx-bootstrap`, `ngrx/store`).
