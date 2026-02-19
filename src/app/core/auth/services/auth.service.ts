@@ -27,11 +27,16 @@ export class AuthService {
   async exchangeCodeForToken(code: string): Promise<TokenResponse> {
     const codeVerifier = this.pkceService.getStoredVerifier();
 
+    console.log('[AuthService] exchangeCodeForToken - Starting');
+    console.log('[AuthService] Code:', code.substring(0, 20) + '...');
+    console.log('[AuthService] Code Verifier:', codeVerifier?.substring(0, 20) + '...');
+
     if (!codeVerifier) {
       throw new Error('PKCE verifier not found');
     }
 
     try {
+      console.log('[AuthService] Requesting token from:', this.tokenEndpoint);
       const response = await this.requestToken({
         grant_type: 'authorization_code',
         client_id: environment.clientId,
@@ -39,6 +44,9 @@ export class AuthService {
         redirect_uri: environment.redirectUri,
         code_verifier: codeVerifier,
       });
+
+      console.log('[AuthService] Token response received');
+      console.log('[AuthService] Access Token:', response.access_token.substring(0, 50) + '...');
 
       this.tokenService.setTokens(
         response.access_token,
@@ -50,9 +58,11 @@ export class AuthService {
       this.pkceService.clearVerifier();
       this.authStateService.setAuthenticated();
 
+      console.log('[AuthService] Tokens saved, authentication state set');
+
       return response;
     } catch (error) {
-      console.error('Token exchange error:', error);
+      console.error('[AuthService] Token exchange error:', error);
       this.authStateService.setError('Failed to exchange code for token');
       throw error;
     }

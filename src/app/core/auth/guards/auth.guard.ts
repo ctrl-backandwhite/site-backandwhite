@@ -14,10 +14,15 @@ export class AuthGuard {
   private readonly router = inject(Router);
 
   async canActivate(): Promise<boolean> {
-    if (this.authService.isAuthenticated()) {
+    const isAuth = this.authService.isAuthenticated();
+    console.log('[AuthGuard] canActivate - isAuthenticated:', isAuth);
+    console.log('[AuthGuard] Access Token:', this.authService.getAccessToken()?.substring(0, 50));
+    
+    if (isAuth) {
       return true;
     }
 
+    console.log('[AuthGuard] Not authenticated, redirecting to login');
     // Redirect to OAuth2 authorization
     await this.redirectToLogin();
     return false;

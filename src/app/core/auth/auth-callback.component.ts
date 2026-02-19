@@ -34,15 +34,21 @@ export class AuthCallbackComponent implements OnInit {
       const code = this.extractAuthorizationCode();
       const state = this.route.snapshot.queryParamMap.get('state');
 
+      console.log('[AuthCallback] Starting callback processing');
+      console.log('[AuthCallback] Code:', code?.substring(0, 20) + '...');
+      console.log('[AuthCallback] State:', state);
+
       if (!code) {
         console.error('[AuthCallback] No authorization code found');
         this.router.navigate(['/']);
         return;
       }
 
+      console.log('[AuthCallback] Exchanging code for token...');
       this.authService.exchangeCodeForToken(code)
         .then(() => {
           console.log('[AuthCallback] Token exchange successful');
+          console.log('[AuthCallback] Navigating to /admin');
           this.router.navigate(['/admin']);
         })
         .catch((error) => {

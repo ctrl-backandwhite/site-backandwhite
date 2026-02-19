@@ -28,7 +28,7 @@ export const routes: Routes = [
             import("./account/account.module").then((m) => m.AccountModule),
     },
     {
-        path: "",
+        path: "dashboard",
         component: LayoutComponent,
         loadChildren: () =>
             import("./pages/pages.module").then((m) => m.PagesModule),
