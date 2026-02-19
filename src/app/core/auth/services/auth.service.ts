@@ -23,7 +23,7 @@ export class AuthService {
     private readonly authStateService = inject(AuthStateService);
     private readonly pkceService = inject(PKCEService);
 
-    private readonly tokenEndpoint = environment.apiBaseUrl.replace('/api/v1', '') + '/oauth2/token';
+    private readonly tokenEndpoint = environment.oauth2TokenUrl;
     private readonly logoutEndpoint = `${environment.apiBaseUrl}/auth/logout`;
     private readonly revokeEndpoint = `${environment.apiBaseUrl}/auth/revoke`;
 
