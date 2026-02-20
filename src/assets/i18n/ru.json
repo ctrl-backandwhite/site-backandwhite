@@ -1,616 +1,138 @@
 {
-  "HEADER": {
-    "SEARCH": "Поиск...",
-    "MEGA_MENU": "Мега Меню",
-    "NOTIFICATIONS": {
-      "TITLE": "Уведомления",
-      "VIEW_ALL": "Просмотреть все",
-      "LOAD_MORE": "Посмотреть больше..",
-      "FIRST": {
-        "TITLE": "Ваш заказ размещен",
-        "TEXT": "Если несколько языков объединяют грамматику",
-            "WALLET": {
-              "CONNECT": "Подключить кошелек",
-              "DISCONNECT": "Отключить",
-              "BALANCE": "Баланс"
-            },
-      },
-      "SECOND": {
-        "TITLE": "Джеймс Лемир",
-        "TEXT": "Это будет похоже на упрощенный английский.",
-        "TIME": "1 час назад"
-      },
-      "THIRD": {
-        "TITLE": "Ваш товар отправлен",
-        "TEXT": "Если несколько языков объединяют грамматику",
-        "TIME": "3 минуты назад"
-      },
-      "FOUR": {
-        "TITLE": "Салена Лейфилд",
-        "TEXT": "Как мой скептически настроенный друг из Кембриджа, Запад",
-        "TIME": "1 час назад"
-      }
-    },
-    "SETTINGS": "Settings",
-    "UI": {
-      "TITLE": "Компоненты пользовательского интерфейса",
-      "LIGHTBOX": "Лайтбокс",
-      "RANGE_SLIDER": "Ползунок диапазона",
-      "SWEET_ALERT": "сладкая тревога",
-      "RATING": "Рейтинг",
-      "FORMS": "Формы",
-      "TABLES": "Столы",
-      "CHARTS": "Чарты"
-    },
-    "APPLICATIONS": {
-      "TITLE": "Приложения",
-      "ECOMMERCE": "Электронная коммерция",
-      "CALENDAR": "Календарь",
-      "EMAIL": "Эл. адрес",
-      "PROJECTS": "Проекты",
-      "TASKS": "Задачи",
-      "CONTACTS": "Контакты"
-    },
-    "EXTRA_PAGES": {
-      "TITLE": "Дополнительные страницы",
-      "LIGHT_SIDEBAR": "Легкая боковая панель",
-      "COMPACT_SIDEBAR": "Компактная боковая панель",
-      "HORIZONTAL_LAYOUT": "Горизонтальное расположение",
-      "MAINTENANCE": "Техническое обслуживание",
-      "COMING SOON": "СКОРО",
-      "TIMELINE": "Хронология",
-      "FAQ": "задаваемые вопросы"
-    },
-    "LOGIN": {
-      "PROFILE": "Профиль",
-      "MY_WALLET": "Мой кошелек",
-      "SETTINGS": "Настройки",
-      "LOCK_SCREEN": "Экран блокировки",
-      "LOGOUT": "Выход"
-    }
-  },
-  "MENUITEMS": {
-    "MENU": {
-      "TEXT": "Меню"
-    },
-    "DASHBOARDS": {
-      "TEXT": "Сводки",
-      "BADGE": "04",
-      "LIST": {
-        "DEFAULT": "По умолчанию",
-        "SAAS": "Saas",
-        "CRYPTO": "крипто-",
-        "BLOG": "Блог",
-        "JOBS": "Работа"
-      }
-    },
-    "LAYOUTS": {
-      "TEXT": "Макеты",
-      "LIST": {
-        "HORIZONTAL": "горизонтальный",
-        "LIGHTSIDEBAR": "Легкая боковая панель",
-        "COMPACTSIDEBAR": "Компактная боковая панель",
-        "ICONSIDEBAR": "Иконки боковой панели",
-        "BOXED": "В штучной упаковке",
-        "COLOREDSIDEBAR": "Цветная боковая панель",
-        "VERTICAL": "вертикальный",
-        "LIGHTTOPBAR": "Светлая верхняя панель",
-        "COLOREDHEADER": "Цветной заголовок",
-        "SCROLLABLE": "Прокручиваемый"
-      }
-    },
-    "APPS": {
-      "TEXT": "Программы"
-    },
-    "CALENDAR": {
-      "TEXT": "Календарь"
-    },
-    "CHAT": {
-      "TEXT": "Чат",
-      "BADGE": "новый"
-    },
-    "FILEMANAGER": {
-      "TEXT": "Файловый менеджер",
-      "BADGE": "новый"
-    },
-    "ECOMMERCE": {
-      "TEXT": "Электронная торговля",
-      "LIST": {
-        "PRODUCTS": "Товары",
-        "PRODUCTDETAIL": "Информация о продукте",
-        "ORDERS": "заказы",
-        "CUSTOMERS": "Клиенты",
-        "CART": "телега",
-        "CHECKOUT": "Проверять, выписываться",
-        "SHOPS": "Магазины",
-        "ADDPRODUCT": "Добавить продукт"
-      }
-    },
-    "CRYPTO": {
-      "TEXT": "крипто-",
-      "LIST": {
-        "WALLET": "Бумажник",
-        "BUY/SELL": "Купи продай",
-        "EXCHANGE": "обмен",
-        "LENDING": "кредитование",
-        "ORDERS": "заказы",
-        "KYCAPPLICATION": "Приложение KYC",
-        "ICOLANDING": "ICO Landing"
-      }
-    },
-    "EMAIL": {
-      "TEXT": "Эл. адрес",
-      "LIST": {
-        "INBOX": "входящие",
-        "READEMAIL": "Читать электронную почту",
-        "TEMPLATE": {
-          "TEXT": "Шаблон",
-          "BADGE": "Новый",
-          "LIST": {
-            "BASIC": "Базовое действие",
-            "ALERT": "Уведомление по электронной почте",
-            "BILLING": "Электронная почта для выставления счетов"
-          }
-        }
-      }
-    },
-    "INVOICES": {
-      "TEXT": "Счета-фактуры",
-      "LIST": {
-        "INVOICELIST": "Список счетов",
-        "INVOICEDETAIL": "Деталь счета"
-      }
-    },
-    "PROJECTS": {
-      "TEXT": "проектов",
-      "LIST": {
-        "GRID": "Сетка проектов",
-        "PROJECTLIST": "Список проектов",
-        "OVERVIEW": "Обзор проекта",
-        "CREATE": "Создать новый"
-      }
-    },
-    "TASKS": {
-      "TEXT": "Задачи",
-      "LIST": {
-        "TASKLIST": "Список заданий",
-        "KANBAN": "Канбан Правление",
-        "CREATETASK": "Создать задачу"
-      }
-    },
-    "CONTACTS": {
-      "TEXT": "контакты",
-      "LIST": {
-        "USERGRID": "Сетка пользователя",
-        "USERLIST": "Список пользователей",
-        "PROFILE": "Профиль"
-      }
-    },
-    "BLOG": {
-      "TEXT": "Блог",
-      "BADGE": "Новый",
-      "LIST": {
-        "BLOGLIST": "Список блогов",
-        "BLOGGRID": "Блог Сетка",
-        "DETAIL": "Подробности блога"
-      }
-    },
-    "JOBS": {
-      "TEXT": "Работа",
-      "BADGE": "Новый",
-      "LIST": {
-        "JOBLIST": "Список вакансий",
-        "JOBGRID": "Сетка заданий",
-        "APPLYJOB": "Подать заявку",
-        "JOBDETAILS": "Детали работы",
-        "JOBCATEGORIES": "Категории вакансий",
-        "CANDIDATE": {
-          "TEXT": "Кандидат",
-          "LIST": {
-            "LIST": "Список",
-            "OVERVIEW": "Обзор"
-          }
-        }
-      }
-    },
-    "PAGES": {
-      "TEXT": "страницы"
-    },
-    "AUTHENTICATION": {
-      "TEXT": "Аутентификация",
-      "BADGE": "новый",
-      "LIST": {
-        "LOGIN": "Авторизоваться",
-        "REGISTER": "регистр",
-        "RECOVERPWD": "Восстановить пароль",
-        "LOCKSCREEN": "Экран блокировки",
-        "LOGIN2": "Авторизоваться 2",
-        "REGISTER2": "регистр 2",
-        "RECOVERPWD2": "Восстановить пароль 2",
-        "LOCKSCREEN2": "Экран блокировки 2",
-        "CONFIRMMAIL": "Подтвердить почту",
-        "CONFIRMMAIL2": "Подтвердить почту 2",
-        "EMAILVERIFICATION": "Подтверждение адреса электронной почты",
-        "EMAILVERIFICATION2": "Подтверждение адреса электронной почты 2",
-        "TWOSTEPVERIFICATION": "Двухэтапная проверка",
-        "TWOSTEPVERIFICATION2": "Двухэтапная проверка 2"
-      }
-    },
-    "UTILITY": {
-      "TEXT": "Утилита",
-      "LIST": {
-        "STARTER": "Стартовая страница",
-        "MAINTENANCE": "Обслуживание",
-        "TIMELINE": "Лента новостей",
-        "FAQS": "Вопросы и ответы",
-        "PRICING": "ценообразование",
-        "ERROR404": "Ошибка 404",
-        "ERROR500": "Ошибка 500"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "Составные части"
-    },
-    "UIELEMENTS": {
-      "TEXT": "Элементы пользовательского интерфейса",
-      "LIST": {
-        "ALERTS": "Оповещения",
-        "BUTTONS": "Кнопки",
-        "CARDS": "Карты",
-        "CAROUSEL": "Карусель",
-        "DROPDOWNS": "Dropdowns",
-        "GRID": "сетка",
-        "IMAGES": "Изображений",
-        "MODALS": "модальности",
-        "RANGESLIDER": "Ползунок диапазона",
-        "PROGRESSBAR": "Прогресс Бары",
-        "SWEETALERT": "Sweet Alert",
-        "TABS": "Вкладки и Аккордеоны",
-        "TYPOGRAPHY": "Типография",
-        "TOASTS": "Тосты",
-        "VIDEO": "видео",
-        "GENERAL": "Общий",
-        "COLORS": "Цвета",
-        "RATING": "Рейтинг",
-        "NOTIFICATION": "Уведомление",
-        "UTILITIES": "Утилиты",
-        "CROPPER": "Обрезка изображений"
-      }
-    },
-    "FORMS": {
-      "TEXT": "формы",
-      "BADGE": "09",
-      "LIST": {
-        "ELEMENTS": "Элементы формы",
-        "VALIDATION": "Проверка формы",
-        "ADVANCED": "Форма Advanced",
-        "EDITOR": "Редактор форм",
-        "FILEUPLOAD": "Загрузить файл формы",
-        "REPEATER": "Повторитель формы",
-        "WIZARD": "Мастер форм",
-        "MASK": "Форма Маска",
-        "LAYOUTS": "Макеты форм"
-      }
-    },
-    "TABLES": {
-      "TEXT": "таблицы",
-      "LIST": {
-        "BASIC": "Основные таблицы",
-        "DataTables": "Таблицы данных",
-        "EditTableTables": "Редактируемая таблица"
-      }
-    },
-    "CHARTS": {
-      "TEXT": "Графики",
-      "LIST": {
-        "APEX": "Диаграмма вершины",
-        "CHARTJS": "Chartjs Диаграмма",
-        "CHARTIST": "Chartist Диаграмма",
-        "ECHART": "Электронная Диаграмма"
-      }
-    },
-    "ICONS": {
-      "TEXT": "Иконки",
-      "LIST": {
-        "BOXICONS": "Boxicons",
-        "MATERIALDESIGN": "Материал Дизайн",
-        "DRIPICONS": "Dripicons",
-        "FONTAWESOME": "Шрифт потрясающий"
-      }
-    },
-    "MAPS": {
-      "TEXT": "Карты",
-      "LIST": {
-        "LEAFLETMAP": "Листовки Карты",
-        "AMCHARTS": "AmCharts"
-      }
-    },
-    "MULTILEVEL": {
-      "TEXT": "Многоуровневый",
-      "LIST": {
-        "LEVEL1": {
-          "1": "Уровень 1.1",
-          "2": "Уровень 1.2",
-          "LEVEL2": {
-            "1": "Уровень 2.1",
-            "2": "Уровень 2.2"
-          }
-        }
-      }
-    }
-  },
   "LANDING": {
     "NAV": {
-      "BRAND": "Back & White",
-      "FEATURES": "Возможности",
-      "ROADMAP": "Дорожная карта",
-      "TOKENOMICS": "Токеномика",
-      "LOGIN": "Вход",
-      "LANGUAGE": "Язык"
+      "HOME": "Home",
+      "ABOUT": "About",
+      "FEATURES": "Features",
+      "ROADMAP": "Roadmap",
+      "TEAM": "Team",
+      "NEWS": "News",
+      "FAQS": "FAQs",
+      "SIGN_IN": "Sign in"
     },
     "HERO": {
-      "BADGE": "✨ Токенизированные акции",
-      "TITLE": "Будущее децентрализованных инвестиций",
-      "SUBTITLE": "Станьте частью создания реальных компаний с токенами на блокчейне. Мы демократизируем доступ к институциональным инвестиционным возможностям.",
-      "WHITEPAPER": "📄 Скачать Whitepaper",
-      "ACCESS": "Доступ →"
+      "TITLE": "Токен BW - Токенизация Реальных Активов",
+      "SUBTITLE": "Bridge between crypto and real economy. Fractional ownership of real companies powered by blockchain.",
+      "GET_WHITEPAPER": "Скачать Белую Бумагу",
+      "HOW_IT_WORK": "Узнать Больше",
+      "GET_TOKEN": "Получить Токен BW",
+      "ETH_RATE": "Network: Binance Smart Chain (BSC BEP-20)"
     },
-    "COUNTDOWN": {
-      "LAUNCH": "Официальный запуск",
+    "ICO": {
+      "TITLE": "Обратный Отсчет Запуска Токена",
+      "TIME_LEFT": "Дата Запуска: 30 января 2027 г.",
       "DAYS": "Дни",
       "HOURS": "Часы",
       "MINUTES": "Минуты",
       "SECONDS": "Секунды"
     },
-    "FEATURES": {
-      "TITLE": "Почему Back & White?",
-      "SUBTITLE": "Революционная платформа для токенизированных инвестиций",
-      "REAL_STOCKS": {
-        "TITLE": "Реальные акции",
-        "DESC": "Инвестируйте в реальные компании с дивидендами и правами собственности."
-      },
-      "SECURITY": {
-        "TITLE": "Безопасность блокчейна",
-        "DESC": "Безопасные и прозрачные транзакции через проверенные смарт-контракты."
-      },
-      "NO_FEES": {
-        "TITLE": "Без посредников",
-        "DESC": "Исключите традиционные комиссии и получайте доступ к возможностям напрямую."
-      },
-      "GLOBAL": {
-        "TITLE": "Глобальный доступ",
-        "DESC": "Инвестируйте из любой точки мира 24/7 без ограничений."
-      },
-      "LIQUIDITY": {
-        "TITLE": "Гарантированная ликвидность",
-        "DESC": "Покупайте и продавайте в любое время на нашем вторичном рынке."
-      },
-      "REGULATED": {
-        "TITLE": "Регулируется",
-        "DESC": "Полное соответствие международным нормам и постоянный аудит."
-      }
+    "ABOUT": {
+      "TITLE": "О Токене BW",
+      "SUBTITLE": "Реальные Активы. Реальная Стоимость. Реальная Блокчейн.",
+      "HEADING": "Мост между крипто и реальной экономикой",
+      "DESCRIPTION": "BW Token solves the trust crisis in crypto by connecting blockchain with real enterprises. Each token represents fractional ownership of verified real-world companies, eliminating vaporware and providing tangible asset backing.",
+      "DESCRIPTION2": "Our infrastructure ensures legal compliance, transparent audits, and direct capital flow from enterprise profits to token holders through automated buy-back mechanisms.",
+      "READ_MORE": "Read White Paper",
+      "HOW_IT_WORK": "How It Works",
+      "INVEST_AMOUNT": "Total Supply",
+      "USERS": "1B BW Tokens",
+      "LENDING": "Equity Tokenization",
+      "LENDING_DESC": "Democratize access to private equity investments. What was once exclusive to institutional investors is now available to any BW holder through fractional ownership of real enterprises.",
+      "WALLET": "Real Asset Backing",
+      "WALLET_DESC": "Every BW token is backed by verifiable real-world assets. Our Proof of Asset system and real-time dashboards ensure transparency and eliminate the 'vaporware' problem plaguing crypto.",
+      "LEARN_MORE": "Explore Features"
     },
-    "HOW_IT_WORKS": {
-      "TITLE": "Как это работает",
-      "SUBTITLE": "Начните инвестировать за 4 простых шага",
-      "STEP1": {
-        "TITLE": "Откройте аккаунт",
-        "DESC": "Зарегистрируйтесь по email и подтвердите личность за несколько минут."
-      },
-      "STEP2": {
-        "TITLE": "Пополните счет",
-        "DESC": "Переведите криптовалюту или фиатные средства в кошелек безопасно."
-      },
-      "STEP3": {
-        "TITLE": "Выберите активы",
-        "DESC": "Изучите и выберите из сотен токенизированных компаний."
-      },
-      "STEP4": {
-        "TITLE": "Получайте доход",
-        "DESC": "Получайте автоматические дивиденды и рост капитала."
-      }
+    "FEATURES": {
+      "TITLE": "Основные Характеристики",
+      "SUBTITLE": "What Makes BW Token Unique",
+      "SECURITY": "Безопасность и Соответствие",
+      "SECURITY_DESC": "BEP-3643 standard compliance with integrated KYC/AML protocols. External audits from leading firms. Legal entity ownership through BW Holding Ltd structure.",
+      "FEATURE_1": "Transparent verification",
+      "FEATURE_2": "Audited enterprises",
+      "LENDING_TITLE": "Управление и Голосование",
+      "LENDING_DESC": "Token holders vote on enterprise selection, portfolio management, and protocol decisions. Staking requirements prevent manipulation. Direct influence on ecosystem growth.",
+      "LENDING_FEATURE_1": "Democratic decision-making",
+      "LENDING_FEATURE_2": "30+ day staking requirement",
+      "WALLET_TITLE": "Генерация Стоимости",
+      "WALLET_DESC": "30% of enterprise net profits fuel token buy-backs in open markets. Create upward price pressure while benefiting all holders. Burn mechanism until 50% supply reduction.",
+      "WALLET_FEATURE_1": "Constant buy-back pressure",
+      "WALLET_FEATURE_2": "Dividend redistribution option"
     },
     "ROADMAP": {
-      "TITLE": "Дорожная карта 2025-2026",
-      "SUBTITLE": "Наш план по революции фондового рынка",
-      "Q1_2025": {
-        "TITLE": "Запуск Testnet",
-        "ITEM1": "Демо-платформа",
-        "ITEM2": "Проверенные смарт-контракты",
-        "ITEM3": "Тестирование с первыми пользователями"
-      },
-      "Q2_2025": {
-        "TITLE": "Mainnet и запуск токена",
-        "ITEM1": "Запуск mainnet",
-        "ITEM2": "Токен BW доступен",
-        "ITEM3": "Первые пары акций"
-      },
-      "Q3_2025": {
-        "TITLE": "Расширение активов",
-        "ITEM1": "100+ компаний в листинге",
-        "ITEM2": "Интеграция с биржами",
-        "ITEM3": "Программы стейкинга"
-      },
-      "Q4_2025": {
-        "TITLE": "Вторичный рынок",
-        "ITEM1": "Интегрированный DEX",
-        "ITEM2": "Гарантированная ликвидность",
-        "ITEM3": "Финансовые деривативы"
-      },
-      "Q1_2026": {
-        "TITLE": "Глобальная экспансия",
-        "ITEM1": "Регулирование в 10+ странах",
-        "ITEM2": "Несколько фиатных валют",
-        "ITEM3": "Нативное мобильное приложение"
-      },
-      "H2_2026": {
-        "TITLE": "DAO Governance",
-        "ITEM1": "Децентрализованное управление",
-        "ITEM2": "Предложения сообщества",
-        "ITEM3": "Полностью автономный протокол"
-      }
-    },
-    "TOKENOMICS": {
-      "TITLE": "Токен BW",
-      "SUBTITLE": "Стратегическое распределение",
-      "TREASURY": "Казна активов (Новые предприятия)",
-      "PUBLIC_SALE": "Публичная продажа / IDO",
-      "DEX_LIQUIDITY": "Ликвидность (DEX/CEX)",
-      "TEAM_VESTING": "Команда (Vesting 4 года)",
-      "MARKETING": "Маркетинг и партнерства",
-      "SPECS": "Спецификации",
-      "TOTAL_SUPPLY": "Общий объем",
-      "ICO_PRICE": "Цена ICO",
-      "BLOCKCHAIN": "Блокчейн",
-      "STANDARD": "Стандарт",
-      "UTILITY": "Полезность",
-      "UTILITY_VALUE": "Управление, комиссии, стейкинг",
-      "BURN": "Сжигание токенов",
-      "BURN_VALUE": "0,5% за транзакцию"
-    },
-    "CTA": {
-      "TITLE": "Станьте частью финансовой революции",
-      "SUBTITLE": "Присоединяйтесь к тысячам инвесторов, которые уже демократизируют фондовый рынок",
-      "BUTTON": "Открыть аккаунт сейчас"
+      "TITLE": "Development Timeline",
+      "SUBTITLE": "2027-2028 Launch & Growth Strategy",
+      "PHASE1_TITLE": "Web Launch",
+      "PHASE1_DATE": "January 1, 2027",
+      "PHASE1_DESC": "Public website deployment. White paper release. Community building begins. KYC infrastructure setup for compliance.",
+      "PHASE2_TITLE": "Token Generation",
+      "PHASE2_DATE": "January 30, 2027",
+      "PHASE2_DESC": "TGE on PancakeSwap. Initial liquidity deployment. First governance voting period opens for Enterprise #1 selection.",
+      "PHASE3_TITLE": "BW Holding Registration",
+      "PHASE3_DATE": "Q1 2027",
+      "PHASE3_DESC": "Legal constitution of BW Holding Ltd. Smart contract audits completed. Angel investor allocation begins.",
+      "PHASE4_TITLE": "Enterprise #1 Launch",
+      "PHASE4_DATE": "Q2 2027",
+      "PHASE4_DESC": "Community votes select first real enterprise. Funding deployment. Operations begin. Real profit generation starts.",
+      "PHASE5_TITLE": "Dashboard Launch",
+      "PHASE5_DATE": "Q1-Q2 2028",
+      "PHASE6_TITLE": "Mobile App Release",
+      "PHASE6_DATE": "Q3 2028"
     },
     "TEAM": {
-      "TITLE": "Команда лидеров",
-      "SUBTITLE": "Опытные профессионалы, ведущие продукт, комплаенс и рост.",
-      "MEMBERS": {
-        "LEAD": {
-          "NAME": "Mr. Important",
-          "ROLE": "CEO и основатель",
-          "BIO": "15+ лет на рынках капитала и в финтех-стратегии."
-        },
-        "M1": {
-          "NAME": "ALF One",
-          "ROLE": "CTO",
-          "BIO": "Архитектура и безопасность масштабируемых платформ."
-        },
-        "M2": {
-          "NAME": "ALF Two",
-          "ROLE": "COO",
-          "BIO": "Операции, партнерства и регуляторная координация."
-        },
-        "M3": {
-          "NAME": "ALF Three",
-          "ROLE": "Руководитель продукта",
-          "BIO": "UX и реализация дорожной карты."
-        },
-        "M4": {
-          "NAME": "ALF Four",
-          "ROLE": "Руководитель по комплаенсу",
-          "BIO": "Риск, KYC/AML и управление."
-        }
-      }
+      "TITLE": "Team",
+      "SUBTITLE": "Meet our team",
+      "CEO_NAME": "Mark Hurley",
+      "CEO_ROLE": "CEO & Lead",
+      "BLOCKCHAIN_NAME": "Calvin Smith",
+      "BLOCKCHAIN_ROLE": "Blockchain developer",
+      "DESIGNER_1_NAME": "Vickie Sample",
+      "DESIGNER_1_ROLE": "Designer",
+      "APP_DEV_NAME": "Alma Farley",
+      "APP_DEV_ROLE": "App developer",
+      "DESIGNER_2_NAME": "Amy Hood",
+      "DESIGNER_2_ROLE": "Designer"
     },
-    "FOOTER": {
-      "DESCRIPTION": "Корпоративная платформа для цифровых активов и инвестиций с фокусом на безопасность, прозрачность и соответствие требованиям.",
-      "COMPANY": {
-        "TITLE": "Компания",
-        "FEATURES": "Возможности",
-        "ROADMAP": "Дорожная карта",
-        "TOKENOMICS": "Токеномика"
-      },
-      "PRODUCT": {
-        "TITLE": "Продукт",
-        "ACCESS": "Доступ",
-        "SECURITY": "Безопасность",
-        "UTILITY": "Полезность"
-      },
-      "LEGAL": {
-        "TITLE": "Правовая информация",
-        "TERMS": "Условия",
-        "PRIVACY": "Конфиденциальность",
-        "COOKIES": "Файлы cookie"
-      },
-      "CONTACT": {
-        "TITLE": "Контакты",
-        "LOCATION": "Barcelona · Madrid · Miami"
-      },
-      "COPYRIGHT": "© {{year}} Back & White. Все права защищены.",
-      "META": {
-        "ACCESS": "Доступ",
-        "FEATURES": "Возможности"
-      }
+    "NEWS": {
+      "TITLE": "Последние Обновления",
+      "SUBTITLE": "Project Developments & Announcements",
+      "ARTICLE_1_TITLE": "Token Launch Announcement",
+      "ARTICLE_1_DESC": "BW Token goes live on January 30, 2027. Historical moment: real assets meet blockchain.",
+      "ARTICLE_1_DATE": "January 20, 2027",
+      "ARTICLE_2_TITLE": "White Paper Released",
+      "ARTICLE_2_DESC": "Complete tokenomics, governance structure, and technical specifications for BW Token ecosystem published.",
+      "ARTICLE_2_DATE": "January 5, 2027",
+      "ARTICLE_3_TITLE": "Smart Contract Audited",
+      "ARTICLE_3_DESC": "Security audit completed. BEP-3643 compliance verified. Ready for mainnet deployment.",
+      "ARTICLE_3_DATE": "January 15, 2027",
+      "READ_MORE": "Read more",
+      "CATEGORY": "Announcements"
+    },
+    "FAQS": {
+      "TITLE": "Часто Задаваемые Вопросы",
+      "SUBTITLE": "Learn About BW Token",
+      "TAB_GENERAL": "Token Basics",
+      "TAB_TOKENSALE": "Enterprise & Economics",
+      "TAB_ROADMAP": "Technical & Legal",
+      "QUESTION_1": "What is BW Token?",
+      "QUESTION_2": "How does tokenization work?",
+      "QUESTION_3": "What backs the token value?",
+      "QUESTION_4": "How do I participate?",
+      "QUESTION_5": "What is buy-back mechanism?",
+      "QUESTION_6": "How are enterprises selected?",
+      "QUESTION_7": "What is BEP-3643 compliance?",
+      "QUESTION_8": "When is the Investor Dashboard ready?",
+      "ANSWER_1": "BW Token is a cryptocurrency that represents fractional ownership of real, verified enterprises. Unlike traditional crypto, every token is backed by verifiable real-world assets and generates real profits.",
+      "ANSWER_2": "Tokenization converts ownership stakes in real companies into digital tokens on blockchain. This allows fractional ownership, transparent transfer, and democratic governance through smart contracts.",
+      "ANSWER_3": "BW tokens are backed by real enterprises owned through BW Holding Ltd legal structure. Investors verify asset existence through our Proof of Asset system and real-time dashboards.",
+      "ANSWER_4": "Purchase BW tokens on PancakeSwap starting January 30, 2027. Complete KYC verification. Stake tokens to participate in enterprise selection governance voting.",
+      "ANSWER_5": "30% of enterprise profits are used to buy BW tokens in open markets, creating constant upward price pressure. These tokens are either burned (reducing supply) or distributed as dividends to holders.",
+      "ANSWER_6": "Community members holding staked BW tokens vote on which real enterprises to finance from the asset treasury. This democratic process begins in Q4 2027.",
+      "ANSWER_7": "BEP-3643 is a blockchain standard for security tokens with integrated compliance, KYC/AML protocols, and identity verification. It ensures legal compliance and investor protection.",
+      "ANSWER_8": "The Investor Dashboard launches in Q1-Q2 2028, providing real-time visibility into enterprise revenues, profit distributions, and token buy-back activities."
     }
   },
-  "admin": {
-    "welcome": "Добро пожаловать в панель администратора Back & White",
-    "logout": "Выход",
-    "dashboard": "Панель управления",
-    "dashboardDesc": "Мониторьте свой аккаунт и просматривайте аналитику",
-    "users": "Пользователи",
-    "usersDesc": "Управляйте учетными записями пользователей и разрешениями",
-    "settings": "Параметры",
-    "settingsDesc": "Настройте свои предпочтения",
-    "userInfo": "Информация Пользователя",
-    "accessToken": "Токен доступа",
-    "tokenStatus": "Статус токена",
-    "active": "Активен"
-  },
-  "WALLET": {
-    "CONNECT": "Подключить кошелек",
-    "DISCONNECT": "Отключить",
-    "BALANCE": "Баланс"
-  },
-  "DAO": {
-    "TITLE": "DAO - Голосование и инвестиции в компании",
-    "SUBTITLE": "Участвуйте в запуске компаний с голосованием на основе токенов",
-    "OVERVIEW": "Обзор",
-    "WALLET_INFO": "Кошелёк",
-    "WALLET_CONNECTED": "Кошелёк подключён",
-    "WALLET_NOT_CONNECTED": "Кошелёк не подключён",
-    "CONNECT_HINT": "Подключите кошелёк, чтобы получить доступ к функциям управления.",
-    "GOVERNANCE_METRICS": "Показатели управления",
-    "PROPOSALS": "Предложения",
-    "PROPOSALS_SUBTITLE": "Просматривайте, голосуйте и инвестируйте в активные предложения.",
-    "MANAGE_PANEL": "Панель управления",
-    "MANAGE_SUBTITLE": "Создавайте или обновляйте предложения и настройки управления.",
-    "MANAGE": "Управление предложениями",
-    "BACK": "Назад",
-    "BALANCE": "Баланс",
-    "HOLDING_DAYS": "Дни владения",
-    "DAYS": "Дней",
-    "STAKED_AMOUNT": "Застейканная сумма",
-    "VOTING_STATUS": "Статус голосования",
-    "CAN_VOTE": "Имеет право голосовать",
-    "CANNOT_VOTE": "Не имеет право голосовать",
-    "INDUSTRY": "Отрасль",
-    "LOCATION": "Местоположение",
-    "VOTES": "Голоса",
-    "FUNDING": "Финансирование",
-    "DAYS_LEFT": "Осталось дней",
-    "EXPECTED_RETURN": "Ожидаемый доход",
-    "VOTE": "Голосовать",
-    "INVEST": "Инвестировать",
-    "AMOUNT_TO_STAKE": "Сумма для стейкинга",
-    "AVAILABLE_BALANCE": "Доступный баланс",
-    "QUICK_AMOUNTS": "Быстрый выбор",
-    "VOTING_POWER": "Сила голоса",
-    "REMAINING_BALANCE": "Оставшийся баланс",
-    "IMPORTANT": "Важно",
-    "VOTING_INFO_1": "Ваши токены будут заблокированы на 30 дней после голосования",
-    "VOTING_INFO_2": "Каждый токен считается за 1 голос",
-    "VOTING_INFO_3": "Голосование не может быть отменено после отправки",
-    "CONFIRM_VOTE": "Подтвердить голос",
-    "CANCEL": "Отмена",
-    "MANAGE_PROPOSALS": "Управление предложениями",
-    "NEW_PROPOSAL": "Новое предложение",
-    "COMPANY_NAME": "Название компании",
-    "DESCRIPTION": "Описание",
-    "CATEGORY": "Категория",
-    "SELECT_CATEGORY": "Выберите категорию",
-    "CATEGORY_RETAIL": "Розница",
-    "CATEGORY_FOOD": "Продукты и напитки",
-    "CATEGORY_ECOMMERCE": "Электронная коммерция",
-    "CATEGORY_TECHNOLOGY": "Технология",
-    "TARGET_FUNDING": "Целевое финансирование ($)",
-    "EDIT_PROPOSAL": "Редактировать предложение",
-    "UPDATE": "Обновить",
-    "CREATE": "Создать",
-    "NO_PROPOSALS": "Предложений еще нет. Создайте одно для начала!",
-    "TARGET": "Цель",
-    "FUNDED": "Финансировано"
+  "FOOTER": {
+    "COPYRIGHT": "© Back and White. Crafted with",
+    "BY": "by Nexaplaform"
   }
 }

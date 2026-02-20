@@ -7,6 +7,7 @@ export const environment = {
   oauth2AuthorizeUrl: 'https://mic-authservice-production.up.railway.app/oauth2/authorize',
   oauth2TokenUrl: 'https://mic-authservice-production.up.railway.app/oauth2/token',
   oauth2LoginUrl: 'https://mic-authservice-production.up.railway.app/login',
+  oauth2LogoutUrl: 'https://backandwhite.com',
   clientId: 'backandwhite-client',
   redirectUri: 'https://backandwhite.com/auth/callback',
   scope: 'openid',

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/ui/lightbox/lightbox.component.scss"],
+  "sourcesContent": ["::ng-deep .modal-holder {\r\n  .modal-content {\r\n    background-color: transparent;\r\n    color: white;\r\n    background: none;\r\n    border: none;\r\n  }\r\n\r\n  .modal-header {\r\n    border: none\r\n  }\r\n\r\n}\r\n"],
+  "mappings": ";AACE,UAAA,CAAA,aAAA,CAAA;AACE,oBAAA;AACA,SAAA;AACA,cAAA;AACA,UAAA;;AAGF,UAAA,CAPA,aAOA,CAAA;AACE,UAAA;;",
+  "names": []
+}

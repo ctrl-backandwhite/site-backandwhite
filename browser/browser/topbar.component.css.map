@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/layouts/topbar/topbar.component.scss"],
+  "sourcesContent": [".logo-circle {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 35px;\n  height: 35px;\n  border-radius: 50%;\n  background-color: #f8f9fa;\n  flex-shrink: 0;\n\n  img {\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;\n    object-fit: contain;\n    padding: 5px;\n  }\n}\n\n.brand-text {\n  color: white !important;\n  font-weight: 600;\n  font-size: 16px;\n  white-space: nowrap;\n}\n\n@media (min-width: 992px) {\n  .logo-circle {\n    width: 40px;\n    height: 40px;\n    margin-right: 5px;\n  }\n}\n"],
+  "mappings": ";AAAA,CAAA;AACE,WAAA;AACA,eAAA;AACA,mBAAA;AACA,SAAA;AACA,UAAA;AACA,iBAAA;AACA,oBAAA;AACA,eAAA;;AAEA,CAVF,YAUE;AACE,SAAA;AACA,UAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAIJ,CAAA;AACE,SAAA;AACA,eAAA;AACA,aAAA;AACA,eAAA;;AAGF,QAAA,WAAA;AACE,GA3BF;AA4BI,WAAA;AACA,YAAA;AACA,kBAAA;;;",
+  "names": []
+}

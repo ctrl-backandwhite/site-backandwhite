@@ -105,10 +105,10 @@ export class TopbarComponent implements OnInit {
   logout() {
     this.authService.logout().subscribe({
       next: () => {
-        window.location.href = environment.oauth2LoginUrl;
+        window.location.href = '/';
       },
       error: () => {
-        window.location.href = environment.oauth2LoginUrl;
+        window.location.href = '/';
       }
     });
   }

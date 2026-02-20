@@ -5,10 +5,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../environments/environment';
 
 @Component({
-    selector: 'app-admin',
-    standalone: true,
-    imports: [CommonModule, TranslateModule],
-    template: `
+  selector: 'app-admin',
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
+  template: `
     <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <!-- Header -->
       <div class="bg-white shadow-md border-b-2 border-blue-600">
@@ -66,19 +66,19 @@ import { environment } from '../../../environments/environment';
   `
 })
 export class AdminComponent {
-    private readonly authService = inject(AuthService);
-    private readonly translateService = inject(TranslateService);
+  private readonly authService = inject(AuthService);
+  private readonly translateService = inject(TranslateService);
 
-    accessToken = this.authService.getAccessToken() || '';
+  accessToken = this.authService.getAccessToken() || '';
 
-    logout(): void {
-        this.authService.logout().subscribe({
-            next: () => {
-                window.location.href = environment.oauth2LoginUrl;
-            },
-            error: () => {
-                window.location.href = environment.oauth2LoginUrl;
-            }
-        });
-    }
+  logout(): void {
+    this.authService.logout().subscribe({
+      next: () => {
+        window.location.href = '/';
+      },
+      error: () => {
+        window.location.href = '/';
+      }
+    });
+  }
 }

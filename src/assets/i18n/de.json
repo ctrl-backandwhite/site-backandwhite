@@ -1,613 +1,138 @@
 {
-  "HEADER": {
-    "SEARCH": "Suche...",
-    "MEGA_MENU": "Mega Menu",
-    "NOTIFICATIONS": {
-      "TITLE": "Benachrichtigungen",
-      "VIEW_ALL": "Alle anzeigen",
-      "LOAD_MORE": "Mehr sehen..",
-      "FIRST": {
-        "TITLE": "Ihre Bestellung wird aufgegeben",
-        "TEXT": "Wenn mehrere Sprachen die Grammatik verschmelzen",
-        "TIME": "Vor 3 Minuten"
-      },
-      "SECOND": {
-        "TITLE": "James Lemire",
-        "TEXT": "Es wird wie vereinfachtes Englisch erscheinen.",
-        "TIME": "Vor 1 Stunde"
-      },
-      "THIRD": {
-        "TITLE": "Ihr Artikel wird versendet",
-        "TEXT": "Wenn mehrere Sprachen die Grammatik verschmelzen",
-        "TIME": "Vor 3 Minuten"
-      },
-      "FOUR": {
-        "TITLE": "Salena Layfield",
-        "TEXT": "Als skeptischer Cambridge-Freund von mir Occidental.",
-        "TIME": "Vor 1 Stunde"
-      }
-    },
-    "SETTINGS": "Einstellungen",
-    "UI": {
-      "TITLE": "UI-Komponenten",
-      "LIGHTBOX": "LightBox",
-      "RANGE_SLIDER": "Range Slider",
-      "SWEET_ALERT": "Sweet Alert",
-      "RATING": "Bewertung",
-      "FORMS": "Formulare",
-      "TABLES": "Tabellen",
-      "CHARTS": "Charts"
-    },
-    "APPLICATIONS": {
-      "TITLE": "Anwendungen",
-      "ECOMMERCE": "Ecommerce",
-      "CALENDAR": "Kalender",
-      "EMAIL": "Email",
-      "PROJECTS": "Projekte",
-      "TASKS": "Aufgaben",
-      "CONTACTS": "Kontakte"
-    },
-    "EXTRA_PAGES": {
-      "TITLE": "Zusätzliche Seiten",
-      "LIGHT_SIDEBAR": "Light Sidebar",
-      "COMPACT_SIDEBAR": "Kompakte Seitenleiste",
-      "HORIZONTAL_LAYOUT": "Horizontal layout",
-      "MAINTENANCE": "Wartungsarbeiten",
-      "COMING SOON": "Bald erhältlich",
-      "TIMELINE": "Timeline",
-      "FAQ": "FAQs"
-    },
-    "LOGIN": {
-      "PROFILE": "Profil",
-      "MY_WALLET": "My Wallet",
-      "SETTINGS": "Einstellungen",
-      "LOCK_SCREEN": "Bildschirm sperren",
-      "LOGOUT": "Abmelden"
-    }
-  },
-  "MENUITEMS": {
-    "MENU": {
-      "TEXT": "Speisekarte"
-    },
-    "DASHBOARDS": {
-      "TEXT": "Dashboards",
-      "BADGE": "04",
-      "LIST": {
-        "DEFAULT": "Standard",
-        "SAAS": "Saas",
-        "CRYPTO": "Krypto",
-        "BLOG": "Bloggen",
-        "JOBS": "Arbeitsplätze"
-      }
-    },
-    "LAYOUTS": {
-      "TEXT": "Layouts",
-      "LIST": {
-        "HORIZONTAL": "Horizontal",
-        "LIGHTSIDEBAR": "Leichte Seitenleiste",
-        "COMPACTSIDEBAR": "Kompakte Seitenleiste",
-        "ICONSIDEBAR": "Symbole Seitenleiste",
-        "BOXED": "Boxed Layout",
-        "COLOREDSIDEBAR": "Farbige Seitenleiste",
-        "VERTICAL": "Vertikale",
-        "LIGHTTOPBAR": "Leichte Oberleiste",
-        "COLOREDHEADER": "Farbiger Header",
-        "SCROLLABLE": "Bildlauffähig"
-      }
-    },
-    "APPS": {
-      "TEXT": "Apps"
-    },
-    "CALENDAR": {
-      "TEXT": "Kalender"
-    },
-    "CHAT": {
-      "TEXT": "Plaudern",
-      "BADGE": "Neu"
-    },
-    "FILEMANAGER": {
-      "TEXT": "Dateimanager",
-      "BADGE": "Neu"
-    },
-    "ECOMMERCE": {
-      "TEXT": "E-Commerce",
-      "LIST": {
-        "PRODUCTS": "Produkte",
-        "PRODUCTDETAIL": "Produktdetail",
-        "ORDERS": "Aufträge",
-        "CUSTOMERS": "Kunden",
-        "CART": "Wagen",
-        "CHECKOUT": "Auschecken",
-        "SHOPS": "Geschäfte",
-        "ADDPRODUCT": "Produkt hinzufügen"
-      }
-    },
-    "CRYPTO": {
-      "TEXT": "Krypto",
-      "LIST": {
-        "WALLET": "Brieftasche",
-        "BUY/SELL": "Kaufen Verkaufen",
-        "EXCHANGE": "Austausch",
-        "LENDING": "Ausleihe",
-        "ORDERS": "Aufträge",
-        "KYCAPPLICATION": "KYC-Anwendung",
-        "ICOLANDING": "ICO Landung"
-      }
-    },
-    "EMAIL": {
-      "TEXT": "Email",
-      "LIST": {
-        "INBOX": "Posteingang",
-        "READEMAIL": "E-Mail lesen",
-        "TEMPLATE": {
-          "TEXT": "Vorlage",
-          "BADGE": "Neu",
-          "LIST": {
-            "BASIC": "Grundlegende Aktion",
-            "ALERT": "Benachrichtigungs-E-Mail",
-            "BILLING": "Abrechnung per E-Mail"
-          }
-        }
-      }
-    },
-    "INVOICES": {
-      "TEXT": "Rechnungen",
-      "LIST": {
-        "INVOICELIST": "Rechnungsliste",
-        "INVOICEDETAIL": "Rechnungsdetail"
-      }
-    },
-    "PROJECTS": {
-      "TEXT": "Projekte",
-      "LIST": {
-        "GRID": "Projektraster",
-        "PROJECTLIST": "Projektliste",
-        "OVERVIEW": "Projektübersicht",
-        "CREATE": "Erstelle neu"
-      }
-    },
-    "TASKS": {
-      "TEXT": "Aufgaben",
-      "LIST": {
-        "TASKLIST": "Aufgabenliste",
-        "KANBAN": "Kanban Board",
-        "CREATETASK": "Aufgabe erstellen"
-      }
-    },
-    "CONTACTS": {
-      "TEXT": "Kontakte",
-      "LIST": {
-        "USERGRID": "User Grid",
-        "USERLIST": "Benutzerliste",
-        "PROFILE": "Profil"
-      }
-    },
-    "BLOG": {
-      "TEXT": "Blog",
-      "BADGE": "Neu",
-      "LIST": {
-        "BLOGLIST": "Blog-Liste",
-        "BLOGGRID": "Blog-Raster",
-        "DETAIL": "Blog-Details"
-      }
-    },
-    "JOBS": {
-      "TEXT": "Arbeitsplätze",
-      "BADGE": "Neu",
-      "LIST": {
-        "JOBLIST": "Job-Liste",
-        "JOBGRID": "Job-Raster",
-        "APPLYJOB": "Stelle bewerben",
-        "JOBDETAILS": "Auftragsdetails",
-        "JOBCATEGORIES": "Job-Kategorien",
-        "CANDIDATE": {
-          "TEXT": "Kandidatin",
-          "LIST": {
-            "LIST": "Aufführen",
-            "OVERVIEW": "Überblick"
-          }
-        }
-      }
-    },
-    "PAGES": {
-      "TEXT": "Seiten"
-    },
-    "AUTHENTICATION": {
-      "TEXT": "Authentifizierung",
-      "BADGE": "Neu",
-      "LIST": {
-        "LOGIN": "Anmeldung",
-        "REGISTER": "Registrieren",
-        "RECOVERPWD": "Passwort wiederherstellen",
-        "LOCKSCREEN": "Bildschirm sperren",
-        "LOGIN2": "Anmeldung 2",
-        "REGISTER2": "Registrieren 2",
-        "RECOVERPWD2": "Passwort wiederherstellen 2",
-        "LOCKSCREEN2": "Bildschirm sperren 2",
-        "CONFIRMMAIL": "Mail bestätigen",
-        "CONFIRMMAIL2": "Mail bestätigen 2",
-        "EMAILVERIFICATION": "E-Mail-Verifizierung",
-        "EMAILVERIFICATION2": "E-Mail-Verifizierung 2",
-        "TWOSTEPVERIFICATION": "Überprüfung in zwei Schritten",
-        "TWOSTEPVERIFICATION2": "Überprüfung in zwei Schritten 2"
-      }
-    },
-    "UTILITY": {
-      "TEXT": "Nützlichkeit",
-      "LIST": {
-        "STARTER": "Startseite",
-        "MAINTENANCE": "Instandhaltung",
-        "TIMELINE": "Zeitleiste",
-        "FAQS": "FAQs",
-        "PRICING": "Preisgestaltung",
-        "ERROR404": "Fehler 404",
-        "ERROR500": "Fehler 500"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "Komponenten"
-    },
-    "UIELEMENTS": {
-      "TEXT": "UI-Elemente",
-      "LIST": {
-        "ALERTS": "Warnungen",
-        "BUTTONS": "Tasten",
-        "CARDS": "Karten",
-        "CAROUSEL": "Karussell",
-        "DROPDOWNS": "Dropdowns",
-        "GRID": "Netz",
-        "IMAGES": "Bilder",
-        "LIGHTBOX": "Leuchtkasten",
-        "MODALS": "Modale",
-        "RANGESLIDER": "Range-Schieberegler",
-        "PROGRESSBAR": "Fortschrittsbalken",
-        "PLACEHOLDER": "Platzhalter",
-        "SWEETALERT": "Süßer Alarm",
-        "TABS": "Tabs & Akkordeons",
-        "TYPOGRAPHY": "Typografie",
-        "TOASTS": "Toast",
-        "VIDEO": "Video",
-        "GENERAL": "Allgemein",
-        "COLORS": "Farben",
-        "RATING": "Bewertung",
-        "NOTIFICATION": "Benachrichtigung",
-        "UTILITIES": "Dienstprogramme",
-        "CROPPER": "Bildbeschneidung"
-      }
-    },
-    "FORMS": {
-      "TEXT": "Formen",
-      "BADGE": "09",
-      "LIST": {
-        "ELEMENTS": "Formularelemente",
-        "VALIDATION": "Formularvalidierung",
-        "ADVANCED": "Formular erweitert",
-        "EDITOR": "Formulareditor",
-        "FILEUPLOAD": "Hochladen von Formulardateien",
-        "REPEATER": "Form Repeater",
-        "WIZARD": "Formzauberer",
-        "MASK": "Formularmaske",
-        "LAYOUTS": "Formularlayouts"
-      }
-    },
-    "TABLES": {
-      "TEXT": "Tabellen",
-      "LIST": {
-        "BASIC": "Grundtabellen",
-        "DataTables": "Datentabellen",
-        "EditTableTables": "Bearbeitbare Tabelle"
-      }
-    },
-    "CHARTS": {
-      "TEXT": "Diagramme",
-      "LIST": {
-        "APEX": "Apex-Diagramm",
-        "CHARTJS": "Chartjs Chart",
-        "CHARTIST": "Chartist Chart",
-        "ECHART": "E Diagramm"
-      }
-    },
-    "ICONS": {
-      "TEXT": "Symbole",
-      "LIST": {
-        "BOXICONS": "Boxicons",
-        "MATERIALDESIGN": "Material Design",
-        "DRIPICONS": "Dripicons",
-        "FONTAWESOME": "Schriftart fantastisch"
-      }
-    },
-    "MAPS": {
-      "TEXT": "Karten",
-      "LIST": {
-        "LEAFLETMAP": "Faltblatt Karten",
-        "AMCHARTS": "AmCharts"
-      }
-    },
-    "MULTILEVEL": {
-      "TEXT": "Multi Level",
-      "LIST": {
-        "LEVEL1": {
-          "1": "Stufe 1.1",
-          "2": "Stufe 1.2",
-          "LEVEL2": {
-            "1": "Stufe 2.1",
-            "2": "Stufe 2.2"
-          }
-        }
-      }
-    }
-  },
   "LANDING": {
     "NAV": {
-      "BRAND": "Back & White",
+      "HOME": "Startseite",
+      "ABOUT": "Über",
       "FEATURES": "Funktionen",
       "ROADMAP": "Roadmap",
-      "TOKENOMICS": "Tokenomics",
-      "LOGIN": "Login",
-      "LANGUAGE": "Sprache"
+      "TEAM": "Team",
+      "NEWS": "Nachrichten",
+      "FAQS": "Häufig gestellte Fragen",
+      "SIGN_IN": "Anmelden"
     },
     "HERO": {
-      "BADGE": "✨ Tokenisierte Aktien",
-      "TITLE": "Die Zukunft der dezentralen Investments",
-      "SUBTITLE": "Sei Teil der Entstehung echter Unternehmen mit blockchainbasierten Tokens. Wir demokratisieren den Zugang zu institutionellen Investmentmöglichkeiten.",
-      "WHITEPAPER": "📄 Whitepaper herunterladen",
-      "ACCESS": "Zugang →"
+      "TITLE": "Token BW - Echte Vermögenswerte tokenisieren",
+      "SUBTITLE": "Brücke zwischen Krypto und Realwirtschaft. Bruchteileigentum an echten Unternehmen, angetrieben durch Blockchain.",
+      "GET_WHITEPAPER": "Whitepaper Herunterladen",
+      "HOW_IT_WORK": "Mehr erfahren",
+      "GET_TOKEN": "BW Token erhalten",
+      "ETH_RATE": "Netzwerk: Binance Smart Chain (BSC BEP-20)"
     },
-    "COUNTDOWN": {
-      "LAUNCH": "Offizieller Launch",
+    "ICO": {
+      "TITLE": "Countdown zum Token-Start",
+      "TIME_LEFT": "Startdatum: 30. Januar 2027",
       "DAYS": "Tage",
       "HOURS": "Stunden",
       "MINUTES": "Minuten",
       "SECONDS": "Sekunden"
     },
-    "FEATURES": {
-      "TITLE": "Warum Back & White?",
-      "SUBTITLE": "Die revolutionäre Plattform für tokenisierte Investments",
-      "REAL_STOCKS": {
-        "TITLE": "Echte Aktien",
-        "DESC": "Investiere in reale Unternehmen mit echten Dividenden und Eigentumsrechten."
-      },
-      "SECURITY": {
-        "TITLE": "Blockchain-Sicherheit",
-        "DESC": "Sichere und transparente Transaktionen durch geprüfte Smart Contracts."
-      },
-      "NO_FEES": {
-        "TITLE": "Keine Zwischenhändler",
-        "DESC": "Beseitige traditionelle Gebühren und greife direkt auf Chancen zu."
-      },
-      "GLOBAL": {
-        "TITLE": "Globaler Zugang",
-        "DESC": "Investiere weltweit, 24/7, ohne Einschränkungen."
-      },
-      "LIQUIDITY": {
-        "TITLE": "Garantierte Liquidität",
-        "DESC": "Kaufe und verkaufe jederzeit in unserem Sekundärmarkt."
-      },
-      "REGULATED": {
-        "TITLE": "Reguliert",
-        "DESC": "Volle Einhaltung internationaler Vorschriften und kontinuierliche Prüfung."
-      }
+    "ABOUT": {
+      "TITLE": "Über uns",
+      "SUBTITLE": "Was ist ICO Token?",
+      "HEADING": "Bestes ICO für Ihr Kryptowährungsgeschäft",
+      "DESCRIPTION": "Wenn mehrere Sprachen zusammenfließen, wird die resultierende Grammatik einfacher und regelmäßiger als die bestehende.",
+      "DESCRIPTION2": "Es wäre notwendig, eine einheitliche Aussprache zu haben.",
+      "READ_MORE": "Mehr lesen",
+      "HOW_IT_WORK": "Wie es funktioniert",
+      "INVEST_AMOUNT": "Investitionsbetrag",
+      "USERS": "Benutzer",
+      "LENDING": "Kreditvergabe",
+      "LENDING_DESC": "At vero eos et accusamus et iusto blanditiis",
+      "WALLET": "Geldbörse",
+      "WALLET_DESC": "Quis autem vel eum iure reprehenderit",
+      "LEARN_MORE": "Erfahren Sie mehr"
     },
-    "HOW_IT_WORKS": {
-      "TITLE": "So funktioniert es",
-      "SUBTITLE": "Starte mit 4 einfachen Schritten",
-      "STEP1": {
-        "TITLE": "Konto eröffnen",
-        "DESC": "Registriere dich mit deiner E-Mail und verifiziere deine Identität in Minuten."
-      },
-      "STEP2": {
-        "TITLE": "Einzahlen",
-        "DESC": "Überweise Krypto oder Fiat sicher in deine Wallet."
-      },
-      "STEP3": {
-        "TITLE": "Assets auswählen",
-        "DESC": "Entdecke und wähle aus hunderten tokenisierten Unternehmen."
-      },
-      "STEP4": {
-        "TITLE": "Erträge erhalten",
-        "DESC": "Erhalte automatische Dividenden und Kapitalwachstum."
-      }
+    "FEATURES": {
+      "TITLE": "Funktionen",
+      "SUBTITLE": "Schlüsselfunktionen des Produkts",
+      "SECURITY": "Sicherheit",
+      "SECURITY_DESC": "Es wird so einfach wie Occidental sein; tatsächlich wird es Occidental sein",
+      "FEATURE_1": "Donec pede justo vel aliquet",
+      "FEATURE_2": "Aenean et nisl sagittis",
+      "LENDING_TITLE": "Kreditvergabe",
+      "LENDING_DESC": "Wenn mehrere Sprachen zusammenfließen, wird die resultierende Grammatik einfacher und regelmäßiger als die bestehende.",
+      "LENDING_FEATURE_1": "Donec pede justo vel aliquet",
+      "LENDING_FEATURE_2": "Aenean et nisl sagittis",
+      "WALLET_TITLE": "Geldbörse",
+      "WALLET_DESC": "Es wird so einfach wie Occidental sein; tatsächlich wird es Occidental sein. Für eine englische Person wird es wie vereinfachtes Englisch aussehen.",
+      "WALLET_FEATURE_1": "Donec pede justo vel aliquet",
+      "WALLET_FEATURE_2": "Aenean et nisl sagittis"
     },
     "ROADMAP": {
-      "TITLE": "Roadmap 2025-2026",
-      "SUBTITLE": "Unser Plan zur Revolutionierung des Aktienmarkts",
-      "Q1_2025": {
-        "TITLE": "Testnet-Launch",
-        "ITEM1": "Demo-Plattform",
-        "ITEM2": "Geprüfte Smart Contracts",
-        "ITEM3": "Tests mit ersten Nutzern"
-      },
-      "Q2_2025": {
-        "TITLE": "Mainnet und Token-Launch",
-        "ITEM1": "Mainnet-Start",
-        "ITEM2": "BW-Token verfügbar",
-        "ITEM3": "Erste Aktienpaare"
-      },
-      "Q3_2025": {
-        "TITLE": "Asset-Erweiterung",
-        "ITEM1": "100+ gelistete Unternehmen",
-        "ITEM2": "Integration mit Börsen",
-        "ITEM3": "Staking-Programme"
-      },
-      "Q4_2025": {
-        "TITLE": "Sekundärmarkt",
-        "ITEM1": "Integrierter DEX",
-        "ITEM2": "Garantierte Liquidität",
-        "ITEM3": "Finanzderivate"
-      },
-      "Q1_2026": {
-        "TITLE": "Globale Expansion",
-        "ITEM1": "Regulierung in 10+ Ländern",
-        "ITEM2": "Mehrere Fiat-Währungen",
-        "ITEM3": "Native Mobile-App"
-      },
-      "H2_2026": {
-        "TITLE": "DAO-Governance",
-        "ITEM1": "Dezentrale Governance",
-        "ITEM2": "Community-Vorschläge",
-        "ITEM3": "Vollständig autonomes Protokoll"
-      }
-    },
-    "TOKENOMICS": {
-      "TITLE": "BW-Token",
-      "SUBTITLE": "Strategische Verteilung",
-      "TREASURY": "Asset-Schatzkammer (Neue Unternehmungen)",
-      "PUBLIC_SALE": "Öffentlicher Verkauf / IDO",
-      "DEX_LIQUIDITY": "Liquidität (DEX/CEX)",
-      "TEAM_VESTING": "Team (Vesting 4 Jahre)",
-      "MARKETING": "Marketing und Partnerschaften",
-      "SPECS": "Spezifikationen",
-      "TOTAL_SUPPLY": "Gesamtangebot",
-      "ICO_PRICE": "ICO-Preis",
-      "BLOCKCHAIN": "Blockchain",
-      "STANDARD": "Standard",
-      "UTILITY": "Nutzen",
-      "UTILITY_VALUE": "Governance, Gebühren, Staking",
-      "BURN": "Token-Burn",
-      "BURN_VALUE": "0,5% pro Transaktion"
-    },
-    "CTA": {
-      "TITLE": "Werde Teil der finanziellen Revolution",
-      "SUBTITLE": "Schließe dich tausenden Investoren an, die den Aktienmarkt bereits demokratisieren",
-      "BUTTON": "Jetzt Konto eröffnen"
+      "TITLE": "Zeitstrahl",
+      "SUBTITLE": "Unsere Roadmap",
+      "PHASE1_TITLE": "ICO-Plattformidee",
+      "PHASE1_DATE": "Dezember, 2019",
+      "PHASE1_DESC": "Es wird so einfach wie Occidental, tatsächlich wird es Cambridge",
+      "PHASE2_TITLE": "Projektforschung",
+      "PHASE2_DATE": "Januar, 2020",
+      "PHASE2_DESC": "Für eine englische Person wird es wie vereinfachtes Englisch aussehen",
+      "PHASE3_TITLE": "ICO- und Token-Design",
+      "PHASE3_DATE": "Februar, 2020",
+      "PHASE3_DESC": "Für Wissenschaft, Musik, Sport usw. verwendet Europa dasselbe Vokabular",
+      "PHASE4_TITLE": "ICO-Startplattform",
+      "PHASE4_DATE": "März, 2020",
+      "PHASE4_DESC": "Die neue gemeinsame Sprache wird einfacher als die bestehende",
+      "PHASE5_TITLE": "Token-Verkaufsrunde 1",
+      "PHASE5_DATE": "April, 2020",
+      "PHASE6_TITLE": "Token-Verkaufsrunde 2",
+      "PHASE6_DATE": "Mai, 2020"
     },
     "TEAM": {
-      "TITLE": "Führungsteam",
-      "SUBTITLE": "Erfahrene Fachkräfte für Produkt, Compliance und Wachstum.",
-      "MEMBERS": {
-        "LEAD": {
-          "NAME": "Mr. Important",
-          "ROLE": "CEO & Gründerin",
-          "BIO": "15+ Jahre in Kapitalmärkten und Fintech-Strategie."
-        },
-        "M1": {
-          "NAME": "ALF One",
-          "ROLE": "CTO",
-          "BIO": "Architektur und Sicherheit für skalierbare Plattformen."
-        },
-        "M2": {
-          "NAME": "ALF Two",
-          "ROLE": "COO",
-          "BIO": "Betrieb, Partnerschaften und regulatorische Koordination."
-        },
-        "M3": {
-          "NAME": "ALF Three",
-          "ROLE": "Leiter Produkt",
-          "BIO": "Nutzererlebnis und Umsetzung der Roadmap."
-        },
-        "M4": {
-          "NAME": "ALF Four",
-          "ROLE": "Leitung Compliance",
-          "BIO": "Risiko, KYC/AML und Governance."
-        }
-      }
+      "TITLE": "Team",
+      "SUBTITLE": "Lernen Sie unser Team kennen",
+      "CEO_NAME": "Mark Hurley",
+      "CEO_ROLE": "CEO und Leiter",
+      "BLOCKCHAIN_NAME": "Calvin Smith",
+      "BLOCKCHAIN_ROLE": "Blockchain-Entwickler",
+      "DESIGNER_1_NAME": "Vickie Sample",
+      "DESIGNER_1_ROLE": "Designer",
+      "APP_DEV_NAME": "Alma Farley",
+      "APP_DEV_ROLE": "App-Entwickler",
+      "DESIGNER_2_NAME": "Amy Hood",
+      "DESIGNER_2_ROLE": "Designer"
     },
-    "FOOTER": {
-      "DESCRIPTION": "Unternehmensplattform für digitale Anlagen und Investments mit Fokus auf Sicherheit, Transparenz und Compliance.",
-      "COMPANY": {
-        "TITLE": "Unternehmen",
-        "FEATURES": "Funktionen",
-        "ROADMAP": "Roadmap",
-        "TOKENOMICS": "Tokenomics"
-      },
-      "PRODUCT": {
-        "TITLE": "Produkt",
-        "ACCESS": "Zugang",
-        "SECURITY": "Sicherheit",
-        "UTILITY": "Nutzen"
-      },
-      "LEGAL": {
-        "TITLE": "Rechtliches",
-        "TERMS": "Bedingungen",
-        "PRIVACY": "Datenschutz",
-        "COOKIES": "Cookies"
-      },
-      "CONTACT": {
-        "TITLE": "Kontakt",
-        "LOCATION": "Barcelona · Madrid · Miami"
-      },
-      "COPYRIGHT": "© {{year}} Back & White. Alle Rechte vorbehalten.",
-      "META": {
-        "ACCESS": "Zugang",
-        "FEATURES": "Funktionen"
-      }
+    "NEWS": {
+      "TITLE": "Letzte Nachrichten",
+      "SUBTITLE": "Aktuelle Nachrichten und Artikel",
+      "ARTICLE_1_TITLE": "Donec pede justo, fringilla vele",
+      "ARTICLE_1_DESC": "Wenn mehrere Sprachen zusammenfließen, wird die resultierende Grammatik einfacher",
+      "ARTICLE_1_DATE": "04 Mar, 2020",
+      "ARTICLE_2_TITLE": "Aenean ut eros et nisl",
+      "ARTICLE_2_DESC": "Jeder erkennt, warum eine neue gemeinsame Sprache wünschenswert wäre",
+      "ARTICLE_2_DATE": "12 Feb, 2020",
+      "ARTICLE_3_TITLE": "In turpis, pellentesque posuere",
+      "ARTICLE_3_DESC": "Für eine englische Person wird es wie vereinfachtes Englisch aussehen, wie ein skeptischer Cambridge-Freund",
+      "ARTICLE_3_DATE": "06 Jan, 2020",
+      "READ_MORE": "Mehr lesen",
+      "CATEGORY": "Kryptowährung"
+    },
+    "FAQS": {
+      "TITLE": "Häufig gestellte Fragen",
+      "SUBTITLE": "Häufig gestellte Fragen",
+      "TAB_GENERAL": "Allgemeine Fragen",
+      "TAB_TOKENSALE": "Token-Verkauf",
+      "TAB_ROADMAP": "Roadmap",
+      "QUESTION_1": "Was ist Lorem Ipsum?",
+      "QUESTION_2": "Warum verwenden wir es?",
+      "QUESTION_3": "Woher kommt es?",
+      "QUESTION_4": "Wo kann ich etwas bekommen?",
+      "QUESTION_5": "Was sind die Vorteile?",
+      "QUESTION_6": "Ist es sicher?",
+      "QUESTION_7": "Wie funktioniert es?",
+      "QUESTION_8": "Wann wird es gestartet?",
+      "ANSWER_1": "Lorem Ipsum ist einfach ein Dummy-Text aus der Druck- und Schriftsetzungsindustrie.",
+      "ANSWER_2": "Lorem Ipsum ist seit 1500 der Standard-Dummy-Text der Industrie.",
+      "ANSWER_3": "Der Zweck der Verwendung von Lorem Ipsum ist, dass es eine mehr oder weniger normale Verteilung hat.",
+      "ANSWER_4": "Es gibt viele Variationen von Lorem Ipsum-Passagen.",
+      "ANSWER_5": "Alle Lorem Ipsum-Generatoren im Internet neigen dazu, vordefinierte Chunks zu wiederholen.",
+      "ANSWER_6": "Ja, wir verwenden branchenübliche Verschlüsselung und Sicherheitsprotokolle.",
+      "ANSWER_7": "Unsere Plattform bietet ein nahtloses Erlebnis für die Token-Verteilung.",
+      "ANSWER_8": "Das Startdatum ist für Q2 2024 geplant."
     }
   },
-  "admin": {
-    "welcome": "Willkommen im Back & White Admin-Bereich",
-    "logout": "Abmelden",
-    "dashboard": "Dashboard",
-    "dashboardDesc": "Überwachen Sie Ihr Konto und Analysen",
-    "users": "Benutzer",
-    "usersDesc": "Verwalten Sie Benutzerkonten und Berechtigungen",
-    "settings": "Einstellungen",
-    "settingsDesc": "Konfigurieren Sie Ihre Voreinstellungen",
-    "userInfo": "Benutzerinformationen",
-    "accessToken": "Zugangstoken",
-    "tokenStatus": "Token-Status",
-    "active": "Aktiv"
-  },
-  "WALLET": {
-    "CONNECT": "Wallet Verbinden",
-    "DISCONNECT": "Trennen",
-    "BALANCE": "Guthaben"
-  },
-  "DAO": {
-    "TITLE": "DAO - Unternehmensabstimmung und Investitionen",
-    "SUBTITLE": "Beteiligen Sie sich an Unternehmensstart-ups mit tokenbasierter Abstimmung",
-    "OVERVIEW": "Übersicht",
-    "WALLET_INFO": "Wallet",
-    "WALLET_CONNECTED": "Wallet verbunden",
-    "WALLET_NOT_CONNECTED": "Wallet nicht verbunden",
-    "CONNECT_HINT": "Verbinden Sie Ihr Wallet, um Governance-Funktionen zu nutzen.",
-    "GOVERNANCE_METRICS": "Governance-Kennzahlen",
-    "PROPOSALS": "Vorschläge",
-    "PROPOSALS_SUBTITLE": "Aktive Vorschläge prüfen, abstimmen und investieren.",
-    "MANAGE_PANEL": "Verwaltung",
-    "MANAGE_SUBTITLE": "Vorschläge erstellen oder aktualisieren und Governance-Einstellungen verwalten.",
-    "MANAGE": "Vorschläge verwalten",
-    "BACK": "Zurück",
-    "BALANCE": "Guthaben",
-    "HOLDING_DAYS": "Haltungstage",
-    "DAYS": "Tage",
-    "STAKED_AMOUNT": "Gestapelter Betrag",
-    "VOTING_STATUS": "Abstimmungsstatus",
-    "CAN_VOTE": "Abstimmungsberechtigt",
-    "CANNOT_VOTE": "Nicht abstimmungsberechtigt",
-    "INDUSTRY": "Industrie",
-    "LOCATION": "Standort",
-    "VOTES": "Stimmen",
-    "FUNDING": "Finanzierung",
-    "DAYS_LEFT": "Verbleibende Tage",
-    "EXPECTED_RETURN": "Erwartete Rendite",
-    "VOTE": "Abstimmen",
-    "INVEST": "Investieren",
-    "AMOUNT_TO_STAKE": "Zu stapelnder Betrag",
-    "AVAILABLE_BALANCE": "Verfügbares Guthaben",
-    "QUICK_AMOUNTS": "Schnellauswahl",
-    "VOTING_POWER": "Abstimmungskraft",
-    "REMAINING_BALANCE": "Verbleibendes Guthaben",
-    "IMPORTANT": "Wichtig",
-    "VOTING_INFO_1": "Ihre Token werden 30 Tage nach der Abstimmung gesperrt",
-    "VOTING_INFO_2": "Jedes Token zählt als 1 Stimme",
-    "VOTING_INFO_3": "Die Abstimmung kann nach Übermittlung nicht rückgängig gemacht werden",
-    "CONFIRM_VOTE": "Abstimmung bestätigen",
-    "CANCEL": "Abbrechen",
-    "MANAGE_PROPOSALS": "Vorschläge verwalten",
-    "NEW_PROPOSAL": "Neuer Vorschlag",
-    "COMPANY_NAME": "Unternehmensname",
-    "DESCRIPTION": "Beschreibung",
-    "CATEGORY": "Kategorie",
-    "SELECT_CATEGORY": "Kategorie auswählen",
-    "CATEGORY_RETAIL": "Einzelhandel",
-    "CATEGORY_FOOD": "Lebensmittel und Getränke",
-    "CATEGORY_ECOMMERCE": "E-Commerce",
-    "CATEGORY_TECHNOLOGY": "Technologie",
-    "TARGET_FUNDING": "Zielfinanzierung ($)",
-    "EDIT_PROPOSAL": "Vorschlag bearbeiten",
-    "UPDATE": "Aktualisieren",
-    "CREATE": "Erstellen",
-    "NO_PROPOSALS": "Noch keine Vorschläge. Erstelle einen um zu beginnen!",
-    "TARGET": "Ziel",
-    "FUNDED": "Finanziert"  }
+  "FOOTER": {
+    "COPYRIGHT": "© Back and White. Erstellt mit",
+    "BY": "von Nexaplaform"
+  }
 }

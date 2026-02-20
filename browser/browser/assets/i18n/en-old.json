@@ -1,0 +1,643 @@
+{
+  "HEADER": {
+    "SEARCH": "Search...",
+    "MEGA_MENU": "Mega Menu",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifications",
+      "VIEW_ALL": "View All",
+      "LOAD_MORE": "View More..",
+      "FIRST": {
+        "TITLE": "Your order is placed",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "It will seem like simplified English.",
+        "TIME": "1 hours ago"
+      },
+      "THIRD": {
+        "TITLE": "Your item is shipped",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "As a skeptical Cambridge friend of mine occidental.",
+        "TIME": "1 hours ago"
+      }
+    },
+    "SETTINGS": "Settings",
+    "UI": {
+      "TITLE": "UI Components",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Range Slider",
+      "SWEET_ALERT": "Sweet Alert",
+      "RATING": "Rating",
+      "FORMS": "Forms",
+      "TABLES": "Tables",
+      "CHARTS": "Charts"
+    },
+    "APPLICATIONS": {
+      "TITLE": "Applications",
+      "ECOMMERCE": "Ecommerce",
+      "CALENDAR": "Calendar",
+      "EMAIL": "Email",
+      "PROJECTS": "Projects",
+      "TASKS": "Tasks",
+      "CONTACTS": "Contacts"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Extra Pages",
+      "LIGHT_SIDEBAR": "Light Sidebar",
+      "COMPACT_SIDEBAR": "Compact Sidebar",
+      "HORIZONTAL_LAYOUT": "Horizontal layout",
+      "MAINTENANCE": "Maintenance",
+      "COMING SOON": "Coming Soon",
+      "TIMELINE": "Timeline",
+      "FAQ": "FAQs"
+    },
+    "LOGIN": {
+      "PROFILE": "Profile",
+      "MY_WALLET": "My Wallet",
+      "SETTINGS": "Settings",
+      "LOCK_SCREEN": "Lock screen",
+      "LOGOUT": "Logout"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Dashboards",
+      "BADGE": "04",
+      "LIST": {
+        "DEFAULT": "Default",
+        "SAAS": "Saas",
+        "CRYPTO": "Crypto",
+        "BLOG": "Blog",
+        "JOBS": "Jobs"
+      }
+    },
+    "LAYOUTS": {
+      "TEXT": "Layouts",
+      "LIST": {
+        "HORIZONTAL": "Horizontal",
+        "LIGHTSIDEBAR": "Light Sidebar",
+        "COMPACTSIDEBAR": "Compact Sidebar",
+        "ICONSIDEBAR": "Icons Sidebar",
+        "BOXED": "Boxed Layout",
+        "COLOREDSIDEBAR": "Colored Sidebar",
+        "VERTICAL": "Vertical",
+        "LIGHTTOPBAR": "Light Topbar",
+        "COLOREDHEADER": "Colored Header",
+        "SCROLLABLE": "Scrollable"
+      }
+    },
+    "APPS": {
+      "TEXT": "Apps"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendar"
+    },
+    "CHAT": {
+      "TEXT": "Chat",
+      "BADGE": "New"
+    },
+    "FILEMANAGER": {
+      "TEXT": "File Manager",
+      "BADGE": "New"
+    },
+    "ECOMMERCE": {
+      "TEXT": "Ecommerce",
+      "LIST": {
+        "PRODUCTS": "Products",
+        "PRODUCTDETAIL": "Product Detail",
+        "ORDERS": "Orders",
+        "CUSTOMERS": "Customers",
+        "CART": "Cart",
+        "CHECKOUT": "Checkout",
+        "SHOPS": "Shops",
+        "ADDPRODUCT": "Add Product"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "Crypto",
+      "LIST": {
+        "WALLET": "Wallet",
+        "BUY/SELL": "Buy/Sell",
+        "EXCHANGE": "Exchange",
+        "LENDING": "Lending",
+        "ORDERS": "Orders",
+        "KYCAPPLICATION": "KYC Application",
+        "ICOLANDING": "ICO Landing"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "Email",
+      "LIST": {
+        "INBOX": "Inbox",
+        "READEMAIL": "Read Email",
+        "TEMPLATE": {
+          "BADGE": "New",
+          "TEXT": "Template",
+          "LIST": {
+            "BASIC": "Basic Action",
+            "ALERT": "Alert Email",
+            "BILLING": "Billing Email"
+          }
+        }
+      }
+    },
+    "INVOICES": {
+      "TEXT": "Invoices",
+      "LIST": {
+        "INVOICELIST": "Invoice List",
+        "INVOICEDETAIL": "Invoice Detail"
+      }
+    },
+    "PROJECTS": {
+      "TEXT": "Projects",
+      "LIST": {
+        "GRID": "Projects Grid",
+        "PROJECTLIST": "Projects List",
+        "OVERVIEW": "Project Overview",
+        "CREATE": "Create New"
+      }
+    },
+    "TASKS": {
+      "TEXT": "Tasks",
+      "LIST": {
+        "TASKLIST": "Task List",
+        "KANBAN": "Kanban Board",
+        "CREATETASK": "Create Task"
+      }
+    },
+    "CONTACTS": {
+      "TEXT": "Contacts",
+      "LIST": {
+        "USERGRID": "User Grid",
+        "USERLIST": "User List",
+        "PROFILE": "Profile"
+      }
+    },
+    "BLOG": {
+      "TEXT": "Blog",
+      "BADGE": "New",
+      "LIST": {
+        "BLOGLIST": "Blog List",
+        "BLOGGRID": "Blog Grid",
+        "DETAIL": "Blog Details"
+      }
+    },
+    "JOBS": {
+      "TEXT": "Jobs",
+      "BADGE": "New",
+      "LIST": {
+        "JOBLIST": "Job List",
+        "JOBGRID": "Job Grid",
+        "APPLYJOB": "Apply Job",
+        "JOBDETAILS": "Job Details",
+        "JOBCATEGORIES": "Jobs Categories",
+        "CANDIDATE": {
+          "TEXT": "Candidate",
+          "LIST": {
+            "LIST": "List",
+            "OVERVIEW": "Overview"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "Pages"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Authentication",
+      "BADGE": "New",
+      "LIST": {
+        "LOGIN": "Login",
+        "LOGIN2": "Login 2",
+        "REGISTER": "Register",
+        "REGISTER2": "Register 2",
+        "RECOVERPWD": "Recover Password",
+        "RECOVERPWD2": "Recover Password 2",
+        "LOCKSCREEN": "Lock screen",
+        "LOCKSCREEN2": "Lock screen 2",
+        "CONFIRMMAIL": "Confirm Mail",
+        "CONFIRMMAIL2": "Confirm Mail 2",
+        "EMAILVERIFICATION": "Email verification",
+        "EMAILVERIFICATION2": "Email verification 2",
+        "TWOSTEPVERIFICATION": "Two step verification",
+        "TWOSTEPVERIFICATION2": "Two step verification 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "Utility",
+      "LIST": {
+        "STARTER": "Starter Page",
+        "MAINTENANCE": "Maintenance",
+        "TIMELINE": "Timeline",
+        "FAQS": "FAQs",
+        "PRICING": "Pricing",
+        "ERROR404": "Error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "Components"
+    },
+    "UIELEMENTS": {
+      "TEXT": "UI Elements",
+      "LIST": {
+        "ALERTS": "Alerts",
+        "BUTTONS": "Buttons",
+        "CARDS": "Cards",
+        "CAROUSEL": "Carousel",
+        "DROPDOWNS": "Dropdowns",
+        "GRID": "Grid",
+        "IMAGES": "Images",
+        "LIGHTBOX": "Lightbox",
+        "MODALS": "Modals",
+        "RANGESLIDER": "Range Slider",
+        "PROGRESSBAR": "Progress Bars",
+        "PLACEHOLDER": "Placeholder",
+        "SWEETALERT": "Sweet Alert",
+        "TABS": "Tabs & Accordions",
+        "TYPOGRAPHY": "Typography",
+        "TOASTS": "Toasts",
+        "VIDEO": "Video",
+        "GENERAL": "General",
+        "COLORS": "Colors",
+        "RATING": "Rating",
+        "NOTIFICATION": "Notification",
+        "UTILITIES": "Utilities",
+        "CROPPER": "Image Cropper"
+      }
+    },
+    "FORMS": {
+      "TEXT": "Forms",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Form Elements",
+        "VALIDATION": "Form Validation",
+        "ADVANCED": "Form Advanced",
+        "EDITOR": "Form Editor",
+        "FILEUPLOAD": "Form File Upload",
+        "REPEATER": "Form Repeater",
+        "WIZARD": "Form Wizard",
+        "MASK": "Form Mask",
+        "LAYOUTS": "Form Layouts"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Tables",
+      "LIST": {
+        "BASIC": "Basic Tables",
+        "DataTables": "Data Tables",
+        "EditTableTables": "Editable Table"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Charts",
+      "LIST": {
+        "APEX": "Apex Chart",
+        "CHARTJS": "Chartjs Chart",
+        "CHARTIST": "Chartist Chart",
+        "ECHART": "E Chart"
+      }
+    },
+    "ICONS": {
+      "TEXT": "Icons",
+      "LIST": {
+        "BOXICONS": "Boxicons",
+        "MATERIALDESIGN": "Material Design",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Font Awesome"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Maps",
+      "LIST": {
+        "LEAFLETMAP": "Leaflet Maps",
+        "AMCHARTS": "AmCharts"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi Level",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "LEVEL2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  },
+  "LANDING": {
+    "NAV": {
+      "BRAND": "Back & White",
+      "HOME": "Home",
+      "ABOUT": "About",
+      "FEATURES": "Features",
+      "ROADMAP": "Roadmap",
+      "TOKENOMICS": "Tokenomics",
+      "LOGIN": "Login",
+      "LANGUAGE": "Language"
+    },
+    "HERO": {
+      "BADGE": "✨ Tokenized Stocks",
+      "TITLE": "The future of decentralized investment",
+      "SUBTITLE": "Be part of creating real companies with blockchain-based tokens. We democratize access to institutional investment opportunities.",
+      "WHITEPAPER": "📄 Download Whitepaper",
+      "ACCESS": "Access →",
+      "LEARN_MORE": "Learn More",
+      "GET_TOKEN": "Get BW Token"
+    },
+    "COUNTDOWN": {
+      "TITLE": "ICO Countdown",
+      "LAUNCH": "Official Launch",
+      "DAYS": "Days",
+      "HOURS": "Hours",
+      "MINUTES": "Minutes",
+      "SECONDS": "Seconds"
+    },
+    "ABOUT": {
+      "TAG": "About Back & White",
+      "TITLE": "Democratizing institutional investment",
+      "HEADING": "Real companies, blockchain technology",
+      "DESCRIPTION": "Back & White revolutionizes how people invest by tokenizing real stocks on the blockchain. Each token represents actual ownership in verified companies, with full dividend rights and regulatory compliance.",
+      "DESCRIPTION2": "Our platform eliminates traditional barriers to entry, allowing anyone to access institutional-grade investments with transparency, security, and liquidity.",
+      "READ_MORE": "Read More",
+      "HOW_IT_WORKS": "How it Works",
+      "USERS": "Active Users",
+      "INVESTED": "Total Invested",
+      "SECURITY": "Bank-Grade Security",
+      "SECURITY_DESC": "Multi-layer security architecture with audited smart contracts and insurance coverage.",
+      "DIVIDENDS": "Automated Dividends",
+      "DIVIDENDS_DESC": "Receive your share of profits directly to your wallet, automatically distributed.",
+      "LEARN_MORE": "Learn More →"
+    },
+    "FEATURES": {
+      "TAG": "Core Features",
+      "TITLE": "Why Back & White?",
+      "SUBTITLE": "The revolutionary platform for tokenized investments",
+      "REAL_STOCKS": {
+        "TITLE": "Real Stocks",
+        "DESC": "Invest in authentic companies with real dividends and ownership rights."
+      },
+      "SECURITY": {
+        "TITLE": "Blockchain Security",
+        "DESC": "Secure and transparent transactions through audited smart contracts."
+      },
+      "NO_FEES": {
+        "TITLE": "No Intermediaries",
+        "DESC": "Eliminate traditional commissions and access opportunities directly."
+      },
+      "GLOBAL": {
+        "TITLE": "Global Access",
+        "DESC": "Invest from anywhere in the world, 24/7, without restrictions."
+      },
+      "LIQUIDITY": {
+        "TITLE": "Guaranteed Liquidity",
+        "DESC": "Buy and sell anytime in our secondary market."
+      },
+      "REGULATED": {
+        "TITLE": "Regulated",
+        "DESC": "Full compliance with international regulations and constant auditing."
+      }
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "How it works",
+      "SUBTITLE": "Start investing in 4 simple steps",
+      "STEP1": {
+        "TITLE": "Open your account",
+        "DESC": "Register with your email and verify your identity in minutes."
+      },
+      "STEP2": {
+        "TITLE": "Deposit funds",
+        "DESC": "Transfer crypto or fiat money to your wallet securely."
+      },
+      "STEP3": {
+        "TITLE": "Select assets",
+        "DESC": "Explore and choose from hundreds of tokenized companies."
+      },
+      "STEP4": {
+        "TITLE": "Receive profits",
+        "DESC": "Get automatic dividends and capital appreciation."
+      }
+    },
+    "ROADMAP": {
+      "TAG": "Development Roadmap",
+      "TITLE": "Roadmap 2025-2026",
+      "SUBTITLE": "Our plan to revolutionize the stock market",
+      "Q1_2025": {
+        "TITLE": "Testnet Launch",
+        "ITEM1": "Demo platform",
+        "ITEM2": "Audited smart contracts",
+        "ITEM3": "Testing with early users"
+      },
+      "Q2_2025": {
+        "TITLE": "Mainnet and Token Launch",
+        "ITEM1": "Mainnet launch",
+        "ITEM2": "BW token available",
+        "ITEM3": "First stock pairs"
+      },
+      "Q3_2025": {
+        "TITLE": "Asset Expansion",
+        "ITEM1": "100+ listed companies",
+        "ITEM2": "Exchange integration",
+        "ITEM3": "Staking programs"
+      },
+      "Q4_2025": {
+        "TITLE": "Secondary Market",
+        "ITEM1": "Integrated DEX",
+        "ITEM2": "Guaranteed liquidity",
+        "ITEM3": "Financial derivatives"
+      },
+      "Q1_2026": {
+        "TITLE": "Global Expansion",
+        "ITEM1": "Regulation in 10+ countries",
+        "ITEM2": "Multiple fiat currencies",
+        "ITEM3": "Native mobile app"
+      },
+      "H2_2026": {
+        "TITLE": "DAO Governance",
+        "ITEM1": "Decentralized governance",
+        "ITEM2": "Community proposals",
+        "ITEM3": "Fully autonomous protocol"
+      }
+    },
+    "TOKENOMICS": {
+      "TAG": "Token Economics",
+      "TITLE": "BW Token",
+      "SUBTITLE": "Strategic Distribution",
+      "DESCRIPTION": "The BW Token powers our ecosystem, enabling governance, staking rewards, and fee discounts. Smart tokenomics designed for long-term value creation.",
+      "BENEFIT1": "Governance rights to vote on platform decisions",
+      "BENEFIT2": "Fee discounts of up to 50% on all transactions",
+      "BENEFIT3": "Staking rewards and liquidity mining incentives",
+      "DISTRIBUTION": "Token Distribution",
+      "TREASURY": "Asset Treasury (New Ventures)",
+      "PUBLIC_SALE": "Public Sale / IDO",
+      "DEX_LIQUIDITY": "Liquidity (DEX/CEX)",
+      "TEAM_VESTING": "Team (Vesting 4 years)",
+      "MARKETING": "Marketing & Partnerships",
+      "SPECS": "Specifications",
+      "TOTAL_SUPPLY": "Total Supply",
+      "ICO_PRICE": "ICO Price",
+      "BLOCKCHAIN": "Blockchain",
+      "STANDARD": "Standard",
+      "UTILITY": "Utility",
+      "UTILITY_VALUE": "Governance, Fees, Staking",
+      "BURN": "Burn Mechanism",
+      "BURN_VALUE": "0.5% per transaction"
+    },
+    "CTA": {
+      "TITLE": "Be part of the financial revolution",
+      "SUBTITLE": "Join thousands of investors already democratizing the stock market",
+      "BUTTON": "Open your account now"
+    },
+    "TEAM": {
+      "TITLE": "Leadership team",
+      "SUBTITLE": "Experienced professionals driving product, compliance, and growth.",
+      "MEMBERS": {
+        "LEAD": {
+          "NAME": "Mr. Important",
+          "ROLE": "CEO & Founder",
+          "BIO": "15+ years in capital markets and fintech strategy."
+        },
+        "M1": {
+          "NAME": "ALF One",
+          "ROLE": "CTO",
+          "BIO": "Architecture and security for scalable platforms."
+        },
+        "M2": {
+          "NAME": "ALF Two",
+          "ROLE": "COO",
+          "BIO": "Operations, partnerships, and regulatory coordination."
+        },
+        "M3": {
+          "NAME": "ALF Three",
+          "ROLE": "Head of Product",
+          "BIO": "User experience and roadmap execution."
+        },
+        "M4": {
+          "NAME": "ALF Four",
+          "ROLE": "Head of Compliance",
+          "BIO": "Risk, KYC/AML, and governance."
+        }
+      }
+    },
+    "FOOTER": {
+      "DESCRIPTION": "Enterprise-grade platform for digital assets and investments focused on security, transparency, and compliance.",
+      "COMPANY": {
+        "TITLE": "Company",
+        "FEATURES": "Features",
+        "ROADMAP": "Roadmap",
+        "TOKENOMICS": "Tokenomics"
+      },
+      "PRODUCT": {
+        "TITLE": "Product",
+        "ACCESS": "Access",
+        "SECURITY": "Security",
+        "UTILITY": "Utility"
+      },
+      "LEGAL": {
+        "TITLE": "Legal",
+        "TERMS": "Terms",
+        "PRIVACY": "Privacy",
+        "COOKIES": "Cookies"
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "LOCATION": "Barcelona · Madrid · Miami"
+      },
+      "COPYRIGHT": "© {{year}} Back & White. All rights reserved.",
+      "META": {
+        "ACCESS": "Access",
+        "FEATURES": "Features"
+      }
+    }
+  },
+  "admin": {
+    "welcome": "Welcome to the Back & White Admin Panel",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "dashboardDesc": "Monitor your account and view analytics",
+    "users": "Users",
+    "usersDesc": "Manage user accounts and permissions",
+    "settings": "Settings",
+    "settingsDesc": "Configure your preferences",
+    "userInfo": "User Information",
+    "accessToken": "Access Token",
+    "tokenStatus": "Token Status",
+    "active": "Active"
+  },
+  "WALLET": {
+    "CONNECT": "Connect Wallet",
+    "DISCONNECT": "Disconnect",
+    "BALANCE": "Balance"
+  },
+  "DAO": {
+    "TITLE": "DAO - Company Voting & Investment",
+    "SUBTITLE": "Participate in company launches with token-based voting",
+    "OVERVIEW": "Overview",
+    "WALLET_INFO": "Wallet",
+    "WALLET_CONNECTED": "Wallet connected",
+    "WALLET_NOT_CONNECTED": "Wallet not connected",
+    "CONNECT_HINT": "Connect your wallet to access governance features.",
+    "GOVERNANCE_METRICS": "Governance Metrics",
+    "PROPOSALS": "Proposals",
+    "PROPOSALS_SUBTITLE": "Review, vote and invest in active proposals.",
+    "MANAGE_PANEL": "Management Panel",
+    "MANAGE_SUBTITLE": "Create or update proposals and governance settings.",
+    "MANAGE": "Manage Proposals",
+    "BACK": "Back",
+    "BALANCE": "Balance",
+    "HOLDING_DAYS": "Holding Days",
+    "DAYS": "Days",
+    "STAKED_AMOUNT": "Staked Amount",
+    "VOTING_STATUS": "Voting Status",
+    "CAN_VOTE": "Eligible to Vote",
+    "CANNOT_VOTE": "Not Eligible to Vote",
+    "INDUSTRY": "Industry",
+    "LOCATION": "Location",
+    "VOTES": "Votes",
+    "FUNDING": "Funding",
+    "DAYS_LEFT": "Days Left",
+    "EXPECTED_RETURN": "Expected Return",
+    "VOTE": "Vote",
+    "INVEST": "Invest",
+    "AMOUNT_TO_STAKE": "Amount to Stake",
+    "AVAILABLE_BALANCE": "Available Balance",
+    "QUICK_AMOUNTS": "Quick Select",
+    "VOTING_POWER": "Voting Power",
+    "REMAINING_BALANCE": "Remaining Balance",
+    "IMPORTANT": "Important",
+    "VOTING_INFO_1": "Your tokens will be locked for 30 days after voting",
+    "VOTING_INFO_2": "Each token counts as 1 vote",
+    "VOTING_INFO_3": "Voting cannot be undone once submitted",
+    "CONFIRM_VOTE": "Confirm Vote",
+    "CANCEL": "Cancel",
+    "MANAGE_PROPOSALS": "Manage Proposals",
+    "NEW_PROPOSAL": "New Proposal",
+    "COMPANY_NAME": "Company Name",
+    "DESCRIPTION": "Description",
+    "CATEGORY": "Category",
+    "SELECT_CATEGORY": "Select Category",
+    "CATEGORY_RETAIL": "Retail",
+    "CATEGORY_FOOD": "Food & Beverage",
+    "CATEGORY_ECOMMERCE": "E-commerce",
+    "CATEGORY_TECHNOLOGY": "Technology",
+    "TARGET_FUNDING": "Target Funding ($)",
+    "EDIT_PROPOSAL": "Edit Proposal",
+    "UPDATE": "Update",
+    "CREATE": "Create",
+    "NO_PROPOSALS": "No proposals yet. Create one to get started!",
+    "TARGET": "Target",
+    "FUNDED": "Funded"
+  }
+}

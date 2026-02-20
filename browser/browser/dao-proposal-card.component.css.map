@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/dao/components/dao-proposal-card.component.scss"],
+  "sourcesContent": [".dao-proposal-card {\n    border-left: 3px solid transparent;\n\n    &.status-approved {\n        border-left-color: #10b981;\n    }\n\n    &.status-active {\n        border-left-color: #556ee6;\n    }\n\n    &.status-rejected {\n        border-left-color: #ef4444;\n    }\n\n    .clamp-2 {\n        display: -webkit-box;\n        -webkit-line-clamp: 2;\n        -webkit-box-orient: vertical;\n        overflow: hidden;\n    }\n}\n"],
+  "mappings": ";AAAA,CAAA;AACI,eAAA,IAAA,MAAA;;AAEA,CAHJ,iBAGI,CAAA;AACI,qBAAA;;AAGJ,CAPJ,iBAOI,CAAA;AACI,qBAAA;;AAGJ,CAXJ,iBAWI,CAAA;AACI,qBAAA;;AAGJ,CAfJ,kBAeI,CAAA;AACI,WAAA;AACA,sBAAA;AACA,sBAAA;AACA,YAAA;;",
+  "names": []
+}

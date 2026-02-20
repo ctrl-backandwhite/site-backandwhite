@@ -5,3 +5,7 @@ interface JQuerySlick {
     slick: (method: string, ...args: any[]) => JQuery;
     // You might need to add more properties if specific methods are used
 }
+
+// Declaration for particles.js
+declare var particlesJS: any;
+declare module 'particles.js';

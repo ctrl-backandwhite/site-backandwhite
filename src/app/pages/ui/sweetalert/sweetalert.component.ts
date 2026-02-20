@@ -4,10 +4,10 @@ import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.compon
 import Swal from 'sweetalert2';
 
 @Component({
-    selector: 'app-sweetalert',
-    templateUrl: './sweetalert.component.html',
-    styleUrls: ['./sweetalert.component.scss'],
-    imports: [PagetitleComponent]
+  selector: 'app-sweetalert',
+  templateUrl: './sweetalert.component.html',
+  styleUrls: ['./sweetalert.component.scss'],
+  imports: [PagetitleComponent]
 })
 
 /**
@@ -101,7 +101,7 @@ export class SweetalertComponent implements OnInit {
     Swal.fire({
       title: 'Sweet!',
       text: 'Modal with a custom image.',
-      imageUrl: 'assets/images/logo-dark.png',
+      imageUrl: 'assets/logo.png',
       imageHeight: 20,
       confirmButtonColor: '#556ee6'
     });

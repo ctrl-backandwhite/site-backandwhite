@@ -1,186 +1,192 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, OnDestroy, HostListener, inject } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { AuthOAuthService } from '../core/services/auth-oauth.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { interval } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { TablesModule } from '../pages/tables/tables.module';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SharedModule } from '../cyptolanding/shared/shared.module';
 import { LoginService } from '../core/services/login.service';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from '../core/services/language.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
-    selector: 'app-landing',
-    templateUrl: './landing.component.html',
-    styleUrls: ['./landing.component.scss'],
-    imports: [CommonModule, RouterModule, TranslateModule]
+  selector: 'app-landing',
+  templateUrl: './landing.component.html',
+  styleUrls: ['./landing.component.scss'],
+  imports: [CommonModule, AccordionModule, TablesModule, TabsModule, SharedModule, SlickCarouselModule, BsDropdownModule, TranslateModule],
+  providers: []
 })
-export class LandingComponent implements OnInit, OnDestroy {
-    private authOAuthService = inject(AuthOAuthService);
-    private loginService = inject(LoginService);
 
-    year = new Date().getFullYear();
-    currentLanguage = 'en';
-    mobileMenuOpen = false;
-    languageDropdownOpen = false;
-    fadeActive = false;
-    private fadeTimeout: any;
+/**
+ * Crypto landing page
+ */
+export class LandingComponent implements OnInit {
+  private readonly loginService = inject(LoginService);
+  private readonly languageService = inject(LanguageService);
+  private readonly cookieService = inject(CookieService);
 
-    languages = [
-        { code: 'en', name: 'English', flag: 'us.jpg' },
-        { code: 'es', name: 'Español', flag: 'spain.jpg' },
-        { code: 'pt', name: 'Português', flag: 'portugal.svg' },
-        { code: 'de', name: 'Deutsch', flag: 'germany.jpg' },
-        { code: 'it', name: 'Italiano', flag: 'italy.jpg' },
-        { code: 'ru', name: 'Русский', flag: 'russia.jpg' },
-        { code: 'fr', name: 'Français', flag: 'french.jpg' },
-        { code: 'zh-Hant', name: '中文（繁體）', flag: 'china.svg' }
-    ];
-    // Countdown properties
-    countdownDays = 0;
-    countdownHours = 0;
-    countdownMinutes = 0;
-    countdownSeconds = 0;
-    private countdownInterval: any;
+  // set the currenr year
+  year: number = new Date().getFullYear();
+  currentSection: any = 'home';
 
-    // Carousel properties
-    heroSlides: string[] = [
-        'assets/images/crypto/features-img/img-1.png',
-        'assets/images/crypto/features-img/img-2.png',
-        'assets/images/crypto/bg-ico-hero.jpg'
-    ];
-    currentSlideIndex = 0;
-    private autoRotateInterval: any;
+  // Language dropdown
+  cookieValue: any;
+  flagvalue: any;
+  valueset: any = 'assets/images/flags/us.jpg';
 
-    constructor(private translate: TranslateService) { }
+  listLang: any = [
+    { text: 'English', flag: 'assets/images/flags/us.jpg', lang: 'en' },
+    { text: 'Español', flag: 'assets/images/flags/spain.jpg', lang: 'es' },
+    { text: 'Português', flag: 'assets/images/flags/portugal.svg', lang: 'pt' },
+    { text: 'Deutsch', flag: 'assets/images/flags/germany.jpg', lang: 'de' },
+    { text: 'Italiano', flag: 'assets/images/flags/italy.jpg', lang: 'it' },
+    { text: 'Русский', flag: 'assets/images/flags/russia.jpg', lang: 'ru' },
+    { text: 'Français', flag: 'assets/images/flags/french.jpg', lang: 'fr' },
+    { text: '中文（繁體）', flag: 'assets/images/flags/china.svg', lang: 'zh-Hant' }
+  ];
 
-    @HostListener('window:scroll')
-    onScroll() {
-        const elements = document.querySelectorAll('.feature-card');
-        const roadmapItems = document.querySelectorAll('.roadmap-item');
+  // Timeline config
+  slideConfig = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  };
+  // Team config
+  config = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+  };
+  // About config
+  aboutConfig = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+  };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                }
-            });
-        }, { threshold: 0.1 });
 
-        elements.forEach(el => observer.observe(el));
-        roadmapItems.forEach(el => observer.observe(el));
+  private _trialEndsAt;
+
+  private _diff: number;
+  _days: number;
+  _hours: number;
+  _minutes: number;
+  _seconds: number;
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    this._trialEndsAt = "2026-12-31";
+
+    // Initialize language
+    this.cookieValue = this.cookieService.get('lang');
+    const val = this.listLang.filter(x => x.lang === this.cookieValue);
+    if (val.length === 0) {
+      this.valueset = 'assets/images/flags/us.jpg';
+    } else {
+      this.flagvalue = val.map(element => element.flag)[0];
     }
 
-    startCountdown() {
-        const targetDate = new Date('2027-01-30T00:00:00').getTime();
+    interval(3000).pipe(
+      map((x) => {
+        this._diff = Date.parse(this._trialEndsAt) - Date.parse(new Date().toString());
+      })).subscribe((x) => {
+        this._days = this.getDays(this._diff);
+        this._hours = this.getHours(this._diff);
+        this._minutes = this.getMinutes(this._diff);
+        this._seconds = this.getSeconds(this._diff);
+      });
 
-        this.countdownInterval = setInterval(() => {
-            const now = new Date().getTime();
-            const difference = targetDate - now;
+    // Initialize particles.js
+    this.initParticles();
+  }
 
-            if (difference > 0) {
-                this.countdownDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-                this.countdownHours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-                this.countdownMinutes = Math.floor((difference / 1000 / 60) % 60);
-                this.countdownSeconds = Math.floor((difference / 1000) % 60);
-            } else {
-                clearInterval(this.countdownInterval);
-                this.countdownDays = 0;
-                this.countdownHours = 0;
-                this.countdownMinutes = 0;
-                this.countdownSeconds = 0;
-            }
-        }, 1000);
+  /**
+   * Initialize particles.js
+   */
+  initParticles() {
+    if (typeof particlesJS !== 'undefined') {
+      particlesJS.load('particles-js', 'assets/particles.json', function () {
+        console.log('particles.js loaded');
+      });
     }
+  }
 
-    ngOnInit() {
-        this.translate.setDefaultLang('en');
-        this.translate.use('en');
-        this.onScroll();
-        this.startCountdown();
-        this.startAutoRotateCarousel();
-        this.triggerFadeIn();
-    }
+  getDays(t) {
+    return Math.floor(t / (1000 * 60 * 60 * 24));
+  }
 
-    startAutoRotateCarousel() {
-        this.autoRotateInterval = setInterval(() => {
-            this.nextSlide();
-        }, 5000);
-    }
+  getHours(t) {
+    return Math.floor((t / (1000 * 60 * 60)) % 24);
+  }
 
-    ngOnDestroy() {
-        if (this.countdownInterval) {
-            clearInterval(this.countdownInterval);
-        }
-        if (this.autoRotateInterval) {
-            clearInterval(this.autoRotateInterval);
-        }
-        if (this.fadeTimeout) {
-            clearTimeout(this.fadeTimeout);
-        }
-    }
+  getMinutes(t) {
+    return Math.floor((t / 1000 / 60) % 60);
+  }
 
-    changeLanguage(lang: string) {
-        if (this.currentLanguage === lang) {
-            this.languageDropdownOpen = false;
-            return;
-        }
-        this.currentLanguage = lang;
-        this.languageDropdownOpen = false;
-        this.triggerLanguageFade(lang);
-    }
+  getSeconds(t) {
+    return Math.floor((t / 1000) % 60);
+  }
 
-    toggleLanguageDropdown() {
-        this.languageDropdownOpen = !this.languageDropdownOpen;
+  ngOnDestroy(): void {
+    // this.subscription.unsubscribe();
+  }
+  /**
+   * Window scroll method
+   */
+  windowScroll() {
+    const navbar = document.getElementById('navbar');
+    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+      navbar.classList.add('nav-sticky')
+    } else {
+      navbar.classList.remove('nav-sticky')
     }
+  }
 
-    closeMobileMenu() {
-        this.mobileMenuOpen = false;
+  scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
 
-    toggleMobileMenu() {
-        this.mobileMenuOpen = !this.mobileMenuOpen;
-    }
+  /**
+   * Toggle navbar
+   */
+  toggleMenu() {
+    document.getElementById('topnav-menu-content').classList.toggle('show');
+  }
 
-    getCurrentLanguageFlag(): string {
-        const currentLang = this.languages.find(l => l.code === this.currentLanguage);
-        return currentLang ? currentLang.flag : 'spain.jpg';
-    }
+  /**
+   * Section changed method
+   * @param sectionId specify the current sectionID
+   */
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
 
-    // Carousel methods
-    previousSlide() {
-        this.currentSlideIndex = (this.currentSlideIndex - 1 + this.heroSlides.length) % this.heroSlides.length;
-    }
+  /**
+   * Handle login button click
+   */
+  onLogin(): void {
+    this.loginService.initiateLogin();
+  }
 
-    nextSlide() {
-        this.currentSlideIndex = (this.currentSlideIndex + 1) % this.heroSlides.length;
-    }
-
-    goToSlide(index: number) {
-        this.currentSlideIndex = index;
-    }
-
-    private triggerFadeIn() {
-        if (this.fadeTimeout) {
-            clearTimeout(this.fadeTimeout);
-        }
-        this.fadeActive = false;
-        this.fadeTimeout = setTimeout(() => {
-            this.fadeActive = true;
-        }, 80);
-    }
-
-    private triggerLanguageFade(lang: string) {
-        if (this.fadeTimeout) {
-            clearTimeout(this.fadeTimeout);
-        }
-        this.fadeActive = false;
-        this.fadeTimeout = setTimeout(() => {
-            this.translate.use(lang);
-            this.fadeActive = true;
-        }, 140);
-    }
-
-    /**
-     * Inicia el flujo OAuth2 de login
-     */
-    async onLogin() {
-        await this.loginService.initiateLogin();
-    }
+  /**
+   * Set language
+   */
+  setLanguage(text: string, lang: string, flag: string): void {
+    this.flagvalue = flag;
+    this.cookieValue = lang;
+    this.languageService.setLanguage(lang);
+  }
 }

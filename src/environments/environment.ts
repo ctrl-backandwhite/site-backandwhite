@@ -11,6 +11,7 @@ export const environment = {
   oauth2AuthorizeUrl: 'https://localhost:8443/oauth2/authorize',
   oauth2TokenUrl: 'https://localhost:8443/oauth2/token',
   oauth2LoginUrl: 'https://localhost:8443/login',
+  oauth2LogoutUrl: 'http://localhost:4200',
   clientId: 'oidc-client',
   redirectUri: 'http://localhost:4200/auth/callback',
   scope: 'openid',

@@ -1,613 +1,138 @@
 {
-  "HEADER": {
-    "SEARCH": "搜尋...",
-    "MEGA_MENU": "大型選單",
-    "NOTIFICATIONS": {
-      "TITLE": "通知",
-      "VIEW_ALL": "查看全部",
-      "LOAD_MORE": "查看更多..",
-      "FIRST": {
-        "TITLE": "您的訂單已建立",
-        "TEXT": "若多種語言融合其文法",
-        "TIME": "3 分鐘前"
-      },
-      "SECOND": {
-        "TITLE": "James Lemire",
-        "TEXT": "看起來像是簡化英文。",
-        "TIME": "1 小時前"
-      },
-      "THIRD": {
-        "TITLE": "您的商品已出貨",
-        "TEXT": "若多種語言融合其文法",
-        "TIME": "3 分鐘前"
-      },
-      "FOUR": {
-        "TITLE": "Salena Layfield",
-        "TEXT": "像是一位來自劍橋的懷疑論朋友。",
-        "TIME": "1 小時前"
-      }
-    },
-    "SETTINGS": "設定",
-    "UI": {
-      "TITLE": "UI 元件",
-      "LIGHTBOX": "燈箱",
-      "RANGE_SLIDER": "範圍滑桿",
-      "SWEET_ALERT": "甜美警示",
-      "RATING": "評分",
-      "FORMS": "表單",
-      "TABLES": "表格",
-      "CHARTS": "圖表"
-    },
-    "APPLICATIONS": {
-      "TITLE": "應用程式",
-      "ECOMMERCE": "電商",
-      "CALENDAR": "行事曆",
-      "EMAIL": "電子郵件",
-      "PROJECTS": "專案",
-      "TASKS": "任務",
-      "CONTACTS": "聯絡人"
-    },
-    "EXTRA_PAGES": {
-      "TITLE": "其他頁面",
-      "LIGHT_SIDEBAR": "淺色側邊欄",
-      "COMPACT_SIDEBAR": "精簡側邊欄",
-      "HORIZONTAL_LAYOUT": "水平版面",
-      "MAINTENANCE": "維護",
-      "COMING SOON": "即將推出",
-      "TIMELINE": "時間軸",
-      "FAQ": "常見問題"
-    },
-    "LOGIN": {
-      "PROFILE": "個人資料",
-      "MY_WALLET": "我的錢包",
-      "SETTINGS": "設定",
-      "LOCK_SCREEN": "鎖定畫面",
-      "LOGOUT": "登出"
-    }
-  },
-  "MENUITEMS": {
-    "MENU": {
-      "TEXT": "選單"
-    },
-    "DASHBOARDS": {
-      "TEXT": "儀表板",
-      "BADGE": "04",
-      "LIST": {
-        "DEFAULT": "預設",
-        "SAAS": "SaaS",
-        "CRYPTO": "加密貨幣",
-        "BLOG": "部落格",
-        "JOBS": "工作"
-      }
-    },
-    "LAYOUTS": {
-      "TEXT": "版面",
-      "LIST": {
-        "HORIZONTAL": "水平",
-        "LIGHTSIDEBAR": "淺色側邊欄",
-        "COMPACTSIDEBAR": "精簡側邊欄",
-        "ICONSIDEBAR": "圖示側邊欄",
-        "BOXED": "盒狀版面",
-        "COLOREDSIDEBAR": "彩色側邊欄",
-        "VERTICAL": "垂直",
-        "LIGHTTOPBAR": "淺色頂欄",
-        "COLOREDHEADER": "彩色標頭",
-        "SCROLLABLE": "可捲動"
-      }
-    },
-    "APPS": {
-      "TEXT": "應用"
-    },
-    "CALENDAR": {
-      "TEXT": "行事曆"
-    },
-    "CHAT": {
-      "TEXT": "聊天",
-      "BADGE": "新"
-    },
-    "FILEMANAGER": {
-      "TEXT": "檔案管理",
-      "BADGE": "新"
-    },
-    "ECOMMERCE": {
-      "TEXT": "電商",
-      "LIST": {
-        "PRODUCTS": "商品",
-        "PRODUCTDETAIL": "商品詳情",
-        "ORDERS": "訂單",
-        "CUSTOMERS": "客戶",
-        "CART": "購物車",
-        "CHECKOUT": "結帳",
-        "SHOPS": "商店",
-        "ADDPRODUCT": "新增商品"
-      }
-    },
-    "CRYPTO": {
-      "TEXT": "加密貨幣",
-      "LIST": {
-        "WALLET": "錢包",
-        "BUY/SELL": "買/賣",
-        "EXCHANGE": "兌換",
-        "LENDING": "借貸",
-        "ORDERS": "訂單",
-        "KYCAPPLICATION": "KYC 申請",
-        "ICOLANDING": "ICO Landing"
-      }
-    },
-    "EMAIL": {
-      "TEXT": "電子郵件",
-      "LIST": {
-        "INBOX": "收件匣",
-        "READEMAIL": "閱讀郵件",
-        "TEMPLATE": {
-          "BADGE": "新",
-          "TEXT": "範本",
-          "LIST": {
-            "BASIC": "基本動作",
-            "ALERT": "警示郵件",
-            "BILLING": "帳務郵件"
-          }
-        }
-      }
-    },
-    "INVOICES": {
-      "TEXT": "發票",
-      "LIST": {
-        "INVOICELIST": "發票清單",
-        "INVOICEDETAIL": "發票詳情"
-      }
-    },
-    "PROJECTS": {
-      "TEXT": "專案",
-      "LIST": {
-        "GRID": "專案格狀",
-        "PROJECTLIST": "專案清單",
-        "OVERVIEW": "專案概覽",
-        "CREATE": "建立新的"
-      }
-    },
-    "TASKS": {
-      "TEXT": "任務",
-      "LIST": {
-        "TASKLIST": "任務清單",
-        "KANBAN": "看板",
-        "CREATETASK": "建立任務"
-      }
-    },
-    "CONTACTS": {
-      "TEXT": "聯絡人",
-      "LIST": {
-        "USERGRID": "使用者格狀",
-        "USERLIST": "使用者清單",
-        "PROFILE": "個人資料"
-      }
-    },
-    "BLOG": {
-      "TEXT": "部落格",
-      "BADGE": "新",
-      "LIST": {
-        "BLOGLIST": "部落格清單",
-        "BLOGGRID": "部落格格狀",
-        "DETAIL": "部落格詳情"
-      }
-    },
-    "JOBS": {
-      "TEXT": "工作",
-      "BADGE": "新",
-      "LIST": {
-        "JOBLIST": "工作清單",
-        "JOBGRID": "工作格狀",
-        "APPLYJOB": "應徵工作",
-        "JOBDETAILS": "工作詳情",
-        "JOBCATEGORIES": "工作類別",
-        "CANDIDATE": {
-          "TEXT": "候選人",
-          "LIST": {
-            "LIST": "清單",
-            "OVERVIEW": "概覽"
-          }
-        }
-      }
-    },
-    "PAGES": {
-      "TEXT": "頁面"
-    },
-    "AUTHENTICATION": {
-      "TEXT": "身分驗證",
-      "BADGE": "新",
-      "LIST": {
-        "LOGIN": "登入",
-        "LOGIN2": "登入 2",
-        "REGISTER": "註冊",
-        "REGISTER2": "註冊 2",
-        "RECOVERPWD": "找回密碼",
-        "RECOVERPWD2": "找回密碼 2",
-        "LOCKSCREEN": "鎖定畫面",
-        "LOCKSCREEN2": "鎖定畫面 2",
-        "CONFIRMMAIL": "確認郵件",
-        "CONFIRMMAIL2": "確認郵件 2",
-        "EMAILVERIFICATION": "郵件驗證",
-        "EMAILVERIFICATION2": "郵件驗證 2",
-        "TWOSTEPVERIFICATION": "兩步驟驗證",
-        "TWOSTEPVERIFICATION2": "兩步驟驗證 2"
-      }
-    },
-    "UTILITY": {
-      "TEXT": "工具",
-      "LIST": {
-        "STARTER": "起始頁",
-        "MAINTENANCE": "維護",
-        "TIMELINE": "時間軸",
-        "FAQS": "常見問題",
-        "PRICING": "定價",
-        "ERROR404": "錯誤 404",
-        "ERROR500": "錯誤 500"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "元件"
-    },
-    "UIELEMENTS": {
-      "TEXT": "UI 元素",
-      "LIST": {
-        "ALERTS": "警示",
-        "BUTTONS": "按鈕",
-        "CARDS": "卡片",
-        "CAROUSEL": "輪播",
-        "DROPDOWNS": "下拉選單",
-        "GRID": "網格",
-        "IMAGES": "圖片",
-        "LIGHTBOX": "燈箱",
-        "MODALS": "對話框",
-        "RANGESLIDER": "範圍滑桿",
-        "PROGRESSBAR": "進度條",
-        "PLACEHOLDER": "佔位符",
-        "SWEETALERT": "甜美警示",
-        "TABS": "分頁與手風琴",
-        "TYPOGRAPHY": "字體",
-        "TOASTS": "吐司訊息",
-        "VIDEO": "影片",
-        "GENERAL": "一般",
-        "COLORS": "顏色",
-        "RATING": "評分",
-        "NOTIFICATION": "通知",
-        "UTILITIES": "工具",
-        "CROPPER": "圖片裁切"
-      }
-    },
-    "FORMS": {
-      "TEXT": "表單",
-      "BADGE": "09",
-      "LIST": {
-        "ELEMENTS": "表單元素",
-        "VALIDATION": "表單驗證",
-        "ADVANCED": "進階表單",
-        "EDITOR": "表單編輯器",
-        "FILEUPLOAD": "表單檔案上傳",
-        "REPEATER": "表單重複器",
-        "WIZARD": "表單精靈",
-        "MASK": "表單遮罩",
-        "LAYOUTS": "表單版面"
-      }
-    },
-    "TABLES": {
-      "TEXT": "表格",
-      "LIST": {
-        "BASIC": "基本表格",
-        "DataTables": "資料表",
-        "EditTableTables": "可編輯表格"
-      }
-    },
-    "CHARTS": {
-      "TEXT": "圖表",
-      "LIST": {
-        "APEX": "Apex 圖表",
-        "CHARTJS": "Chartjs 圖表",
-        "CHARTIST": "Chartist 圖表",
-        "ECHART": "E 圖表"
-      }
-    },
-    "ICONS": {
-      "TEXT": "圖示",
-      "LIST": {
-        "BOXICONS": "Boxicons",
-        "MATERIALDESIGN": "Material Design",
-        "DRIPICONS": "Dripicons",
-        "FONTAWESOME": "Font Awesome"
-      }
-    },
-    "MAPS": {
-      "TEXT": "地圖",
-      "LIST": {
-        "LEAFLETMAP": "Leaflet 地圖",
-        "AMCHARTS": "AmCharts"
-      }
-    },
-    "MULTILEVEL": {
-      "TEXT": "多層級",
-      "LIST": {
-        "LEVEL1": {
-          "1": "層級 1.1",
-          "2": "層級 1.2",
-          "LEVEL2": {
-            "1": "層級 2.1",
-            "2": "層級 2.2"
-          }
-        }
-      }
-    }
-  },
   "LANDING": {
     "NAV": {
-      "BRAND": "Back & White",
-      "FEATURES": "特色",
+      "HOME": "Home",
+      "ABOUT": "About",
+      "FEATURES": "Features",
       "ROADMAP": "Roadmap",
-      "TOKENOMICS": "Tokenomics",
-      "LOGIN": "登入",
-      "LANGUAGE": "語言"
+      "TEAM": "Team",
+      "NEWS": "News",
+      "FAQS": "FAQs",
+      "SIGN_IN": "Sign in"
     },
     "HERO": {
-      "BADGE": "✨ 代幣化股票",
-      "TITLE": "去中心化投資的未來",
-      "SUBTITLE": "參與以區塊鏈代幣創造真實企業。我們讓機構投資機會更民主化。",
-      "WHITEPAPER": "📄 下載 Whitepaper",
-      "ACCESS": "前往 →"
+      "TITLE": "BW代幣 - 代幣化真實資產",
+      "SUBTITLE": "Bridge between crypto and real economy. Fractional ownership of real companies powered by blockchain.",
+      "GET_WHITEPAPER": "下載白皮書",
+      "HOW_IT_WORK": "了解更多",
+      "GET_TOKEN": "獲取BW代幣",
+      "ETH_RATE": "Network: Binance Smart Chain (BSC BEP-20)"
     },
-    "COUNTDOWN": {
-      "LAUNCH": "正式上線",
+    "ICO": {
+      "TITLE": "代幣啟動倒計時",
+      "TIME_LEFT": "啟動日期：2027年1月30日",
       "DAYS": "天",
       "HOURS": "小時",
       "MINUTES": "分鐘",
       "SECONDS": "秒"
     },
-    "FEATURES": {
-      "TITLE": "為什麼選擇 Back & White？",
-      "SUBTITLE": "革命性的代幣化投資平台",
-      "REAL_STOCKS": {
-        "TITLE": "真實股票",
-        "DESC": "投資真實企業，享有真實股息與所有權。"
-      },
-      "SECURITY": {
-        "TITLE": "區塊鏈安全",
-        "DESC": "透過審計的智慧合約，交易安全且透明。"
-      },
-      "NO_FEES": {
-        "TITLE": "無中介",
-        "DESC": "消除傳統費用，直接取得機會。"
-      },
-      "GLOBAL": {
-        "TITLE": "全球可及",
-        "DESC": "在全球任何地方 24/7 投資，不受限制。"
-      },
-      "LIQUIDITY": {
-        "TITLE": "保證流動性",
-        "DESC": "在次級市場隨時買賣。"
-      },
-      "REGULATED": {
-        "TITLE": "受監管",
-        "DESC": "完全符合國際法規並持續審計。"
-      }
+    "ABOUT": {
+      "TITLE": "關於BW代幣",
+      "SUBTITLE": "真實資產。真實價值。真實區塊鏈。",
+      "HEADING": "連接加密與真實經濟的橋樑",
+      "DESCRIPTION": "BW Token solves the trust crisis in crypto by connecting blockchain with real enterprises. Each token represents fractional ownership of verified real-world companies, eliminating vaporware and providing tangible asset backing.",
+      "DESCRIPTION2": "Our infrastructure ensures legal compliance, transparent audits, and direct capital flow from enterprise profits to token holders through automated buy-back mechanisms.",
+      "READ_MORE": "Read White Paper",
+      "HOW_IT_WORK": "How It Works",
+      "INVEST_AMOUNT": "Total Supply",
+      "USERS": "1B BW Tokens",
+      "LENDING": "Equity Tokenization",
+      "LENDING_DESC": "Democratize access to private equity investments. What was once exclusive to institutional investors is now available to any BW holder through fractional ownership of real enterprises.",
+      "WALLET": "Real Asset Backing",
+      "WALLET_DESC": "Every BW token is backed by verifiable real-world assets. Our Proof of Asset system and real-time dashboards ensure transparency and eliminate the 'vaporware' problem plaguing crypto.",
+      "LEARN_MORE": "Explore Features"
     },
-    "HOW_IT_WORKS": {
-      "TITLE": "運作方式",
-      "SUBTITLE": "4 個簡單步驟開始投資",
-      "STEP1": {
-        "TITLE": "開立帳戶",
-        "DESC": "用電子郵件註冊並在幾分鐘內完成驗證。"
-      },
-      "STEP2": {
-        "TITLE": "存入資金",
-        "DESC": "安全地轉入加密貨幣或法幣至錢包。"
-      },
-      "STEP3": {
-        "TITLE": "選擇資產",
-        "DESC": "探索並挑選數百家代幣化企業。"
-      },
-      "STEP4": {
-        "TITLE": "獲取收益",
-        "DESC": "獲得自動股息與資本增值。"
-      }
+    "FEATURES": {
+      "TITLE": "核心特性",
+      "SUBTITLE": "What Makes BW Token Unique",
+      "SECURITY": "安全性和合規性",
+      "SECURITY_DESC": "BEP-3643 standard compliance with integrated KYC/AML protocols. External audits from leading firms. Legal entity ownership through BW Holding Ltd structure.",
+      "FEATURE_1": "Transparent verification",
+      "FEATURE_2": "Audited enterprises",
+      "LENDING_TITLE": "治理和投票",
+      "LENDING_DESC": "Token holders vote on enterprise selection, portfolio management, and protocol decisions. Staking requirements prevent manipulation. Direct influence on ecosystem growth.",
+      "LENDING_FEATURE_1": "Democratic decision-making",
+      "LENDING_FEATURE_2": "30+ day staking requirement",
+      "WALLET_TITLE": "價值生成",
+      "WALLET_DESC": "30% of enterprise net profits fuel token buy-backs in open markets. Create upward price pressure while benefiting all holders. Burn mechanism until 50% supply reduction.",
+      "WALLET_FEATURE_1": "Constant buy-back pressure",
+      "WALLET_FEATURE_2": "Dividend redistribution option"
     },
     "ROADMAP": {
-      "TITLE": "Roadmap 2025-2026",
-      "SUBTITLE": "我們革命化股票市場的計畫",
-      "Q1_2025": {
-        "TITLE": "Testnet 上線",
-        "ITEM1": "示範平台",
-        "ITEM2": "已審計智慧合約",
-        "ITEM3": "首批用戶測試"
-      },
-      "Q2_2025": {
-        "TITLE": "Mainnet 與代幣上線",
-        "ITEM1": "Mainnet 上線",
-        "ITEM2": "BW 代幣可用",
-        "ITEM3": "首批股票配對"
-      },
-      "Q3_2025": {
-        "TITLE": "資產擴張",
-        "ITEM1": "100+ 企業上架",
-        "ITEM2": "與交易所整合",
-        "ITEM3": "質押計畫"
-      },
-      "Q4_2025": {
-        "TITLE": "次級市場",
-        "ITEM1": "整合 DEX",
-        "ITEM2": "保證流動性",
-        "ITEM3": "金融衍生品"
-      },
-      "Q1_2026": {
-        "TITLE": "全球擴張",
-        "ITEM1": "10+ 國家監管",
-        "ITEM2": "多種法幣",
-        "ITEM3": "原生行動 App"
-      },
-      "H2_2026": {
-        "TITLE": "DAO 治理",
-        "ITEM1": "去中心化治理",
-        "ITEM2": "社群提案",
-        "ITEM3": "完全自治協議"
-      }
-    },
-    "TOKENOMICS": {
-      "TITLE": "BW 代幣",
-      "SUBTITLE": "戰略分配",
-      "TREASURY": "資產庫（新企業）",
-      "PUBLIC_SALE": "公開發售 / IDO",
-      "DEX_LIQUIDITY": "流動性（DEX/CEX）",
-      "TEAM_VESTING": "團隊（Vesting 4 年）",
-      "MARKETING": "行銷和合作夥伴",
-      "SPECS": "規格",
-      "TOTAL_SUPPLY": "總供應量",
-      "ICO_PRICE": "ICO 價格",
-      "BLOCKCHAIN": "區塊鏈",
-      "STANDARD": "標準",
-      "UTILITY": "效用",
-      "UTILITY_VALUE": "治理、費用、質押",
-      "BURN": "代幣銷毀機制",
-      "BURN_VALUE": "每筆交易 0.5%"
-    },
-    "CTA": {
-      "TITLE": "成為金融革命的一部分",
-      "SUBTITLE": "加入成千上萬已在推動金融民主化的投資者",
-      "BUTTON": "立即開戶"
+      "TITLE": "Development Timeline",
+      "SUBTITLE": "2027-2028 Launch & Growth Strategy",
+      "PHASE1_TITLE": "Web Launch",
+      "PHASE1_DATE": "January 1, 2027",
+      "PHASE1_DESC": "Public website deployment. White paper release. Community building begins. KYC infrastructure setup for compliance.",
+      "PHASE2_TITLE": "Token Generation",
+      "PHASE2_DATE": "January 30, 2027",
+      "PHASE2_DESC": "TGE on PancakeSwap. Initial liquidity deployment. First governance voting period opens for Enterprise #1 selection.",
+      "PHASE3_TITLE": "BW Holding Registration",
+      "PHASE3_DATE": "Q1 2027",
+      "PHASE3_DESC": "Legal constitution of BW Holding Ltd. Smart contract audits completed. Angel investor allocation begins.",
+      "PHASE4_TITLE": "Enterprise #1 Launch",
+      "PHASE4_DATE": "Q2 2027",
+      "PHASE4_DESC": "Community votes select first real enterprise. Funding deployment. Operations begin. Real profit generation starts.",
+      "PHASE5_TITLE": "Dashboard Launch",
+      "PHASE5_DATE": "Q1-Q2 2028",
+      "PHASE6_TITLE": "Mobile App Release",
+      "PHASE6_DATE": "Q3 2028"
     },
     "TEAM": {
-      "TITLE": "領導團隊",
-      "SUBTITLE": "資深專業人士推動產品、合規與成長。",
-      "MEMBERS": {
-        "LEAD": {
-          "NAME": "Mr. Important",
-          "ROLE": "CEO & Founder",
-          "BIO": "15+ 年資本市場與金融科技策略經驗。"
-        },
-        "M1": {
-          "NAME": "ALF One",
-          "ROLE": "CTO",
-          "BIO": "可擴展平台的架構與安全。"
-        },
-        "M2": {
-          "NAME": "ALF Two",
-          "ROLE": "COO",
-          "BIO": "營運、合作與監管協調。"
-        },
-        "M3": {
-          "NAME": "ALF Three",
-          "ROLE": "Head of Product",
-          "BIO": "使用者體驗與路線圖執行。"
-        },
-        "M4": {
-          "NAME": "ALF Four",
-          "ROLE": "Head of Compliance",
-          "BIO": "風險、KYC/AML 與治理。"
-        }
-      }
+      "TITLE": "Team",
+      "SUBTITLE": "Meet our team",
+      "CEO_NAME": "Mark Hurley",
+      "CEO_ROLE": "CEO & Lead",
+      "BLOCKCHAIN_NAME": "Calvin Smith",
+      "BLOCKCHAIN_ROLE": "Blockchain developer",
+      "DESIGNER_1_NAME": "Vickie Sample",
+      "DESIGNER_1_ROLE": "Designer",
+      "APP_DEV_NAME": "Alma Farley",
+      "APP_DEV_ROLE": "App developer",
+      "DESIGNER_2_NAME": "Amy Hood",
+      "DESIGNER_2_ROLE": "Designer"
     },
-    "FOOTER": {
-      "DESCRIPTION": "企業級數位資產與投資平台，重視安全、透明與合規。",
-      "COMPANY": {
-        "TITLE": "公司",
-        "FEATURES": "特色",
-        "ROADMAP": "Roadmap",
-        "TOKENOMICS": "Tokenomics"
-      },
-      "PRODUCT": {
-        "TITLE": "產品",
-        "ACCESS": "存取",
-        "SECURITY": "安全",
-        "UTILITY": "效用"
-      },
-      "LEGAL": {
-        "TITLE": "法律",
-        "TERMS": "條款",
-        "PRIVACY": "隱私",
-        "COOKIES": "Cookies"
-      },
-      "CONTACT": {
-        "TITLE": "聯絡",
-        "LOCATION": "Barcelona · Madrid · Miami"
-      },
-      "COPYRIGHT": "© {{year}} Back & White. 保留所有權利。",
-      "META": {
-        "ACCESS": "存取",
-        "FEATURES": "特色"
-      }
-    }  },
-  "admin": {
-    "welcome": "歡迎來到 Back & White 管理面板",
-    "logout": "登出",
-    "dashboard": "儀表板",
-    "dashboardDesc": "監控您的帳戶並查看分析",
-    "users": "用戶",
-    "usersDesc": "管理用戶帳戶和權限",
-    "settings": "設置",
-    "settingsDesc": "配置您的偏好設置",
-    "userInfo": "用戶信息",
-    "accessToken": "訪問令牌",
-    "tokenStatus": "令牌狀態",
-    "active": "活躍"
+    "NEWS": {
+      "TITLE": "最新更新",
+      "SUBTITLE": "Project Developments & Announcements",
+      "ARTICLE_1_TITLE": "Token Launch Announcement",
+      "ARTICLE_1_DESC": "BW Token goes live on January 30, 2027. Historical moment: real assets meet blockchain.",
+      "ARTICLE_1_DATE": "January 20, 2027",
+      "ARTICLE_2_TITLE": "White Paper Released",
+      "ARTICLE_2_DESC": "Complete tokenomics, governance structure, and technical specifications for BW Token ecosystem published.",
+      "ARTICLE_2_DATE": "January 5, 2027",
+      "ARTICLE_3_TITLE": "Smart Contract Audited",
+      "ARTICLE_3_DESC": "Security audit completed. BEP-3643 compliance verified. Ready for mainnet deployment.",
+      "ARTICLE_3_DATE": "January 15, 2027",
+      "READ_MORE": "Read more",
+      "CATEGORY": "Announcements"
+    },
+    "FAQS": {
+      "TITLE": "常見問題",
+      "SUBTITLE": "Learn About BW Token",
+      "TAB_GENERAL": "Token Basics",
+      "TAB_TOKENSALE": "Enterprise & Economics",
+      "TAB_ROADMAP": "Technical & Legal",
+      "QUESTION_1": "What is BW Token?",
+      "QUESTION_2": "How does tokenization work?",
+      "QUESTION_3": "What backs the token value?",
+      "QUESTION_4": "How do I participate?",
+      "QUESTION_5": "What is buy-back mechanism?",
+      "QUESTION_6": "How are enterprises selected?",
+      "QUESTION_7": "What is BEP-3643 compliance?",
+      "QUESTION_8": "When is the Investor Dashboard ready?",
+      "ANSWER_1": "BW Token is a cryptocurrency that represents fractional ownership of real, verified enterprises. Unlike traditional crypto, every token is backed by verifiable real-world assets and generates real profits.",
+      "ANSWER_2": "Tokenization converts ownership stakes in real companies into digital tokens on blockchain. This allows fractional ownership, transparent transfer, and democratic governance through smart contracts.",
+      "ANSWER_3": "BW tokens are backed by real enterprises owned through BW Holding Ltd legal structure. Investors verify asset existence through our Proof of Asset system and real-time dashboards.",
+      "ANSWER_4": "Purchase BW tokens on PancakeSwap starting January 30, 2027. Complete KYC verification. Stake tokens to participate in enterprise selection governance voting.",
+      "ANSWER_5": "30% of enterprise profits are used to buy BW tokens in open markets, creating constant upward price pressure. These tokens are either burned (reducing supply) or distributed as dividends to holders.",
+      "ANSWER_6": "Community members holding staked BW tokens vote on which real enterprises to finance from the asset treasury. This democratic process begins in Q4 2027.",
+      "ANSWER_7": "BEP-3643 is a blockchain standard for security tokens with integrated compliance, KYC/AML protocols, and identity verification. It ensures legal compliance and investor protection.",
+      "ANSWER_8": "The Investor Dashboard launches in Q1-Q2 2028, providing real-time visibility into enterprise revenues, profit distributions, and token buy-back activities."
+    }
   },
-  "WALLET": {
-    "CONNECT": "連接錢包",
-    "DISCONNECT": "斷開連接",
-    "BALANCE": "餘額"
-  },
-  "DAO": {
-    "TITLE": "DAO - 公司投票和投資",
-    "SUBTITLE": "通過基於代幣的投票參與公司啟動",
-    "OVERVIEW": "總覽",
-    "WALLET_INFO": "錢包",
-    "WALLET_CONNECTED": "錢包已連線",
-    "WALLET_NOT_CONNECTED": "錢包未連線",
-    "CONNECT_HINT": "連線錢包以存取治理功能。",
-    "GOVERNANCE_METRICS": "治理指標",
-    "PROPOSALS": "提案",
-    "PROPOSALS_SUBTITLE": "檢視、投票並投資於進行中的提案。",
-    "MANAGE_PANEL": "管理面板",
-    "MANAGE_SUBTITLE": "建立或更新提案與治理設定。",
-    "MANAGE": "管理提案",
-    "BACK": "返回",
-    "BALANCE": "餘額",
-    "HOLDING_DAYS": "持有天數",
-    "DAYS": "天",
-    "STAKED_AMOUNT": "質押金額",
-    "VOTING_STATUS": "投票狀態",
-    "CAN_VOTE": "有資格投票",
-    "CANNOT_VOTE": "沒有資格投票",
-    "INDUSTRY": "行業",
-    "LOCATION": "位置",
-    "VOTES": "投票",
-    "FUNDING": "融資",
-    "DAYS_LEFT": "剩餘天數",
-    "EXPECTED_RETURN": "預期回報",
-    "VOTE": "投票",
-    "INVEST": "投資",
-    "AMOUNT_TO_STAKE": "質押金額",
-    "AVAILABLE_BALANCE": "可用餘額",
-    "QUICK_AMOUNTS": "快速選擇",
-    "VOTING_POWER": "投票權",
-    "REMAINING_BALANCE": "剩餘餘額",
-    "IMPORTANT": "重要",
-    "VOTING_INFO_1": "您的代幣將在投票後被鎖定30天",
-    "VOTING_INFO_2": "每個代幣計為1票",
-    "VOTING_INFO_3": "提交後無法撤銷投票",
-    "CONFIRM_VOTE": "確認投票",
-    "CANCEL": "取消",
-    "MANAGE_PROPOSALS": "管理提案",
-    "NEW_PROPOSAL": "新提案",
-    "COMPANY_NAME": "公司名稱",
-    "DESCRIPTION": "描述",
-    "CATEGORY": "類別",
-    "SELECT_CATEGORY": "選擇類別",
-    "CATEGORY_RETAIL": "零售",
-    "CATEGORY_FOOD": "食品和飲料",
-    "CATEGORY_ECOMMERCE": "電子商務",
-    "CATEGORY_TECHNOLOGY": "技術",
-    "TARGET_FUNDING": "目標融資 ($)",
-    "EDIT_PROPOSAL": "編輯提案",
-    "UPDATE": "更新",
-    "CREATE": "建立",
-    "NO_PROPOSALS": "暫無提案。創建一個開始!",
-    "TARGET": "目標",
-    "FUNDED": "已融資"
+  "FOOTER": {
+    "COPYRIGHT": "© Back and White. Crafted with",
+    "BY": "by Nexaplaform"
   }
 }

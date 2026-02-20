@@ -37,7 +37,8 @@
               "metismenujs/dist/metismenujs",
               "sweetalert2",
               "polylabel",
-              "@ckeditor/ckeditor5-build-classic"
+              "@ckeditor/ckeditor5-build-classic",
+              "particles.js"
             ],
             "outputPath": {
               "base": "dist/skote"
@@ -63,7 +64,8 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/slick-carousel/slick/slick.min.js"
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "node_modules/particles.js/particles.js"
             ],
             "browser": "src/main.ts",
             "stylePreprocessorOptions": {

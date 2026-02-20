@@ -2,8 +2,8 @@ import { Directive, Input, EventEmitter, Inject, Output, ElementRef, HostListene
 
 
 @Directive({
-    selector: '[appScrollspy]',
-    standalone: false
+  selector: '[appScrollspy]',
+  standalone: false
 })
 export class ScrollspyDirective {
 
@@ -12,7 +12,7 @@ export class ScrollspyDirective {
   private currentSection: string;
 
   // tslint:disable-next-line: variable-name
-  constructor(private _el: ElementRef, @Inject(DOCUMENT) private document: Document, ) { }
+  constructor(private _el: ElementRef, @Inject(DOCUMENT) private document: Document,) { }
 
   @HostListener('window:scroll', ['$event'])
   /**

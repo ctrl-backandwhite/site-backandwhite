@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/dao/dao.component.scss"],
+  "sourcesContent": [".dao-page {\n    .dao-header-actions {\n        display: flex;\n        flex-wrap: wrap;\n        gap: 0.5rem;\n    }\n\n    .dao-wallet-address {\n        font-family: 'Courier New', monospace;\n        letter-spacing: 0.4px;\n    }\n}\n\n@media (max-width: 576px) {\n    .dao-page {\n        .dao-header-actions {\n            width: 100%;\n        }\n\n        .dao-header-actions .btn {\n            flex: 1;\n        }\n    }\n}\n\n.proposals-grid {\n    grid-template-columns: 1fr;\n    gap: 12px;\n}\n"],
+  "mappings": ";AACI,CAAA,SAAA,CAAA;AACI,WAAA;AACA,aAAA;AACA,OAAA;;AAGJ,CANA,SAMA,CAAA;AACI,eAAA,aAAA,EAAA;AACA,kBAAA;;AAIR,QAAA,WAAA;AAEQ,GAdJ,SAcI,CAdJ;AAeQ,WAAA;;AAGJ,GAlBJ,SAkBI,CAlBJ,mBAkBI,CAAA;AACI,UAAA;;;AAKZ,CAAA;AACI,yBAAA;AACA,OAAA;;",
+  "names": []
+}

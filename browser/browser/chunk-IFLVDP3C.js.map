@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/store/Invoices/invoice.action.ts"],
+  "sourcesContent": ["import { createAction, props } from '@ngrx/store';\r\nimport { InvoiceList } from './invoices.model';\r\n\r\n// fetch \r\nexport const fetchInvoiceListData = createAction('[Data] fetch InvoiceList');\r\nexport const fetchInvoiceListSuccess = createAction('[Data] fetch InvoiceList success', props<{ InvoiceData: InvoiceList[] }>())\r\nexport const fetchInvoiceListFail = createAction('[Data fetch InvoiceList failed]', props<{ error: string }>())\r\n"],
+  "mappings": ";;;;;;AAIO,IAAM,uBAAuB,aAAa,0BAA0B;AACpE,IAAM,0BAA0B,aAAa,oCAAoC,MAAK,CAAkC;AACxH,IAAM,uBAAuB,aAAa,mCAAmC,MAAK,CAAqB;",
+  "names": []
+}

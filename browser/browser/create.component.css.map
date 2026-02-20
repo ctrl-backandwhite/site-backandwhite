@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/projects/create/create.component.scss"],
+  "sourcesContent": [".custom-day {\r\n    text-align: center;\r\n    padding: 0.185rem 0.25rem;\r\n    display: inline-block;\r\n    height: 2rem;\r\n    width: 2rem;\r\n}\r\n\r\n.custom-day.focused {\r\n    background-color: #e6e6e6;\r\n}\r\n\r\n.custom-day.range,\r\n.custom-day:hover {\r\n    background-color: #556ee6;\r\n    color: white;\r\n}\r\n\r\n.custom-day.faded {\r\n    background-color: #556ee6;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAA;AACI,cAAA;AACA,WAAA,SAAA;AACA,WAAA;AACA,UAAA;AACA,SAAA;;AAGJ,CARA,UAQA,CAAA;AACI,oBAAA;;AAGJ,CAZA,UAYA,CAAA;AAAA,CAZA,UAYA;AAEI,oBAAA;AACA,SAAA;;AAGJ,CAlBA,UAkBA,CAAA;AACI,oBAAA;;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/user.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { User } from 'src/app/store/Authentication/auth.models';\r\n\r\n@Injectable({ providedIn: 'root' })\r\nexport class UserProfileService {\r\n    constructor(private http: HttpClient) { }\r\n    /***\r\n     * Get All User\r\n     */\r\n    getAll() {\r\n        return this.http.get<User[]>(`api/users`);\r\n    }\r\n\r\n    /***\r\n     * Facked User Register\r\n     */\r\n    register(user: User) {\r\n        return this.http.post(`/users/register`, user);\r\n    }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;AAKM,IAAO,qBAAP,MAAO,oBAAkB;EAC3B,YAAoB,MAAgB;AAAhB,SAAA,OAAA;EAAoB;;;;EAIxC,SAAM;AACF,WAAO,KAAK,KAAK,IAAY,WAAW;EAC5C;;;;EAKA,SAAS,MAAU;AACf,WAAO,KAAK,KAAK,KAAK,mBAAmB,IAAI;EACjD;;;uCAdS,qBAAkB,mBAAA,UAAA,CAAA;IAAA;EAAA;;4EAAlB,qBAAkB,SAAlB,oBAAkB,WAAA,YADL,OAAM,CAAA;EAAA;;;sEACnB,oBAAkB,CAAA;UAD9B;WAAW,EAAE,YAAY,OAAM,CAAE;;;",
+  "names": []
+}

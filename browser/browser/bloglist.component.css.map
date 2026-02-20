@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/blog/bloglist/bloglist.component.scss"],
+  "sourcesContent": [".blog-card {\r\n    .nav {\r\n        align-items: end;\r\n        justify-content: flex-end;\r\n    }\r\n    h5 {\r\n        // position: absolute;\r\n        top: 10px;    \r\n    }\r\n    .card-body {\r\n        padding: 1.25rem 0 0;\r\n    }\r\n}"],
+  "mappings": ";AACI,CAAA,UAAA,CAAA;AACI,eAAA;AACA,mBAAA;;AAEJ,CAJA,UAIA;AAEI,OAAA;;AAEJ,CARA,UAQA,CAAA;AACI,WAAA,QAAA,EAAA;;",
+  "names": []
+}

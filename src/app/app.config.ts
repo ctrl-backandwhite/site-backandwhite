@@ -3,9 +3,6 @@ import { HttpClient, HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromD
 import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { provideToastr } from 'ngx-toastr';

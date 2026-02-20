@@ -1,611 +1,138 @@
 {
-  "HEADER": {
-    "SEARCH": "Cerca...",
-    "MEGA_MENU": "Mega Menu",
-    "NOTIFICATIONS": {
-      "TITLE": "Notifiche",
-      "VIEW_ALL": "Visualizza tutto",
-      "LOAD_MORE": "Visualizza altro..",
-      "FIRST": {
-        "TITLE": "Il tuo ordine è stato effettuato",
-        "TEXT": "Se più lingue si fondono la grammatica",
-        "TIME": "3 minuti fa"
-      },
-      "SECOND": {
-        "TITLE": "James Lemire",
-        "TEXT": "Sembrerà un inglese semplificato.",
-        "TIME": "1 ora fa"
-      },
-      "THIRD": {
-        "TITLE": "Il tuo articolo è spedito",
-        "TEXT": "Se più lingue si fondono la grammatica",
-        "TIME": "3 minuti fa"
-      },
-      "FOUR": {
-        "TITLE": "Salena Layfield",
-        "TEXT": "Come mio scettico amico di Cambridge occidentale.",
-        "TIME": "1 ora fa"
-      }
-    },
-    "SETTINGS": "Settings",
-    "UI": {
-      "TITLE": "Componenti dell'interfaccia utente",
-      "LIGHTBOX": "LightBox",
-      "RANGE_SLIDER": "Range Slider",
-      "SWEET_ALERT": "Sweet Alert",
-      "RATING": "Rating",
-      "FORMS": "Moduli",
-      "TABLES": "Tavoli",
-      "CHARTS": "Grafici"
-    },
-    "APPLICATIONS": {
-      "TITLE": "Applicazioni",
-      "ECOMMERCE": "Ecommerce",
-      "CALENDAR": "Calendario",
-      "EMAIL": "Email",
-      "PROJECTS": "Progetti",
-      "TASKS": "Compiti",
-      "CONTACTS": "Contatti"
-    },
-    "EXTRA_PAGES": {
-      "TITLE": "Pagine extra",
-      "LIGHT_SIDEBAR": "Light Sidebar",
-      "COMPACT_SIDEBAR": "Barra laterale compatta",
-      "HORIZONTAL_LAYOUT": "Layout orizzontale",
-      "MAINTENANCE": "Manutenzione",
-      "COMING SOON": "Prossimamente",
-      "TIMELINE": "Cronologia",
-      "FAQ": "FAQs"
-    },
-    "LOGIN": {
-      "PROFILE": "Profile",
-      "MY_WALLET": "Il mio portafoglio",
-      "SETTINGS": "Impostazioni",
-      "LOCK_SCREEN": "Blocca schermo",
-      "LOGOUT": "Logout"
-    }
-  },
-  "MENUITEMS": {
-    "MENU": {
-      "TEXT": "Menù"
-    },
-    "DASHBOARDS": {
-      "TEXT": "cruscotti",
-      "BADGE": "04",
-      "LIST": {
-        "DEFAULT": "Predefinita",
-        "SAAS": "Saas",
-        "CRYPTO": "Crypto",
-        "BLOG": "Blog",
-        "JOBS": "Lavori"
-      }
-    },
-    "LAYOUTS": {
-      "TEXT": "layout",
-      "LIST": {
-        "HORIZONTAL": "Orizzontale",
-        "LIGHTSIDEBAR": "Barra laterale leggera",
-        "COMPACTSIDEBAR": "Barra laterale compatta",
-        "ICONSIDEBAR": "Barra laterale delle icone",
-        "BOXED": "Layout in scatola",
-        "COLOREDSIDEBAR": "Barra laterale colorata",
-        "VERTICAL": "Verticale",
-        "LIGHTTOPBAR": "Barra superiore leggera",
-        "COLOREDHEADER": "Intestazione colorata",
-        "SCROLLABLE": "Scorrevole"
-      }
-    },
-    "APPS": {
-      "TEXT": "applicazioni"
-    },
-    "CALENDAR": {
-      "TEXT": "Calendario"
-    },
-    "CHAT": {
-      "TEXT": "Chiacchierare",
-      "BADGE": "Nuova"
-    },
-    "FILEMANAGER": {
-      "TEXT": "Filemanager",
-      "BADGE": "Nuova"
-    },
-    "ECOMMERCE": {
-      "TEXT": "ecommerce",
-      "LIST": {
-        "PRODUCTS": "Prodotti",
-        "PRODUCTDETAIL": "Dettagli del prodotto",
-        "ORDERS": "Ordini",
-        "CUSTOMERS": "I clienti",
-        "CART": "Carrello",
-        "CHECKOUT": "Check-out",
-        "SHOPS": "negozi",
-        "ADDPRODUCT": "Aggiungi prodotto"
-      }
-    },
-    "CRYPTO": {
-      "TEXT": "Crypto",
-      "LIST": {
-        "WALLET": "Portafoglio",
-        "BUY/SELL": "Comprare vendere",
-        "EXCHANGE": "Scambio",
-        "LENDING": "prestito",
-        "ORDERS": "Ordini",
-        "KYCAPPLICATION": "Applicazione KYC",
-        "ICOLANDING": "Atterraggio ICO"
-      }
-    },
-    "EMAIL": {
-      "TEXT": "E-mail",
-      "LIST": {
-        "INBOX": "Posta in arrivo",
-        "READEMAIL": "Leggi l'email",
-        "TEMPLATE": {
-          "TEXT": "Modella",
-          "BADGE": "Nuova",
-          "LIST": {
-            "BASIC": "Azione di base",
-            "ALERT": "Email di avviso",
-            "BILLING": "Email di fatturazione"
-          }
-        }
-      }
-    },
-    "INVOICES": {
-      "TEXT": "Fatture",
-      "LIST": {
-        "INVOICELIST": "Elenco fatture",
-        "INVOICEDETAIL": "Dettaglio fattura"
-      }
-    },
-    "PROJECTS": {
-      "TEXT": "progetti",
-      "LIST": {
-        "GRID": "Griglia dei progetti",
-        "PROJECTLIST": "Elenco dei progetti",
-        "OVERVIEW": "Panoramica del progetto",
-        "CREATE": "Creare nuovo"
-      }
-    },
-    "TASKS": {
-      "TEXT": "Compiti",
-      "LIST": {
-        "TASKLIST": "Elenco delle attività",
-        "KANBAN": "Kanban Board",
-        "CREATETASK": "Crea attività"
-      }
-    },
-    "CONTACTS": {
-      "TEXT": "Contatti",
-      "LIST": {
-        "USERGRID": "Griglia utente",
-        "USERLIST": "lista degli utenti",
-        "PROFILE": "Profilo"
-      }
-    },
-    "BLOG": {
-      "TEXT": "Blog",
-      "BADGE": "Nuova",
-      "LIST": {
-        "BLOGLIST": "Elenco blog",
-        "BLOGGRID": "Blog Grid",
-        "DETAIL": "Dettagli del blog"
-      }
-    },
-    "JOBS": {
-      "TEXT": "Lavori",
-      "BADGE": "Nuova",
-      "LIST": {
-        "JOBLIST": "Elenco lavori",
-        "JOBGRID": "Griglia di lavoro",
-        "APPLYJOB": "Applicare lavoro",
-        "JOBDETAILS": "Dettagli di lavoro",
-        "JOBCATEGORIES": "Categorie di lavoro",
-        "CANDIDATE": {
-          "TEXT": "Candidata",
-          "LIST": {
-            "LIST": "Elenco",
-            "OVERVIEW": "Panoramica"
-          }
-        }
-      }
-    },
-    "PAGES": {
-      "TEXT": "pagine"
-    },
-    "AUTHENTICATION": {
-      "TEXT": "Autenticazione",
-      "BADGE": "Nuova",
-      "LIST": {
-        "LOGIN": "Accesso",
-        "REGISTER": "Registrati",
-        "RECOVERPWD": "Recupera la password",
-        "LOCKSCREEN": "Blocca schermo",
-        "LOGIN2": "Accesso 2",
-        "REGISTER2": "Registrati 2",
-        "RECOVERPWD2": "Recupera la password 2",
-        "LOCKSCREEN2": "Blocca schermo 2",
-        "CONFIRMMAIL": "Conferma posta",
-        "CONFIRMMAIL2": "Conferma posta 2",
-        "EMAILVERIFICATION": "Verifica email",
-        "EMAILVERIFICATION2": "Verifica email 2",
-        "TWOSTEPVERIFICATION": "Verifica in due passaggi",
-        "TWOSTEPVERIFICATION2": "Verifica in due passaggi 2"
-      }
-    },
-    "UTILITY": {
-      "TEXT": "Utilità",
-      "LIST": {
-        "STARTER": "Pagina iniziale",
-        "MAINTENANCE": "Manutenzione",
-        "TIMELINE": "Sequenza temporale",
-        "FAQS": "FAQs",
-        "PRICING": "Prezzi",
-        "ERROR404": "Errore 404",
-        "ERROR500": "Errore 500"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "componenti"
-    },
-    "UIELEMENTS": {
-      "TEXT": "Elementi dell'interfaccia utente",
-      "LIST": {
-        "ALERTS": "avvisi",
-        "BUTTONS": "pulsanti",
-        "CARDS": "Carte",
-        "CAROUSEL": "Giostra",
-        "DROPDOWNS": "menu a discesa",
-        "GRID": "Griglia",
-        "IMAGES": "immagini",
-        "MODALS": "Modals",
-        "RANGESLIDER": "Cursore gamma",
-        "PROGRESSBAR": "Indicatori di stato",
-        "SWEETALERT": "Avviso dolce",
-        "TABS": "Schede e fisarmoniche",
-        "TYPOGRAPHY": "Tipografia",
-        "TOASTS": "Brindisi",
-        "VIDEO": "video",
-        "GENERAL": "Generale",
-        "COLORS": "Colori",
-        "RATING": "Valutazione",
-        "NOTIFICATION": "Notifica",
-        "UTILITIES": "Utilità",
-        "CROPPER": "Ritaglia immagine"
-      }
-    },
-    "FORMS": {
-      "TEXT": "Forme",
-      "BADGE": "09",
-      "LIST": {
-        "ELEMENTS": "Form Elements",
-        "VALIDATION": "Convalida del modulo",
-        "ADVANCED": "Modulo avanzato",
-        "EDITOR": "Editor di moduli",
-        "FILEUPLOAD": "Caricamento file modulo",
-        "REPEATER": "Ripetitore di moduli",
-        "WIZARD": "Procedura guidata modulo",
-        "MASK": "Maschera Maschera",
-        "LAYOUTS": "Layout dei moduli"
-      }
-    },
-    "TABLES": {
-      "TEXT": "tabelle",
-      "LIST": {
-        "BASIC": "Tabelle di base",
-        "DataTables": "Tabelle dati",
-        "EditTableTables": "Tabella modificabile"
-      }
-    },
-    "CHARTS": {
-      "TEXT": "Grafici",
-      "LIST": {
-        "APEX": "Grafico dell'apice",
-        "CHARTJS": "Grafico di Chartjs",
-        "CHARTIST": "Chart Chartist",
-        "ECHART": "E Chart"
-      }
-    },
-    "ICONS": {
-      "TEXT": "Icons",
-      "LIST": {
-        "BOXICONS": "Boxicons",
-        "MATERIALDESIGN": "Design materiale",
-        "DRIPICONS": "Dripicons",
-        "FONTAWESOME": "Carattere fantastico"
-      }
-    },
-    "MAPS": {
-      "TEXT": "Mappe",
-      "LIST": {
-
-        "LEAFLETMAP": "Mappe volantino",
-        "AMCHARTS": "AmCharts"
-      }
-    },
-    "MULTILEVEL": {
-      "TEXT": "Multi livello",
-      "LIST": {
-        "LEVEL1": {
-          "1": "Livello 1.1",
-          "2": "Livello 1.2",
-          "LEVEL2": {
-            "1": "Livello 2.1",
-            "2": "Livello 2.2"
-          }
-        }
-      }
-    }
-  },
   "LANDING": {
     "NAV": {
-      "BRAND": "Back & White",
-      "FEATURES": "Funzionalità",
+      "HOME": "Home",
+      "ABOUT": "About",
+      "FEATURES": "Features",
       "ROADMAP": "Roadmap",
-      "TOKENOMICS": "Tokenomics",
-      "LOGIN": "Accesso",
-      "LANGUAGE": "Lingua"
+      "TEAM": "Team",
+      "NEWS": "News",
+      "FAQS": "FAQs",
+      "SIGN_IN": "Sign in"
     },
     "HERO": {
-      "BADGE": "✨ Azioni tokenizzate",
-      "TITLE": "Il futuro degli investimenti decentralizzati",
-      "SUBTITLE": "Partecipa alla creazione di aziende reali con token basati su blockchain. Democratizziamo l’accesso alle opportunità di investimento istituzionali.",
-      "WHITEPAPER": "📄 Scarica il Whitepaper",
-      "ACCESS": "Accedi →"
+      "TITLE": "Token BW - Tokenizzare Beni Reali",
+      "SUBTITLE": "Bridge between crypto and real economy. Fractional ownership of real companies powered by blockchain.",
+      "GET_WHITEPAPER": "Scarica White Paper",
+      "HOW_IT_WORK": "Scopri di Più",
+      "GET_TOKEN": "Ottieni Token BW",
+      "ETH_RATE": "Rete: Binance Smart Chain (BSC BEP-20)"
     },
-    "COUNTDOWN": {
-      "LAUNCH": "Lancio ufficiale",
+    "ICO": {
+      "TITLE": "Conto alla Rovescia del Lancio",
+      "TIME_LEFT": "Data di Lancio: 30 Gennaio 2027",
       "DAYS": "Giorni",
       "HOURS": "Ore",
       "MINUTES": "Minuti",
       "SECONDS": "Secondi"
     },
-    "FEATURES": {
-      "TITLE": "Perché Back & White?",
-      "SUBTITLE": "La piattaforma rivoluzionaria per investimenti tokenizzati",
-      "REAL_STOCKS": {
-        "TITLE": "Azioni reali",
-        "DESC": "Investi in aziende autentiche con dividendi reali e diritti di proprietà."
-      },
-      "SECURITY": {
-        "TITLE": "Sicurezza blockchain",
-        "DESC": "Transazioni sicure e trasparenti tramite smart contract auditati."
-      },
-      "NO_FEES": {
-        "TITLE": "Nessun intermediario",
-        "DESC": "Elimina le commissioni tradizionali e accedi direttamente alle opportunità."
-      },
-      "GLOBAL": {
-        "TITLE": "Accesso globale",
-        "DESC": "Investi da qualsiasi parte del mondo, 24/7, senza restrizioni."
-      },
-      "LIQUIDITY": {
-        "TITLE": "Liquidità garantita",
-        "DESC": "Compra e vendi in qualsiasi momento nel nostro mercato secondario."
-      },
-      "REGULATED": {
-        "TITLE": "Regolato",
-        "DESC": "Piena conformità alle normative internazionali e auditing costante."
-      }
+    "ABOUT": {
+      "TITLE": "Su Token BW",
+      "SUBTITLE": "Beni Reali. Valore Reale. Blockchain Reale.",
+      "HEADING": "Il Ponte Tra Cripto e Economia Reale",
+      "DESCRIPTION": "BW Token solves the trust crisis in crypto by connecting blockchain with real enterprises. Each token represents fractional ownership of verified real-world companies, eliminating vaporware and providing tangible asset backing.",
+      "DESCRIPTION2": "Our infrastructure ensures legal compliance, transparent audits, and direct capital flow from enterprise profits to token holders through automated buy-back mechanisms.",
+      "READ_MORE": "Read White Paper",
+      "HOW_IT_WORK": "How It Works",
+      "INVEST_AMOUNT": "Total Supply",
+      "USERS": "1B BW Tokens",
+      "LENDING": "Equity Tokenization",
+      "LENDING_DESC": "Democratize access to private equity investments. What was once exclusive to institutional investors is now available to any BW holder through fractional ownership of real enterprises.",
+      "WALLET": "Real Asset Backing",
+      "WALLET_DESC": "Every BW token is backed by verifiable real-world assets. Our Proof of Asset system and real-time dashboards ensure transparency and eliminate the 'vaporware' problem plaguing crypto.",
+      "LEARN_MORE": "Explore Features"
     },
-    "HOW_IT_WORKS": {
-      "TITLE": "Come funziona",
-      "SUBTITLE": "Inizia a investire in 4 semplici passaggi",
-      "STEP1": {
-        "TITLE": "Apri il tuo account",
-        "DESC": "Registrati con la tua email e verifica la tua identità in pochi minuti."
-      },
-      "STEP2": {
-        "TITLE": "Deposita fondi",
-        "DESC": "Trasferisci crypto o valuta fiat nel tuo wallet in sicurezza."
-      },
-      "STEP3": {
-        "TITLE": "Seleziona gli asset",
-        "DESC": "Esplora e scegli tra centinaia di aziende tokenizzate."
-      },
-      "STEP4": {
-        "TITLE": "Ricevi profitti",
-        "DESC": "Ottieni dividendi automatici e apprezzamento del capitale."
-      }
+    "FEATURES": {
+      "TITLE": "Caratteristiche Principali",
+      "SUBTITLE": "Cosa Rende Token BW Unico",
+      "SECURITY": "Sicurezza e Conformità",
+      "SECURITY_DESC": "BEP-3643 standard compliance with integrated KYC/AML protocols. External audits from leading firms. Legal entity ownership through BW Holding Ltd structure.",
+      "FEATURE_1": "Transparent verification",
+      "FEATURE_2": "Audited enterprises",
+      "LENDING_TITLE": "Governance e Votazione",
+      "LENDING_DESC": "Token holders vote on enterprise selection, portfolio management, and protocol decisions. Staking requirements prevent manipulation. Direct influence on ecosystem growth.",
+      "LENDING_FEATURE_1": "Democratic decision-making",
+      "LENDING_FEATURE_2": "30+ day staking requirement",
+      "WALLET_TITLE": "Generazione di Valore",
+      "WALLET_DESC": "30% of enterprise net profits fuel token buy-backs in open markets. Create upward price pressure while benefiting all holders. Burn mechanism until 50% supply reduction.",
+      "WALLET_FEATURE_1": "Constant buy-back pressure",
+      "WALLET_FEATURE_2": "Dividend redistribution option"
     },
     "ROADMAP": {
-      "TITLE": "Roadmap 2025-2026",
-      "SUBTITLE": "Il nostro piano per rivoluzionare il mercato azionario",
-      "Q1_2025": {
-        "TITLE": "Lancio Testnet",
-        "ITEM1": "Piattaforma demo",
-        "ITEM2": "Smart contract auditati",
-        "ITEM3": "Test con i primi utenti"
-      },
-      "Q2_2025": {
-        "TITLE": "Mainnet e lancio del token",
-        "ITEM1": "Avvio mainnet",
-        "ITEM2": "Token BW disponibile",
-        "ITEM3": "Prime coppie di azioni"
-      },
-      "Q3_2025": {
-        "TITLE": "Espansione degli asset",
-        "ITEM1": "100+ aziende quotate",
-        "ITEM2": "Integrazione con exchange",
-        "ITEM3": "Programmi di staking"
-      },
-      "Q4_2025": {
-        "TITLE": "Mercato secondario",
-        "ITEM1": "DEX integrato",
-        "ITEM2": "Liquidità garantita",
-        "ITEM3": "Derivati finanziari"
-      },
-      "Q1_2026": {
-        "TITLE": "Espansione globale",
-        "ITEM1": "Regolamentazione in 10+ paesi",
-        "ITEM2": "Valute fiat multiple",
-        "ITEM3": "App mobile nativa"
-      },
-      "H2_2026": {
-        "TITLE": "DAO Governance",
-        "ITEM1": "Governance decentralizzata",
-        "ITEM2": "Proposte della community",
-        "ITEM3": "Protocollo completamente autonomo"
-      }
-    },
-    "TOKENOMICS": {
-      "TITLE": "Token BW",
-      "SUBTITLE": "Distribuzione Strategica",
-      "TREASURY": "Tesoreria degli Asset (Nuove Imprese)",
-      "PUBLIC_SALE": "Vendita Pubblica / IDO",
-      "DEX_LIQUIDITY": "Liquidità (DEX/CEX)",
-      "TEAM_VESTING": "Team (Vesting 4 anni)",
-      "MARKETING": "Marketing e Partnership",
-      "SPECS": "Specifiche",
-      "TOTAL_SUPPLY": "Offerta totale",
-      "ICO_PRICE": "Prezzo ICO",
-      "BLOCKCHAIN": "Blockchain",
-      "STANDARD": "Standard",
-      "UTILITY": "Utilità",
-      "UTILITY_VALUE": "Governance, commissioni, staking",
-      "BURN": "Meccanismo di burn",
-      "BURN_VALUE": "0,5% per transazione"
-    },
-    "CTA": {
-      "TITLE": "Sii parte della rivoluzione finanziaria",
-      "SUBTITLE": "Unisciti a migliaia di investitori che stanno già democratizzando il mercato azionario",
-      "BUTTON": "Apri il tuo account ora"
+      "TITLE": "Development Timeline",
+      "SUBTITLE": "2027-2028 Launch & Growth Strategy",
+      "PHASE1_TITLE": "Web Launch",
+      "PHASE1_DATE": "January 1, 2027",
+      "PHASE1_DESC": "Public website deployment. White paper release. Community building begins. KYC infrastructure setup for compliance.",
+      "PHASE2_TITLE": "Token Generation",
+      "PHASE2_DATE": "January 30, 2027",
+      "PHASE2_DESC": "TGE on PancakeSwap. Initial liquidity deployment. First governance voting period opens for Enterprise #1 selection.",
+      "PHASE3_TITLE": "BW Holding Registration",
+      "PHASE3_DATE": "Q1 2027",
+      "PHASE3_DESC": "Legal constitution of BW Holding Ltd. Smart contract audits completed. Angel investor allocation begins.",
+      "PHASE4_TITLE": "Enterprise #1 Launch",
+      "PHASE4_DATE": "Q2 2027",
+      "PHASE4_DESC": "Community votes select first real enterprise. Funding deployment. Operations begin. Real profit generation starts.",
+      "PHASE5_TITLE": "Dashboard Launch",
+      "PHASE5_DATE": "Q1-Q2 2028",
+      "PHASE6_TITLE": "Mobile App Release",
+      "PHASE6_DATE": "Q3 2028"
     },
     "TEAM": {
-      "TITLE": "Team di leadership",
-      "SUBTITLE": "Professionisti esperti alla guida di prodotto, conformità e crescita.",
-      "MEMBERS": {
-        "LEAD": {
-          "NAME": "Mr. Important",
-          "ROLE": "CEO & Fondatrice",
-          "BIO": "15+ anni nei mercati dei capitali e strategia fintech."
-        },
-        "M1": {
-          "NAME": "ALF One",
-          "ROLE": "CTO",
-          "BIO": "Architettura e sicurezza per piattaforme scalabili."
-        },
-        "M2": {
-          "NAME": "ALF Two",
-          "ROLE": "COO",
-          "BIO": "Operazioni, partnership e coordinamento normativo."
-        },
-        "M3": {
-          "NAME": "ALF Three",
-          "ROLE": "Responsabile Prodotto",
-          "BIO": "Esperienza utente ed esecuzione della roadmap."
-        },
-        "M4": {
-          "NAME": "ALF Four",
-          "ROLE": "Responsabile Compliance",
-          "BIO": "Rischio, KYC/AML e governance."
-        }
-      }
+      "TITLE": "Team",
+      "SUBTITLE": "Meet our team",
+      "CEO_NAME": "Mark Hurley",
+      "CEO_ROLE": "CEO & Lead",
+      "BLOCKCHAIN_NAME": "Calvin Smith",
+      "BLOCKCHAIN_ROLE": "Blockchain developer",
+      "DESIGNER_1_NAME": "Vickie Sample",
+      "DESIGNER_1_ROLE": "Designer",
+      "APP_DEV_NAME": "Alma Farley",
+      "APP_DEV_ROLE": "App developer",
+      "DESIGNER_2_NAME": "Amy Hood",
+      "DESIGNER_2_ROLE": "Designer"
     },
-    "FOOTER": {
-      "DESCRIPTION": "Piattaforma enterprise per asset digitali e investimenti con focus su sicurezza, trasparenza e conformità.",
-      "COMPANY": {
-        "TITLE": "Azienda",
-        "FEATURES": "Funzionalità",
-        "ROADMAP": "Roadmap",
-        "TOKENOMICS": "Tokenomics"
-      },
-      "PRODUCT": {
-        "TITLE": "Prodotto",
-        "ACCESS": "Accesso",
-        "SECURITY": "Sicurezza",
-        "UTILITY": "Utilità"
-      },
-      "LEGAL": {
-        "TITLE": "Legale",
-        "TERMS": "Termini",
-        "PRIVACY": "Privacy",
-        "COOKIES": "Cookie"
-      },
-      "CONTACT": {
-        "TITLE": "Contatto",
-        "LOCATION": "Barcelona · Madrid · Miami"
-      },
-      "COPYRIGHT": "© {{year}} Back & White. Tutti i diritti riservati.",
-      "META": {
-        "ACCESS": "Accesso",
-        "FEATURES": "Funzionalità"
-      }
+    "NEWS": {
+      "TITLE": "Ultimi Aggiornamenti",
+      "SUBTITLE": "Project Developments & Announcements",
+      "ARTICLE_1_TITLE": "Token Launch Announcement",
+      "ARTICLE_1_DESC": "BW Token goes live on January 30, 2027. Historical moment: real assets meet blockchain.",
+      "ARTICLE_1_DATE": "January 20, 2027",
+      "ARTICLE_2_TITLE": "White Paper Released",
+      "ARTICLE_2_DESC": "Complete tokenomics, governance structure, and technical specifications for BW Token ecosystem published.",
+      "ARTICLE_2_DATE": "January 5, 2027",
+      "ARTICLE_3_TITLE": "Smart Contract Audited",
+      "ARTICLE_3_DESC": "Security audit completed. BEP-3643 compliance verified. Ready for mainnet deployment.",
+      "ARTICLE_3_DATE": "January 15, 2027",
+      "READ_MORE": "Read more",
+      "CATEGORY": "Announcements"
+    },
+    "FAQS": {
+      "TITLE": "Domande Frequenti",
+      "SUBTITLE": "Learn About BW Token",
+      "TAB_GENERAL": "Token Basics",
+      "TAB_TOKENSALE": "Enterprise & Economics",
+      "TAB_ROADMAP": "Technical & Legal",
+      "QUESTION_1": "What is BW Token?",
+      "QUESTION_2": "How does tokenization work?",
+      "QUESTION_3": "What backs the token value?",
+      "QUESTION_4": "How do I participate?",
+      "QUESTION_5": "What is buy-back mechanism?",
+      "QUESTION_6": "How are enterprises selected?",
+      "QUESTION_7": "What is BEP-3643 compliance?",
+      "QUESTION_8": "When is the Investor Dashboard ready?",
+      "ANSWER_1": "BW Token is a cryptocurrency that represents fractional ownership of real, verified enterprises. Unlike traditional crypto, every token is backed by verifiable real-world assets and generates real profits.",
+      "ANSWER_2": "Tokenization converts ownership stakes in real companies into digital tokens on blockchain. This allows fractional ownership, transparent transfer, and democratic governance through smart contracts.",
+      "ANSWER_3": "BW tokens are backed by real enterprises owned through BW Holding Ltd legal structure. Investors verify asset existence through our Proof of Asset system and real-time dashboards.",
+      "ANSWER_4": "Purchase BW tokens on PancakeSwap starting January 30, 2027. Complete KYC verification. Stake tokens to participate in enterprise selection governance voting.",
+      "ANSWER_5": "30% of enterprise profits are used to buy BW tokens in open markets, creating constant upward price pressure. These tokens are either burned (reducing supply) or distributed as dividends to holders.",
+      "ANSWER_6": "Community members holding staked BW tokens vote on which real enterprises to finance from the asset treasury. This democratic process begins in Q4 2027.",
+      "ANSWER_7": "BEP-3643 is a blockchain standard for security tokens with integrated compliance, KYC/AML protocols, and identity verification. It ensures legal compliance and investor protection.",
+      "ANSWER_8": "The Investor Dashboard launches in Q1-Q2 2028, providing real-time visibility into enterprise revenues, profit distributions, and token buy-back activities."
     }
   },
-  "admin": {
-    "welcome": "Benvenuto nel Pannello di Amministrazione Back & White",
-    "logout": "Esci",
-    "dashboard": "Cruscotto",
-    "dashboardDesc": "Monitora il tuo account e visualizza analitiche",
-    "users": "Utenti",
-    "usersDesc": "Gestisci account utenti e autorizzazioni",
-    "settings": "Impostazioni",
-    "settingsDesc": "Configura le tue preferenze",
-    "userInfo": "Informazioni Utente",
-    "accessToken": "Token di Accesso",
-    "tokenStatus": "Stato del Token",
-    "active": "Attivo"  },
-  "WALLET": {
-    "CONNECT": "Connetti Portafoglio",
-    "DISCONNECT": "Disconnetti",
-    "BALANCE": "Saldo"
-  },
-  "DAO": {
-    "TITLE": "DAO - Votazione e Investimento Aziendale",
-    "SUBTITLE": "Partecipa al lancio di aziende con votazione basata su token",
-    "OVERVIEW": "Panoramica",
-    "WALLET_INFO": "Portafoglio",
-    "WALLET_CONNECTED": "Portafoglio connesso",
-    "WALLET_NOT_CONNECTED": "Portafoglio non connesso",
-    "CONNECT_HINT": "Connetti il portafoglio per accedere alle funzionalità di governance.",
-    "GOVERNANCE_METRICS": "Metriche di governance",
-    "PROPOSALS": "Proposte",
-    "PROPOSALS_SUBTITLE": "Esamina, vota e investi nelle proposte attive.",
-    "MANAGE_PANEL": "Pannello di gestione",
-    "MANAGE_SUBTITLE": "Crea o aggiorna proposte e impostazioni di governance.",
-    "MANAGE": "Gestisci Proposte",
-    "BACK": "Indietro",
-    "BALANCE": "Saldo",
-    "HOLDING_DAYS": "Giorni di Detenzione",
-    "DAYS": "Giorni",
-    "STAKED_AMOUNT": "Importo in Stake",
-    "VOTING_STATUS": "Stato Votazione",
-    "CAN_VOTE": "Idoneo a Votare",
-    "CANNOT_VOTE": "Non Idoneo a Votare",
-    "INDUSTRY": "Settore",
-    "LOCATION": "Ubicazione",
-    "VOTES": "Voti",
-    "FUNDING": "Finanziamento",
-    "DAYS_LEFT": "Giorni Rimanenti",
-    "EXPECTED_RETURN": "Rendimento Atteso",
-    "VOTE": "Vota",
-    "INVEST": "Investi",
-    "AMOUNT_TO_STAKE": "Importo da Mettere in Stake",
-    "AVAILABLE_BALANCE": "Saldo Disponibile",
-    "QUICK_AMOUNTS": "Selezione Rapida",
-    "VOTING_POWER": "Potere di Voto",
-    "REMAINING_BALANCE": "Saldo Rimanente",
-    "IMPORTANT": "Importante",
-    "VOTING_INFO_1": "I tuoi token saranno bloccati per 30 giorni dopo la votazione",
-    "VOTING_INFO_2": "Ogni token conta come 1 voto",
-    "VOTING_INFO_3": "La votazione non può essere annullata dopo l'invio",
-    "CONFIRM_VOTE": "Conferma Voto",
-    "CANCEL": "Annulla",
-    "MANAGE_PROPOSALS": "Gestisci Proposte",
-    "NEW_PROPOSAL": "Nuova Proposta",
-    "COMPANY_NAME": "Nome Azienda",
-    "DESCRIPTION": "Descrizione",
-    "CATEGORY": "Categoria",
-    "SELECT_CATEGORY": "Seleziona Categoria",
-    "CATEGORY_RETAIL": "Commercio al Dettaglio",
-    "CATEGORY_FOOD": "Alimenti e Bevande",
-    "CATEGORY_ECOMMERCE": "E-commerce",
-    "CATEGORY_TECHNOLOGY": "Tecnologia",
-    "TARGET_FUNDING": "Finanziamento Obiettivo ($)",
-    "EDIT_PROPOSAL": "Modifica Proposta",
-    "UPDATE": "Aggiorna",
-    "CREATE": "Crea",
-    "NO_PROPOSALS": "Nessuna proposta ancora. Creane una per iniziare!",
-    "TARGET": "Obiettivo",
-    "FUNDED": "Finanziato"  }
+  "FOOTER": {
+    "COPYRIGHT": "© Back and White. Crafted with",
+    "BY": "by Nexaplaform"
+  }
 }

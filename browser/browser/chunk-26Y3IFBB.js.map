@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/store/ProjectsData/project.actions.ts"],
+  "sourcesContent": ["import { createAction, props } from '@ngrx/store';\r\nimport { Project } from './project.model';\r\n\r\n// fetch \r\nexport const fetchprojectData = createAction('[Data] fetch project');\r\nexport const fetchprojectSuccess = createAction('[Data] fetch project success', props<{ projectdata: Project[] }>())\r\nexport const fetchprojectFail = createAction('[Data fetch project failed]', props<{ error: string }>())\r\n"],
+  "mappings": ";;;;;;AAIO,IAAM,mBAAmB,aAAa,sBAAsB;AAC5D,IAAM,sBAAsB,aAAa,gCAAgC,MAAK,CAA8B;AAC5G,IAAM,mBAAmB,aAAa,+BAA+B,MAAK,CAAqB;",
+  "names": []
+}

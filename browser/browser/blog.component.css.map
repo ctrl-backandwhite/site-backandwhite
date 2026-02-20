@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/dashboards/blog/blog.component.scss"],
+  "sourcesContent": [".blog-card {\r\n    .card-body {\r\n        padding: 1.25rem 0 0;\r\n    }\r\n}"],
+  "mappings": ";AACI,CAAA,UAAA,CAAA;AACI,WAAA,QAAA,EAAA;;",
+  "names": []
+}
