@@ -1,8 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Inject, DOCUMENT } from '@angular/core';
-import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { AuthenticationService } from '../../core/services/auth.service';
-import { AuthfakeauthenticationService } from '../../core/services/authfake.service';
 import { environment } from '../../../environments/environment';
 import { CookieService } from 'ngx-cookie-service';
 import { LanguageService } from '../../core/services/language.service';
@@ -14,6 +11,7 @@ import { getLayoutMode } from 'src/app/store/layouts/layout.selector';
 import { RootReducerState } from 'src/app/store';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SimplebarAngularModule } from 'simplebar-angular';
+import { AuthService } from '../../core/auth/services/auth.service';
 
 @Component({
   selector: 'app-topbar',
@@ -37,8 +35,8 @@ export class TopbarComponent implements OnInit {
   dataLayout$: Observable<string>;
   // Define layoutMode as a property
 
-  constructor(@Inject(DOCUMENT) private document: any, private router: Router, private authService: AuthenticationService,
-    private authFackservice: AuthfakeauthenticationService,
+  constructor(@Inject(DOCUMENT) private document: any,
+    private authService: AuthService,
     public languageService: LanguageService,
     public translate: TranslateService,
     public _cookiesService: CookieService, public store: Store<RootReducerState>) {
@@ -105,8 +103,14 @@ export class TopbarComponent implements OnInit {
    * Logout the user
    */
   logout() {
-    this.authFackservice.logout();
-    this.router.navigate(['/auth/login']);
+    this.authService.logout().subscribe({
+      next: () => {
+        window.location.href = environment.oauth2LoginUrl;
+      },
+      error: () => {
+        window.location.href = environment.oauth2LoginUrl;
+      }
+    });
   }
 
   /**

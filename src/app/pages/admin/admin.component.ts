@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
 import { AuthService } from '../../core/auth/services/auth.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
     selector: 'app-admin',
@@ -66,14 +66,19 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   `
 })
 export class AdminComponent {
-    private readonly router = inject(Router);
     private readonly authService = inject(AuthService);
     private readonly translateService = inject(TranslateService);
 
     accessToken = this.authService.getAccessToken() || '';
 
     logout(): void {
-        this.authService.logout();
-        this.router.navigate(['/']);
+        this.authService.logout().subscribe({
+            next: () => {
+                window.location.href = environment.oauth2LoginUrl;
+            },
+            error: () => {
+                window.location.href = environment.oauth2LoginUrl;
+            }
+        });
     }
 }
