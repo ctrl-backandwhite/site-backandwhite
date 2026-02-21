@@ -79,6 +79,16 @@
 
   @media (max-width: 991.98px) {
     background-color: var(--#{$prefix}topnav-bg);
+    padding-right: 0;
+
+    .container {
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    .navbar-logo {
+      margin-right: auto;
+    }
   }
 
   .navbar-logo {
@@ -162,6 +172,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 991.98px) {
+      margin-left: auto;
+      margin-right: 0;
+    }
 
     i {
       font-size: 22px;
