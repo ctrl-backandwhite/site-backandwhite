@@ -236,6 +236,19 @@
       }
     }
 
+    .brand-name {
+      color: #000000;
+      background: none;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+      background-clip: initial;
+      text-shadow: none;
+
+      &::after {
+        background: linear-gradient(90deg, #000000, transparent);
+      }
+    }
+
     .navbar-nav {
       .nav-item {
         .nav-link {
