@@ -44,13 +44,6 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const token = this.authService.getAccessToken();
-    const tokenPayload = token ? this.decodeJwtPayload(token) : null;
-    const firstName = tokenPayload?.firstName?.trim() || '';
-    const lastName = tokenPayload?.lastName?.trim() || '';
-    this.userDisplayName = `${firstName} ${lastName}`.trim();
-    this.userEmail = tokenPayload?.sub || '';
-
     this.breadCrumbItems = [{ label: 'PAGETITLE.DASHBOARD', active: true }];
 
     this.configService.getConfig().subscribe(response => {
