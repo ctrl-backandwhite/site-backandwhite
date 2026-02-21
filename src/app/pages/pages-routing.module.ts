@@ -3,22 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CalendarComponent } from './calendar/calendar.component';
 import { ChatComponent } from './chat/chat.component';
-import { DefaultComponent } from './dashboards/default/default.component';
+import { CryptoComponent } from './dashboards/crypto/crypto.component';
 import { FilemanagerComponent } from './filemanager/filemanager.component';
 import { DaoComponent } from './dao/dao.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'dashboard' },
-  {
-    path: "",
-    component: DefaultComponent
-  },
-  { path: 'dashboard', component: DefaultComponent },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: CryptoComponent },
   { path: 'calendar', component: CalendarComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'filemanager', component: FilemanagerComponent },
   { path: 'dao', component: DaoComponent },
-  { path: 'dashboards', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule) },
   { path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule) },
   { path: 'crypto', loadChildren: () => import('./crypto/crypto.module').then(m => m.CryptoModule) },
   { path: 'email', loadChildren: () => import('./email/email.module').then(m => m.EmailModule) },

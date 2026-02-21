@@ -8,10 +8,7 @@
       "BADGE": "04",
       "LIST": {
         "DEFAULT": "Default",
-        "SAAS": "Saas",
-        "CRYPTO": "Crypto",
-        "BLOG": "Blog",
-        "JOBS": "Jobs"
+        "CRYPTO": "Crypto"
       }
     },
     "LAYOUTS": {
@@ -458,6 +455,13 @@
     "WARN_3": "Никогда не сообщайте seed-фразу или приватные ключи.",
     "DISCLAIMER": "Временная инструкция. Проверяйте детали перед сделкой.",
     "CLOSE": "Закрыть"
+  },
+  "PAGETITLE": {
+    "DASHBOARD": "Дашборд",
+    "CRYPTO": "Крипто",
+    "SKOTE": "Skote",
+    "BRAND": "Back & White",
+    "GOOGLE_MAPS": "Google Maps"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",

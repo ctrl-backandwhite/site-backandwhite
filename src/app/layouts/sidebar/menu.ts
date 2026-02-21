@@ -7,43 +7,6 @@ export const MENU: MenuItem[] = [
         isTitle: true
     },
     {
-        id: 2,
-        label: 'MENUITEMS.DASHBOARDS.TEXT',
-        icon: 'bx-home-circle',
-        subItems: [
-            {
-                id: 3,
-                label: 'MENUITEMS.DASHBOARDS.LIST.DEFAULT',
-                link: '/dashboard/',
-                parentId: 2
-            },
-            {
-                id: 4,
-                label: 'MENUITEMS.DASHBOARDS.LIST.SAAS',
-                link: '/dashboard/dashboards/saas',
-                parentId: 2
-            },
-            {
-                id: 5,
-                label: 'MENUITEMS.DASHBOARDS.LIST.CRYPTO',
-                link: '/dashboard/dashboards/crypto',
-                parentId: 2
-            },
-            {
-                id: 6,
-                label: 'MENUITEMS.DASHBOARDS.LIST.BLOG',
-                link: '/dashboard/dashboards/blog',
-                parentId: 2
-            },
-            {
-                id: 7,
-                label: 'MENUITEMS.DASHBOARDS.LIST.JOBS',
-                link: '/dashboard/dashboards/jobs',
-                parentId: 2,
-            },
-        ]
-    },
-    {
         id: 8,
         isLayout: true
     },

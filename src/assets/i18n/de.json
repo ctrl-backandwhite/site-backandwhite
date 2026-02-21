@@ -8,10 +8,7 @@
       "BADGE": "04",
       "LIST": {
         "DEFAULT": "Default",
-        "SAAS": "Saas",
-        "CRYPTO": "Crypto",
-        "BLOG": "Blog",
-        "JOBS": "Jobs"
+        "CRYPTO": "Crypto"
       }
     },
     "LAYOUTS": {
@@ -458,6 +455,13 @@
     "WARN_3": "Teile niemals deine Seed-Phrase oder privaten Schlüssel.",
     "DISCLAIMER": "Temporäre Anleitung. Prüfe Details vor dem Handel.",
     "CLOSE": "Schließen"
+  },
+  "PAGETITLE": {
+    "DASHBOARD": "Dashboard",
+    "CRYPTO": "Krypto",
+    "SKOTE": "Skote",
+    "BRAND": "Back & White",
+    "GOOGLE_MAPS": "Google Maps"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Erstellt mit",

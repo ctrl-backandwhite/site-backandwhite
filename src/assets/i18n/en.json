@@ -8,10 +8,7 @@
       "BADGE": "04",
       "LIST": {
         "DEFAULT": "Default",
-        "SAAS": "Saas",
-        "CRYPTO": "Crypto",
-        "BLOG": "Blog",
-        "JOBS": "Jobs"
+        "CRYPTO": "Crypto"
       }
     },
     "LAYOUTS": {
@@ -270,6 +267,13 @@
         }
       }
     }
+  },
+  "PAGETITLE": {
+    "DASHBOARD": "Dashboard",
+    "CRYPTO": "Crypto",
+    "SKOTE": "Skote",
+    "BRAND": "Back & White",
+    "GOOGLE_MAPS": "Google Maps"
   },
 
   "LANDING": {

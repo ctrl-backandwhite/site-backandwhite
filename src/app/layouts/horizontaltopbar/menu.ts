@@ -2,44 +2,6 @@ import { MenuItem } from './menu.model';
 
 export const MENU: MenuItem[] = [
     {
-        id: 1,
-        label: 'MENUITEMS.DASHBOARDS.TEXT',
-        icon: 'bx-home-circle',
-        isCollapsed: false,
-        subItems: [
-            {
-                id: 2,
-                label: 'MENUITEMS.DASHBOARDS.LIST.DEFAULT',
-                link: '/dashboard',
-                parentId: 1
-            },
-            {
-                id: 3,
-                label: 'MENUITEMS.DASHBOARDS.LIST.SAAS',
-                link: '/dashboards/saas',
-                parentId: 1
-            },
-            {
-                id: 4,
-                label: 'MENUITEMS.DASHBOARDS.LIST.CRYPTO',
-                link: '/dashboards/crypto',
-                parentId: 1
-            },
-            {
-                id: 5,
-                label: 'MENUITEMS.DASHBOARDS.LIST.BLOG',
-                link: '/dashboards/blog',
-                parentId: 1
-            },
-            {
-                id: 6,
-                label: 'MENUITEMS.DASHBOARDS.LIST.JOBS',
-                link: '/dashboards/jobs',
-                parentId: 1,
-            },
-        ]
-    },
-    {
         id: 7,
         label: 'MENUITEMS.UIELEMENTS.TEXT',
         icon: 'bx-tone',

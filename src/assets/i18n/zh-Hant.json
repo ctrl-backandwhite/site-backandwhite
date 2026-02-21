@@ -8,10 +8,7 @@
       "BADGE": "04",
       "LIST": {
         "DEFAULT": "Default",
-        "SAAS": "Saas",
-        "CRYPTO": "Crypto",
-        "BLOG": "Blog",
-        "JOBS": "Jobs"
+        "CRYPTO": "Crypto"
       }
     },
     "LAYOUTS": {
@@ -458,6 +455,13 @@
     "WARN_3": "不要分享助记词或私钥。",
     "DISCLAIMER": "此为临时指南，交易前请再次确认。",
     "CLOSE": "關閉"
+  },
+  "PAGETITLE": {
+    "DASHBOARD": "儀表板",
+    "CRYPTO": "加密",
+    "SKOTE": "Skote",
+    "BRAND": "Back & White",
+    "GOOGLE_MAPS": "Google Maps"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",

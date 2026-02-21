@@ -8,10 +8,7 @@
       "BADGE": "04",
       "LIST": {
         "DEFAULT": "Defecto",
-        "SAAS": "Saas",
-        "CRYPTO": "Cripto",
-        "BLOG": "Blog",
-        "JOBS": "Trabajos"
+        "CRYPTO": "Cripto"
       }
     },
     "LAYOUTS": {
@@ -458,6 +455,13 @@
     "WARN_3": "Nunca compartas tu frase semilla ni tus llaves privadas.",
     "DISCLAIMER": "Guía temporal. Revisa los detalles antes de operar.",
     "CLOSE": "Cerrar"
+  },
+  "PAGETITLE": {
+    "DASHBOARD": "Dashboard",
+    "CRYPTO": "Cripto",
+    "SKOTE": "Skote",
+    "BRAND": "Back & White",
+    "GOOGLE_MAPS": "Google Maps"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Creado con",

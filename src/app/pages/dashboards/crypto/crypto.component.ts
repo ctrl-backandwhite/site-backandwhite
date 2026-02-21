@@ -13,10 +13,10 @@ import { LoaderComponent } from 'src/app/shared/ui/loader/loader.component';
 import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.component';
 
 @Component({
-    selector: 'app-crypto',
-    templateUrl: './crypto.component.html',
-    styleUrls: ['./crypto.component.scss'],
-    imports: [PagetitleComponent, LoaderComponent, BsDropdownModule, NgApexchartsModule, TabsModule, SimplebarAngularModule]
+  selector: 'app-crypto',
+  templateUrl: './crypto.component.html',
+  styleUrls: ['./crypto.component.scss'],
+  imports: [PagetitleComponent, LoaderComponent, BsDropdownModule, NgApexchartsModule, TabsModule, SimplebarAngularModule]
 })
 export class CryptoComponent implements OnInit {
 
@@ -38,7 +38,7 @@ export class CryptoComponent implements OnInit {
   constructor(private configService: ConfigService) { }
 
   ngOnInit(): void {
-    this.breadCrumbItems = [{ label: 'Dashboards' }, { label: 'Crypto', active: true }];
+    this.breadCrumbItems = [{ label: 'PAGETITLE.DASHBOARD' }, { label: 'PAGETITLE.CRYPTO', active: true }];
 
     this.configService.getConfig().subscribe(response => {
       this.walletBalanceData = response.cryptoWalletBalance;
