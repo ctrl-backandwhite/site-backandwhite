@@ -22,7 +22,6 @@ import { LightboxComponent } from './lightbox/lightbox.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { ToastsComponent } from "./toasts/toasts.component";
 import { RatingComponent } from "./rating/rating.component";
-import { NotificationComponent } from "./notification/notification.component";
 import { UtilitiesComponent } from "./utilities/utilities.component";
 
 const routes: Routes = [
@@ -109,10 +108,6 @@ const routes: Routes = [
     {
         path: "rating",
         component: RatingComponent
-    },
-    {
-        path: "notification",
-        component: NotificationComponent
     },
     {
         path: "utilities",
