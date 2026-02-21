@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CalendarComponent } from './calendar/calendar.component';
 import { ChatComponent } from './chat/chat.component';
-import { CryptoComponent } from './dashboards/crypto/crypto.component';
+import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { FilemanagerComponent } from './filemanager/filemanager.component';
 import { DaoComponent } from './dao/dao.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: CryptoComponent },
+  { path: '', component: DashboardComponent },
+  { path: 'dashboard', redirectTo: '', pathMatch: 'full' },
   { path: 'calendar', component: CalendarComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'filemanager', component: FilemanagerComponent },

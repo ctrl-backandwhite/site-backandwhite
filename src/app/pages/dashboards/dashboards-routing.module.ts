@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DefaultComponent } from './default/default.component';
-import { CryptoComponent } from './crypto/crypto.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'crypto', pathMatch: 'full' },
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     {
         path: 'default',
         component: DefaultComponent
     },
     {
-        path: 'crypto',
-        component: CryptoComponent
+        path: 'dashboard',
+        component: DashboardComponent
     },
 ];
 

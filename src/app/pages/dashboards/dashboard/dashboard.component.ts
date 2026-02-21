@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
-import { walletRadialChart, overviewChart, transactionsData, bitconinChart, ethereumChart, litecoinChart } from './data';
+import { walletRadialChart, overviewChart, transactionsData, bitconinChart, ethereumChart, litecoinChart } from './dashboard.data';
 
-import { ChartType, Transactions } from './crypto.model';
+import { ChartType, Transactions } from './dashboard.model';
 import { ChartComponent, NgApexchartsModule } from "ng-apexcharts";
 import { ConfigService } from '../../../core/services/config.service';
 
@@ -13,12 +13,12 @@ import { LoaderComponent } from 'src/app/shared/ui/loader/loader.component';
 import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.component';
 
 @Component({
-  selector: 'app-crypto',
-  templateUrl: './crypto.component.html',
-  styleUrls: ['./crypto.component.scss'],
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.scss'],
   imports: [PagetitleComponent, LoaderComponent, BsDropdownModule, NgApexchartsModule, TabsModule, SimplebarAngularModule]
 })
-export class CryptoComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
   @ViewChild("chart", { static: false }) chart: ChartComponent;
 
@@ -38,7 +38,7 @@ export class CryptoComponent implements OnInit {
   constructor(private configService: ConfigService) { }
 
   ngOnInit(): void {
-    this.breadCrumbItems = [{ label: 'PAGETITLE.DASHBOARD' }, { label: 'PAGETITLE.CRYPTO', active: true }];
+    this.breadCrumbItems = [{ label: 'PAGETITLE.DASHBOARD', active: true }];
 
     this.configService.getConfig().subscribe(response => {
       this.walletBalanceData = response.cryptoWalletBalance;

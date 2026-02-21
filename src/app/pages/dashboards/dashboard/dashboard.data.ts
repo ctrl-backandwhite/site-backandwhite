@@ -1,4 +1,4 @@
-import { ChartType } from './crypto.model';
+import { ChartType } from './dashboard.model';
 
 const walletRadialChart: ChartType = {
 
