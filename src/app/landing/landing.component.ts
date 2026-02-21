@@ -198,6 +198,17 @@ export class LandingComponent implements OnInit {
   }
 
   /**
+   * Open buy token instructions modal
+   */
+  openBuyTokenModal(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template, {
+      class: 'modal-dialog-centered modal-lg token-buy-modal',
+      backdrop: true,
+      ignoreBackdropClick: false
+    });
+  }
+
+  /**
    * Download whitepaper in the current language
    */
   downloadWhitepaper(): void {

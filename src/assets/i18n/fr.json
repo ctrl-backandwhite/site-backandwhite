@@ -170,6 +170,22 @@
     "CLOSE": "Fermer",
     "DOWNLOAD_PDF": "Télécharger PDF"
   },
+  "TOKEN_BUY": {
+    "MODAL_TITLE": "Comment acheter le token ?",
+    "INTRO": "Suivez ces étapes pour acheter BW sur PancakeSwap. Vérifiez toujours le contrat du token.",
+    "STEPS_TITLE": "Étapes",
+    "STEP_1": "Installez un portefeuille (MetaMask ou Trust Wallet).",
+    "STEP_2": "Passez sur BNB Smart Chain et ajoutez des fonds (BNB).",
+    "STEP_3": "Ouvrez PancakeSwap et connectez votre portefeuille.",
+    "STEP_4": "Collez l'adresse du contrat officiel et échangez BNB contre BW.",
+    "WARN_TITLE": "Conseils de sécurité",
+    "WARN_1": "Utilisez uniquement le site officiel de PancakeSwap :",
+    "OFFICIAL_LINK_LABEL": "pancakeswap.finance",
+    "WARN_2": "Vérifiez l'adresse du contrat sur nos canaux officiels.",
+    "WARN_3": "Ne partagez jamais votre phrase de récupération ni vos clés privées.",
+    "DISCLAIMER": "Guide temporaire. Vérifiez les détails avant toute opération.",
+    "CLOSE": "Fermer"
+  },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"

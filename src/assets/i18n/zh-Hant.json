@@ -170,6 +170,22 @@
     "CLOSE": "關閉",
     "DOWNLOAD_PDF": "下載 PDF"
   },
+  "TOKEN_BUY": {
+    "MODAL_TITLE": "如何购买代币？",
+    "INTRO": "按照以下步骤在 PancakeSwap 购买 BW。务必核对代币合约地址。",
+    "STEPS_TITLE": "步骤",
+    "STEP_1": "安装钱包（MetaMask 或 Trust Wallet）。",
+    "STEP_2": "切换到 BNB Smart Chain 并准备 BNB 资金。",
+    "STEP_3": "打开 PancakeSwap 并连接钱包。",
+    "STEP_4": "粘贴官方合约地址并用 BNB 兑换 BW。",
+    "WARN_TITLE": "防骗提示",
+    "WARN_1": "只使用 PancakeSwap 官方网站：",
+    "OFFICIAL_LINK_LABEL": "pancakeswap.finance",
+    "WARN_2": "在我们的官方渠道核对合约地址。",
+    "WARN_3": "不要分享助记词或私钥。",
+    "DISCLAIMER": "此为临时指南，交易前请再次确认。",
+    "CLOSE": "關閉"
+  },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"

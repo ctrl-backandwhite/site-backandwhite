@@ -118,7 +118,8 @@
                 </div>
 
                 <div class="mt-4">
-                  <button type="button" class="btn btn-success w-md">{{ 'LANDING.HERO.GET_TOKEN' | translate }}</button>
+                  <button type="button" class="btn btn-success w-md" (click)="openBuyTokenModal(buyTokenModal)">{{
+                    'LANDING.HERO.GET_TOKEN' | translate }}</button>
                 </div>
               </div>
             </div>
@@ -1151,3 +1152,45 @@
     </div>
   </ng-template>
   <!-- End Whitepaper Modal -->
+
+  <!-- Buy Token Modal -->
+  <ng-template #buyTokenModal let-modal>
+    <div class="modal-header token-buy-modal-header">
+      <h5 class="modal-title">{{ 'TOKEN_BUY.MODAL_TITLE' | translate }}</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
+    </div>
+    <div class="modal-body token-buy-modal-body">
+      <p class="token-buy-intro">{{ 'TOKEN_BUY.INTRO' | translate }}</p>
+
+      <div class="token-buy-section">
+        <h6 class="token-buy-title">{{ 'TOKEN_BUY.STEPS_TITLE' | translate }}</h6>
+        <ol class="token-buy-steps">
+          <li>{{ 'TOKEN_BUY.STEP_1' | translate }}</li>
+          <li>{{ 'TOKEN_BUY.STEP_2' | translate }}</li>
+          <li>{{ 'TOKEN_BUY.STEP_3' | translate }}</li>
+          <li>{{ 'TOKEN_BUY.STEP_4' | translate }}</li>
+        </ol>
+      </div>
+
+      <div class="token-buy-section token-buy-warning">
+        <h6 class="token-buy-title">{{ 'TOKEN_BUY.WARN_TITLE' | translate }}</h6>
+        <ul class="token-buy-warnings">
+          <li>
+            {{ 'TOKEN_BUY.WARN_1' | translate }}
+            <a class="token-buy-link" href="https://pancakeswap.finance/" target="_blank" rel="noopener noreferrer">
+              {{ 'TOKEN_BUY.OFFICIAL_LINK_LABEL' | translate }}
+            </a>
+          </li>
+          <li>{{ 'TOKEN_BUY.WARN_2' | translate }}</li>
+          <li>{{ 'TOKEN_BUY.WARN_3' | translate }}</li>
+        </ul>
+        <p class="token-buy-disclaimer">{{ 'TOKEN_BUY.DISCLAIMER' | translate }}</p>
+      </div>
+    </div>
+    <div class="modal-footer token-buy-modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="modalRef?.hide()">
+        {{ 'TOKEN_BUY.CLOSE' | translate }}
+      </button>
+    </div>
+  </ng-template>
+  <!-- End Buy Token Modal -->

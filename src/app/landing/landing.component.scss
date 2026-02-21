@@ -38,4 +38,71 @@
   overflow-y: auto;
 }
 
+.token-buy-modal {
+  .modal-content {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.token-buy-modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.token-buy-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+  color: #2f3a4a;
+}
+
+.token-buy-intro {
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.token-buy-section {
+  margin-top: 16px;
+}
+
+.token-buy-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.token-buy-steps,
+.token-buy-warnings {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b5563;
+}
+
+.token-buy-warning {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(255, 243, 205, 0.4);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.token-buy-link {
+  margin-left: 6px;
+  color: #0d6efd;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.token-buy-disclaimer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.token-buy-modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 // Brand name, navbar-logo y dropdown movidos a _crypto.scss para unificación
