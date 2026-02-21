@@ -85,7 +85,8 @@
               <a href="javascript: void(0);" class="btn btn-success" (click)="downloadWhitepaper()">{{
                 'LANDING.HERO.GET_WHITEPAPER' |
                 translate }}</a>
-              <a href="javascript: void(0);" class="btn btn-light">{{ 'LANDING.HERO.HOW_IT_WORK' |
+              <a href="javascript: void(0);" class="btn btn-light" (click)="openWhitepaperModal(whitepaperModal)">{{
+                'LANDING.HERO.HOW_IT_WORK' |
                 translate }}</a>
             </div>
           </div>
@@ -1082,3 +1083,71 @@
     <!-- end container -->
   </footer>
   <!-- Footer end -->
+  <!-- Whitepaper Modal -->
+  <ng-template #whitepaperModal let-modal>
+    <div class="modal-header">
+      <h5 class="modal-title">{{ 'WHITEPAPER.MODAL_TITLE' | translate }}</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
+    </div>
+    <div class="modal-body whitepaper-modal-body">
+      <h4 class="mb-3">{{ 'WHITEPAPER.EXECUTIVE_SUMMARY' | translate }}</h4>
+      <p>{{ 'WHITEPAPER.EXECUTIVE_SUMMARY_TEXT' | translate }}</p>
+
+      <h4 class="mt-4 mb-3">{{ 'WHITEPAPER.VISION_MISSION' | translate }}</h4>
+      <h5>{{ 'WHITEPAPER.VISION' | translate }}</h5>
+      <p>{{ 'WHITEPAPER.VISION_TEXT' | translate }}</p>
+      <h5>{{ 'WHITEPAPER.MISSION' | translate }}</h5>
+      <p>{{ 'WHITEPAPER.MISSION_TEXT' | translate }}</p>
+
+      <h4 class="mt-4 mb-3">{{ 'WHITEPAPER.TECHNOLOGY' | translate }}</h4>
+      <ul>
+        <li><strong>Blockchain:</strong> Ethereum (ERC-20)</li>
+        <li>{{ 'WHITEPAPER.SMART_CONTRACTS' | translate }}</li>
+        <li>{{ 'WHITEPAPER.DAO_GOVERNANCE' | translate }}</li>
+        <li>{{ 'WHITEPAPER.KYC_AML' | translate }}</li>
+        <li>{{ 'WHITEPAPER.INSTITUTIONAL_SECURITY' | translate }}</li>
+      </ul>
+
+      <h4 class="mt-4 mb-3">{{ 'WHITEPAPER.TOKENOMICS' | translate }}</h4>
+      <p><strong>Token:</strong> BW Token</p>
+      <p><strong>{{ 'WHITEPAPER.TOTAL_SUPPLY' | translate }}:</strong> {{ 'WHITEPAPER.TBD' | translate }}</p>
+      <p><strong>{{ 'WHITEPAPER.DISTRIBUTION' | translate }}:</strong></p>
+      <ul>
+        <li>40% {{ 'WHITEPAPER.PUBLIC_SALE' | translate }}</li>
+        <li>20% {{ 'WHITEPAPER.TEAM_ADVISORS' | translate }}</li>
+        <li>20% {{ 'WHITEPAPER.DEVELOPMENT_MARKETING' | translate }}</li>
+        <li>15% {{ 'WHITEPAPER.LIQUIDITY_RESERVE' | translate }}</li>
+        <li>5% {{ 'WHITEPAPER.STRATEGIC_PARTNERS' | translate }}</li>
+      </ul>
+
+      <h4 class="mt-4 mb-3">{{ 'WHITEPAPER.ROADMAP' | translate }}</h4>
+      <ul>
+        <li><strong>Q1 2026:</strong> {{ 'WHITEPAPER.Q1_2026' | translate }}</li>
+        <li><strong>Q2 2026:</strong> {{ 'WHITEPAPER.Q2_2026' | translate }}</li>
+        <li><strong>Q3 2026:</strong> {{ 'WHITEPAPER.Q3_2026' | translate }}</li>
+        <li><strong>Q4 2026:</strong> {{ 'WHITEPAPER.Q4_2026' | translate }}</li>
+        <li><strong>Q1 2027:</strong> {{ 'WHITEPAPER.Q1_2027' | translate }}</li>
+      </ul>
+
+      <h4 class="mt-4 mb-3">{{ 'WHITEPAPER.RISKS' | translate }}</h4>
+      <p>{{ 'WHITEPAPER.RISKS_INTRO' | translate }}</p>
+      <ul>
+        <li>{{ 'WHITEPAPER.MARKET_VOLATILITY' | translate }}</li>
+        <li>{{ 'WHITEPAPER.REGULATORY_RISKS' | translate }}</li>
+        <li>{{ 'WHITEPAPER.TECH_RISKS' | translate }}</li>
+        <li>{{ 'WHITEPAPER.ADOPTION_RISKS' | translate }}</li>
+      </ul>
+
+      <div class="alert alert-info mt-4">
+        <i class="mdi mdi-information me-2"></i>{{ 'WHITEPAPER.DISCLAIMER' | translate }}
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modalRef?.hide()">{{ 'WHITEPAPER.CLOSE' | translate
+        }}</button>
+      <button type="button" class="btn btn-success" (click)="downloadWhitepaper(); modalRef?.hide()">
+        <i class="mdi mdi-download me-1"></i>{{ 'WHITEPAPER.DOWNLOAD_PDF' | translate }}
+      </button>
+    </div>
+  </ng-template>
+  <!-- End Whitepaper Modal -->

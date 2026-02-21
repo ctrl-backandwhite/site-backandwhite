@@ -7,6 +7,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { provideToastr } from 'ngx-toastr';
 import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
@@ -133,8 +134,7 @@ export const appConfig: ApplicationConfig = {
       })
 
     ),
-
-
+    importProvidersFrom(ModalModule.forRoot()),
     { provide: BsDropdownConfig, useValue: { isAnimated: true, autoClose: true } }
   ]
 };

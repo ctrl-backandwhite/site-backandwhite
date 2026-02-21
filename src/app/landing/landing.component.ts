@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, TemplateRef } from '@angular/core';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { interval } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -9,6 +9,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SharedModule } from '../cyptolanding/shared/shared.module';
 import { LoginService } from '../core/services/login.service';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BsModalService, BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../core/services/language.service';
 import { CookieService } from 'ngx-cookie-service';
@@ -17,7 +18,7 @@ import { CookieService } from 'ngx-cookie-service';
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
-  imports: [CommonModule, AccordionModule, TablesModule, TabsModule, SharedModule, SlickCarouselModule, BsDropdownModule, TranslateModule],
+  imports: [CommonModule, AccordionModule, TablesModule, TabsModule, SharedModule, SlickCarouselModule, BsDropdownModule, ModalModule, TranslateModule],
   providers: []
 })
 
@@ -28,6 +29,10 @@ export class LandingComponent implements OnInit {
   private readonly loginService = inject(LoginService);
   private readonly languageService = inject(LanguageService);
   private readonly cookieService = inject(CookieService);
+  private readonly modalService = inject(BsModalService);
+
+  // Modal reference
+  modalRef?: BsModalRef;
 
   // set the currenr year
   year: number = new Date().getFullYear();
@@ -179,6 +184,17 @@ export class LandingComponent implements OnInit {
    */
   onLogin(): void {
     this.loginService.initiateLogin();
+  }
+
+  /**
+   * Open whitepaper information modal
+   */
+  openWhitepaperModal(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template, {
+      class: 'modal-lg',
+      backdrop: true,
+      ignoreBackdropClick: false
+    });
   }
 
   /**

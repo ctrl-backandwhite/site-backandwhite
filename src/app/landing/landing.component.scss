@@ -33,4 +33,9 @@
   height: 40px;
 }
 
+.whitepaper-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
 // Brand name, navbar-logo y dropdown movidos a _crypto.scss para unificación
