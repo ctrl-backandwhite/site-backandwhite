@@ -5,6 +5,7 @@ import { walletRadialChart, overviewChart, transactionsData, bitconinChart, ethe
 import { ChartType, Transactions } from './dashboard.model';
 import { ChartComponent, NgApexchartsModule } from "ng-apexcharts";
 import { ConfigService } from '../../../core/services/config.service';
+import { AuthService } from 'src/app/core/auth/services/auth.service';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
@@ -33,11 +34,28 @@ export class DashboardComponent implements OnInit {
   litecoinChart: ChartType;
 
   walletBalanceData: any;
+  userDisplayName = '';
+  userEmail = '';
 
   transactionsData: Transactions[];
-  constructor(private configService: ConfigService) { }
+  constructor(
+    private configService: ConfigService,
+    private authService: AuthService
+  ) { }
 
   ngOnInit(): void {
+    const token = this.authService.getAccessToken();
+    const tokenPayload = token ? this.decodeJwtPayload(token) : null;
+    const firstName = tokenPayload?.firstName?.trim() || '';
+    const lastName = tokenPayload?.lastName?.trim() || '';
+    this.userDisplayName = `${firstName} ${lastName}`.trim();
+    this.userEmail =
+      tokenPayload?.email ||
+      tokenPayload?.preferred_username ||
+      tokenPayload?.upn ||
+      tokenPayload?.sub ||
+      '';
+
     this.breadCrumbItems = [{ label: 'PAGETITLE.DASHBOARD', active: true }];
 
     this.configService.getConfig().subscribe(response => {
@@ -215,5 +233,25 @@ export class DashboardComponent implements OnInit {
     this.bitconinChart = bitconinChart;
     this.ethereumChart = ethereumChart;
     this.litecoinChart = litecoinChart;
+  }
+
+  private decodeJwtPayload(token: string): Record<string, any> | null {
+    try {
+      const payload = token.split('.')[1];
+      if (!payload) {
+        return null;
+      }
+      const base64 = payload.replace(/-/g, '+').replace(/_/g, '/');
+      const padded = base64 + '==='.slice((base64.length + 3) % 4);
+      const json = decodeURIComponent(
+        atob(padded)
+          .split('')
+          .map(char => `%${`00${char.charCodeAt(0).toString(16)}`.slice(-2)}`)
+          .join('')
+      );
+      return JSON.parse(json);
+    } catch {
+      return null;
+    }
   }
 }
