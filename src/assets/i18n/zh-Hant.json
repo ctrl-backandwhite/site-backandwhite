@@ -11,16 +11,16 @@
       "SIGN_IN": "Sign in"
     },
     "HERO": {
-      "TITLE": "BW代幣 - 代幣化真實資產",
-      "SUBTITLE": "Bridge between crypto and real economy. Fractional ownership of real companies powered by blockchain.",
+      "TITLE": "去中心化投資的未來",
+      "SUBTITLE": "參與創建基於區塊鏈代幣的真實公司。我們使機構投資機會民主化。",
       "GET_WHITEPAPER": "下載白皮書",
       "HOW_IT_WORK": "了解更多",
       "GET_TOKEN": "獲取BW代幣",
       "ETH_RATE": "Network: Binance Smart Chain (BSC BEP-20)"
     },
     "ICO": {
-      "TITLE": "代幣啟動倒計時",
-      "TIME_LEFT": "啟動日期：2027年1月30日",
+      "TITLE": "啟動",
+      "TIME_LEFT": "Token BW",
       "DAYS": "天",
       "HOURS": "小時",
       "MINUTES": "分鐘",

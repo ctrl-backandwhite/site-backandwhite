@@ -4,32 +4,57 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'dropzone/dist/min/dropzone.min.css';
 
+/* Apply Roboto Light to entire site */
+* {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* Ensure headings have proper weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
 /* BW Token Branding Colors */
 :root {
-  --bw-primary: #6366f1;     /* Indigo/Purple for crypto */
-  --bw-secondary: #f59e0b;   /* Amber/Gold for value */
-  --bw-dark: #1f2937;        /* Dark for contrast */
-  --bw-light: #f3f4f6;       /* Light for backgrounds */
-  --bw-accent: #8b5cf6;      /* Purple accent */
+  --bw-primary: #6366f1;
+  /* Indigo/Purple for crypto */
+  --bw-secondary: #f59e0b;
+  /* Amber/Gold for value */
+  --bw-dark: #1f2937;
+  /* Dark for contrast */
+  --bw-light: #f3f4f6;
+  /* Light for backgrounds */
+  --bw-accent: #8b5cf6;
+  /* Purple accent */
 }
 
 /* Hero Section Enhancements */
 .hero-section {
   background: linear-gradient(135deg, #1f2937 0%, #374151 100%) !important;
   position: relative;
-  padding: 100px 0 80px !important;
-  
-  .text-white-50 {
-    color: rgba(255, 255, 255, 0.9) !important;
+  // Mobile-first: espaciado base para móviles
+  padding: 100px 0 120px !important;
+
+  // Tablet y superior
+  @media (min-width: 768px) {
+    padding: 150px 0 170px !important;
   }
 
-  .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  // Desktop
+  @media (min-width: 1200px) {
+    padding: 180px 0 200px !important;
+  }
+
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.9) !important;
   }
 
   .hero-subtitle {
@@ -79,15 +104,15 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 0.5rem;
-  
+  margin-bottom: 1.5rem;
+
   &::after {
     content: '';
     display: block;
     width: 60px;
     height: 4px;
     background: linear-gradient(90deg, #6366f1, #f59e0b);
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     border-radius: 2px;
   }
 }
@@ -95,7 +120,7 @@
 .section-subtitle {
   font-size: 1.125rem;
   color: #6b7280;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Features Section */
@@ -245,7 +270,7 @@
         color: #6366f1;
         font-weight: 600;
         text-decoration: none;
-        
+
         &:hover {
           color: #8b5cf6;
         }
@@ -326,11 +351,42 @@
 
 /* Container Spacing */
 .section {
-  padding: 80px 0;
+  padding: 120px 0 !important;
+  margin-bottom: 40px;
 
   &:nth-child(even) {
     background: #f9fafb;
   }
+}
+
+/* Extra spacing for specific sections */
+.hero-section {
+  margin-bottom: 60px !important;
+}
+
+.about-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.features-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.roadmap-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.news-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.faq-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 /* Text Utilities */
@@ -418,7 +474,7 @@ ngx-dropzone {
   margin-top: 10px;
 }
 
-dropzone > .dropzone.dz-wrapper .dz-message {
+dropzone>.dropzone.dz-wrapper .dz-message {
   background-color: transparent !important;
   border: none !important;
   overflow: inherit !important;
@@ -434,7 +490,7 @@ dropzone > .dropzone.dz-wrapper .dz-message {
   font-size: 1.21875rem;
 }
 
-dropzone > .dropzone.dz-wrapper {
+dropzone>.dropzone.dz-wrapper {
   min-height: 76px !important;
   border: none !important;
 }
@@ -456,7 +512,7 @@ dropzone > .dropzone.dz-wrapper {
   }
 }
 
-.switch.switch-small > .switch-pane > span {
+.switch.switch-small>.switch-pane>span {
   font-size: 12px !important;
 }
 

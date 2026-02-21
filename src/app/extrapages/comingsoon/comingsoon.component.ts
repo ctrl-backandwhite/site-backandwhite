@@ -4,10 +4,10 @@ import { interval } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
-    selector: 'app-comingsoon',
-    templateUrl: './comingsoon.component.html',
-    styleUrls: ['./comingsoon.component.scss'],
-    imports: [RouterModule]
+  selector: 'app-comingsoon',
+  templateUrl: './comingsoon.component.html',
+  styleUrls: ['./comingsoon.component.scss'],
+  imports: [RouterModule]
 })
 
 /**
@@ -24,7 +24,7 @@ export class ComingsoonComponent implements OnInit {
   private _trialEndsAt;
 
   ngOnInit(): void {
-    this._trialEndsAt = "2026-12-31";
+    this._trialEndsAt = "2027-01-30";
 
     interval(1000).pipe(
       map((x) => {
@@ -36,7 +36,7 @@ export class ComingsoonComponent implements OnInit {
         this._seconds = this.getSeconds(this._diff);
       });
   }
-  
+
   getDays(t: number) {
     return Math.floor(t / (1000 * 60 * 60 * 24));
   }

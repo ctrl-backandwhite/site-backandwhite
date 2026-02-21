@@ -85,7 +85,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._trialEndsAt = "2026-12-31";
+    this._trialEndsAt = "2027-01-30";
 
     // Initialize language
     this.cookieValue = this.cookieService.get('lang');
@@ -179,6 +179,39 @@ export class LandingComponent implements OnInit {
    */
   onLogin(): void {
     this.loginService.initiateLogin();
+  }
+
+  /**
+   * Download whitepaper in the current language
+   */
+  downloadWhitepaper(): void {
+    // Get current language from cookies
+    let currentLang = this.cookieService.get('lang') || 'en';
+
+    // Map language codes to file names
+    const whitepaperFiles: { [key: string]: string } = {
+      'es': 'whitepaper-es.pdf',
+      'en': 'whitepaper-en.pdf',
+      'pt': 'whitepaper-pt.pdf',
+      'de': 'whitepaper-de.pdf',
+      'it': 'whitepaper-it.pdf',
+      'ru': 'whitepaper-ru.pdf',
+      'fr': 'whitepaper-fr.pdf',
+      'zh-Hant': 'whitepaper-zh-Hant.pdf'
+    };
+
+    // Get the appropriate whitepaper file or default to English
+    const fileName = whitepaperFiles[currentLang] || whitepaperFiles['en'];
+    const filePath = `assets/whitepapers/${fileName}`;
+
+    // Create a temporary link and trigger download
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = fileName;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 
   /**

@@ -9,11 +9,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SharedModule } from './shared/shared.module';
 
 @Component({
-    selector: 'app-cyptolanding',
-    templateUrl: './cyptolanding.component.html',
-    styleUrls: ['./cyptolanding.component.scss'],
-    imports: [CommonModule, AccordionModule, TablesModule, TabsModule,  SharedModule,SlickCarouselModule],
-    providers: []
+  selector: 'app-cyptolanding',
+  templateUrl: './cyptolanding.component.html',
+  styleUrls: ['./cyptolanding.component.scss'],
+  imports: [CommonModule, AccordionModule, TablesModule, TabsModule, SharedModule, SlickCarouselModule],
+  providers: []
 })
 
 /**
@@ -61,7 +61,7 @@ export class CyptolandingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._trialEndsAt = "2026-12-31";
+    this._trialEndsAt = "2027-01-30";
 
     interval(3000).pipe(
       map((x) => {

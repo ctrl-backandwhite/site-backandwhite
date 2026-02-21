@@ -11,16 +11,16 @@
       "SIGN_IN": "Anmelden"
     },
     "HERO": {
-      "TITLE": "Back and White - Modernes Admin-Dashboard",
-      "SUBTITLE": "Eine leistungsstarke und flexible Admin-Dashboard-Vorlage, die mit Angular erstellt wurde",
-      "GET_WHITEPAPER": "Whitepaper abrufen",
-      "HOW_IT_WORK": "So funktioniert es",
-      "GET_TOKEN": "Token abrufen",
-      "ETH_RATE": "1 ETH = 2235 SKT"
+      "TITLE": "Token BW - Echte Vermögenswerte tokenisieren",
+      "SUBTITLE": "Brücke zwischen Krypto und Realwirtschaft. Bruchteileigentum an echten Unternehmen, angetrieben durch Blockchain.",
+      "GET_WHITEPAPER": "Whitepaper Herunterladen",
+      "HOW_IT_WORK": "Mehr erfahren",
+      "GET_TOKEN": "BW Token erhalten",
+      "ETH_RATE": "Netzwerk: Binance Smart Chain (BSC BEP-20)"
     },
     "ICO": {
-      "TITLE": "ICO-Countdown",
-      "TIME_LEFT": "Verbleibende Zeit bis Ico",
+      "TITLE": "Countdown zum Token-Start",
+      "TIME_LEFT": "Startdatum: 30. Januar 2027",
       "DAYS": "Tage",
       "HOURS": "Stunden",
       "MINUTES": "Minuten",

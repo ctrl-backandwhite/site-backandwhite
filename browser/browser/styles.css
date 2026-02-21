@@ -10152,6 +10152,7 @@ fieldset:disabled .btn {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+  padding-top: 60px;
 }
 .text-body-secondary {
   --bs-text-opacity: 1;
@@ -17771,10 +17772,10 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
 }
 /*!
  * Waves v0.7.6
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2018 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;
@@ -50751,6 +50752,338 @@ button.toast-close-button {
 }
 
 /* src/styles.scss */
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+:root {
+  --bw-primary: #6366f1;
+  --bw-secondary: #f59e0b;
+  --bw-dark: #1f2937;
+  --bw-light: #f3f4f6;
+  --bw-accent: #8b5cf6;
+}
+.hero-section {
+  background:
+    linear-gradient(
+      135deg,
+      #1f2937 0%,
+      #374151 100%) !important;
+  position: relative;
+  padding: 100px 0 80px !important;
+}
+.hero-section .text-white-50 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+.hero-section .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.hero-section .hero-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.hero-section .btn-hero-primary {
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+.hero-section .btn-hero-primary:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #a855f7);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+  color: white;
+}
+.hero-section .btn-hero-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.hero-section .btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #f59e0b);
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+.features-section .feature-card {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.features-section .feature-card:hover {
+  border-color: #6366f1;
+  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.15);
+  transform: translateY(-5px);
+}
+.features-section .feature-card .feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+.features-section .feature-card .feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.features-section .feature-card .feature-desc {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+.roadmap-section .timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 2rem;
+}
+.roadmap-section .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #6366f1;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #6366f1;
+}
+.roadmap-section .timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 25px;
+  width: 4px;
+  height: 40px;
+  background:
+    linear-gradient(
+      180deg,
+      #6366f1,
+      #e5e7eb);
+}
+.roadmap-section .timeline-item:last-child::after {
+  display: none;
+}
+.roadmap-section .timeline-item .phase-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+.roadmap-section .timeline-item .phase-date {
+  color: #f59e0b;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.roadmap-section .timeline-item .phase-desc {
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.news-section .news-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.news-section .news-card:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+.news-section .news-card .news-header {
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6);
+  color: white;
+  padding: 2rem;
+  min-height: 120px;
+}
+.news-section .news-card .news-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.news-section .news-card .news-date {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+}
+.news-section .news-card .news-body {
+  padding: 1.5rem;
+}
+.news-section .news-card .news-body .news-desc {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.news-section .news-card .news-body .news-link {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+.news-section .news-card .news-body .news-link:hover {
+  color: #8b5cf6;
+}
+.faq-section .faq-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.faq-section .faq-item .faq-question {
+  background: #f9fafb;
+  padding: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-section .faq-item .faq-question:hover {
+  background: #f3f4f6;
+}
+.faq-section .faq-item .faq-question .faq-icon {
+  color: #6366f1;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+.faq-section .faq-item .faq-question.active .faq-icon {
+  transform: rotate(180deg);
+}
+.faq-section .faq-item .faq-answer {
+  padding: 1.5rem;
+  background: white;
+  color: #6b7280;
+  line-height: 1.6;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn.btn-primary {
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6);
+  border: none;
+}
+.btn.btn-primary:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #a855f7);
+}
+.btn.btn-secondary {
+  background: #f59e0b;
+  border: none;
+}
+.btn.btn-secondary:hover {
+  background: #d97706;
+}
+.section {
+  padding: 80px 0;
+}
+.section:nth-child(even) {
+  background: #f9fafb;
+}
+.text-primary {
+  color: #6366f1 !important;
+}
+.text-secondary {
+  color: #f59e0b !important;
+}
+.accent-line {
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #f59e0b);
+  margin: 2rem 0;
+  border-radius: 2px;
+}
 .modal-holder {
   animation-name: example;
   animation-duration: 0.3s;
