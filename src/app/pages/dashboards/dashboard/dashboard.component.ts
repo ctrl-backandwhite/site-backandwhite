@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 
 import { walletRadialChart, overviewChart, transactionsData, bitconinChart, ethereumChart, litecoinChart } from './dashboard.data';
 
@@ -6,20 +6,24 @@ import { ChartType, Transactions } from './dashboard.model';
 import { ChartComponent, NgApexchartsModule } from "ng-apexcharts";
 import { ConfigService } from '../../../core/services/config.service';
 import { AuthService } from 'src/app/core/auth/services/auth.service';
+import { BlockchainService, BlockchainTransaction, WalletBalance } from '../../../core/services/blockchain.service';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { LoaderComponent } from 'src/app/shared/ui/loader/loader.component';
 import { PagetitleComponent } from 'src/app/shared/ui/pagetitle/pagetitle.component';
+import { FilterByTypePipe } from 'src/app/shared/pipes/filter-by-type.pipe';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
-  imports: [PagetitleComponent, LoaderComponent, BsDropdownModule, NgApexchartsModule, TabsModule, SimplebarAngularModule]
+  imports: [PagetitleComponent, LoaderComponent, BsDropdownModule, NgApexchartsModule, TabsModule, SimplebarAngularModule, FilterByTypePipe]
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
 
   @ViewChild("chart", { static: false }) chart: ChartComponent;
 
@@ -36,11 +40,15 @@ export class DashboardComponent implements OnInit {
   walletBalanceData: any;
   userDisplayName = '';
   userEmail = '';
+  realWalletBalance: WalletBalance | null = null;
 
-  transactionsData: Transactions[];
+  transactionsData: BlockchainTransaction[];
+  private destroy$ = new Subject<void>();
+
   constructor(
     private configService: ConfigService,
-    private authService: AuthService
+    private authService: AuthService,
+    private blockchainService: BlockchainService
   ) { }
 
   ngOnInit(): void {
@@ -50,7 +58,39 @@ export class DashboardComponent implements OnInit {
       this.walletBalanceData = response.cryptoWalletBalance;
     });
 
+    // Load user info from JWT token
+    const token = this.authService.getAccessToken();
+    if (token) {
+      const tokenPayload = this.decodeJwtPayload(token);
+      const firstName = tokenPayload?.firstName?.trim() || '';
+      const lastName = tokenPayload?.lastName?.trim() || '';
+      this.userDisplayName = `${firstName} ${lastName}`.trim();
+      this.userEmail = tokenPayload?.sub || '';
+    }
+
+    // Subscribe to blockchain transactions
+    this.blockchainService.getTransactions()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(transactions => {
+        this.transactionsData = transactions;
+      });
+
+    // Subscribe to wallet balance
+    this.blockchainService.getWalletBalance()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(balance => {
+        this.realWalletBalance = balance;
+      });
+
+    // Ensure balance refresh when returning to the dashboard
+    this.blockchainService.refreshWalletBalance();
+
     this._fetchData();
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   public updateOptionsData = {
@@ -217,10 +257,13 @@ export class DashboardComponent implements OnInit {
   private _fetchData() {
     this.walletRadialChart = walletRadialChart;
     this.overviewChart = overviewChart;
-    this.transactionsData = transactionsData;
     this.bitconinChart = bitconinChart;
     this.ethereumChart = ethereumChart;
     this.litecoinChart = litecoinChart;
+
+    // Initialize with empty or default transactions
+    // The actual transactions will be loaded from BlockchainService
+    this.transactionsData = [];
   }
 
   private decodeJwtPayload(token: string): Record<string, any> | null {

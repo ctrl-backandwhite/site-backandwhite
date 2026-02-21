@@ -12,6 +12,7 @@ import { RootReducerState } from 'src/app/store';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { AuthService } from '../../core/auth/services/auth.service';
+import { BlockchainService } from '../../core/services/blockchain.service';
 
 @Component({
   selector: 'app-topbar',
@@ -35,8 +36,17 @@ export class TopbarComponent implements OnInit {
   dataLayout$: Observable<string>;
   // Define layoutMode as a property
 
+  // Metamask properties
+  isMetamaskConnected = false;
+  walletAddress: string = '';
+  isConnectingMetamask = false;
+
+  // User properties
+  userDisplayName: string = '';
+
   constructor(@Inject(DOCUMENT) private document: any,
     private authService: AuthService,
+    private blockchainService: BlockchainService,
     public languageService: LanguageService,
     public translate: TranslateService,
     public _cookiesService: CookieService, public store: Store<RootReducerState>) {
@@ -75,6 +85,15 @@ export class TopbarComponent implements OnInit {
     } else {
       this.flagvalue = val.map(element => element.flag);
     }
+
+    // Load user info from JWT token
+    const token = this.authService.getAccessToken();
+    if (token) {
+      const tokenPayload = this.decodeJwtPayload(token);
+      const firstName = tokenPayload?.firstName?.trim() || '';
+      const lastName = tokenPayload?.lastName?.trim() || '';
+      this.userDisplayName = `${firstName} ${lastName}`.trim();
+    }
   }
 
   setLanguage(text: string, lang: string, flag: string) {
@@ -111,6 +130,72 @@ export class TopbarComponent implements OnInit {
         window.location.href = '/';
       }
     });
+  }
+
+  /**
+   * Connect/Disconnect Metamask Wallet
+   */
+  async connectMetamask() {
+    if (typeof (window as any).ethereum === 'undefined') {
+      alert('Please install MetaMask extension');
+      console.error('Metamask not installed');
+      return;
+    }
+
+    try {
+      this.isConnectingMetamask = true;
+      console.log('Starting Metamask connection...');
+
+      if (this.isMetamaskConnected) {
+        // Disconnect logic
+        console.log('Disconnecting wallet...');
+        this.isMetamaskConnected = false;
+        this.walletAddress = '';
+      } else {
+        // Connect logic
+        console.log('Requesting Metamask accounts...');
+        const accounts = await (window as any).ethereum.request({
+          method: 'eth_requestAccounts'
+        });
+
+        if (accounts && accounts.length > 0) {
+          this.walletAddress = accounts[0];
+          this.isMetamaskConnected = true;
+          console.log('Wallet connected:', this.walletAddress);
+
+          // Notify BlockchainService about the connected wallet
+          this.blockchainService.setConnectedAddress(this.walletAddress);
+          console.log('BlockchainService notified about connected wallet');
+        } else {
+          console.warn('No accounts returned from Metamask');
+          alert('No accounts available in MetaMask');
+        }
+      }
+    } catch (error: any) {
+      console.error('Error connecting to Metamask:', error);
+
+      // Handle user rejection
+      if (error.code === 4001) {
+        console.log('User rejected the wallet connection');
+      }
+      alert('Failed to connect to MetaMask: ' + (error.message || 'Unknown error'));
+    } finally {
+      this.isConnectingMetamask = false;
+    }
+  }
+
+  /**
+   * Decode JWT payload
+   */
+  decodeJwtPayload(token: string): any {
+    try {
+      const payload = token.split('.')[1];
+      const decoded = atob(payload.replace(/-/g, '+').replace(/_/g, '/'));
+      return JSON.parse(decoded);
+    } catch (error) {
+      console.error('Error decoding JWT:', error);
+      return null;
+    }
   }
 
   /**

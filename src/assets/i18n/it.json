@@ -466,5 +466,42 @@
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"
+  },
+  "HEADER": {
+    "SEARCH": "Cerca...",
+    "MEGA_MENU": "Mega Menu",
+    "CONNECT_METAMASK": "Connetti Portafoglio",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifiche",
+      "VIEW_ALL": "Visualizza tutto",
+      "LOAD_MORE": "Visualizza di più..",
+      "FIRST": {
+        "TITLE": "Il tuo ordine è stato effettuato",
+        "TEXT": "Se più lingue si uniscono nella grammatica",
+        "TIME": "3 minuti fa"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "Sembrerà inglese semplificato",
+        "TIME": "1 ora fa"
+      },
+      "THIRD": {
+        "TITLE": "Il tuo articolo è stato spedito",
+        "TEXT": "Se più lingue si uniscono nella grammatica",
+        "TIME": "3 minuti fa"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "Come un amico Cambridge scettico occidentale",
+        "TIME": "1 ora fa"
+      }
+    },
+    "SETTINGS": "Impostazioni",
+    "LOGIN": {
+      "PROFILE": "Profilo",
+      "MY_WALLET": "Il mio portafoglio",
+      "LOCK_SCREEN": "Schermata di blocco",
+      "LOGOUT": "Disconnettersi"
+    }
   }
 }

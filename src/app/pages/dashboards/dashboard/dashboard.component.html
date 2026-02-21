@@ -56,7 +56,13 @@
                         </div>
                         <div class="col-md-4 mt-4 mt-md-0 text-center d-flex flex-column justify-content-center">
                             <p class="fw-medium mb-2">Balance :</p>
+                            @if (realWalletBalance) {
+                            <h4>$ {{ realWalletBalance.ethBalanceUSD }}</h4>
+                            <p class="text-muted small mb-0">{{ realWalletBalance.ethBalance }} ETH</p>
+                            } @else {
                             <h4>$ 6134.39</h4>
+                            <p class="text-muted small mb-0">Connect wallet to see real balance</p>
+                            }
                         </div>
                         <div class="col-md-4 mt-4 mt-md-0 text-center">
                             <p class="fw-medium mb-2">Coin :</p>
@@ -101,36 +107,28 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <div class="float-end">
-                        <select class="form-select form-select-sm ms-2" (change)="getBalanceData($event)">
-                            <option value="march" selected>March</option>
-                            <option value="february">February</option>
-                            <option value="january">January</option>
-                            <option value="december">December</option>
-                        </select>
-                    </div>
                     <h4 class="card-title mb-3">Wallet Balance</h4>
-                    @for (data of walletBalanceData; track $index) {
+                    @if (realWalletBalance) {
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="mt-4">
-                                <p>{{data.text}}</p>
-                                <h4>{{ data.amount }}</h4>
+                                <p>Available Balance</p>
+                                <h4>$ {{ realWalletBalance.totalBalance }}</h4>
 
-                                <p class="text-muted mb-4"> {{data.subamount}} <i
+                                <p class="text-muted mb-4"> +{{ realWalletBalance.trend }} % <i
                                         class="mdi mdi-arrow-up ms-1 text-success"></i></p>
 
                                 <div class="row">
                                     <div class="col-6">
                                         <div>
                                             <p class="mb-2">Income</p>
-                                            <h5>{{ data.income }}</h5>
+                                            <h5>$ {{ realWalletBalance.income }}</h5>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <p class="mb-2">Expense</p>
-                                            <h5>{{ data.expense }}</h5>
+                                            <h5>$ {{ realWalletBalance.expense }}</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +142,7 @@
 
                         <div class="col-lg-4 col-sm-6">
                             <div>
-                                <apx-chart class="apex-charts" dir="ltr" [series]="data.chartSeries"
+                                <apx-chart class="apex-charts" dir="ltr" [series]="[25, 35, 40]"
                                     [chart]="walletRadialChart.chart" [colors]="walletRadialChart.colors"
                                     [stroke]="walletRadialChart.stroke" [plotOptions]="walletRadialChart.plotOptions"
                                     [legend]="walletRadialChart.legend" [labels]="walletRadialChart.labels">
@@ -153,18 +151,41 @@
                         </div>
 
                         <div class="col-lg-4 col-sm-6 align-self-center">
-                            @for (item of data.balancelist; track $index) {
                             <div class="mt-4 pt-2">
                                 <p class="mb-2"><i
-                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-{{item.color}}"></i>
-                                    {{ item.text }}
+                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i>
+                                    {{ realWalletBalance.nativeSymbol }}
                                 </p>
-                                <h5>{{ item.coin }} = <span class="text-muted font-size-14">{{ item.amount }}</span>
+                                <h5>{{ realWalletBalance.nativeBalance }} {{ realWalletBalance.nativeSymbol }} = <span
+                                        class="text-muted font-size-14">$ {{ realWalletBalance.nativeBalanceUSD
+                                        }}</span>
                                 </h5>
                             </div>
-                            }
+                            <div class="mt-4 pt-2">
+                                <p class="mb-2"><i
+                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-warning"></i>
+                                    BTC
+                                </p>
+                                <h5>{{ realWalletBalance.btcBalance }} BTC = <span class="text-muted font-size-14">$ {{
+                                        realWalletBalance.btcBalanceUSD }}</span>
+                                </h5>
+                            </div>
+                            <div class="mt-4 pt-2">
+                                <p class="mb-2"><i
+                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-success"></i>
+                                    USDT
+                                </p>
+                                <h5>{{ realWalletBalance.usdtBalance }} USDT = <span class="text-muted font-size-14">$
+                                        {{ realWalletBalance.usdtBalanceUSD }}</span>
+                                </h5>
+                            </div>
                         </div>
-                    </div>}
+                    </div>
+                    } @else {
+                    <div class="text-center text-muted py-5">
+                        Connect your wallet to see the real balance.
+                    </div>
+                    }
                 </div>
             </div>
         </div>
@@ -288,6 +309,7 @@
                             <ngx-simplebar style="height: 330px;">
                                 <table class="table align-middle table-nowrap">
                                     <tbody>
+                                        @if (transactionsData && transactionsData.length > 0) {
                                         @for (data of transactionsData; track $index) {
                                         <tr>
                                             <td style="width: 50px;">
@@ -312,6 +334,12 @@
                                                 </div>
                                             </td>
                                         </tr>}
+                                        } @else {
+                                        <tr>
+                                            <td colspan="4" class="text-center text-muted py-4">No transactions found
+                                            </td>
+                                        </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </ngx-simplebar>
@@ -320,7 +348,8 @@
                             <ngx-simplebar style="height: 330px;">
                                 <table class="table align-middle table-nowrap">
                                     <tbody>
-                                        @for (data of transactionsData; track $index) {
+                                        @if (transactionsData && (transactionsData | filterByType: 'buy').length > 0) {
+                                        @for (data of (transactionsData | filterByType: 'buy'); track $index) {
                                         <tr>
                                             <td style="width: 50px;">
                                                 <div class="font-size-22 text-{{data.color}}">
@@ -344,6 +373,51 @@
                                                 </div>
                                             </td>
                                         </tr>}
+                                        } @else {
+                                        <tr>
+                                            <td colspan="4" class="text-center text-muted py-4">No buy transactions
+                                                found</td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </ngx-simplebar>
+                        </tab>
+                        <tab heading="Sell">
+                            <ngx-simplebar style="height: 330px;">
+                                <table class="table align-middle table-nowrap">
+                                    <tbody>
+                                        @if (transactionsData && (transactionsData | filterByType: 'sell').length > 0) {
+                                        @for (data of (transactionsData | filterByType: 'sell'); track $index) {
+                                        <tr>
+                                            <td style="width: 50px;">
+                                                <div class="font-size-22 text-{{data.color}}">
+                                                    <i class="bx {{data.icon}}"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                                                    <p class="text-muted mb-0">{{data.date}}</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-end">
+                                                    <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-end">
+                                                    <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                                                </div>
+                                            </td>
+                                        </tr>}
+                                        } @else {
+                                        <tr>
+                                            <td colspan="4" class="text-center text-muted py-4">No sell transactions
+                                                found</td>
+                                        </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </ngx-simplebar>

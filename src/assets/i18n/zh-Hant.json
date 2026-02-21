@@ -466,5 +466,42 @@
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"
+  },
+  "HEADER": {
+    "SEARCH": "搜索...",
+    "MEGA_MENU": "超級菜單",
+    "CONNECT_METAMASK": "連接錢包",
+    "NOTIFICATIONS": {
+      "TITLE": "通知",
+      "VIEW_ALL": "查看全部",
+      "LOAD_MORE": "查看更多..",
+      "FIRST": {
+        "TITLE": "您的訂單已下達",
+        "TEXT": "如果多種語言合併語法",
+        "TIME": "3分鐘前"
+      },
+      "SECOND": {
+        "TITLE": "詹姆斯·勒米爾",
+        "TEXT": "看起來像簡化的英文",
+        "TIME": "1小時前"
+      },
+      "THIRD": {
+        "TITLE": "您的商品已發送",
+        "TEXT": "如果多種語言合併語法",
+        "TIME": "3分鐘前"
+      },
+      "FOUR": {
+        "TITLE": "塞萊納·萊菲爾德",
+        "TEXT": "作為一個懷疑的劍橋朋友西方",
+        "TIME": "1小時前"
+      }
+    },
+    "SETTINGS": "設置",
+    "LOGIN": {
+      "PROFILE": "個人資料",
+      "MY_WALLET": "我的錢包",
+      "LOCK_SCREEN": "鎖屏",
+      "LOGOUT": "登出"
+    }
   }
 }

@@ -466,5 +466,42 @@
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"
+  },
+  "HEADER": {
+    "SEARCH": "Rechercher...",
+    "MEGA_MENU": "Mega Menu",
+    "CONNECT_METAMASK": "Connecter le portefeuille",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifications",
+      "VIEW_ALL": "Afficher tout",
+      "LOAD_MORE": "Voir plus..",
+      "FIRST": {
+        "TITLE": "Votre commande est passée",
+        "TEXT": "Si plusieurs langues fusionnent la grammaire",
+        "TIME": "il y a 3 minutes"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "Cela ressemblera à un anglais simplifié",
+        "TIME": "il y a 1 heure"
+      },
+      "THIRD": {
+        "TITLE": "Votre article a été expédié",
+        "TEXT": "Si plusieurs langues fusionnent la grammaire",
+        "TIME": "il y a 3 minutes"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "Comme un ami Cambridge sceptique occidental",
+        "TIME": "il y a 1 heure"
+      }
+    },
+    "SETTINGS": "Paramètres",
+    "LOGIN": {
+      "PROFILE": "Profil",
+      "MY_WALLET": "Mon portefeuille",
+      "LOCK_SCREEN": "Écran de verrouillage",
+      "LOGOUT": "Déconnexion"
+    }
   }
 }

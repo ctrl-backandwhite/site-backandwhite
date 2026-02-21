@@ -18,6 +18,17 @@
     </div>
 
     <div class="d-flex">
+      <button type="button" class="btn header-item" (click)="connectMetamask()" [disabled]="isConnectingMetamask"
+        [class.btn-outline-primary]="!isMetamaskConnected" [class.btn-primary]="isMetamaskConnected"
+        title="Connect to Metamask">
+        <i class="bx bx-wallet me-2"></i>
+        @if(!isMetamaskConnected) {
+        <span class="d-none d-lg-inline-block">{{ 'HEADER.CONNECT_METAMASK' | translate }}</span>
+        } @else {
+        <span class="d-none d-lg-inline-block">{{ walletAddress | slice:0:6 }}...{{ walletAddress | slice:-4 }}</span>
+        }
+      </button>
+
       <div class="dropdown d-inline-block" dropdown>
         <button type="button" class="btn header-item" id="page-header-user-dropdown" dropdownToggle>
           @if(flagvalue === undefined){
@@ -128,7 +139,7 @@
       <div class="dropdown d-inline-block" dropdown>
         <button type="button" class="btn header-item" dropdownToggle id="page-header-user-dropdown">
           <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
-          <span class="d-none d-xl-inline-block ms-1">Henry </span>
+          <span class="d-none d-xl-inline-block ms-1">{{ userDisplayName || 'User' }} </span>
           <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-end" *dropdownMenu>
