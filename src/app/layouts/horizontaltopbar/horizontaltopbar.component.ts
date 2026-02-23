@@ -274,7 +274,15 @@ export class HorizontaltopbarComponent implements OnInit, AfterViewInit {
    * Initialize
    */
   initialize(): void {
-    this.menuItems = MENU;
+    const showFullMenu = localStorage.getItem('menu') === 'true';
+
+    if (showFullMenu) {
+      // Show all menu items
+      this.menuItems = MENU;
+    } else {
+      // Filter menu items: hide items with hideWithoutFlag: true
+      this.menuItems = MENU.filter(item => !item.hideWithoutFlag);
+    }
   }
 
   /**

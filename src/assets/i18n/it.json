@@ -459,9 +459,39 @@
   "PAGETITLE": {
     "DASHBOARD": "Dashboard",
     "CRYPTO": "Crypto",
-    "SKOTE": "Skote",
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
+  },
+  "DASHBOARD": {
+    "SWAP_TITLE": "Scambia",
+    "SWAP_FROM": "Da",
+    "SWAP_TO": "A",
+    "SWAP_AMOUNT": "Importo",
+    "BALANCE": "Saldo",
+    "SWAP_SLIPPAGE": "Slippage",
+    "SWAP_DEADLINE": "Scadenza",
+    "SWAP_ESTIMATED": "Uscita stimata",
+    "SWAP_MIN_RECEIVE": "Minimo ricevuto",
+    "SWAP_MAX_PAY": "Massimo da pagare",
+    "SWAP_RATE": "Prezzo",
+    "SWAP_BUTTON": "Scambia",
+    "SWAP_LOADING": "Scambio...",
+    "POPULAR_TOKENS": "Token popolari",
+    "NO_TOKENS_FOUND": "Nessun token trovato",
+    "ADD_CUSTOM_TOKEN": "Aggiungi Token",
+
+    "TOKEN_BALANCES": "Saldi dei token",
+    "TOKEN_BALANCES_EMPTY": "Nessun saldo token",
+    "TX_FILTER_SENT": "Inviate",
+    "TX_FILTER_ALL": "Tutte",
+    "TX_FILTER_RECEIVED": "Ricevute",
+    "TX_FILTER_BUY": "Acquisto",
+    "TX_FILTER_SELL": "Vendita",
+    "TX_EMPTY_SENT": "Nessuna transazione inviata",
+    "TX_EMPTY_ALL": "Nessuna transazione",
+    "TX_EMPTY_RECEIVED": "Nessuna transazione ricevuta",
+    "TX_EMPTY_BUY": "Nessun acquisto",
+    "TX_EMPTY_SELL": "Nessuna vendita"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
@@ -471,6 +501,7 @@
     "SEARCH": "Cerca...",
     "MEGA_MENU": "Mega Menu",
     "CONNECT_METAMASK": "Connetti Portafoglio",
+    "METAMASK_CONNECTED": "Portafoglio connesso",
     "NOTIFICATIONS": {
       "TITLE": "Notifiche",
       "VIEW_ALL": "Visualizza tutto",
@@ -503,5 +534,20 @@
       "LOCK_SCREEN": "Schermata di blocco",
       "LOGOUT": "Disconnettersi"
     }
+  },
+  "WALLET": {
+    "CONNECT": "Connetti Portafoglio",
+    "DISCONNECT": "Disconnetti"
+  },
+
+  "COMMON": {
+    "ADD": "Aggiungi",
+    "CANCEL": "Annulla",
+    "LOADING": "Caricamento...",
+    "SUBMIT": "Invia",
+    "CLOSE": "Chiudi",
+    "SAVE": "Salva",
+    "DELETE": "Elimina",
+    "EDIT": "Modifica"
   }
 }

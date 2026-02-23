@@ -20,19 +20,77 @@ export const MENU: MenuItem[] = [
         label: 'MENUITEMS.CALENDAR.TEXT',
         icon: 'bx-calendar',
         link: '/dashboard/calendar',
+        hideWithoutFlag: true
     },
     {
         id: 11,
         label: 'MENUITEMS.CHAT.TEXT',
         icon: 'bx-chat',
         link: '/dashboard/chat',
-
+        hideWithoutFlag: true
     },
     {
         id: 12,
         label: 'MENUITEMS.FILEMANAGER.TEXT',
         icon: 'bx-file',
         link: '/dashboard/filemanager',
+        hideWithoutFlag: true
+    },
+    {
+        id: 40,
+        label: 'MENUITEMS.PROJECTS.TEXT',
+        icon: 'bx-briefcase-alt-2',
+        subItems: [
+            {
+                id: 41,
+                label: 'MENUITEMS.PROJECTS.LIST.GRID',
+                link: '/dashboard/projects/grid',
+                parentId: 40
+            },
+            {
+                id: 42,
+                label: 'MENUITEMS.PROJECTS.LIST.PROJECTLIST',
+                link: '/dashboard/projects/list',
+                parentId: 40
+            },
+            {
+                id: 43,
+                label: 'MENUITEMS.PROJECTS.LIST.OVERVIEW',
+                link: '/dashboard/projects/overview',
+                parentId: 40
+            },
+            {
+                id: 44,
+                label: 'MENUITEMS.PROJECTS.LIST.CREATE',
+                link: '/dashboard/projects/create',
+                parentId: 40
+            }
+        ]
+    },
+    {
+        id: 45,
+        label: 'MENUITEMS.TASKS.TEXT',
+        icon: 'bx-task',
+        subItems: [
+            {
+                id: 46,
+                label: 'MENUITEMS.TASKS.LIST.TASKLIST',
+                link: '/dashboard/tasks/list',
+                parentId: 45
+            },
+            {
+                id: 47,
+                label: 'MENUITEMS.TASKS.LIST.KANBAN',
+                link: '/dashboard/tasks/kanban',
+                parentId: 45
+            },
+            {
+                id: 48,
+                label: 'MENUITEMS.TASKS.LIST.CREATETASK',
+                link: '/dashboard/tasks/create',
+                parentId: 45
+            }
+        ]
     },
     {
         id: 13,
@@ -93,6 +151,7 @@ export const MENU: MenuItem[] = [
         id: 22,
         label: 'MENUITEMS.CRYPTO.TEXT',
         icon: 'bx-bitcoin',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 23,
@@ -142,6 +201,7 @@ export const MENU: MenuItem[] = [
         id: 30,
         label: 'MENUITEMS.EMAIL.TEXT',
         icon: 'bx-envelope',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 31,
@@ -190,6 +250,7 @@ export const MENU: MenuItem[] = [
         id: 37,
         label: 'MENUITEMS.INVOICES.TEXT',
         icon: 'bx-receipt',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 38,
@@ -206,65 +267,10 @@ export const MENU: MenuItem[] = [
         ]
     },
     {
-        id: 40,
-        label: 'MENUITEMS.PROJECTS.TEXT',
-        icon: 'bx-briefcase-alt-2',
-        subItems: [
-            {
-                id: 41,
-                label: 'MENUITEMS.PROJECTS.LIST.GRID',
-                link: '/dashboard/projects/grid',
-                parentId: 40
-            },
-            {
-                id: 42,
-                label: 'MENUITEMS.PROJECTS.LIST.PROJECTLIST',
-                link: '/dashboard/projects/list',
-                parentId: 40
-            },
-            {
-                id: 43,
-                label: 'MENUITEMS.PROJECTS.LIST.OVERVIEW',
-                link: '/dashboard/projects/overview',
-                parentId: 40
-            },
-            {
-                id: 44,
-                label: 'MENUITEMS.PROJECTS.LIST.CREATE',
-                link: '/dashboard/projects/create',
-                parentId: 40
-            }
-        ]
-    },
-    {
-        id: 45,
-        label: 'MENUITEMS.TASKS.TEXT',
-        icon: 'bx-task',
-        subItems: [
-            {
-                id: 46,
-                label: 'MENUITEMS.TASKS.LIST.TASKLIST',
-                link: '/dashboard/tasks/list',
-                parentId: 45
-            },
-            {
-                id: 47,
-                label: 'MENUITEMS.TASKS.LIST.KANBAN',
-                link: '/dashboard/tasks/kanban',
-                parentId: 45
-            },
-            {
-                id: 48,
-                label: 'MENUITEMS.TASKS.LIST.CREATETASK',
-                link: '/dashboard/tasks/create',
-                parentId: 45
-            }
-        ]
-    },
-    {
         id: 49,
         label: 'MENUITEMS.CONTACTS.TEXT',
         icon: 'bxs-user-detail',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 50,
@@ -290,6 +296,7 @@ export const MENU: MenuItem[] = [
         id: 53,
         label: 'MENUITEMS.BLOG.TEXT',
         icon: 'bx-file',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 54,
@@ -315,6 +322,7 @@ export const MENU: MenuItem[] = [
         id: 57,
         label: 'MENUITEMS.JOBS.TEXT',
         icon: 'bx-briefcase-alt',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 58,
@@ -374,12 +382,14 @@ export const MENU: MenuItem[] = [
     {
         id: 66,
         label: 'MENUITEMS.PAGES.TEXT',
-        isTitle: true
+        isTitle: true,
+        hideWithoutFlag: true
     },
     {
         id: 67,
         label: 'MENUITEMS.AUTHENTICATION.TEXT',
         icon: 'bx-user-circle',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 68,
@@ -471,6 +481,7 @@ export const MENU: MenuItem[] = [
         id: 82,
         label: 'MENUITEMS.UTILITY.TEXT',
         icon: 'bx-file',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 83,
@@ -525,12 +536,14 @@ export const MENU: MenuItem[] = [
     {
         id: 91,
         label: 'MENUITEMS.COMPONENTS.TEXT',
-        isTitle: true
+        isTitle: true,
+        hideWithoutFlag: true
     },
     {
         id: 92,
         label: 'MENUITEMS.UIELEMENTS.TEXT',
         icon: 'bx-tone',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 93,
@@ -676,6 +689,7 @@ export const MENU: MenuItem[] = [
         id: 116,
         label: 'MENUITEMS.FORMS.TEXT',
         icon: 'bxs-eraser',
+        hideWithoutFlag: true,
         badge: {
             variant: 'danger',
             text: 'MENUITEMS.FORMS.BADGE',
@@ -741,6 +755,7 @@ export const MENU: MenuItem[] = [
         id: 126,
         icon: 'bx-list-ul',
         label: 'MENUITEMS.TABLES.TEXT',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 127,
@@ -760,6 +775,7 @@ export const MENU: MenuItem[] = [
         id: 130,
         icon: 'bxs-bar-chart-alt-2',
         label: 'MENUITEMS.CHARTS.TEXT',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 131,
@@ -791,6 +807,7 @@ export const MENU: MenuItem[] = [
         id: 135,
         label: 'MENUITEMS.ICONS.TEXT',
         icon: 'bx-aperture',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 136,
@@ -822,6 +839,7 @@ export const MENU: MenuItem[] = [
         id: 140,
         label: 'MENUITEMS.MAPS.TEXT',
         icon: 'bx-map',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 142,
@@ -842,11 +860,13 @@ export const MENU: MenuItem[] = [
         label: 'DAO.TITLE',
         icon: 'bx-building',
         link: '/dashboard/dao',
+        hideWithoutFlag: true
     },
     {
         id: 143,
         label: 'MENUITEMS.MULTILEVEL.TEXT',
         icon: 'bx-share-alt',
+        hideWithoutFlag: true,
         subItems: [
             {
                 id: 144,

@@ -1,463 +1,957 @@
 <app-loader></app-loader>
 <div class="container-fluid">
-    <app-page-title title="PAGETITLE.DASHBOARD" [breadcrumbItems]="breadCrumbItems"></app-page-title>
-    <div class="row align-items-stretch">
-        <div class="col-12 col-xl-6 mb-4 d-flex">
-            <div class="card w-100 h-100">
-                <div class="card-body d-flex flex-column justify-content-center">
-                    <div class="row align-items-center">
-                        <div class="col-lg-9 col-sm-8">
-                            <div class="p-4">
-                                <h5 class="text-primary">Welcome Back !</h5>
-                                <p>Back & White Dashboard</p>
+  <app-page-title title="PAGETITLE.DASHBOARD" [breadcrumbItems]="breadCrumbItems"></app-page-title>
+  <div class="row align-items-stretch">
+    <div class="col-12 col-xl-6 mb-4 d-flex">
+      <div class="card w-100 h-100">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h4 class="card-title mb-3">Wallet Balance</h4>
+          @if (realWalletBalance) {
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="mt-4">
+                <p>Available Balance</p>
+                <h4>$ {{ realWalletBalance.totalBalance }}</h4>
 
-                                <div class="text-muted">
-                                    <p class="mb-1"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>
-                                        If several languages coalesce</p>
-                                    <p class="mb-1"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>
-                                        Sed ut perspiciatis unde</p>
-                                    <p class="mb-0"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>
-                                        It would be necessary</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-4 align-self-center">
-                            <div>
-                                <img src="assets/images/crypto/features-img/img-1.png" alt="" class="img-fluid d-block">
-                            </div>
-                        </div>
+                <p class="text-muted mb-4"> +{{ realWalletBalance.trend }} % <i
+                    class="mdi mdi-arrow-up ms-1 text-success"></i></p>
+
+                <div class="row">
+                  <div class="col-6">
+                    <div>
+                      <p class="mb-2">Income</p>
+                      <h5>$ {{ realWalletBalance.income }}</h5>
                     </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <p class="mb-2">Expense</p>
+                      <h5>$ {{ realWalletBalance.expense }}</h5>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-12 col-xl-6 mb-4 d-flex">
-            <div class="card w-100 h-100">
-                <div class="card-body d-flex flex-column justify-content-center">
-                    <div class="float-end dropdown ms-2" dropdown>
-                        <a class="text-muted dropdown-toggle" href="javascript: void(0);" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle>
-                            <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end" *dropdownMenu>
-                            <a class="dropdown-item" href="javascript: void(0);">Action</a>
-                            <a class="dropdown-item" href="javascript: void(0);">Another action</a>
-                            <a class="dropdown-item" href="javascript: void(0);">Something else here</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <div class="mb-3 me-3">
-                                <i class="mdi mdi-account-circle text-primary h1"></i>
-                            </div>
-                            <div>
-                                <h5>{{ userDisplayName || '—' }}</h5>
-                                <p class="text-muted mb-1">{{ userEmail || '—' }}</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4 mt-md-0 text-center d-flex flex-column justify-content-center">
-                            <p class="fw-medium mb-2">Balance :</p>
-                            @if (realWalletBalance) {
-                            <h4>$ {{ realWalletBalance.ethBalanceUSD }}</h4>
-                            <p class="text-muted small mb-0">{{ realWalletBalance.ethBalance }} ETH</p>
-                            } @else {
-                            <h4>$ 6134.39</h4>
-                            <p class="text-muted small mb-0">Connect wallet to see real balance</p>
-                            }
-                        </div>
-                        <div class="col-md-4 mt-4 mt-md-0 text-center">
-                            <p class="fw-medium mb-2">Coin :</p>
-                            <div class="d-inline-flex align-items-center mt-1">
-                                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Bitcoin">
-                                    <div class="avatar-xs">
-                                        <span
-                                            class="avatar-title rounded-circle bg-warning-subtle text-warning font-size-18">
-                                            <i class="mdi mdi-bitcoin"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Ethereum">
-                                    <div class="avatar-xs">
-                                        <span
-                                            class="avatar-title rounded-circle bg-primary-subtle text-primary font-size-18">
-                                            <i class="mdi mdi-ethereum"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Litecoin">
-                                    <div class="avatar-xs">
-                                        <span class="avatar-title rounded-circle bg-info-subtle text-info font-size-18">
-                                            <i class="mdi mdi-litecoin"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="mt-3">
-                                <a href="javascript: void(0);" class="btn btn-primary w-md">Buy / Sell</a>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="mt-4">
+                  <a href="javascript: void(0);" class="btn btn-primary btn-sm">View more <i
+                      class="mdi mdi-arrow-right ms-1"></i></a>
                 </div>
+              </div>
             </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div>
+                <apx-chart class="apex-charts" dir="ltr" [series]="[25, 35, 40]" [chart]="walletRadialChart.chart"
+                  [colors]="walletRadialChart.colors" [stroke]="walletRadialChart.stroke"
+                  [plotOptions]="walletRadialChart.plotOptions" [legend]="walletRadialChart.legend"
+                  [labels]="walletRadialChart.labels">
+                </apx-chart>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 align-self-center">
+              <div class="mt-4 pt-2">
+                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i>
+                  {{ realWalletBalance.nativeSymbol }}
+                </p>
+                <h5>{{ realWalletBalance.nativeBalance }} {{ realWalletBalance.nativeSymbol }} = <span
+                    class="text-muted font-size-14">$ {{ realWalletBalance.nativeBalanceUSD
+                    }}</span>
+                </h5>
+              </div>
+              <div class="mt-4 pt-2">
+                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-warning"></i>
+                  BTC
+                </p>
+                <h5>{{ realWalletBalance.btcBalance }} BTC = <span class="text-muted font-size-14">$ {{
+                    realWalletBalance.btcBalanceUSD }}</span>
+                </h5>
+              </div>
+              <div class="mt-4 pt-2">
+                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-success"></i>
+                  USDT
+                </p>
+                <h5>{{ realWalletBalance.usdtBalance }} USDT = <span class="text-muted font-size-14">$
+                    {{ realWalletBalance.usdtBalanceUSD }}</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          } @else {
+          <div class="text-center text-muted py-5">
+            Connect your wallet to see the real balance.
+          </div>
+          }
         </div>
+      </div>
     </div>
+    <div class="col-12 col-xl-6 mb-4 d-flex">
+      <div class="card w-100 h-100">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <div class="float-end dropdown ms-2" dropdown>
+            <a class="text-muted dropdown-toggle" href="javascript: void(0);" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" dropdownToggle>
+              <i class="mdi mdi-dots-horizontal font-size-18"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" *dropdownMenu>
+              <a class="dropdown-item" href="javascript: void(0);">Action</a>
+              <a class="dropdown-item" href="javascript: void(0);">Another action</a>
+              <a class="dropdown-item" href="javascript: void(0);">Something else here</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="mb-3 me-3">
+                <i class="mdi mdi-account-circle text-primary h1"></i>
+              </div>
+              <div>
+                <h5>{{ userDisplayName || '—' }}</h5>
+                <p class="text-muted mb-1">{{ userEmail || '—' }}</p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0 text-center d-flex flex-column justify-content-center">
+              <p class="fw-medium mb-2">Balance :</p>
+              @if (realWalletBalance) {
+              <h4>$ {{ realWalletBalance.ethBalanceUSD }}</h4>
+              <p class="text-muted small mb-0">{{ realWalletBalance.ethBalance }} ETH</p>
+              } @else {
+              <h4>$ 6134.39</h4>
+              <p class="text-muted small mb-0">Connect wallet to see real balance</p>
+              }
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0 text-center">
+              <p class="fw-medium mb-2">Coin :</p>
+              <div class="d-inline-flex align-items-center mt-1">
+                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Bitcoin">
+                  <div class="avatar-xs">
+                    <span class="avatar-title rounded-circle bg-warning-subtle text-warning font-size-18">
+                      <i class="mdi mdi-bitcoin"></i>
+                    </span>
+                  </div>
+                </a>
+                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Ethereum">
+                  <div class="avatar-xs">
+                    <span class="avatar-title rounded-circle bg-primary-subtle text-primary font-size-18">
+                      <i class="mdi mdi-ethereum"></i>
+                    </span>
+                  </div>
+                </a>
+                <a href="javascript: void(0);" class="m-1" placement="top" tooltip="Litecoin">
+                  <div class="avatar-xs">
+                    <span class="avatar-title rounded-circle bg-info-subtle text-info font-size-18">
+                      <i class="mdi mdi-litecoin"></i>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-3">
+                <button type="button" [ngClass]="realWalletBalance ? 'btn-outline-secondary' : 'btn-primary'"
+                  class="btn w-md" (click)="toggleWallet()">
+                  {{ realWalletBalance ? ('WALLET.DISCONNECT' | translate) : ('WALLET.CONNECT' | translate) }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="card-title mb-0 text-center flex-grow-1">{{ 'DASHBOARD.SWAP_TITLE' | translate }}</h4>
+                <button type="button"
+                  class="btn btn-primary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px; font-size: 24px; line-height: 1;" (click)="showAddTokenModal()"
+                  [attr.aria-label]="('DASHBOARD.ADD_CUSTOM_TOKEN' | translate)">
+                  <i class="mdi mdi-plus"></i>
+                </button>
+              </div>
 
-
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title mb-3">Wallet Balance</h4>
-                    @if (realWalletBalance) {
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="mt-4">
-                                <p>Available Balance</p>
-                                <h4>$ {{ realWalletBalance.totalBalance }}</h4>
-
-                                <p class="text-muted mb-4"> +{{ realWalletBalance.trend }} % <i
-                                        class="mdi mdi-arrow-up ms-1 text-success"></i></p>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="mb-2">Income</p>
-                                            <h5>$ {{ realWalletBalance.income }}</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="mb-2">Expense</p>
-                                            <h5>$ {{ realWalletBalance.expense }}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mt-4">
-                                    <a href="javascript: void(0);" class="btn btn-primary btn-sm">View more <i
-                                            class="mdi mdi-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6">
-                            <div>
-                                <apx-chart class="apex-charts" dir="ltr" [series]="[25, 35, 40]"
-                                    [chart]="walletRadialChart.chart" [colors]="walletRadialChart.colors"
-                                    [stroke]="walletRadialChart.stroke" [plotOptions]="walletRadialChart.plotOptions"
-                                    [legend]="walletRadialChart.legend" [labels]="walletRadialChart.labels">
-                                </apx-chart>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6 align-self-center">
-                            <div class="mt-4 pt-2">
-                                <p class="mb-2"><i
-                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i>
-                                    {{ realWalletBalance.nativeSymbol }}
-                                </p>
-                                <h5>{{ realWalletBalance.nativeBalance }} {{ realWalletBalance.nativeSymbol }} = <span
-                                        class="text-muted font-size-14">$ {{ realWalletBalance.nativeBalanceUSD
-                                        }}</span>
-                                </h5>
-                            </div>
-                            <div class="mt-4 pt-2">
-                                <p class="mb-2"><i
-                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-warning"></i>
-                                    BTC
-                                </p>
-                                <h5>{{ realWalletBalance.btcBalance }} BTC = <span class="text-muted font-size-14">$ {{
-                                        realWalletBalance.btcBalanceUSD }}</span>
-                                </h5>
-                            </div>
-                            <div class="mt-4 pt-2">
-                                <p class="mb-2"><i
-                                        class="mdi mdi-circle align-middle font-size-10 me-2 text-success"></i>
-                                    USDT
-                                </p>
-                                <h5>{{ realWalletBalance.usdtBalance }} USDT = <span class="text-muted font-size-14">$
-                                        {{ realWalletBalance.usdtBalanceUSD }}</span>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    } @else {
-                    <div class="text-center text-muted py-5">
-                        Connect your wallet to see the real balance.
-                    </div>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <label class="form-label mb-0">{{ 'DASHBOARD.SWAP_FROM' | translate }}</label>
+                    @if (swapFromToken) {
+                    <small class="text-muted">{{ 'DASHBOARD.BALANCE' | translate }}: {{ getFromTokenBalance() }} {{
+                      swapFromToken.symbol }}</small>
                     }
-                </div>
-            </div>
-        </div>
-    </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <div class="flex-grow-1 swap-dropdown-wrapper">
+                      <div class="dropdown" dropdown [autoClose]="'outside'">
+                        <button type="button"
+                          class="btn btn-outline-secondary w-100 text-start d-flex align-items-center gap-2 swap-token-btn"
+                          dropdownToggle>
+                          @if (swapFromToken?.logo) {
+                          <img [src]="swapFromToken.logo" [alt]="swapFromToken.symbol" class="rounded-circle"
+                            style="width: 28px; height: 28px; object-fit: cover;">
+                          }
+                          @if (swapFromToken) {
+                          <span class="fw-semibold">{{ swapFromToken.symbol }}</span>
+                          }
+                          @if (!swapFromToken) {
+                          <span class="flex-grow-1">
+                            <div class="fw-semibold">{{ 'DASHBOARD.SWAP_TITLE' | translate }}</div>
+                          </span>
+                          }
+                          <i class="mdi mdi-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="dropdown-menu swap-dropdown-menu" *dropdownMenu>
+                          <div class="px-3 py-2">
+                            <input type="text" class="form-control form-control-sm swap-search"
+                              [(ngModel)]="fromTokenSearch" (ngModelChange)="filterFromTokens()"
+                              (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()"
+                              placeholder="Search token...">
+                          </div>
 
-    <div class="row">
+                          @if (!fromTokenSearch && popularTokens.length > 0) {
+                          <div class="px-3 py-3 border-bottom">
+                            <small class="text-uppercase text-muted fw-semibold d-block mb-2">{{
+                              'DASHBOARD.POPULAR_TOKENS' | translate }}</small>
+                            <div class="d-flex flex-wrap gap-2">
+                              @for (token of popularTokens | slice:0:6; track token.address) {
+                              @if (isTokenInWallet(token.address)) {
+                              <button type="button" class="btn btn-sm btn-token-chip" (click)="selectFromToken(token)">
+                                @if (token.logo) {
+                                <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                  style="width: 20px; height: 20px; object-fit: cover;">
+                                }
+                                <span>{{ token.symbol }}</span>
+                              </button>
+                              }
+                              }
+                            </div>
+                          </div>
+                          }
+
+                          <div style="max-height: 300px; overflow-y: auto;">
+                            @if (filteredCustomTokens.length > 0) {
+                            <div class="px-3 py-2 text-muted small fw-semibold bg-light">
+                              <i class="mdi mdi-plus-circle me-1"></i>Custom Tokens
+                            </div>
+                            @for (token of filteredCustomTokens; track token.address) {
+                            <button type="button"
+                              class="dropdown-item d-flex align-items-center gap-2 swap-dropdown-item position-relative"
+                              (click)="selectFromToken(token)">
+                              @if (token.logo) {
+                              <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                style="width: 28px; height: 28px; object-fit: cover;"
+                                onerror="this.style.display='none'">
+                              } @else {
+                              <div class="token-avatar">{{ token.symbol.charAt(0) }}</div>
+                              }
+                              <div class="flex-grow-1">
+                                <div class="fw-semibold">{{ token.symbol }}</div>
+                                <small class="text-muted">{{ token.name }}</small>
+                              </div>
+                              <button type="button" class="btn btn-sm btn-link text-danger p-0"
+                                style="font-size: 18px; line-height: 1;" (click)="removeCustomToken(token, $event)"
+                                [attr.aria-label]="'Eliminar token'">
+                                <i class="mdi mdi-delete"></i>
+                              </button>
+                            </button>
+                            }
+                            }
+
+                            @if (filteredPancakeSwapTokens.length > 0) {
+                            <div class="px-3 py-2 text-muted small fw-semibold bg-light"
+                              [class.border-top]="filteredCustomTokens.length > 0">
+                              <i class="mdi mdi-pancake me-1"></i>PancakeSwap Tokens
+                            </div>
+                            @for (token of filteredPancakeSwapTokens; track token.address) {
+                            <button type="button"
+                              class="dropdown-item d-flex align-items-center gap-2 swap-dropdown-item"
+                              (click)="selectFromToken(token)">
+                              @if (token.logo) {
+                              <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                style="width: 28px; height: 28px; object-fit: cover;"
+                                onerror="this.style.display='none'">
+                              } @else {
+                              <div class="token-avatar">{{ token.symbol.charAt(0) }}</div>
+                              }
+                              <div class="flex-grow-1">
+                                <div class="fw-semibold">{{ token.symbol }}</div>
+                                <small class="text-muted">{{ token.name }}</small>
+                              </div>
+                            </button>
+                            }
+                            }
+
+                            @if (filteredPancakeSwapTokens.length === 0 && filteredCustomTokens.length === 0 &&
+                            fromTokenSearch) {
+                            <div class="px-3 py-3 text-center text-muted">
+                              <i class="mdi mdi-magnify mdi-24px d-block mb-2" style="opacity: 0.5;"></i>
+                              <small>{{ 'DASHBOARD.NO_TOKENS_FOUND' | translate }}</small>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    @if (swapFromToken) {
+                    <input type="number" class="form-control swap-amount-input" [(ngModel)]="swapAmount"
+                      (ngModelChange)="onSwapAmountChange($event)" min="0" step="0.000001"
+                      style="max-width: 110px; flex-shrink: 0;"
+                      [placeholder]="getFromTokenBalance() + ' ' + (swapFromToken?.symbol || 'TOKEN')">
+                    }
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <label class="form-label mb-0">{{ 'DASHBOARD.SWAP_TO' | translate }}</label>
+                    @if (swapToToken) {
+                    <small class="text-muted">{{ 'DASHBOARD.BALANCE' | translate }}: {{ getToTokenBalance() }} {{
+                      swapToToken.symbol }}</small>
+                    }
+                  </div>
+                  <div class="d-flex gap-2">
+                    <div class="flex-grow-1 swap-dropdown-wrapper">
+                      <div class="dropdown" dropdown [autoClose]="'outside'">
+                        <button type="button"
+                          class="btn btn-outline-secondary w-100 text-start d-flex align-items-center gap-2 swap-token-btn"
+                          dropdownToggle>
+                          @if (swapToToken?.logo) {
+                          <img [src]="swapToToken.logo" [alt]="swapToToken.symbol" class="rounded-circle"
+                            style="width: 28px; height: 28px; object-fit: cover;">
+                          }
+                          @if (swapToToken) {
+                          <span class="fw-semibold">{{ swapToToken.symbol }}</span>
+                          }
+                          @if (!swapToToken) {
+                          <span class="flex-grow-1">
+                            <div class="fw-semibold">{{ 'DASHBOARD.SWAP_TITLE' | translate }}</div>
+                          </span>
+                          }
+                          <i class="mdi mdi-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="dropdown-menu swap-dropdown-menu" *dropdownMenu>
+                          <div class="px-3 py-2">
+                            <input type="text" class="form-control form-control-sm swap-search"
+                              [(ngModel)]="toTokenSearch" (ngModelChange)="filterToTokens()"
+                              (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()"
+                              placeholder="Search token...">
+                          </div>
+
+                          @if (!toTokenSearch && popularTokens.length > 0) {
+                          <div class="px-3 py-3 border-bottom">
+                            <small class="text-uppercase text-muted fw-semibold d-block mb-2">{{
+                              'DASHBOARD.POPULAR_TOKENS' | translate }}</small>
+                            <div class="d-flex flex-wrap gap-2">
+                              @for (token of popularTokens | slice:0:6; track token.address) {
+                              <button type="button" class="btn btn-sm btn-token-chip" (click)="selectToToken(token)">
+                                @if (token.logo) {
+                                <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                  style="width: 20px; height: 20px; object-fit: cover;">
+                                }
+                                <span>{{ token.symbol }}</span>
+                              </button>
+                              }
+                            </div>
+                          </div>
+                          }
+
+                          <div style="max-height: 300px; overflow-y: auto;">
+                            @if (filteredCustomTokens.length > 0) {
+                            <div class="px-3 py-2 text-muted small fw-semibold bg-light">
+                              <i class="mdi mdi-plus-circle me-1"></i>Custom Tokens
+                            </div>
+                            @for (token of filteredCustomTokens; track token.address) {
+                            <button type="button"
+                              class="dropdown-item d-flex align-items-center gap-2 swap-dropdown-item position-relative"
+                              (click)="selectToToken(token)">
+                              @if (token.logo) {
+                              <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                style="width: 28px; height: 28px; object-fit: cover;"
+                                onerror="this.style.display='none'">
+                              } @else {
+                              <div class="token-avatar">{{ token.symbol.charAt(0) }}</div>
+                              }
+                              <div class="flex-grow-1">
+                                <div class="fw-semibold">{{ token.symbol }}</div>
+                                <small class="text-muted">{{ token.name }}</small>
+                              </div>
+                              <button type="button" class="btn btn-sm btn-link text-danger p-0"
+                                style="font-size: 18px; line-height: 1;" (click)="removeCustomToken(token, $event)"
+                                [attr.aria-label]="'Eliminar token'">
+                                <i class="mdi mdi-delete"></i>
+                              </button>
+                            </button>
+                            }
+                            }
+
+                            @if (filteredPancakeSwapTokens.length > 0) {
+                            <div class="px-3 py-2 text-muted small fw-semibold bg-light"
+                              [class.border-top]="filteredCustomTokens.length > 0">
+                              <i class="mdi mdi-pancake me-1"></i>PancakeSwap Tokens
+                            </div>
+                            @for (token of filteredPancakeSwapTokens; track token.address) {
+                            <button type="button"
+                              class="dropdown-item d-flex align-items-center gap-2 swap-dropdown-item"
+                              (click)="selectToToken(token)">
+                              @if (token.logo) {
+                              <img [src]="token.logo" [alt]="token.symbol" class="rounded-circle"
+                                style="width: 28px; height: 28px; object-fit: cover;"
+                                onerror="this.style.display='none'">
+                              } @else {
+                              <div class="token-avatar">{{ token.symbol.charAt(0) }}</div>
+                              }
+                              <div class="flex-grow-1">
+                                <div class="fw-semibold">{{ token.symbol }}</div>
+                                <small class="text-muted">{{ token.name }}</small>
+                              </div>
+                            </button>
+                            }
+                            }
+
+                            @if (filteredPancakeSwapTokens.length === 0 && filteredCustomTokens.length === 0 &&
+                            toTokenSearch) {
+                            <div class="px-3 py-3 text-center text-muted">
+                              <i class="mdi mdi-magnify mdi-24px d-block mb-2" style="opacity: 0.5;"></i>
+                              <small>{{ 'DASHBOARD.NO_TOKENS_FOUND' | translate }}</small>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    @if (swapToToken) {
+                    <input type="number" class="form-control swap-amount-input" [(ngModel)]="swapToAmount"
+                      (ngModelChange)="onSwapToAmountChange($event)" min="0" step="0.000001"
+                      style="max-width: 110px; flex-shrink: 0;" placeholder="0.0000">
+                    }
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label class="form-label">{{ 'DASHBOARD.SWAP_SLIPPAGE' | translate }}</label>
+                    <input type="text" class="form-control" [value]="'5%'" readonly>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label class="form-label">{{ 'DASHBOARD.SWAP_DEADLINE' | translate }}</label>
+                    <input type="text" class="form-control" [value]="'20 min'" readonly>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <small class="text-muted">
+                    {{ 'DASHBOARD.SWAP_RATE' | translate }}:
+                    @if (swapQuoteLoading) {
+                    <span>{{ 'DASHBOARD.SWAP_LOADING' | translate }}</span>
+                    } @else if (swapAmount && swapQuote && swapFromToken && swapToToken) {
+                    <span>1 {{ swapFromToken.symbol }} = {{ getSwapRate() }} {{ swapToToken.symbol }}</span>
+                    } @else {
+                    <span>—</span>
+                    }
+                  </small>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-muted mb-1">{{ 'DASHBOARD.SWAP_ESTIMATED' | translate }}</p>
+                    <h6 class="mb-3">
+                      @if (swapQuoteLoading) {
+                      <span>{{ 'DASHBOARD.SWAP_LOADING' | translate }}</span>
+                      } @else if (swapQuote) {
+                      <span>{{ swapQuote }} {{ swapQuoteSymbol }}</span>
+                      } @else {
+                      <span>—</span>
+                      }
+                    </h6>
+                  </div>
+                  <div class="col-12">
+                    <p class="text-muted mb-1">{{ 'DASHBOARD.SWAP_MIN_RECEIVE' | translate }}</p>
+                    <h6 class="mb-3">
+                      @if (swapQuoteLoading) {
+                      <span>{{ 'DASHBOARD.SWAP_LOADING' | translate }}</span>
+                      } @else if (swapMinReceive) {
+                      <span>{{ swapMinReceive }} {{ swapQuoteSymbol }}</span>
+                      } @else {
+                      <span>—</span>
+                      }
+                    </h6>
+                  </div>
+                  @if (lastSwapInput === 'to') {
+                  <div class="col-12">
+                    <p class="text-muted mb-1">{{ 'DASHBOARD.SWAP_MAX_PAY' | translate }}</p>
+                    <h6 class="mb-3">
+                      @if (swapQuoteLoading) {
+                      <span>{{ 'DASHBOARD.SWAP_LOADING' | translate }}</span>
+                      } @else if (swapMaxPay) {
+                      <span>{{ swapMaxPay }} {{ swapFromToken?.symbol }}</span>
+                      } @else {
+                      <span>—</span>
+                      }
+                    </h6>
+                  </div>
+                  }
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                  <button type="button" class="btn btn-primary" [disabled]="swapIsLoading" (click)="submitSwap()">
+                    {{ swapIsLoading ? ('DASHBOARD.SWAP_LOADING' | translate) : ('DASHBOARD.SWAP_BUTTON' |
+                    translate) }}
+                  </button>
+                  @if (swapError) {
+                  <span class="text-danger">{{ swapError }}</span>
+                  }
+                  @if (swapSuccess) {
+                  <span class="text-success">{{ swapSuccess }}</span>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title mb-4">Buy / Sell</h4>
-                    <tabset class="nav-pills tab-bg bg-light rounded">
-                        <tab heading="Buy" class="mt-4">
-                            <div class="float-end ms-2">
-                                <h5 class="font-size-14"><i
-                                        class="bx bx-wallet text-primary font-size-16 align-middle me-1"></i>
-                                    $4235.23</h5>
-                            </div>
-                            <h5 class="font-size-14 mb-4">Buy Coin</h5>
-
-                            <div>
-
-                                <div class="mb-3">
-                                    <label>Payment method :</label>
-                                    <select class="form-select">
-                                        <option>Credit / Debit Card</option>
-                                        <option>Paypal</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label>Add Amount :</label>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <label class="input-group-text">Amount</label>
-                                        </div>
-                                        <select class="form-select" style="max-width: 90px;">
-                                            <option value="BT" selected>BTC</option>
-                                            <option value="ET">ETH</option>
-                                            <option value="LT">LTC</option>
-                                        </select>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <label class="input-group-text">Price</label>
-                                        <input type="text" class="form-control">
-                                        <label class="input-group-text">$</label>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <label class="input-group-text">Total</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="text-center">
-                                    <button type="button" class="btn btn-success w-md">Buy Coin</button>
-                                </div>
-                            </div>
-                        </tab>
-                        <tab heading="Sell" class="mt-4">
-                            <div class="float-end ms-2">
-                                <h5 class="font-size-14"><i
-                                        class="bx bx-wallet text-primary font-size-16 align-middle me-1"></i>
-                                    $4235.23</h5>
-                            </div>
-                            <h5 class="font-size-14 mb-4">Sell Coin</h5>
-
-                            <div>
-                                <div class="mb-3">
-                                    <label>Email :</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div>
-                                    <label>Add Amount :</label>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <label class="input-group-text">Amount</label>
-                                        </div>
-                                        <select class="form-select" style="max-width: 90px;">
-                                            <option value="BT" selected>BTC</option>
-                                            <option value="ET">ETH</option>
-                                            <option value="LT">LTC</option>
-                                        </select>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-
-                                        <label class="input-group-text">Price</label>
-
-                                        <input type="text" class="form-control">
-
-                                        <label class="input-group-text">$</label>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <label class="input-group-text">Total</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="text-center">
-                                    <button type="button" class="btn btn-danger w-md">Sell Coin</button>
-                                </div>
-                            </div>
-                        </tab>
-                    </tabset>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Transactions</h4>
+              <div class="mb-2 text-muted small">{{ 'DASHBOARD.TOKEN_BALANCES' | translate }}</div>
+              @if (realWalletBalance || (walletTokenBalances && walletTokenBalances.length > 0)) {
+              <div class="tx-token-balances mb-3">
+                @if (realWalletBalance) {
+                <div class="tx-token-balance">
+                  <div class="tx-token-symbol">{{ realWalletBalance.nativeSymbol }}</div>
+                  <div class="tx-token-amount">{{ realWalletBalance.nativeBalance }}</div>
+                  <small class="text-muted">$ {{ realWalletBalance.nativeBalanceUSD }}</small>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title mb-4">Transactions</h4>
-                    <tabset class="nav-pills tab-bg bg-light rounded">
-                        <tab heading="All">
-                            <ngx-simplebar style="height: 330px;">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        @if (transactionsData && transactionsData.length > 0) {
-                                        @for (data of transactionsData; track $index) {
-                                        <tr>
-                                            <td style="width: 50px;">
-                                                <div class="font-size-22 text-{{data.color}}">
-                                                    <i class="bx {{data.icon}}"></i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <h5 class="font-size-14 mb-1">{{data.name}}</h5>
-                                                    <p class="text-muted mb-0">{{data.date}}</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 mb-0">{{data.text}}</h5>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
-                                                </div>
-                                            </td>
-                                        </tr>}
-                                        } @else {
-                                        <tr>
-                                            <td colspan="4" class="text-center text-muted py-4">No transactions found
-                                            </td>
-                                        </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </ngx-simplebar>
-                        </tab>
-                        <tab heading="Buy">
-                            <ngx-simplebar style="height: 330px;">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        @if (transactionsData && (transactionsData | filterByType: 'buy').length > 0) {
-                                        @for (data of (transactionsData | filterByType: 'buy'); track $index) {
-                                        <tr>
-                                            <td style="width: 50px;">
-                                                <div class="font-size-22 text-{{data.color}}">
-                                                    <i class="bx {{data.icon}}"></i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <h5 class="font-size-14 mb-1">{{data.name}}</h5>
-                                                    <p class="text-muted mb-0">{{data.date}}</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 mb-0">{{data.text}}</h5>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
-                                                </div>
-                                            </td>
-                                        </tr>}
-                                        } @else {
-                                        <tr>
-                                            <td colspan="4" class="text-center text-muted py-4">No buy transactions
-                                                found</td>
-                                        </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </ngx-simplebar>
-                        </tab>
-                        <tab heading="Sell">
-                            <ngx-simplebar style="height: 330px;">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        @if (transactionsData && (transactionsData | filterByType: 'sell').length > 0) {
-                                        @for (data of (transactionsData | filterByType: 'sell'); track $index) {
-                                        <tr>
-                                            <td style="width: 50px;">
-                                                <div class="font-size-22 text-{{data.color}}">
-                                                    <i class="bx {{data.icon}}"></i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <h5 class="font-size-14 mb-1">{{data.name}}</h5>
-                                                    <p class="text-muted mb-0">{{data.date}}</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 mb-0">{{data.text}}</h5>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
-                                                </div>
-                                            </td>
-                                        </tr>}
-                                        } @else {
-                                        <tr>
-                                            <td colspan="4" class="text-center text-muted py-4">No sell transactions
-                                                found</td>
-                                        </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </ngx-simplebar>
-                        </tab>
-                        <tab heading="Sell">
-                            <ngx-simplebar style="height: 330px;">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        @for (data of transactionsData; track $index) {
-                                        <tr>
-                                            <td style="width: 50px;">
-                                                <div class="font-size-22 text-{{data.color}}">
-                                                    <i class="bx {{data.icon}}"></i>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <h5 class="font-size-14 mb-1">{{data.name}}</h5>
-                                                    <p class="text-muted mb-0">{{data.date}}</p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 mb-0">{{data.text}}</h5>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-end">
-                                                    <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </ngx-simplebar>
-                        </tab>
-                    </tabset>
+                }
+                @if (walletTokenBalances && walletTokenBalances.length > 0) {
+                @for (token of walletTokenBalances; track token.address) {
+                <div class="tx-token-balance">
+                  <div class="tx-token-symbol">{{ token.symbol }}</div>
+                  <div class="tx-token-amount">{{ token.balance }}</div>
+                  <small class="text-muted">{{ token.name }}</small>
                 </div>
+                }
+                }
+              </div>
+              } @else {
+              <div class="text-muted small mb-3">{{ 'DASHBOARD.TOKEN_BALANCES_EMPTY' | translate }}</div>
+              }
+              <tabset class="nav-pills tab-bg bg-light rounded">
+                <tab heading="{{ 'DASHBOARD.TX_FILTER_ALL' | translate }}">
+                  <ngx-simplebar style="height: 330px;">
+                    <table class="table align-middle table-nowrap">
+                      <tbody>
+                        @if (transactionsData && transactionsData.length > 0) {
+                        @for (data of transactionsData; track $index) {
+                        <tr>
+                          <td style="width: 50px;">
+                            <div class="font-size-22 text-{{data.color}}">
+                              <i class="bx {{data.icon}}"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                              <p class="text-muted mb-0">{{data.date}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_FROM' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.from) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.from, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_TO' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.to) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.to, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                            </div>
+                          </td>
+                        </tr>}
+                        } @else {
+                        <tr>
+                          <td colspan="6" class="text-center text-muted py-5">
+                            <i class="bx bx-wallet font-size-24 d-block mb-2"></i>
+                            <p class="mb-0">{{ 'DASHBOARD.TX_EMPTY_ALL' | translate }}</p>
+                          </td>
+                        </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </ngx-simplebar>
+                </tab>
+                <tab heading="{{ 'DASHBOARD.TX_FILTER_SENT' | translate }}">
+                  <ngx-simplebar style="height: 330px;">
+                    <table class="table align-middle table-nowrap">
+                      <tbody>
+                        @if (transactionsData && (transactionsData | filterByType: 'sent').length >
+                        0) {
+                        @for (data of (transactionsData | filterByType: 'sent'); track $index) {
+                        <tr>
+                          <td style="width: 50px;">
+                            <div class="font-size-22 text-{{data.color}}">
+                              <i class="bx {{data.icon}}"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                              <p class="text-muted mb-0">{{data.date}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_FROM' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.from) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.from, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_TO' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.to) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.to, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                            </div>
+                          </td>
+                        </tr>}
+                        } @else {
+                        <tr>
+                          <td colspan="6" class="text-center text-muted py-5">
+                            <i class="bx bx-send font-size-24 d-block mb-2"></i>
+                            <p class="mb-0">{{ 'DASHBOARD.TX_EMPTY_SENT' | translate }}</p>
+                          </td>
+                        </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </ngx-simplebar>
+                </tab>
+                <tab heading="{{ 'DASHBOARD.TX_FILTER_RECEIVED' | translate }}">
+                  <ngx-simplebar style="height: 330px;">
+                    <table class="table align-middle table-nowrap">
+                      <tbody>
+                        @if (transactionsData && (transactionsData | filterByType:
+                        'received').length >
+                        0) {
+                        @for (data of (transactionsData | filterByType: 'received'); track $index) {
+                        <tr>
+                          <td style="width: 50px;">
+                            <div class="font-size-22 text-{{data.color}}">
+                              <i class="bx {{data.icon}}"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                              <p class="text-muted mb-0">{{data.date}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_FROM' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.from) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.from, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_TO' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.to) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.to, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                            </div>
+                          </td>
+                        </tr>}
+                        } @else {
+                        <tr>
+                          <td colspan="6" class="text-center text-muted py-5">
+                            <i class="bx bx-download font-size-24 d-block mb-2"></i>
+                            <p class="mb-0">{{ 'DASHBOARD.TX_EMPTY_RECEIVED' | translate }}</p>
+                          </td>
+                        </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </ngx-simplebar>
+                </tab>
+                <tab heading="{{ 'DASHBOARD.TX_FILTER_BUY' | translate }}">
+                  <ngx-simplebar style="height: 330px;">
+                    <table class="table align-middle table-nowrap">
+                      <tbody>
+                        @if (transactionsData && (transactionsData | filterByType: 'buy').length >
+                        0) {
+                        @for (data of (transactionsData | filterByType: 'buy'); track $index) {
+                        <tr>
+                          <td style="width: 50px;">
+                            <div class="font-size-22 text-{{data.color}}">
+                              <i class="bx {{data.icon}}"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                              <p class="text-muted mb-0">{{data.date}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_FROM' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.from) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.from, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_TO' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.to) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.to, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                            </div>
+                          </td>
+                        </tr>}
+                        } @else {
+                        <tr>
+                          <td colspan="6" class="text-center text-muted py-5">
+                            <i class="bx bx-send font-size-24 d-block mb-2"></i>
+                            <p class="mb-0">{{ 'DASHBOARD.TX_EMPTY_BUY' | translate }}</p>
+                          </td>
+                        </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </ngx-simplebar>
+                </tab>
+                <tab heading="{{ 'DASHBOARD.TX_FILTER_SELL' | translate }}">
+                  <ngx-simplebar style="height: 330px;">
+                    <table class="table align-middle table-nowrap">
+                      <tbody>
+                        @if (transactionsData && (transactionsData | filterByType: 'sell').length >
+                        0) {
+                        @for (data of (transactionsData | filterByType: 'sell'); track $index) {
+                        <tr>
+                          <td style="width: 50px;">
+                            <div class="font-size-22 text-{{data.color}}">
+                              <i class="bx {{data.icon}}"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <h5 class="font-size-14 mb-1">{{data.name}}</h5>
+                              <p class="text-muted mb-0">{{data.date}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 mb-0">{{data.text}}</h5>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_FROM' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.from) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.from, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="tx-address">
+                              <span class="tx-label">{{ 'DASHBOARD.TX_TO' | translate
+                                }}</span>
+                              <span>{{ formatAddress(data.to) }}</span>
+                              <button type="button" class="btn btn-link p-0 tx-copy-btn"
+                                (click)="copyAddress(data.to, $event)"
+                                [attr.aria-label]="('DASHBOARD.TX_COPY' | translate)">
+                                <i class="bx bx-copy"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-end">
+                              <h5 class="font-size-14 text-muted mb-0">{{data.price}}</h5>
+                            </div>
+                          </td>
+                        </tr>}
+                        } @else {
+                        <tr>
+                          <td colspan="6" class="text-center text-muted py-5">
+                            <i class="bx bx-send font-size-24 d-block mb-2"></i>
+                            <p class="mb-0">{{ 'DASHBOARD.TX_EMPTY_SELL' | translate }}</p>
+                          </td>
+                        </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </ngx-simplebar>
+                </tab>
+              </tabset>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Add Token Modal -->
+<div bsModal #addTokenModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+  aria-labelledby="addTokenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addTokenModalLabel">Agregar Token Personalizado</h5>
+        <button type="button" class="btn-close" (click)="addTokenModal.hide()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group mb-3">
+            <label for="tokenSearchInput" class="col-form-label">Dirección del contrato:<span
+                class="text-danger">*</span></label>
+            <div class="col-lg-12">
+              <input id="tokenSearchInput" type="text" class="form-control" [(ngModel)]="tokenSearchInput"
+                (ngModelChange)="onTokenSearchChange()" [ngModelOptions]="{standalone: true}"
+                placeholder="0x... o BTC, ETH, etc." required>
+              <small class="text-muted">Ingresa la dirección del contrato o el símbolo del token.</small>
+            </div>
+          </div>
+
+          @if (isSearchingToken) {
+          <div class="text-center py-3">
+            <div class="spinner-border spinner-border-sm text-primary" role="status">
+              <span class="visually-hidden">Buscando...</span>
+            </div>
+            <p class="text-muted mt-2 mb-0">Buscando token...</p>
+          </div>
+          }
+
+          @if (tokenSearchResults.length > 0 && !isSearchingToken) {
+          <div class="mb-3">
+            <label class="col-form-label">Resultados de búsqueda:</label>
+            <div style="max-height: 300px; overflow-y: auto;">
+              @for (token of tokenSearchResults; track token.address) {
+              <div class="border rounded p-3 mb-2 cursor-pointer hover-bg-light"
+                style="cursor: pointer; transition: background-color 0.2s;"
+                (mouseenter)="$event.currentTarget.style.backgroundColor='#f8f9fa'"
+                (mouseleave)="$event.currentTarget.style.backgroundColor='white'"
+                (click)="tokenSearchInput = token.address; onTokenSearchChange()">
+                <div class="d-flex align-items-center gap-3">
+                  @if (token.logo) {
+                  <img [src]="token.logo" alt="{{token.symbol}}" class="rounded-circle"
+                    style="width: 32px; height: 32px; object-fit: cover;">
+                  }
+                  <div class="flex-grow-1">
+                    <div class="fw-semibold">{{token.symbol}}</div>
+                    <div class="text-muted small">{{token.name}}</div>
+                  </div>
+                  <div class="text-muted small">{{token.address.substring(0, 8)}}...</div>
+                </div>
+              </div>
+              }
+            </div>
+          </div>
+          }
+
+          @if (customTokenError) {
+          <div class="alert alert-danger" role="alert">
+            <i class="mdi mdi-alert-circle-outline me-2"></i>{{customTokenError}}
+          </div>
+          }
+
+          <div class="row">
+            <div class="col-lg-12">
+              <button type="button" class="btn btn-primary" (click)="addTokenFromModal()"
+                [disabled]="customTokenLoading || !tokenSearchInput">
+                @if (customTokenLoading) {
+                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                }
+                Agregar Token
+              </button>
+              <button type="button" class="btn btn-secondary ms-2" (click)="addTokenModal.hide()">Cancelar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

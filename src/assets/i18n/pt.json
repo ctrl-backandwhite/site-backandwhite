@@ -375,7 +375,7 @@
       "ARTICLE_3_DESC": "Auditoria de segurança concluída. Conformidade com BEP-3643 verificada. Pronto para implantação em mainnet.",
       "ARTICLE_3_DATE": "15 de Janeiro de 2027",
       "READ_MORE": "Leia mais",
-      "CATEGORY": "Anúncios
+      "CATEGORY": "Anúncios"
     },
     "FAQS": {
       "TITLE": "Perguntas Frequentes",
@@ -459,12 +459,64 @@
   "PAGETITLE": {
     "DASHBOARD": "Dashboard",
     "CRYPTO": "Crypto",
-    "SKOTE": "Skote",
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
+  },
+  "DASHBOARD": {
+    "SWAP_TITLE": "Trocar",
+    "SWAP_FROM": "De",
+    "SWAP_TO": "Para",
+    "SWAP_AMOUNT": "Valor",
+    "BALANCE": "Saldo",
+    "SWAP_SLIPPAGE": "Deslizamento",
+    "SWAP_DEADLINE": "Prazo",
+    "SWAP_ESTIMATED": "Saida estimada",
+    "SWAP_MIN_RECEIVE": "Minimo a receber",
+    "SWAP_MAX_PAY": "Maximo a pagar",
+    "SWAP_RATE": "Preco",
+    "SWAP_BUTTON": "Trocar",
+    "SWAP_LOADING": "Trocando...",
+    "POPULAR_TOKENS": "Tokens populares",
+    "NO_TOKENS_FOUND": "Nenhum token encontrado",
+    "ADD_CUSTOM_TOKEN": "Adicionar Token",
+
+    "TOKEN_BALANCES": "Saldos de tokens",
+    "TOKEN_BALANCES_EMPTY": "Sem saldos de tokens",
+    "TX_FILTER_SENT": "Enviado",
+    "TX_FILTER_ALL": "Tudo",
+    "TX_FILTER_RECEIVED": "Recebido",
+    "TX_FILTER_BUY": "Compra",
+    "TX_FILTER_SELL": "Venda",
+    "TX_EMPTY_SENT": "Sem transacoes enviadas",
+    "TX_EMPTY_ALL": "Sem transacoes",
+    "TX_EMPTY_RECEIVED": "Sem transacoes recebidas",
+    "TX_EMPTY_BUY": "Sem compras",
+    "TX_EMPTY_SELL": "Sem vendas",
+    "TX_FROM": "De",
+    "TX_TO": "Para",
+    "TX_COPY": "Copiar endereco"
+  },
+  "HEADER": {
+    "CONNECT_METAMASK": "Conectar carteira",
+    "METAMASK_CONNECTED": "Carteira conectada"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Criado com",
     "BY": "por Nexaplaform"
+  },
+  "WALLET": {
+    "CONNECT": "Conectar Carteira",
+    "DISCONNECT": "Desconectar"
+  },
+
+  "COMMON": {
+    "ADD": "Adicionar",
+    "CANCEL": "Cancelar",
+    "LOADING": "Carregando...",
+    "SUBMIT": "Enviar",
+    "CLOSE": "Fechar",
+    "SAVE": "Salvar",
+    "DELETE": "Deletar",
+    "EDIT": "Editar"
   }
 }

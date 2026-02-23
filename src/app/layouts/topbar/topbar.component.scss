@@ -24,6 +24,19 @@
   white-space: nowrap;
 }
 
+.wallet-status-btn {
+  background-color: var(--bs-header-bg);
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.12);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bs-header-bg);
+    color: inherit;
+  }
+}
+
 @media (min-width: 992px) {
   .logo-circle {
     width: 40px;

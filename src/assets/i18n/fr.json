@@ -459,10 +459,44 @@
   "PAGETITLE": {
     "DASHBOARD": "Tableau de bord",
     "CRYPTO": "Crypto",
-    "SKOTE": "Skote",
+
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
   },
+    "DASHBOARD": {
+      "SWAP_TITLE": "Echanger",
+      "SWAP_FROM": "De",
+      "SWAP_TO": "Vers",
+      "SWAP_AMOUNT": "Montant",
+      "BALANCE": "Solde",
+      "SWAP_SLIPPAGE": "Glissement",
+      "SWAP_DEADLINE": "Expiration",
+      "SWAP_ESTIMATED": "Sortie estimee",
+      "SWAP_MIN_RECEIVE": "Minimum recu",
+        "SWAP_MAX_PAY": "Maximum a payer",
+      "SWAP_RATE": "Taux",
+      "SWAP_BUTTON": "Echanger",
+      "SWAP_LOADING": "Echange en cours...",
+      "POPULAR_TOKENS": "Tokens populaires",
+      "NO_TOKENS_FOUND": "Aucun token trouvé",
+      "ADD_CUSTOM_TOKEN": "Ajouter un token",
+
+      "TOKEN_BALANCES": "Soldes de tokens",
+      "TOKEN_BALANCES_EMPTY": "Aucun solde de token",
+      "TX_FILTER_SENT": "Envoye",
+      "TX_FILTER_ALL": "Tout",
+      "TX_FILTER_RECEIVED": "Recu",
+      "TX_FILTER_BUY": "Achat",
+      "TX_FILTER_SELL": "Vente",
+      "TX_EMPTY_SENT": "Aucune transaction envoyee",
+      "TX_EMPTY_ALL": "Aucune transaction",
+      "TX_EMPTY_RECEIVED": "Aucune transaction recue",
+      "TX_EMPTY_BUY": "Aucun achat",
+      "TX_EMPTY_SELL": "Aucune vente",
+      "TX_FROM": "De",
+      "TX_TO": "A",
+      "TX_COPY": "Copier l adresse"
+    },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"
@@ -471,6 +505,7 @@
     "SEARCH": "Rechercher...",
     "MEGA_MENU": "Mega Menu",
     "CONNECT_METAMASK": "Connecter le portefeuille",
+    "METAMASK_CONNECTED": "Portefeuille connecte",
     "NOTIFICATIONS": {
       "TITLE": "Notifications",
       "VIEW_ALL": "Afficher tout",
@@ -503,5 +538,20 @@
       "LOCK_SCREEN": "Écran de verrouillage",
       "LOGOUT": "Déconnexion"
     }
+  },
+  "WALLET": {
+    "CONNECT": "Connecter Portefeuille",
+    "DISCONNECT": "Déconnecter"
+  },
+
+  "COMMON": {
+    "ADD": "Ajouter",
+    "CANCEL": "Annuler",
+    "LOADING": "Chargement...",
+    "SUBMIT": "Soumettre",
+    "CLOSE": "Fermer",
+    "SAVE": "Enregistrer",
+    "DELETE": "Supprimer",
+    "EDIT": "Modifier"
   }
 }

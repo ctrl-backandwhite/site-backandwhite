@@ -94,6 +94,9 @@ export class TopbarComponent implements OnInit {
       const lastName = tokenPayload?.lastName?.trim() || '';
       this.userDisplayName = `${firstName} ${lastName}`.trim();
     }
+
+    this.syncMetamaskState();
+    this.bindMetamaskListeners();
   }
 
   setLanguage(text: string, lang: string, flag: string) {
@@ -147,10 +150,8 @@ export class TopbarComponent implements OnInit {
       console.log('Starting Metamask connection...');
 
       if (this.isMetamaskConnected) {
-        // Disconnect logic
-        console.log('Disconnecting wallet...');
-        this.isMetamaskConnected = false;
-        this.walletAddress = '';
+        this.syncMetamaskState();
+        return;
       } else {
         // Connect logic
         console.log('Requesting Metamask accounts...');
@@ -159,13 +160,7 @@ export class TopbarComponent implements OnInit {
         });
 
         if (accounts && accounts.length > 0) {
-          this.walletAddress = accounts[0];
-          this.isMetamaskConnected = true;
-          console.log('Wallet connected:', this.walletAddress);
-
-          // Notify BlockchainService about the connected wallet
-          this.blockchainService.setConnectedAddress(this.walletAddress);
-          console.log('BlockchainService notified about connected wallet');
+          this.updateMetamaskState(accounts);
         } else {
           console.warn('No accounts returned from Metamask');
           alert('No accounts available in MetaMask');
@@ -181,6 +176,43 @@ export class TopbarComponent implements OnInit {
       alert('Failed to connect to MetaMask: ' + (error.message || 'Unknown error'));
     } finally {
       this.isConnectingMetamask = false;
+    }
+  }
+
+  private bindMetamaskListeners(): void {
+    const ethereum = (window as any).ethereum;
+    if (!ethereum?.on) {
+      return;
+    }
+
+    ethereum.on('accountsChanged', (accounts: string[]) => {
+      this.updateMetamaskState(accounts);
+    });
+  }
+
+  private async syncMetamaskState(): Promise<void> {
+    const ethereum = (window as any).ethereum;
+    if (!ethereum?.request) {
+      return;
+    }
+
+    try {
+      const accounts = await ethereum.request({ method: 'eth_accounts' });
+      this.updateMetamaskState(accounts || []);
+    } catch (error) {
+      console.warn('Could not check MetaMask accounts:', error);
+    }
+  }
+
+  private updateMetamaskState(accounts: string[]): void {
+    if (accounts && accounts.length > 0) {
+      this.walletAddress = accounts[0];
+      this.isMetamaskConnected = true;
+      this.blockchainService.setConnectedAddress(this.walletAddress);
+      console.log('Wallet connected:', this.walletAddress);
+    } else {
+      this.walletAddress = '';
+      this.isMetamaskConnected = false;
     }
   }
 

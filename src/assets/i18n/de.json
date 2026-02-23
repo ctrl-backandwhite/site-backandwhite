@@ -463,8 +463,61 @@
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
   },
+  "DASHBOARD": {
+    "SWAP_TITLE": "Tauschen",
+    "SWAP_FROM": "Von",
+    "SWAP_TO": "Zu",
+    "SWAP_AMOUNT": "Betrag",
+    "BALANCE": "Guthaben",
+    "SWAP_SLIPPAGE": "Slippage",
+    "SWAP_DEADLINE": "Ablauf",
+    "SWAP_ESTIMATED": "Geschaetzter Ausgang",
+    "SWAP_MIN_RECEIVE": "Minimum erhalten",
+      "SWAP_MAX_PAY": "Maximal zu zahlen",
+    "SWAP_RATE": "Kurs",
+    "SWAP_BUTTON": "Tauschen",
+    "SWAP_LOADING": "Tauschen...",
+    "POPULAR_TOKENS": "Beliebte Token",
+    "NO_TOKENS_FOUND": "Keine Token gefunden",
+    "ADD_CUSTOM_TOKEN": "Token hinzufügen",
+
+    "TOKEN_BALANCES": "Tokenbestaende",
+    "TOKEN_BALANCES_EMPTY": "Keine Tokenbestaende",
+    "TX_FILTER_SENT": "Gesendet",
+    "TX_FILTER_ALL": "Alle",
+    "TX_FILTER_RECEIVED": "Empfangen",
+    "TX_FILTER_BUY": "Kauf",
+    "TX_FILTER_SELL": "Verkauf",
+    "TX_EMPTY_SENT": "Keine gesendeten Transaktionen",
+    "TX_EMPTY_ALL": "Keine Transaktionen",
+    "TX_EMPTY_RECEIVED": "Keine empfangenen Transaktionen",
+    "TX_EMPTY_BUY": "Keine Kaeufe",
+    "TX_EMPTY_SELL": "Keine Verkaeufe",
+    "TX_FROM": "Von",
+    "TX_TO": "An",
+    "TX_COPY": "Adresse kopieren"
+  },
+  "HEADER": {
+    "CONNECT_METAMASK": "Wallet verbinden",
+    "METAMASK_CONNECTED": "Wallet verbunden"
+  },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Erstellt mit",
     "BY": "von Nexaplaform"
+  },
+  "WALLET": {
+    "CONNECT": "Wallet Verbinden",
+    "DISCONNECT": "Trennen"
+  },
+
+  "COMMON": {
+    "ADD": "Hinzufügen",
+    "CANCEL": "Abbrechen",
+    "LOADING": "Wird geladen...",
+    "SUBMIT": "Absenden",
+    "CLOSE": "Schließen",
+    "SAVE": "Speichern",
+    "DELETE": "Löschen",
+    "EDIT": "Bearbeiten"
   }
 }

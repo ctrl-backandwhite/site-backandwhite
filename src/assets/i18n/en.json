@@ -275,6 +275,40 @@
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
   },
+  "DASHBOARD": {
+    "SWAP_TITLE": "Swap",
+    "SWAP_FROM": "From",
+    "SWAP_TO": "To",
+    "SWAP_AMOUNT": "Amount",
+    "BALANCE": "Balance",
+    "SWAP_SLIPPAGE": "Slippage",
+    "SWAP_DEADLINE": "Deadline",
+    "SWAP_ESTIMATED": "Estimated output",
+    "SWAP_MIN_RECEIVE": "Minimum received",
+    "SWAP_MAX_PAY": "Maximum to pay",
+    "SWAP_RATE": "Rate",
+    "SWAP_BUTTON": "Swap",
+    "SWAP_LOADING": "Swapping...",
+    "POPULAR_TOKENS": "Popular tokens",
+    "NO_TOKENS_FOUND": "No tokens found",
+    "ADD_CUSTOM_TOKEN": "Add Token",
+
+    "TOKEN_BALANCES": "Token balances",
+    "TOKEN_BALANCES_EMPTY": "No token balances yet",
+    "TX_FILTER_SENT": "Sent",
+    "TX_FILTER_ALL": "All",
+    "TX_FILTER_RECEIVED": "Received",
+    "TX_FILTER_BUY": "Buy",
+    "TX_FILTER_SELL": "Sell",
+    "TX_EMPTY_SENT": "No sent transactions found",
+    "TX_EMPTY_ALL": "No transactions found",
+    "TX_EMPTY_RECEIVED": "No received transactions found",
+    "TX_EMPTY_BUY": "No buy transactions found",
+    "TX_EMPTY_SELL": "No sell transactions found",
+    "TX_FROM": "From",
+    "TX_TO": "To",
+    "TX_COPY": "Copy address"
+  },
 
   "LANDING": {
     "NAV": {
@@ -471,6 +505,7 @@
     "SEARCH": "Search...",
     "MEGA_MENU": "Mega Menu",
     "CONNECT_METAMASK": "Connect Wallet",
+    "METAMASK_CONNECTED": "Wallet Connected",
     "NOTIFICATIONS": {
       "TITLE": "Notifications",
       "VIEW_ALL": "View All",
@@ -533,5 +568,20 @@
       "LOCK_SCREEN": "Lock screen",
       "LOGOUT": "Logout"
     }
+  },
+  "WALLET": {
+    "CONNECT": "Connect Wallet",
+    "DISCONNECT": "Disconnect"
+  },
+
+  "COMMON": {
+    "ADD": "Add",
+    "CANCEL": "Cancel",
+    "LOADING": "Loading...",
+    "SUBMIT": "Submit",
+    "CLOSE": "Close",
+    "SAVE": "Save",
+    "DELETE": "Delete",
+    "EDIT": "Edit"
   }
 }

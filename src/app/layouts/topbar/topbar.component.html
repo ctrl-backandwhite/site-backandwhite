@@ -18,14 +18,13 @@
     </div>
 
     <div class="d-flex">
-      <button type="button" class="btn header-item" (click)="connectMetamask()" [disabled]="isConnectingMetamask"
-        [class.btn-outline-primary]="!isMetamaskConnected" [class.btn-primary]="isMetamaskConnected"
-        title="Connect to Metamask">
+      <button type="button" class="btn header-item wallet-status-btn" (click)="connectMetamask()"
+        [disabled]="isConnectingMetamask" title="Connect to Metamask">
         <i class="bx bx-wallet me-2"></i>
         @if(!isMetamaskConnected) {
         <span class="d-none d-lg-inline-block">{{ 'HEADER.CONNECT_METAMASK' | translate }}</span>
         } @else {
-        <span class="d-none d-lg-inline-block">{{ walletAddress | slice:0:6 }}...{{ walletAddress | slice:-4 }}</span>
+        <span class="d-none d-lg-inline-block">{{ 'HEADER.METAMASK_CONNECTED' | translate }}</span>
         }
       </button>
 

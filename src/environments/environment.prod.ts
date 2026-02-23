@@ -13,5 +13,7 @@ export const environment = {
   scope: 'openid',
   responseType: 'code',
   responseMode: 'query',
-  code_challenge_method: 'S256'
+  code_challenge_method: 'S256',
+  bscscanApiKey: 'YH79HV3IZW2JFE2M1XTVJ51IAGU7NWVKGF',
+  etherscanApiBaseUrl: 'https://api.etherscan.io/v2/api'
 };

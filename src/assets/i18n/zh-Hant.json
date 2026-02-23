@@ -459,9 +459,42 @@
   "PAGETITLE": {
     "DASHBOARD": "儀表板",
     "CRYPTO": "加密",
-    "SKOTE": "Skote",
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
+  },
+  "DASHBOARD": {
+    "SWAP_TITLE": "兌換",
+    "SWAP_FROM": "從",
+    "SWAP_TO": "到",
+    "TX_FROM": "從",
+    "TX_TO": "到",
+    "TX_COPY": "複製地址",
+    "SWAP_AMOUNT": "金額",
+    "BALANCE": "餘額",
+    "SWAP_SLIPPAGE": "滑點",
+    "SWAP_DEADLINE": "截止時間",
+    "SWAP_ESTIMATED": "預估輸出",
+    "SWAP_MIN_RECEIVE": "最低可得",
+    "SWAP_MAX_PAY": "最高支付",
+    "SWAP_RATE": "匯率",
+    "SWAP_BUTTON": "兌換",
+    "SWAP_LOADING": "兌換中...",
+    "POPULAR_TOKENS": "熱門代幣",
+    "NO_TOKENS_FOUND": "找不到代幣",
+    "ADD_CUSTOM_TOKEN": "添加代幣",
+
+    "TOKEN_BALANCES": "代幣餘額",
+    "TOKEN_BALANCES_EMPTY": "目前沒有代幣餘額",
+    "TX_FILTER_SENT": "已送出",
+    "TX_FILTER_ALL": "全部",
+    "TX_FILTER_RECEIVED": "已接收",
+    "TX_FILTER_BUY": "買入",
+    "TX_FILTER_SELL": "賣出",
+    "TX_EMPTY_SENT": "沒有送出交易",
+    "TX_EMPTY_ALL": "沒有交易",
+    "TX_EMPTY_RECEIVED": "沒有接收交易",
+    "TX_EMPTY_BUY": "沒有買入交易",
+    "TX_EMPTY_SELL": "沒有賣出交易"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
@@ -471,6 +504,7 @@
     "SEARCH": "搜索...",
     "MEGA_MENU": "超級菜單",
     "CONNECT_METAMASK": "連接錢包",
+    "METAMASK_CONNECTED": "錢包已連接",
     "NOTIFICATIONS": {
       "TITLE": "通知",
       "VIEW_ALL": "查看全部",
@@ -503,5 +537,20 @@
       "LOCK_SCREEN": "鎖屏",
       "LOGOUT": "登出"
     }
+  },
+  "WALLET": {
+    "CONNECT": "連接錢包",
+    "DISCONNECT": "斷開連接"
+  },
+
+  "COMMON": {
+    "ADD": "添加",
+    "CANCEL": "取消",
+    "LOADING": "加載中...",
+    "SUBMIT": "提交",
+    "CLOSE": "關閉",
+    "SAVE": "保存",
+    "DELETE": "刪除",
+    "EDIT": "編輯"
   }
 }

@@ -12,10 +12,10 @@ import { SimplebarAngularModule } from 'simplebar-angular';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-sidebar',
-    templateUrl: './sidebar.component.html',
-    styleUrls: ['./sidebar.component.scss'],
-    imports: [SimplebarAngularModule, RouterModule, CommonModule, TranslateModule]
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss'],
+  imports: [SimplebarAngularModule, RouterModule, CommonModule, TranslateModule]
 })
 
 /**
@@ -142,7 +142,15 @@ export class SidebarComponent implements OnInit, AfterViewInit, OnChanges {
    * Initialize
    */
   initialize(): void {
-    this.menuItems = MENU;
+    const showFullMenu = localStorage.getItem('menu') === 'true';
+
+    if (showFullMenu) {
+      // Show all menu items
+      this.menuItems = MENU;
+    } else {
+      // Filter menu items: hide items with hideWithoutFlag: true
+      this.menuItems = MENU.filter(item => !item.hideWithoutFlag);
+    }
   }
 
   /**

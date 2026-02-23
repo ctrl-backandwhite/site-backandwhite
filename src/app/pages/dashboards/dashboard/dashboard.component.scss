@@ -1,0 +1,373 @@
+// Token dropdown styles
+.swap-dropdown-menu {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    min-width: 320px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1050;
+
+    .dropdown-item {
+        border: none;
+        transition: all 0.15s ease;
+        padding: 10px 12px;
+
+        &:hover {
+            background-color: #f5f7fa;
+        }
+
+        &:active {
+            background-color: #eef1f5;
+        }
+
+        img {
+            flex-shrink: 0;
+        }
+
+        .fw-semibold {
+            font-size: 0.95rem;
+            color: #1f2937;
+        }
+
+        small {
+            font-size: 0.8rem;
+            display: block;
+            line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px;
+        }
+
+        // Delete button for custom tokens
+        .btn-link {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+
+            &:hover {
+                opacity: 1 !important;
+                color: #dc3545 !important;
+            }
+        }
+
+        &:hover .btn-link {
+            opacity: 0.6;
+        }
+    }
+}
+
+.swap-search {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+
+    &:focus {
+        border-color: #6366f1;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+}
+
+.btn-token-chip {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    color: #1f2937;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: #e5e7eb;
+        border-color: #d1d5db;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+}
+
+.token-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.swap-token-btn {
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: all 0.15s ease;
+    color: #1f2937;
+
+    &:hover {
+        background-color: #f3f4f6;
+        border-color: #9ca3af;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        border-color: #6366f1;
+    }
+
+    .fw-semibold {
+        color: #1f2937;
+        font-size: 0.95rem;
+    }
+
+    small {
+        color: #6b7280;
+        font-size: 0.8rem;
+    }
+
+    i {
+        color: #9ca3af;
+    }
+}
+
+.swap-dropdown-item {
+    padding: 10px 12px;
+}
+
+.swap-amount-section {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #fafbfc, #f3f4f6);
+
+    .form-label-sm {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #374151;
+        letter-spacing: 0.5px;
+    }
+
+    small {
+        font-size: 0.75rem;
+        color: #9ca3af;
+    }
+}
+
+.swap-dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+    position: relative;
+
+    .dropdown {
+        width: 100%;
+        position: relative;
+    }
+
+    .swap-token-btn {
+        width: 100%;
+        min-width: 100px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+
+    .swap-dropdown-menu {
+        max-width: 450px;
+        width: 100%;
+    }
+}
+
+.swap-amount-input-lg {
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.15s ease;
+    background-color: #fff;
+
+    &:focus {
+        border-color: #6366f1;
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #d1d5db;
+        font-weight: 500;
+    }
+}
+
+.swap-amount-input {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    transition: all 0.15s ease;
+
+    &:focus {
+        border-color: #6366f1;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+
+    &::placeholder {
+        color: #9ca3af;
+        font-size: 0.85rem;
+    }
+}
+
+.form-label-sm {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+// Token dropdown styles (legacy)
+.dropdown-menu {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    .dropdown-item {
+        transition: all 0.2s ease;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        &:active {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        img {
+            flex-shrink: 0;
+        }
+
+        .fw-semibold {
+            font-size: 0.9rem;
+            color: #495057;
+        }
+
+        small {
+            font-size: 0.75rem;
+            display: block;
+            line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px;
+        }
+    }
+}
+
+// Token selector button
+.btn-light {
+    border: 1px solid #ced4da;
+
+    &:hover {
+        border-color: #adb5bd;
+        background-color: #f8f9fa;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.15);
+    }
+}
+
+// Mobile-first responsive adjustments
+@media (max-width: 576px) {
+    .dropdown-menu {
+        max-height: 300px !important;
+
+        .dropdown-item {
+            small {
+                max-width: 180px;
+            }
+        }
+    }
+}
+
+.tx-token-balances {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tx-token-balance {
+    flex: 1 1 140px;
+    padding: 10px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.tx-token-symbol {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.tx-token-amount {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.tx-address {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.tx-label {
+    color: #6c757d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.tx-copy-btn {
+    color: #6c757d;
+
+    &:hover {
+        color: #343a40;
+    }
+}
+
+.swap-token-field {
+    // Natural flow layout - no centering
+}
+
+.swap-token-field .form-label {
+    // Default label styling
+}
+
+@media (max-width: 768px) {
+    .swap-amount-input {
+        min-width: 100px !important;
+    }
+}

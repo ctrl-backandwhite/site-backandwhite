@@ -459,9 +459,42 @@
   "PAGETITLE": {
     "DASHBOARD": "Dashboard",
     "CRYPTO": "Cripto",
-    "SKOTE": "Skote",
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
+  },
+  "DASHBOARD": {
+    "SWAP_TITLE": "Intercambiar",
+    "SWAP_FROM": "Desde",
+    "SWAP_TO": "Hacia",
+    "SWAP_AMOUNT": "Monto",
+    "BALANCE": "Saldo",
+    "SWAP_SLIPPAGE": "Deslizamiento",
+    "SWAP_DEADLINE": "Vencimiento",
+    "SWAP_ESTIMATED": "Salida estimada",
+    "SWAP_MIN_RECEIVE": "Minimo a recibir",
+    "SWAP_MAX_PAY": "Maximo a pagar",
+    "SWAP_RATE": "Precio",
+    "SWAP_BUTTON": "Intercambiar",
+    "SWAP_LOADING": "Intercambiando...",
+    "POPULAR_TOKENS": "Tokens populares",
+    "NO_TOKENS_FOUND": "No se encontraron tokens",
+    "ADD_CUSTOM_TOKEN": "Agregar Token",
+
+    "TOKEN_BALANCES": "Balances de tokens",
+    "TOKEN_BALANCES_EMPTY": "No hay balances de tokens",
+    "TX_FILTER_SENT": "Enviado",
+    "TX_FILTER_ALL": "Todo",
+    "TX_FILTER_RECEIVED": "Recibido",
+    "TX_FILTER_BUY": "Compra",
+    "TX_FILTER_SELL": "Venta",
+    "TX_EMPTY_SENT": "No hay transacciones enviadas",
+    "TX_EMPTY_ALL": "No hay transacciones",
+    "TX_EMPTY_RECEIVED": "No hay transacciones recibidas",
+    "TX_EMPTY_BUY": "No hay compras",
+    "TX_EMPTY_SELL": "No hay ventas",
+    "TX_FROM": "Desde",
+    "TX_TO": "Hacia",
+    "TX_COPY": "Copiar direccion"
   },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Creado con",
@@ -471,6 +504,7 @@
     "SEARCH": "Buscar...",
     "MEGA_MENU": "Mega Menú",
     "CONNECT_METAMASK": "Conectar Billetera",
+    "METAMASK_CONNECTED": "Billetera conectada",
     "NOTIFICATIONS": {
       "TITLE": "Notificaciones",
       "VIEW_ALL": "Ver todo",
@@ -503,5 +537,20 @@
       "LOCK_SCREEN": "Pantalla de bloqueo",
       "LOGOUT": "Cerrar sesión"
     }
+  },
+  "WALLET": {
+    "CONNECT": "Conectar Wallet",
+    "DISCONNECT": "Desconectar"
+  },
+
+  "COMMON": {
+    "ADD": "Agregar",
+    "CANCEL": "Cancelar",
+    "LOADING": "Cargando...",
+    "SUBMIT": "Enviar",
+    "CLOSE": "Cerrar",
+    "SAVE": "Guardar",
+    "DELETE": "Eliminar",
+    "EDIT": "Editar"
   }
 }

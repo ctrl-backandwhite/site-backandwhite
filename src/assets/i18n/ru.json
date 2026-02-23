@@ -463,6 +463,40 @@
     "BRAND": "Back & White",
     "GOOGLE_MAPS": "Google Maps"
   },
+    "DASHBOARD": {
+      "SWAP_TITLE": "Обмен",
+      "SWAP_FROM": "Из",
+      "SWAP_TO": "В",
+      "SWAP_AMOUNT": "Сумма",
+      "BALANCE": "Баланс",
+      "SWAP_SLIPPAGE": "Просадка",
+      "SWAP_DEADLINE": "Срок",
+      "SWAP_ESTIMATED": "Ожидаемый результат",
+      "SWAP_MIN_RECEIVE": "Минимум к получению",
+      "SWAP_MAX_PAY": "Максимум к оплате",
+      "SWAP_RATE": "Курс",
+      "SWAP_BUTTON": "Обмен",
+      "SWAP_LOADING": "Обмен...",
+      "POPULAR_TOKENS": "Популярные токены",
+      "NO_TOKENS_FOUND": "Токены не найдены",
+      "ADD_CUSTOM_TOKEN": "Добавить токен",
+
+      "TOKEN_BALANCES": "Баланс токенов",
+      "TOKEN_BALANCES_EMPTY": "Нет балансов токенов",
+      "TX_FILTER_SENT": "Отправлено",
+      "TX_FILTER_ALL": "Все",
+      "TX_FILTER_RECEIVED": "Получено",
+      "TX_FILTER_BUY": "Покупка",
+      "TX_FILTER_SELL": "Продажа",
+      "TX_EMPTY_SENT": "Нет отправленных транзакций",
+      "TX_EMPTY_ALL": "Нет транзакций",
+      "TX_EMPTY_RECEIVED": "Нет полученных транзакций",
+      "TX_EMPTY_BUY": "Нет покупок",
+      "TX_EMPTY_SELL": "Нет продаж",
+      "TX_FROM": "От",
+      "TX_TO": "Кому",
+      "TX_COPY": "Kopirovat adres"
+    },
   "FOOTER": {
     "COPYRIGHT": "© Back and White. Crafted with",
     "BY": "by Nexaplaform"
@@ -471,6 +505,7 @@
     "SEARCH": "Поиск...",
     "MEGA_MENU": "Мега меню",
     "CONNECT_METAMASK": "Подключить кошелек",
+    "METAMASK_CONNECTED": "Кошелек подключен",
     "NOTIFICATIONS": {
       "TITLE": "Уведомления",
       "VIEW_ALL": "Показать все",
@@ -503,5 +538,20 @@
       "LOCK_SCREEN": "Экран блокировки",
       "LOGOUT": "Выход"
     }
+  },
+  "WALLET": {
+    "CONNECT": "Подключить кошелек",
+    "DISCONNECT": "Отключить"
+  },
+
+  "COMMON": {
+    "ADD": "Добавить",
+    "CANCEL": "Отмена",
+    "LOADING": "Загрузка...",
+    "SUBMIT": "Отправить",
+    "CLOSE": "Закрыть",
+    "SAVE": "Сохранить",
+    "DELETE": "Удалить",
+    "EDIT": "Редактировать"
   }
 }
